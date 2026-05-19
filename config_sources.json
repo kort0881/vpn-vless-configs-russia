@@ -109,7 +109,7 @@ SOURCES_UNIQUE = [
     "https://github.com/LonUp/NodeList/raw/main/V2RAY/Latest_base64.txt",
     "https://github.com/MrMohebi/xray-proxy-grabber-telegram/raw/master/collected-proxies/clash-meta/all.yaml",
     "https://github.com/MrMohebi/xray-proxy-grabber-telegram/raw/master/collected-proxies/row-url/all.txt",
-    "https://github.com/NiREvil/vless/raw/main/sub/clash-meta.yml",  # исправлено blob → raw
+    "https://github.com/NiREvil/vless/raw/main/sub/clash-meta.yml",
     "https://github.com/Tenerome/v2ray/raw/main/res/23-05/2023-05-12",
     "https://github.com/Tenerome/v2ray/raw/main/res/23-05/2023-05-13",
     "https://github.com/barry-far/V2ray-Configs/raw/main/Splitted-By-Protocol/ss.txt",
