@@ -1,8 +1,5 @@
 name: Parse mermeroo SUB LINKS
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 */6 * * *"
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
