@@ -1,0 +1,77 @@
+name: Full Automated Update
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'   # раз в 2 часа (или настройте под свои нужды)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Одна очередь на всё
+concurrency:
+  group: full-update
+  cancel-in-progress: true
+
+jobs:
+  full-update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Reset to origin/main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+          git clean -fdx
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install requests pyyaml
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Create config_sources.json from secret
+        run: echo '${{ secrets.VPN_SOURCES }}' > config_sources.json
+
+      - name: 1. Update githubmirror (mirror.py)
+        run: python mirror.py
+
+      - name: 2. Merge sources from proxy-collect manifest
+        run: python proxy_collect_merge.py
+
+      - name: 3. Run checker (main.py)
+        run: python main.py
+
+      - name: 4. Parse mermeroo sources
+        run: python parse_mermeroo.py
+
+      - name: 5. Compare mermeroo with mirror
+        run: python compare_mermeroo_mirror.py
+
+      - name: 6. Merge mermeroo to config_sources.json
+        run: python merge_mermeroo_to_config_sources.py
+
+      - name: 7. Convert extra mermeroo sources
+        run: python convert_extra_sources.py
+
+      - name: Commit and push all changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          if git diff --cached --quiet; then
+            echo "Нет изменений для коммита"
+            exit 0
+          fi
+          git commit -m "🤖 Full auto-update $(date -u '+%Y-%m-%d %H:%M:%S')"
+          git push origin main
