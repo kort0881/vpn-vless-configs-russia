@@ -1,7 +1,5 @@
 name: Auto Key Checker
-on:
-  schedule:
-    - cron: '0 */6 * * *' # каждые 6 часов
+ # каждые 6 часов
   workflow_dispatch:
 
 permissions:
