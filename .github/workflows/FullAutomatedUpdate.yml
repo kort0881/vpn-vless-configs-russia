@@ -1,4 +1,4 @@
-name: Full Automated Update
+name: FullAutomatedUpdate.yml
 
 on:
   schedule:
