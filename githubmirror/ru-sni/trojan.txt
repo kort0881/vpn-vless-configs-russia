@@ -11,7 +11,7 @@ trojan://WiqtB8V23f@193.168.197.76:49044?security=reality&sni=www.intel.com&fp=c
 trojan://blhwsknjxmfuydz0vhfv@146.70.73.211:53809?security=tls&headerType=none&type=tcp&sni=www.vk.com#IT🇮🇹
 trojan://blhwsknjxmfuydz0vhfv@146.70.73.214:53809?security=tls&headerType=none&type=tcp&sni=www.vk.com#IT🇮🇹
 trojan://dkp96mJVuj@5.175.249.117:443?security=reality&sni=google.com&fp=chrome&pbk=kEfLVGaYdINZml2Jz3NMy8dMhlsXY8PiF08dtGN4cH8&sid=9715efa856269398&spx=/&type=tcp&headerType=http&host=www.namasha.com,s45.namasha.com#🇩🇪 58 - DE - Trojan/TLS/UTLS - 443
-trojan://lpfAiPjB00@193.168.197.76:39425?security=reality&sni=www.amazon.com&fp=chrome&pbk=DoKBudC7Cd1TXpRPWAu7ClkqwEzEPVgfteqs7c0XwXk&sid=8d0e8a871f53&spx=/&type=tcp&path=/#🇸🇪 179 - SE - Trojan/TLS/UTLS - 39425
+trojan://lpfAiPjB00@193.168.197.76:39425?type=tcp&security=reality&pbk=DoKBudC7Cd1TXpRPWAu7ClkqwEzEPVgfteqs7c0XwXk&fp=chrome&sni=www.amazon.com&sid=8d0e8a871f53&spx=%2F#%5BOpenRay%5D%20%F0%9F%87%B8%F0%9F%87%AA%20SE-1266
 trojan://nYzYreUpD4dDjzjFcgf6Fe3oaw4QFN@trunker.cc:8080?security=reality&pbk=BNDEyo7JzKrJ1xPgFNJv5P-emcPIoiUkGZ6OUmlctU4&host=Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET&headerType=none&fp=chrome&type=tcp&sni=wikipedia.org&sid=20b8da6c1f3a9ed7#AutoAiVPN15568639
 trojan://opentunnel.net-v3nom@nlt-1.optnl.com:443?security=tls&headerType=none&type=tcp&sni=discord.com#%F0%9F%87%B3%F0%9F%87%B1+trojan-tls+%40v2mod
 trojan://vpn@45.82.14.144:2025/?type=ws&path=%2F&security=tls&sni=dns.google.com#%F0%9F%87%B7%F0%9F%87%BARU-45.82.14.144-0625
