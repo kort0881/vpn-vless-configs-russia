@@ -1,105 +1,128 @@
 #!/usr/bin/env python3
-"""Генератор собственных VLESS-конфигов с интеграцией в vpn-vless-configs-russia"""
+"""Генератор собственных VLESS-конфигов с интеграцией в githubmirror/clean/vless.txt"""
 
 import uuid
 import json
-import time
+import os
+import re
 from pathlib import Path
 from datetime import datetime
+from urllib.parse import urlparse
 
 # Пути
 BASE_DIR = Path(__file__).parent.absolute()
-OUTPUT_DIR = BASE_DIR / "my_sources"
-OUTPUT_DIR.mkdir(exist_ok=True)
+OUTPUT_DIR = BASE_DIR / "my_sources" / "generated"
+CLEAN_VLESS_PATH = BASE_DIR / "githubmirror" / "clean" / "vless.txt"
 
-def make_vless(host: str, port: int = 443, path: str = "/ws", 
+# Создаём папки
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+CLEAN_VLESS_PATH.parent.mkdir(parents=True, exist_ok=True)
+
+
+def make_vless(host: str, port: int = 443, path: str = "/", 
               sni: str | None = None, remark: str | None = None,
-              flow: str = "xtls-rprx-vision") -> str:
+              flow: str = "xtls-rprx-vision", encryption: str = "none",
+              security: str = "tls", type_: str = "tcp") -> str:
     """Формирует VLESS-URI с Reality/XTLS"""
     uid = str(uuid.uuid4())
     params = {
-        "encryption": "none",
-        "security": "tls",
-        "type": "tcp",
+        "encryption": encryption,
+        "security": security,
+        "type": type_,
         "flow": flow,
     }
     if sni:
         params["sni"] = sni
-    if path and path != "/ws":
+    if path and path != "/":
         params["path"] = path
     
     query = "&".join(f"{k}={v}" for k, v in params.items())
-    remark_part = f"#{remark}" if remark else f"#generated-{datetime.now().strftime('%Y-%m-%d')}"
+    remark_part = f"#{remark}" if remark else f"#my-generated-{datetime.now().strftime('%Y%m%d')}"
     return f"vless://{uid}@{host}:{port}?{query}{remark_part}"
 
-def generate_my_configs(count: int = 30, custom_hosts: list = None):
-    """Генерирует VLESS конфиги"""
-    # Ваши хосты или генерируемые
+
+def generate_my_configs(count: int = 50, custom_hosts: list = None) -> list:
+    """Генерирует VLESS-конфиги, можно передать свой список хостов"""
     if custom_hosts:
         hosts = custom_hosts
     else:
-        # Пример хостов - замените на свои реальные домены
+        # Пример хостов – замените на свои реальные домены или IP
+        # Лучше использовать реальные рабочие серверы
         hosts = [f"node{i}.myvpn.example" for i in range(1, count + 1)]
     
     configs = []
-    for i, host in enumerate(hosts[:count]):
+    for i, host in enumerate(hosts[:count], 1):
         cfg = make_vless(
             host=host,
             port=443,
-            sni=host,
-            remark=f"MySource-{i+1}",
-            flow="xtls-rprx-vision"  # Reality
+            sni=host if not re.match(r'^\d+\.\d+\.\d+\.\d+$', host) else None,
+            remark=f"MySrc-{i}",
+            flow="xtls-rprx-vision"
         )
         configs.append(cfg)
-    
     return configs
 
-def save_to_source(configs: list, subdir: str = "generated"):
-    """Сохраняет конфиги в источник"""
-    out_path = OUTPUT_DIR / subdir / f"vless.txt"
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text("\n".join(configs), encoding="utf-8")
-    print(f"[SAVED] {out_path} ({len(configs)} configs)")
+
+def extract_key(line: str):
+    """Извлекает (host, port, scheme) для дедупликации – как в mirror.py"""
+    try:
+        u = urlparse(line)
+        return (u.hostname, u.port or 443, u.scheme)
+    except:
+        return None
+
+
+def load_existing_clean_vless() -> set:
+    """Загружает существующие строки из githubmirror/clean/vless.txt и возвращает множество URI"""
+    if not CLEAN_VLESS_PATH.exists():
+        return set()
+    with open(CLEAN_VLESS_PATH, 'r', encoding='utf-8', errors='ignore') as f:
+        lines = [l.strip() for l in f if l.strip()]
+    return set(lines)
+
+
+def add_to_clean_vless(new_configs: list) -> int:
+    """Добавляет новые конфиги в clean/vless.txt, если их ещё нет (проверка по полной строке)"""
+    existing = load_existing_clean_vless()
+    added = 0
+    for cfg in new_configs:
+        if cfg not in existing:
+            existing.add(cfg)
+            added += 1
+    if added:
+        with open(CLEAN_VLESS_PATH, 'w', encoding='utf-8') as f:
+            f.write("\n".join(sorted(existing)) + "\n")
+        print(f"[CLEAN] Добавлено {added} новых VLESS-конфигов в {CLEAN_VLESS_PATH}")
+    else:
+        print("[CLEAN] Нет новых конфигов – всё уже присутствует")
+    return added
+
+
+def save_to_my_source(configs: list) -> Path:
+    """Сохраняет копию в my_sources/generated/vless.txt"""
+    out_path = OUTPUT_DIR / "vless.txt"
+    with open(out_path, 'w', encoding='utf-8') as f:
+        f.write("\n".join(configs) + "\n")
+    print(f"[SOURCE] Сохранено {len(configs)} конфигов в {out_path}")
     return out_path
 
-def create_source_entry():
-    """Создаёт запись в config_sources.json для своего источника"""
-    config_sources_path = BASE_DIR / "config_sources.json"
-    
-    # Читаем существующие источники
-    if config_sources_path.exists():
-        with open(config_sources_path, 'r', encoding='utf-8') as f:
-            sources = json.load(f)
-    else:
-        sources = []
-    
-    # Формируем file:// URL
-    file_url = f"file://{OUTPUT_DIR / 'generated' / 'vless.txt'}"
-    
-    # Проверяем, нет ли уже нашего источника
-    if file_url not in sources:
-        sources.append(file_url)
-        with open(config_sources_path, 'w', encoding='utf-8') as f:
-            json.dump(sources, f, indent=2, ensure_ascii=False)
-        print(f"[ADDED] Source entry: {file_url}")
-    else:
-        print(f"[SKIP] Source already exists")
 
 def main():
-    """Main entry point - генерирует и сохраняет конфиги"""
-    print("=== VLESS Generator (My Source) ===")
+    print("=== VLESS Generator (интегрированный) ===")
     
-    # Генерируем конфиги
+    # 1. Генерируем конфиги (можно изменить количество или подставить свои хосты)
     configs = generate_my_configs(count=50)
+    print(f"[GEN] Сгенерировано {len(configs)} URI")
     
-    # Сохраняем
-    save_to_source(configs, subdir="generated")
+    # 2. Сохраняем в my_sources/generated/vless.txt (для отладки/истории)
+    save_to_my_source(configs)
     
-    # Добавляем в config_sources.json
-    create_source_entry()
+    # 3. Добавляем в githubmirror/clean/vless.txt (с дедупликацией)
+    added = add_to_clean_vless(configs)
     
-    # Интеграция с CF генератором
-    print("\n[INFO] Configs saved. Run 'python3 main.py' to process them.")
+    print(f"\n✅ Готово! Добавлено в основной пул: {added} / {len(configs)}")
+    print("Следующие шаги (main.py) обработают их через SNI-фильтры и т.д.")
+
 
 if __name__ == "__main__":
     main()
