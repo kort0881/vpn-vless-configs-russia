@@ -1,25 +1,14 @@
+markdown
 <div align="center">
 
 # 🔐 VPN VLESS Configs Russia
 
 ### Автоматическая коллекция VPN конфигураций с фокусом на РФ и СНГ регион
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python)
-![Auto Update](https://img.shields.io/badge/Auto_Update-Every_15min-brightgreen?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)
+![Auto Update](https://img.shields.io/badge/Auto_Update-Every_2h-brightgreen?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-Educational-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status
-
-</div>
-
----
-
-## 🎬 Live Demo
-
-<div align="center">
-
-![VPN Collector Demo](гифка.gif)
-
-*Автоматический сбор, фильтрация и валидация VPN конфигураций в реальном времени*
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
 </div>
 
@@ -52,35 +41,35 @@
 <td width="50%">
 
 ### 🤖 Автоматизация
-- 🔄 Обновление каждые 15 минут
-- 📥 Сбор из 50+ GitHub репозиториев
-- 📡 Парсинг Telegram каналов
+- 🔄 Обновление каждые 2 часа (cron)
+- 📥 Сбор из 50+ GitHub репозиториев + sstap.org
+- 🧬 **Генерация собственных VLESS-конфигов** (50 шт.)
 - 🤖 GitHub Actions workflow
-- 💾 Автоматический commit результатов
+- 💾 Автоматический коммит и пуш результатов
 
 </td>
 <td width="50%">
 
 ### 🎯 Умная фильтрация
-- 🌍 Geo-фильтр (RU/СНГ/EU)
-- 🔍 Дедупликация по MD5
-- ✅ Валидация синтаксиса
+- 🌍 Geo-фильтр (RU/СНГ/EU) по тегам и SNI
+- 🔍 Дедупликация по (IP, port, scheme)
 - 🏆 Приоритет быстрых серверов
-- 📊 Детальная статистика
+- 📊 Детальная статистика (stats.json)
+- 🧹 Очистка от дублей и мусора
 
 </td>
 </tr>
 </table>
 
 **Поддерживаемые протоколы:**
-- 🟩 **VLESS** - Modern protocol with XTLS
-- 🟦 **VMess** - Classic V2Ray protocol
-- 🟥 **Trojan** - Trojan-GFW protocol
-- ⚫ **Shadowsocks** - SOCKS5-based proxy
+- 🟩 **VLESS** — современный протокол с XTLS
+- 🟦 **VMess** — классический протокол V2Ray
+- 🟥 **Trojan** — протокол Trojan-GFW
+- ⚫ **Shadowsocks** — прокси на базе SOCKS5
 
 ---
 
-## 📊 Live Statistics
+## 📊 Live Statistics (пример)
 
 <div align="center">
 
@@ -92,7 +81,7 @@
 | ⚫ Shadowsocks | 312 | 45 | ✅ Active |
 | **📦 Total** | **2985** | **672** | **✅ Online** |
 
-![Updated](https://img.shields.io/badge/Last_Update-2026--02--17-orange?style=flat-square)
+![Updated](https://img.shields.io/badge/Last_Update-Auto-orange?style=flat-square)
 ![Sources](https://img.shields.io/badge/Sources-53_repos-blue?style=flat-square)
 ![Uptime](https://img.shields.io/badge/Uptime-99.9%25-success?style=flat-square)
 
@@ -102,399 +91,258 @@
 
 ## 🚀 Quick Start
 
-### 1️⃣ Cloudflare Worker подписка (временно недоступна)
-
-> 🔒 Внимание: Cloudflare Workers сейчас частично блокируются в РФ, поэтому **подписка через `vlesstrojan.alexanderyurievich88.workers.dev` временно отключена** и ссылки убраны, чтобы не оставлять нерабочие конфиги и мёртвые подписки.
-
-> 🔁 Как только ситуация стабилизируется и доступ к Cloudflare Workers станет более предсказуемым, здесь снова появятся **актуальные подписочные ссылки**.
-
-> 📝 Пока используйте прямую загрузку с GitHub (см. пункт ниже) или локальный запуск скриптов.
-
-### 2️⃣ Прямая загрузка с GitHub
+### 1️⃣ Прямая загрузка с GitHub
 
 ```bash
-# Все VLESS конфигурации
+# Все VLESS конфигурации (после geo-фильтра)
 wget https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/githubmirror/clean/vless.txt
 
-# Только российские серверы
-wget https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/githubmirror/ru-sni/vless_ru.txt
-```
+# Только российские/СНГ серверы (по SNI)
+wget https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/githubmirror/ru-sni/vless.txt
 
-### 3️⃣ Clone Repository
-
-```bash
+# Сгенерированные собственные VLESS-конфиги (бэкап)
+wget https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/my_sources/generated/vless.txt
+2️⃣ Clone репозитория
+bash
 git clone https://github.com/kort0881/vpn-vless-configs-russia.git
 cd vpn-vless-configs-russia
 
 # Просмотр конфигураций
 cat githubmirror/clean/vless.txt | head -10
-```
+📱 Настройка клиентов
+Hiddify (Рекомендуется)
+Android / iOS / Windows / macOS / Linux
 
----
+Скачать: hiddify.com
 
-## 📱 Настройка клиентов
+Открыть → Add Profile → Subscription URL
 
-### Hiddify (Рекомендуется)
+Вставить ссылку на raw версию файла, например:
 
-**Android / iOS / Windows / macOS / Linux**
+text
+https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/githubmirror/ru-sni/vless.txt
+Import → выбрать сервер
 
-1. Скачать: [hiddify.com](https://hiddify.com)
-2. Открыть → **Add Profile** → **Subscription URL**
-3. Вставить:
-   - пока Cloudflare-подписка временно отключена, используйте:
-     - прямой импорт отдельных ссылок из файлов `githubmirror/clean/*.txt`
-     - либо свой собственный backend/подписку
-4. **Import** → выбрать сервер
+⚠️ Cloudflare Worker подписка временно недоступна из-за блокировок. Используйте прямую загрузку.
 
-### V2RayN (Windows)
+V2RayN (Windows)
+Подписка → Группы подписок → Добавить
 
-1. **Подписка** → **Группы подписок** → **Добавить**
-2. Указать свой рабочий URL подписки или локальный/самостоятельный endpoint
-3. **Обновить подписку** → выбрать сервер
-4. Правая кнопка → **Test Real Latency** (выбрать быстрый)
+URL: как указано выше
 
-### V2RayNG (Android)
+Обновить подписку → выбрать сервер
 
-1. **Menu (≡)** → **Подписки** → **+**
-2. **URL** → вставить ваш URL подписки → **OK**
-3. **Обновить подписку** → выбрать сервер
+Правая кнопка → Test Real Latency (выбрать быстрый)
 
-### Clash Meta / Mihomo
+V2RayNG (Android)
+Menu (≡) → Подписки → +
 
-```yaml
-proxy-providers:
-  vless-sub:
-    type: http
-    url: "https://<your-own-endpoint>/sub?filter=vless"
-    interval: 3600
-    path: ./providers/vless.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-```
+URL → вставить URL → OK
 
----
+Обновить подписку → выбрать сервер
 
-## 📂 Project Structure
-
-```
+📂 Project Structure (с изменениями)
+text
 vpn-vless-configs-russia/
 ├── 📁 githubmirror/
-│   ├── 📁 clean/                    # Все валидные конфигурации
-│   │   ├── vless.txt                # 1247 VLESS configs
-│   │   ├── vmess.txt                # 892 VMess configs
-│   │   ├── trojan.txt               # 534 Trojan configs
-│   │   └── ss.txt                   # 312 Shadowsocks configs
-│   ├── 📁 ru-sni/                   # Только RU/CIS серверы
-│   │   ├── vless_ru.txt             # 342 RU VLESS
-│   │   ├── vmess_ru.txt             # 198 RU VMess
+│   ├── 📁 clean/                 # Все валидные конфиги после geo-фильтра
+│   │   ├── vless.txt
+│   │   ├── vmess.txt
+│   │   ├── trojan.txt
+│   │   └── ss.txt
+│   ├── 📁 ru-sni/                # Отфильтровано по SNI (РФ/СНГ)
+│   │   ├── vless.txt
+│   │   ├── vmess.txt
 │   │   └── ...
-│   ├── 📁 new/                      # Новые конфигурации
-│   └── 📁 ru-sni-local/             # Локальные RU конфиги
-├── 📁 vpn-files/
-│   ├── all_posts.txt                # История постов
-│   └── post_YYYYMMDD_HHMMSS.txt     # Последние посты
-├── 📁 subscriptions/                # Subscription форматы
-├── 📁 data/                         # Служебные данные
-├── 📄 main.py                       # Основной оркестратор
-├── 📄 mirror.py                     # Сборщик конфигураций
-├── 📄 filter_ru_sni.py              # Географический фильтр
-└── 📄 requirements.txt              # Python зависимости
-```
+│   ├── 📁 new/                   # Сырые новые конфиги
+│   │   ├── all_new.txt
+│   │   └── by_protocol/
+│   └── 📁 ru-sni-local/          # Экспериментальный локальный SNI-фильтр
+├── 📁 my_sources/
+│   └── 📁 generated/             # Сгенерированные собственные VLESS-конфиги
+│       └── vless.txt
+├── 📁 logs/                      # Логи выполнения
+├── 📄 my_vless_generator.py      # 🆕 Генератор собственных VLESS
+├── 📄 mirror.py                  # Сборщик из публичных источников
+├── 📄 main.py                    # Оркестратор всех шагов
+├── 📄 filter_ru_sni.py           # Основной SNI-фильтр (РФ/СНГ)
+├── 📄 filter_ru_sni_local.py     # Экспериментальный SNI-фильтр
+├── 📄 generate_cf_vless.py       # Генерация 50 свежих CF-VLESS
+├── 📄 config_sources.json        # Список URL источников (из секрета)
+├── 📄 stats.json                 # Статистика (обновляется при каждом запуске)
+├── 📄 requirements.txt           # Зависимости Python
+└── 📂 .github/workflows/
+    └── FullAutomatedUpdate.yml   # GitHub Actions (каждые 2 часа)
+🔄 Автоматизация (GitHub Actions)
+Workflow FullAutomatedUpdate.yml запускается:
 
----
+⏰ По расписанию: 0 */2 * * * (каждые 2 часа)
 
-## 🔄 Автоматизация
+🖱️ Вручную: через кнопку Run workflow на вкладке Actions
 
-### GitHub Actions Workflow
+Последовательность шагов:
+text
+1. Reset репозитория до origin/main
+2. Установка Python и зависимостей
+3. Создание config_sources.json из секрета VPN_SOURCES
+4. mirror.py          → загрузка и geo-фильтрация → githubmirror/
+5. proxy_collect_merge.py → объединение источников
+6. my_vless_generator.py  → 🆕 генерация 50 собственных VLESS → my_sources/generated/ и добавление в githubmirror/clean/vless.txt
+7. main.py            → запуск оркестратора (включая generate_cf_vless, filter_ru_sni и др.)
+8. parse_mermeroo.py  → парсинг дополнительных источников
+9. compare_* / merge_* → сравнение и слияние
+10. convert_extra_sources.py → преобразование
+11. git commit & push → все изменения (включая my_sources/generated) отправляются в репозиторий
+Результат: свежие конфиги в githubmirror/clean/, githubmirror/ru-sni/, а также в my_sources/generated/vless.txt.
 
-```
-┌─────────────────────────────────────┐
-│ GitHub Actions (Every 15 min)       │
-└──────────────┬──────────────────────┘
-               │
-       ┌───────▼────────┐
-       │ 1. 📥 Сбор     │
-       │ конфигураций   │
-       │ - GitHub       │
-       │   (50+ repos)  │
-       │ - Telegram     │
-       │ - RSS          │
-       └───────┬────────┘
-               │
-       ┌───────▼────────┐
-       │ 2. 🔍          │
-       │ Фильтрация     │
-       │ - Дедупликация │
-       │ - Geo-фильтр   │
-       │ - Валидация    │
-       └───────┬────────┘
-               │
-       ┌───────▼────────┐
-       │ 3. 💾          │
-       │ Сохранение     │
-       │ - clean/       │
-       │ - ru-sni/      │
-       └───────┬────────┘
-               │
-       ┌───────▼────────┐
-       │ 4. 📤 Commit   │
-       │    & Push      │
-       └────────────────┘
-```
-
-**Расписание:**
-- ⏰ Каждые 15 минут (автоматически)
-- 🚀 Ручной запуск (workflow_dispatch)
-- 📊 Обновление статистики
-- 💬 Уведомления в Telegram
-
----
-
-## 🛠️ Локальная установка
-
-### Требования
-
-```bash
-Python 3.8+
+🛠️ Локальная установка и запуск
+Требования
+bash
+Python 3.11+
 Git
-```
-
-### Установка
-
-```bash
-# Clone repository
+Установка
+bash
 git clone https://github.com/kort0881/vpn-vless-configs-russia.git
 cd vpn-vless-configs-russia
-
-# Install dependencies
 pip install -r requirements.txt
+Настройка (опционально)
+Создайте файл config_sources.json со списком URL источников (если не хотите получать их из секрета GitHub). Пример:
 
-# Настроить переменные окружения (опционально)
-cp .env.example .env
-# Редактировать .env (добавить TELEGRAM_BOT_TOKEN если нужно)
-```
-
-### Запуск
-
-```bash
-# Полный цикл (сбор + фильтрация + статистика)
+json
+[
+  "https://raw.githubusercontent.com/.../configs.txt",
+  "https://example.com/proxies.txt"
+]
+Запуск
+bash
+# Полный цикл (все шаги, как в GitHub Actions)
 python main.py
 
-# Только сбор конфигураций
+# Только сбор зеркала
 python mirror.py
 
-# Только фильтрация RU/CIS
+# Только генерация собственных VLESS
+python my_vless_generator.py
+
+# Только SNI-фильтр (РФ/СНГ)
 python filter_ru_sni.py
-```
-
-### Логи
-
-```bash
-# Просмотр последнего лога
+Просмотр логов и статистики
+bash
+# Последний лог
 tail -f logs/vpn-checker-*.log
 
-# Статистика выполнения
+# Статистика
 cat stats.json | python -m json.tool
-```
+🌍 Географическая фильтрация
+mirror.py использует белый список доменов и тегов (РФ/СНГ/Европа)
 
----
+filter_ru_sni.py извлекает реальный SNI из URI и оставляет только те, где SNI соответствует РФ/СНГ доменам (vk.com, yandex.ru, mail.ru, госуслуги и т.д.)
 
-## 🌍 Географическая фильтрация
+Приоритетные регионы:
 
-### Приоритетные регионы
+🇷🇺 Россия
 
-**Высокий приоритет:**
-- 🇷🇺 Россия - минимальный latency
-- 🇰🇿 Казахстан - низкий ping
-- 🇺🇦 Украина - близкие серверы
-- 🇧🇾 Беларусь - стабильное соединение
+🇰🇿 Казахстан
 
-**Средний приоритет:**
-- 🇩🇪 Германия - высокая скорость
-- 🇳🇱 Нидерланды - отличные каналы
-- 🇫🇷 Франция - надежные датацентры
-- 🇬🇧 Великобритания - быстрые серверы
+🇧🇾 Беларусь
 
-### Критерии фильтрации
+🇪🇺 Европа (Германия, Нидерланды, Франция, Великобритания)
 
-```python
-# Проверка домена SNI
-RU_DOMAINS = [
-    'ru', 'рф', 'russia', 'moscow', 'spb', 'msk',
-    'kazakh', 'kz', 'ukraine', 'ua', 'belarus', 'by'
-]
+🔒 Безопасность
+⚠️ Предупреждения
+Риски при использовании публичных VPN:
 
-# Проверка IP диапазонов
-# GeoIP lookup по MaxMind DB
-```
+📝 Логирование трафика — владелец сервера может видеть ваши данные
 
----
+🔓 Незашифрованный HTTP — данные могут быть перехвачены
 
-## 📊 Статистика и мониторинг
+🕵️ Отсутствие гарантий приватности — публичные серверы небезопасны
 
-### Метрики (stats.json)
+🚫 Возможная блокировка — серверы могут быть заблокированы
 
-```json
-{
-  "timestamp": "2026-02-17T18:15:00",
-  "github_mirror": {
-    "vless": 1247,
-    "vmess": 892,
-    "trojan": 534,
-    "ss": 312
-  },
-  "ru_sni": {
-    "vless": 342,
-    "vmess": 198,
-    "trojan": 87,
-    "ss": 45
-  },
-  "sources": {
-    "github_repos": 53,
-    "telegram_posts": 2,
-    "total_raw": 3847,
-    "after_dedup": 2985,
-    "success_rate": 77.6
-  }
-}
-```
+💡 Рекомендации
+✅ Используйте только для:
 
-**Отслеживаем:**
-- ✅ Success rate (% рабочих конфигураций)
-- ⚡ Average response time
-- 🌍 Geographic distribution
-- 📈 Quality trends
-- 🔄 Update frequency
+Тестирования и образования
 
----
+Разработки и отладки
 
-## 🔒 Безопасность
+Временного доступа к заблокированным ресурсам
 
-### ⚠️ Предупреждения
+❌ НЕ используйте для:
 
-**Риски при использовании публичных VPN:**
+Банковских операций
 
-1. 📝 **Логирование трафика** - владелец сервера может видеть ваши данные
-2. 🔓 **Незашифрованный HTTP** - данные могут быть перехвачены
-3. 🕵️ **Отсутствие гарантий приватности** - публичные серверы небезопасны
-4. 🚫 **Возможная блокировка** - серверы могут быть заблокированы
+Конфиденциальной переписки
 
-### 💡 Рекомендации
+Работы с личными данными
 
-✅ **Используйте только для:**
-- Тестирования и образования
-- Разработки и отладки
-- Временного доступа к заблокированным ресурсам
+Коммерческой деятельности
 
-❌ **НЕ используйте для:**
-- Банковских операций
-- Конфиденциальной переписки
-- Работы с личными данными
-- Коммерческой деятельности
+🔐 Для серьезных задач используйте платные VPN-сервисы!
 
-**🔐 Для серьезных задач используйте платные VPN-сервисы!**
+❓ FAQ
+<details> <summary><b>Q: Почему некоторые конфигурации не работают?</b></summary>
+Причины:
 
----
+Сервер заблокирован провайдером
 
-## ❓ FAQ
+Конфигурация устарела
 
-<details>
-<summary><b>Q: Почему некоторые конфигурации не работают?</b></summary>
+Лимит подключений исчерпан
 
-**Причины:**
-1. Сервер заблокирован провайдером
-2. Конфигурация устарела
-3. Лимит подключений исчерпан
-4. Сервер выключен
+Сервер выключен
 
-**Решение:** Используйте подписку - она автоматически обновляется каждые 15 минут.
+Решение: Обновите конфиги — GitHub Actions делает это каждые 2 часа.
+
+</details><details> <summary><b>Q: Как часто обновляются конфигурации?</b></summary>
+⏰ GitHub Actions: каждые 2 часа (автоматически)
+
+📡 Telegram парсинг: 2 раза в день
+
+🚀 Ручной запуск: в любое время
+
+</details><details> <summary><b>Q: Что такое my_sources/generated/vless.txt?</b></summary>
+Это файл, который генерирует скрипт my_vless_generator.py. Он создаёт 50 собственных VLESS-конфигов (с реальными UUID) и автоматически добавляет их в общий пул githubmirror/clean/vless.txt. Это позволяет вам иметь свои уникальные конфиги, которые не зависят от внешних источников.
+
+</details><details> <summary><b>Q: Можно ли изменить количество генерируемых конфигов или хосты?</b></summary>
+Да. Отредактируйте в my_vless_generator.py функцию generate_my_configs(count=50, custom_hosts=None). Передайте свой список хостов или измените count.
+
 </details>
+🔗 Полезные ссылки
+Источники (частично)
+sstap.org — актуальные ключи в реальном времени
 
-<details>
-<summary><b>Q: Как выбрать самые быстрые серверы?</b></summary>
+V2RayAggregator
 
-**В клиентах есть функция ping test:**
-- **Hiddify**: Long tap → Test Latency
-- **V2RayN**: Right click → Test Real Latency  
-- **Clash**: Config → Test All
+NoMoreWalls
 
-Выбирайте серверы с latency < 150ms.
-</details>
+Клиенты
+Hiddify — мультиплатформенный клиент
 
-<details>
-<summary><b>Q: Как часто обновляются конфигурации?</b></summary>
+Xray-core — движок
 
-- ⏰ **GitHub Actions**: каждые 15 минут
-- 📡 **Telegram парсинг**: 2 раза в день
-- 🚀 **Ручной запуск**: в любое время
-</details>
+🤝 Contributing
+Как помочь проекту
+Добавить новые источники — отредактируйте config_sources.json или секрет VPN_SOURCES.
 
-<details>
-<summary><b>Q: Можно ли использовать в коммерческих целях?</b></summary>
+Улучшить фильтрацию — дополните списки GOOD_DOMAINS и GOOD_TAGS в mirror.py.
 
-❌ **Нет**. Репозиторий только для образования.
-</details>
+Сообщить об ошибке — создайте Issue с описанием и логами.
 
----
+Pull Request Process
+Fork репозитория
 
-## 🔗 Полезные ссылки
+Создайте ветку: git checkout -b feature/improvement
 
-### Telegram каналы (источники)
+Закоммитьте изменения: git commit -m "Описание"
 
-[![Telegram](https://img.shields.io/badge/Telegram-@vlesstrojan-blue?style=for-the-badge&logo=telegram)](https://t.me/vlesstrojan)
-[![Telegram](https://img.shields.io/badge/Telegram-@kibersosnew-blue?style=for-the-badge&logo=telegram)](https://t.me/kibersosnew)
+Запушьте: git push origin feature/improvement
 
-### Связанные проекты
+Откройте Pull Request
 
-- [V2RayAggregator](https://github.com/mahdibland/V2RayAggregator) - V2Ray агрегатор
-- [NoMoreWalls](https://github.com/peasoft/NoMoreWalls) - Proxy листы
-- [Xray-core](https://github.com/XTLS/Xray-core) - Proxy движок
-- [Hiddify](https://github.com/hiddify) - Multi-platform VPN клиент
-
-### Документация
-
-- 📖 [USAGE.md](USAGE.md) - Подробное руководство
-- 📜 [LICENSE](LICENSE) - Лицензия проекта
-
----
-
-## 🤝 Contributing
-
-### Как помочь проекту
-
-**1. Добавить новые источники**
-```python
-# В mirror.py
-SOURCES = [
-    "https://your-source.com/configs.txt",
-]
-```
-
-**2. Улучшить фильтрацию**
-- Добавить домены в `RU_DOMAINS`
-- Улучшить GeoIP определение
-- Оптимизировать валидацию
-
-**3. Репортить баги**
-- [Создать Issue](https://github.com/kort0881/vpn-vless-configs-russia/issues)
-- Приложить логи
-- Указать версию Python
-
-### Pull Request Process
-
-1. Fork repository
-2. Create branch: `git checkout -b feature/new-feature`
-3. Commit: `git commit -m "Add new feature"`
-4. Push: `git push origin feature/new-feature`
-5. Open Pull Request
-
----
-
-## 📜 License
-
-### MIT License с ограничениями
+📜 License
+MIT License с ограничениями
 Copyright (c) 2026 VPN VLESS Configs Russia
 
 РАЗРЕШЕНО:
@@ -513,29 +361,25 @@ Copyright (c) 2026 VPN VLESS Configs Russia
 ⚠️ Утечки данных
 ⚠️ Блокировки провайдерами
 
-text
+Полный текст: LICENSE
 
-Полный текст: [LICENSE](LICENSE)
+📞 Контакты
+📱 Telegram: @vlesstrojan
 
----
+🐛 Issues: GitHub Issues
 
-## 📞 Контакты
-
-- 📱 **Telegram**: [@vlesstrojan](https://t.me/vlesstrojan)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/kort0881/vpn-vless-configs-russia/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/kort0881/vpn-vless-configs-russia/discussions)
-
----
+💬 Discussions: GitHub Discussions
 
 <div align="center">
+🌟 Если проект полезен — поставьте звезду!
+https://img.shields.io/github/stars/kort0881/vpn-vless-configs-russia?style=social
+https://img.shields.io/github/forks/kort0881/vpn-vless-configs-russia?style=social
+https://img.shields.io/github/watchers/kort0881/vpn-vless-configs-russia?style=social
 
-## 🌟 Если проект полезен - поставьте звезду!
+💡 Сделано с ❤️ для свободного интернета
+Last Update: автоматически каждые 2 часа | Total Configs: см. stats.json | Sources: 50+ | Uptime: 99.9%
 
-[![GitHub stars](https://img.shields.io/github/stars/kort0881/vpn-vless-configs-russia?style=social)](https://github.com/kort0881/vpn-vless-configs-russia/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/kort0881/vpn-vless-configs-russia?style=social)](https://github.com/kort0881/vpn-vless-configs-russia/network/members)
-[![GitHub watchers](https://img.shields.io/github/watchers/kort0881/vpn-vless-configs-russia?style=social)](https://github.com/kort0881/vpn-vless-configs-russia/watchers)
-
----
+</div> ```
 
 ### 💡 Сделано с ❤️ для свободного интернета
 
