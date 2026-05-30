@@ -358,8 +358,8 @@
   "https://raw.githubusercontent.com/yyyr-otz/tele-providers-collector/019cb3e07ee52fddbc7caa54fc670c6b9bae6539/sub/proxies.txt",
   "https://raw.githubusercontent.com/yyyr-otz/tele-providers-collector/b7a74ee98bcf02c5a507d688a1bed3aa9f7f4ed1/script/raw/protocols/mixed.txt",
   "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt",
-  "https://v2rayse.com/fs/public/20260530/free-node-share-baa6b355.txt",
-  "https://v2rayse.com/fs/public/20260530/free-node-share-baa6b355.yaml",
+  "https://v2rayse.com/fs/public/20260530/free-node-share-a6f1e322.txt",
+  "https://v2rayse.com/fs/public/20260530/free-node-share-a6f1e322.yaml",
   "http://172.245.30.41/clash.yaml",
   "http://weoknow.com/data/dayupdate/1/z1.txt",
   "https://a.nodeshare.xyz/uploads/{YYYY}/{M}/{YYYY}{MM}{DD}.txt",
@@ -885,6 +885,5 @@
   "https://update.glados-config.com/mihomo/543454/7b9d17e/80064/glados.yaml",
   "https://v2ray.neocities.org/v2ray.txt",
   "https://v2rayshare.githubrowcontent.com/{YYYY}/{MM}/{YYYY}{MM}{DD}.txt",
-  "https://www.xrayvip.com/free.txt",
-  "file:///mnt/f/S_Youtube/vpn-vless-configs-russia/my_sources/generated/vless.txt"
+  "https://www.xrayvip.com/free.txt"
 ]
