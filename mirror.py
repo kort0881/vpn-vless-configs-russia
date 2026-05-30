@@ -53,6 +53,44 @@ URLS_BASE = []  # ПУСТОЙ СПИСОК — все источники бер
 CONFIG_SOURCES_FILE = os.path.join(BASE_PATH, "config_sources.json")
 CHUNK_SIZE = 500
 
+# ==================== ДОБАВЛЕНО ДЛЯ SSTAP ====================
+def fetch_keys_from_sstap():
+    """Загружает страницу sstap.org и извлекает все прокси-ключи."""
+    url = "https://sstap.org/node-real-time-update/"
+    try:
+        resp = requests.get(url, timeout=15)
+        if resp.status_code != 200:
+            print(f"⚠️ sstap.org вернул HTTP {resp.status_code}")
+            return []
+        
+        # Регулярные выражения для поиска ключей в HTML-коде
+        patterns = [
+            r'vless://[^\s<>"\'\\]+',
+            r'vmess://[^\s<>"\'\\]+',
+            r'ss://[^\s<>"\'\\]+',
+            r'trojan://[^\s<>"\'\\]+',
+            r'hysteria://[^\s<>"\'\\]+',
+            r'tuic://[^\s<>"\'\\]+',
+        ]
+        keys = []
+        for pat in patterns:
+            found = re.findall(pat, resp.text)
+            keys.extend(found)
+        
+        # Удаляем дубликаты с сохранением порядка
+        unique = []
+        seen = set()
+        for k in keys:
+            if k not in seen:
+                seen.add(k)
+                unique.append(k)
+        
+        print(f"📡 С sstap.org получено {len(unique)} ключей")
+        return unique
+    except Exception as e:
+        print(f"❌ Ошибка при парсинге sstap.org: {e}")
+        return []
+# =============================================================
 
 def load_all_urls():
     urls = set(URLS_BASE)
@@ -143,6 +181,7 @@ def main() -> int:
     urls = load_all_urls()
     print(f"🚀 Старт: всего источников (старые + новые): {len(urls)}")
 
+    # Обработка обычных URL-источников (текстовые файлы, base64 и т.д.)
     for i, url in enumerate(urls, 1):
         try:
             r = requests.get(url, timeout=15)
@@ -179,6 +218,27 @@ def main() -> int:
 
         except Exception as e:
             print(f"{i}/{len(urls)} ⚠️ Ошибка: {e} — {url}")
+
+    # ==================== ДОБАВЛЕНО: получение ключей с sstap.org ====================
+    sstap_keys = fetch_keys_from_sstap()
+    sstap_added = 0
+    sstap_trash = 0
+    for key in sstap_keys:
+        # Проверяем, что ключ валидного протокола (функция protocol_of)
+        if not protocol_of(key):
+            continue
+        if is_good_key(key):
+            if key not in all_keys:
+                all_keys.add(key)
+                sstap_added += 1
+        else:
+            sstap_trash += 1
+    trash_count += sstap_trash
+    if sstap_added > 0:
+        print(f"📡 С sstap.org добавлено {sstap_added} ключей (отфильтровано {sstap_trash})")
+    else:
+        print(f"📡 С sstap.org не добавлено ни одного ключа (все {len(sstap_keys)} отклонены фильтром)")
+    # =============================================================================
 
     all_keys_list = sorted(all_keys)
 
