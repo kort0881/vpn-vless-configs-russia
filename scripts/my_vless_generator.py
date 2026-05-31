@@ -1,135 +1,89 @@
 #!/usr/bin/env python3
-"""Генератор реальных VLESS-конфигов на основе собранных хостов"""
+"""Генератор реальных VLESS-конфигов на основе собранных ключей (mirror.py)"""
 
-import uuid
+import os
 import re
+import uuid
 from pathlib import Path
-from datetime import datetime
 
-BASE_DIR = Path(__file__).parent.absolute()
-OUTPUT_DIR = BASE_DIR / "my_sources" / "generated"
-CLEAN_VLESS_PATH = BASE_DIR / "data/githubmirror" / "clean" / "vless.txt"
-ALL_NEW_PATH = BASE_DIR / "data/githubmirror" / "new" / "all_new.txt"   # все свежие ключи
+# Пути после рефакторинга
+BASE_DIR = Path(__file__).parent.parent  # корень репозитория
+ALL_NEW_FILE = BASE_DIR / "data" / "githubmirror" / "new" / "all_new.txt"
+CLEAN_VLESS_FILE = BASE_DIR / "data" / "githubmirror" / "clean" / "vless.txt"
+OUTPUT_GENERATED = BASE_DIR / "data" / "githubmirror" / "new" / "generated_real.txt"
 
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-CLEAN_VLESS_PATH.parent.mkdir(parents=True, exist_ok=True)
+def extract_hosts_from_file(file_path):
+    """Извлекает из файла с ключами уникальные тройки (host, port, sni)"""
+    if not file_path.exists():
+        return set()
+    hosts = set()
+    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+        for line in f:
+            line = line.strip()
+            if not line.startswith("vless://"):
+                continue
+            # Формат: vless://uuid@host:port?params#tag
+            match = re.match(r'vless://[^@]+@([^:]+):(\d+)\?(.*)', line)
+            if match:
+                host = match.group(1)
+                port = match.group(2)
+                params = match.group(3)
+                sni_match = re.search(r'sni=([^&]+)', params)
+                sni = sni_match.group(1) if sni_match else host
+                hosts.add((host, port, sni))
+    return hosts
 
-def make_vless(host: str, port: int = 443, sni: str = None, remark: str = None,
-               flow: str = "xtls-rprx-vision", encryption: str = "none",
-               security: str = "tls", type_: str = "tcp") -> str:
-    """Формирует VLESS-URI с XTLS Vision"""
+def generate_vless(host, port, sni, remark=None):
+    """Генерирует новый VLESS-URI со случайным UUID"""
     uid = str(uuid.uuid4())
     params = {
-        "encryption": encryption,
-        "security": security,
-        "type": type_,
-        "flow": flow,
+        "encryption": "none",
+        "security": "tls",
+        "type": "tcp",
+        "flow": "xtls-rprx-vision",
     }
     if sni:
         params["sni"] = sni
     query = "&".join(f"{k}={v}" for k, v in params.items())
-    tag = f"#{remark}" if remark else f"#gen-{datetime.now().strftime('%Y%m%d')}"
-    return f"vless://{uid}@{host}:{port}?{query}{tag}"
+    tag = remark if remark else f"gen-{host}"
+    return f"vless://{uid}@{host}:{port}?{query}#{tag}"
 
-def extract_real_hosts_from_files():
-    """
-    Извлекает уникальные (host, port, sni) из результатов работы mirror.py.
-    Сначала из all_new.txt (все свежие ключи), потом из clean/vless.txt.
-    """
-    hosts = set()
-    # Пытаемся прочитать all_new.txt (богаче)
-    if ALL_NEW_PATH.exists():
-        with open(ALL_NEW_PATH, 'r', encoding='utf-8', errors='ignore') as f:
-            for line in f:
-                line = line.strip()
-                if not line.startswith("vless://"):
-                    continue
-                # Формат: vless://uuid@host:port?params#tag
-                m = re.match(r'vless://[^@]+@([^:]+):(\d+)\?(.*)', line)
-                if m:
-                    host = m.group(1)
-                    port = m.group(2)
-                    params = m.group(3)
-                    sni_match = re.search(r'sni=([^&]+)', params)
-                    sni = sni_match.group(1) if sni_match else host
-                    hosts.add((host, port, sni))
-    # Если нет all_new.txt, пробуем clean/vless.txt
-    if not hosts and CLEAN_VLESS_PATH.exists():
-        with open(CLEAN_VLESS_PATH, 'r', encoding='utf-8', errors='ignore') as f:
-            for line in f:
-                line = line.strip()
-                if not line.startswith("vless://"):
-                    continue
-                m = re.match(r'vless://[^@]+@([^:]+):(\d+)\?(.*)', line)
-                if m:
-                    host = m.group(1)
-                    port = m.group(2)
-                    params = m.group(3)
-                    sni_match = re.search(r'sni=([^&]+)', params)
-                    sni = sni_match.group(1) if sni_match else host
-                    hosts.add((host, port, sni))
-    return hosts
-
-def generate_my_configs():
-    """Генерирует VLESS-конфиги на основе реальных серверов из собранных ключей"""
-    real_hosts = extract_real_hosts_from_files()
-    if not real_hosts:
-        print("[WARN] Нет реальных хостов. Сначала запустите mirror.py.")
-        return []
-    
-    configs = []
-    for host, port, sni in real_hosts:
-        cfg = make_vless(
-            host=host,
-            port=int(port),
-            sni=sni,
-            remark=f"auto-{host}",
-            flow="xtls-rprx-vision"
-        )
-        configs.append(cfg)
-    return configs
-
-def load_existing_clean_vless() -> set:
-    if not CLEAN_VLESS_PATH.exists():
+def load_existing_clean_vless():
+    if not CLEAN_VLESS_FILE.exists():
         return set()
-    with open(CLEAN_VLESS_PATH, 'r', encoding='utf-8', errors='ignore') as f:
+    with open(CLEAN_VLESS_FILE, 'r', encoding='utf-8', errors='ignore') as f:
         return {line.strip() for line in f if line.strip()}
 
-def add_to_clean_vless(new_configs: list) -> int:
+def add_to_clean_vless(new_configs):
     existing = load_existing_clean_vless()
-    added = 0
-    for cfg in new_configs:
-        if cfg not in existing:
-            existing.add(cfg)
-            added += 1
-    if added:
-        with open(CLEAN_VLESS_PATH, 'w', encoding='utf-8') as f:
-            f.write("\n".join(sorted(existing)) + "\n")
-        print(f"[CLEAN] Добавлено {added} новых VLESS-конфигов в {CLEAN_VLESS_PATH}")
-    else:
-        print("[CLEAN] Нет новых конфигов – всё уже присутствует")
-    return added
-
-def save_to_my_source(configs: list) -> Path:
-    out_path = OUTPUT_DIR / "vless.txt"
-    with open(out_path, 'w', encoding='utf-8') as f:
-        f.write("\n".join(configs) + "\n")
-    print(f"[SOURCE] Сохранено {len(configs)} конфигов в {out_path}")
-    return out_path
+    added = [cfg for cfg in new_configs if cfg not in existing]
+    if not added:
+        return 0
+    all_configs = sorted(existing.union(added))
+    with open(CLEAN_VLESS_FILE, 'w', encoding='utf-8') as f:
+        f.write("\n".join(all_configs) + "\n")
+    return len(added)
 
 def main():
     print("=== Реальный генератор VLESS (на основе ваших источников) ===")
-    
-    configs = generate_my_configs()
-    if not configs:
-        print("❌ Нет данных для генерации. Запустите mirror.py сначала.")
+    # Извлекаем уникальные хосты из результатов mirror.py
+    hosts = extract_hosts_from_file(ALL_NEW_FILE)
+    if not hosts:
+        print("⚠️ Не найден all_new.txt, пробуем clean/vless.txt...")
+        hosts = extract_hosts_from_file(CLEAN_VLESS_FILE)
+    if not hosts:
+        print("❌ Нет данных для генерации. Убедитесь, что mirror.py уже был запущен и собрал ключи.")
         return 1
-    
-    print(f"[GEN] Сгенерировано {len(configs)} URI на основе реальных серверов")
-    save_to_my_source(configs)
-    added = add_to_clean_vless(configs)
-    
-    print(f"\n✅ Готово! Добавлено в основной пул: {added} / {len(configs)}")
+    print(f"🔍 Найдено уникальных серверов (host:port:sni): {len(hosts)}")
+    generated = []
+    for host, port, sni in hosts:
+        cfg = generate_vless(host, port, sni, remark=f"auto-{host}")
+        generated.append(cfg)
+    with open(OUTPUT_GENERATED, 'w', encoding='utf-8') as f:
+        f.write("\n".join(generated) + "\n")
+    print(f"📁 Сгенерировано {len(generated)} конфигов, сохранено в {OUTPUT_GENERATED}")
+    added = add_to_clean_vless(generated)
+    print(f"✅ Добавлено в основной пул (clean/vless.txt): {added} новых конфигов")
     return 0
 
 if __name__ == "__main__":
