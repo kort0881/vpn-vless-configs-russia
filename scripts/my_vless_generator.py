@@ -1,19 +1,16 @@
 #!/usr/bin/env python3
-"""Генератор реальных VLESS-конфигов на основе собранных ключей (mirror.py)"""
+"""Генератор реальных VLESS-конфигов на основе собранных ключей"""
 
-import os
 import re
 import uuid
 from pathlib import Path
 
-# Пути после рефакторинга
-BASE_DIR = Path(__file__).parent.parent  # корень репозитория
+BASE_DIR = Path(__file__).parent.parent
 ALL_NEW_FILE = BASE_DIR / "data" / "githubmirror" / "new" / "all_new.txt"
 CLEAN_VLESS_FILE = BASE_DIR / "data" / "githubmirror" / "clean" / "vless.txt"
 OUTPUT_GENERATED = BASE_DIR / "data" / "githubmirror" / "new" / "generated_real.txt"
 
 def extract_hosts_from_file(file_path):
-    """Извлекает из файла с ключами уникальные тройки (host, port, sni)"""
     if not file_path.exists():
         return set()
     hosts = set()
@@ -22,7 +19,6 @@ def extract_hosts_from_file(file_path):
             line = line.strip()
             if not line.startswith("vless://"):
                 continue
-            # Формат: vless://uuid@host:port?params#tag
             match = re.match(r'vless://[^@]+@([^:]+):(\d+)\?(.*)', line)
             if match:
                 host = match.group(1)
@@ -34,7 +30,6 @@ def extract_hosts_from_file(file_path):
     return hosts
 
 def generate_vless(host, port, sni, remark=None):
-    """Генерирует новый VLESS-URI со случайным UUID"""
     uid = str(uuid.uuid4())
     params = {
         "encryption": "none",
@@ -66,19 +61,18 @@ def add_to_clean_vless(new_configs):
 
 def main():
     print("=== Реальный генератор VLESS (на основе ваших источников) ===")
-    # Извлекаем уникальные хосты из результатов mirror.py
     hosts = extract_hosts_from_file(ALL_NEW_FILE)
     if not hosts:
-        print("⚠️ Не найден all_new.txt, пробуем clean/vless.txt...")
         hosts = extract_hosts_from_file(CLEAN_VLESS_FILE)
     if not hosts:
-        print("❌ Нет данных для генерации. Убедитесь, что mirror.py уже был запущен и собрал ключи.")
+        print("❌ Нет данных для генерации. Запустите mirror.py сначала.")
         return 1
-    print(f"🔍 Найдено уникальных серверов (host:port:sni): {len(hosts)}")
+    print(f"🔍 Найдено уникальных серверов: {len(hosts)}")
     generated = []
     for host, port, sni in hosts:
         cfg = generate_vless(host, port, sni, remark=f"auto-{host}")
         generated.append(cfg)
+    OUTPUT_GENERATED.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_GENERATED, 'w', encoding='utf-8') as f:
         f.write("\n".join(generated) + "\n")
     print(f"📁 Сгенерировано {len(generated)} конфигов, сохранено в {OUTPUT_GENERATED}")
