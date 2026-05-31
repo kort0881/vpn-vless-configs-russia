@@ -42,7 +42,7 @@ GOOD_TAGS = [
 ]
 
 # Источники из config_sources.json (лежит в корне репозитория)
-CONFIG_SOURCES_FILE = os.path.join(BASE_PATH, "config_sources.json")
+CONFIG_SOURCES_FILE = os.path.join(BASE_PATH, "data", "config_sources.json")
 CHUNK_SIZE = 500
 
 # ==================== ПАРСИНГ SSTAP ====================
