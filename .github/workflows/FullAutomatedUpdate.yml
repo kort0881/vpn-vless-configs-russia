@@ -39,21 +39,29 @@ jobs:
           pip install requests pyyaml
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Create config_sources.json from secret
-        run: echo '${{ secrets.VPN_SOURCES }}' > data/config_sources.json
-
-      - name: 1. Update githubmirror (mirror.py)
-        run: python scripts/mirror.py
-
+      # Шаг 2: Сбор источников (proxy-collect)
       - name: 2. Merge sources from proxy-collect manifest
         run: python scripts/proxy_collect_merge.py
 
+      # Перенос сгенерированного config_sources.json в нужную для mirror.py директорию
+      - name: Copy config_sources.json to data/
+        run: |
+          mkdir -p data
+          cp scripts/data/config_sources.json data/config_sources.json
+
+      # Шаг 1: mirror.py (теперь видит актуальный config_sources.json)
+      - name: 1. Update githubmirror (mirror.py)
+        run: python scripts/mirror.py
+
+      # Шаг 3: Генерация своих конфигов (требует данных от mirror.py)
       - name: 3. Generate my own VLESS configs
         run: python scripts/my_vless_generator.py
 
+      # Шаг 4: Основной checker
       - name: 4. Run checker (main.py)
         run: python scripts/main.py
 
+      # Дополнительные скрипты mermeroo (если нужны)
       - name: 5. Parse mermeroo sources
         run: python scripts/parse_mermeroo.py
 
