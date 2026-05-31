@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-import os
 import json
 from pathlib import Path
 
-# Корень репозитория (скрипт лежит в корне, как в твоём workflow)
-BASE_PATH = Path(__file__).parent
-MERMEROO_FILE = BASE_PATH / "mermeroo_only_new_for_mirror.txt"
-CFG_FILE = BASE_PATH / "data" / "config_sources.json"
+BASE_DIR = Path(__file__).parent.parent  # корень репозитория
+MERMEROO_FILE = BASE_DIR / "mermeroo_only_new_for_mirror.txt"
+CFG_FILE = BASE_DIR / "data" / "config_sources.json"
 
 def load_lines(path):
     if not path.exists():
@@ -25,8 +23,11 @@ def main():
                 data = []
     else:
         data = []
+        CFG_FILE.parent.mkdir(parents=True, exist_ok=True)
+
     if not isinstance(data, list):
         data = []
+
     known = set(data)
     added = 0
     for u in new_urls:
@@ -34,8 +35,10 @@ def main():
             data.append(u)
             known.add(u)
             added += 1
+
     with open(CFG_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+
     print(f"Добавлено новых источников: {added}")
     print(f"Всего в config_sources.json: {len(data)}")
 
