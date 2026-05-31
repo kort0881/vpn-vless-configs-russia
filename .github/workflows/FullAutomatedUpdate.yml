@@ -40,31 +40,31 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Create config_sources.json from secret
-        run: echo '${{ secrets.VPN_SOURCES }}' > config_sources.json
+        run: echo '${{ secrets.VPN_SOURCES }}' > data/config_sources.json
 
       - name: 1. Update githubmirror (mirror.py)
-        run: python mirror.py
+        run: python scripts/mirror.py
 
       - name: 2. Merge sources from proxy-collect manifest
-        run: python proxy_collect_merge.py
+        run: python scripts/proxy_collect_merge.py
 
       - name: 3. Generate my own VLESS configs
-        run: python my_vless_generator.py
+        run: python scripts/my_vless_generator.py
 
       - name: 4. Run checker (main.py)
-        run: python main.py
+        run: python scripts/main.py
 
       - name: 5. Parse mermeroo sources
-        run: python parse_mermeroo.py
+        run: python scripts/parse_mermeroo.py
 
       - name: 6. Compare mermeroo with mirror
-        run: python compare_mermeroo_mirror.py
+        run: python utils/compare_mermeroo_mirror.py
 
       - name: 7. Merge mermeroo to config_sources.json
-        run: python merge_mermeroo_to_config_sources.py
+        run: python scripts/merge_mermeroo_to_config_sources.py
 
       - name: 8. Convert extra mermeroo sources
-        run: python convert_extra_sources.py
+        run: python scripts/convert_extra_sources.py
 
       - name: Commit and push all changes
         run: |
