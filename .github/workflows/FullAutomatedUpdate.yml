@@ -55,19 +55,7 @@ jobs:
       - name: Run checker (main.py)
         run: python scripts/main.py
 
-      # Дополнительные скрипты (mermeroo и пр.) – при необходимости
-      - name: Parse mermeroo sources
-        run: python scripts/parse_mermeroo.py
-
-      - name: Compare mermeroo with mirror
-        run: python utils/compare_mermeroo_mirror.py
-
-      - name: Merge mermeroo to config_sources.json
-        run: python scripts/merge_mermeroo_to_config_sources.py
-
-      - name: Convert extra mermeroo sources
-        run: python scripts/convert_extra_sources.py
-
+      # Финальный коммит всех изменений
       - name: Commit and push all changes
         run: |
           git config user.name "github-actions[bot]"
