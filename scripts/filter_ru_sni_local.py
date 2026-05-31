@@ -14,10 +14,12 @@ import re
 import json
 import base64
 from urllib.parse import urlparse, parse_qs, unquote
+from pathlib import Path
 
-BASE_PATH = os.path.dirname(os.path.abspath(__file__))
-CLEAN_DIR = os.path.join(BASE_PATH, "data/githubmirror", "clean")
-OUT_DIR = os.path.join(BASE_PATH, "data/githubmirror", "ru-sni-local")
+# Определяем корень репозитория (поднимаемся на уровень выше из scripts/)
+BASE_DIR = Path(__file__).parent.parent
+CLEAN_DIR = BASE_DIR / "data" / "githubmirror" / "clean"
+OUT_DIR = BASE_DIR / "data" / "githubmirror" / "ru-sni-local"
 
 # Только RU-домены, которые хотим тестировать как SNI
 RU_SNI_DOMAINS = [
@@ -195,7 +197,12 @@ def is_ru_sni_config(line: str) -> bool:
 
 
 def main():
-    os.makedirs(OUT_DIR, exist_ok=True)
+    # Проверяем, существует ли входная директория
+    if not CLEAN_DIR.exists():
+        print(f"Ошибка: директория {CLEAN_DIR} не найдена")
+        return 1
+
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     total_in = 0
     total_out = 0
@@ -204,8 +211,8 @@ def main():
         if not fname.endswith(".txt"):
             continue
 
-        src_path = os.path.join(CLEAN_DIR, fname)
-        dst_path = os.path.join(OUT_DIR, fname)
+        src_path = CLEAN_DIR / fname
+        dst_path = OUT_DIR / fname
 
         ru_configs = []
         file_total = 0
@@ -220,9 +227,9 @@ def main():
                     ru_configs.append(line)
 
         with open(dst_path, "w", encoding="utf-8") as f:
-            f.write("\n".join(ru_configs))
             if ru_configs:
-                f.write("\n")
+                f.write("\n".join(ru_configs) + "\n")
+            # Если нет конфигов, создаём пустой файл (или не создаём? оставим пустой)
 
         total_in += file_total
         total_out += len(ru_configs)
@@ -234,7 +241,8 @@ def main():
     print(f"Отброшено:      {total_in - total_out}")
     print("=" * 50)
     print(f"Готово → {OUT_DIR}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    exit(main())
