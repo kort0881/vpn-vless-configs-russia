@@ -39,39 +39,33 @@ jobs:
           pip install requests pyyaml
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      # Шаг 2: Сбор источников (proxy-collect)
-      - name: 2. Merge sources from proxy-collect manifest
+      # Шаг 1: Сбор источников через proxy-collect (создаёт data/config_sources.json)
+      - name: Merge sources from proxy-collect manifest
         run: python scripts/proxy_collect_merge.py
 
-      # Перенос сгенерированного config_sources.json в нужную для mirror.py директорию
-      - name: Copy config_sources.json to data/
-        run: |
-          mkdir -p data
-          cp scripts/data/config_sources.json data/config_sources.json
-
-      # Шаг 1: mirror.py (теперь видит актуальный config_sources.json)
-      - name: 1. Update githubmirror (mirror.py)
+      # Шаг 2: mirror.py загружает и фильтрует ключи по config_sources.json
+      - name: Update githubmirror (mirror.py)
         run: python scripts/mirror.py
 
-      # Шаг 3: Генерация своих конфигов (требует данных от mirror.py)
-      - name: 3. Generate my own VLESS configs
+      # Шаг 3: Генерация дополнительных конфигов на основе собранных хостов
+      - name: Generate my own VLESS configs
         run: python scripts/my_vless_generator.py
 
-      # Шаг 4: Основной checker
-      - name: 4. Run checker (main.py)
+      # Шаг 4: Запуск основного checker'а (main.py) для финальной обработки
+      - name: Run checker (main.py)
         run: python scripts/main.py
 
-      # Дополнительные скрипты mermeroo (если нужны)
-      - name: 5. Parse mermeroo sources
+      # Дополнительные скрипты (mermeroo и пр.) – при необходимости
+      - name: Parse mermeroo sources
         run: python scripts/parse_mermeroo.py
 
-      - name: 6. Compare mermeroo with mirror
+      - name: Compare mermeroo with mirror
         run: python utils/compare_mermeroo_mirror.py
 
-      - name: 7. Merge mermeroo to config_sources.json
+      - name: Merge mermeroo to config_sources.json
         run: python scripts/merge_mermeroo_to_config_sources.py
 
-      - name: 8. Convert extra mermeroo sources
+      - name: Convert extra mermeroo sources
         run: python scripts/convert_extra_sources.py
 
       - name: Commit and push all changes
