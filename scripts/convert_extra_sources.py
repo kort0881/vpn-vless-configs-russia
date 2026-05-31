@@ -4,9 +4,9 @@ import yaml
 from urllib.parse import urlparse
 from pathlib import Path
 
-BASE_PATH = Path(__file__).parent
-EXTRA_FILE = BASE_PATH / "mermeroo_extra_sources.txt"
-OUT_FILE = BASE_PATH / "extra_converted_for_mirror.txt"
+BASE_DIR = Path(__file__).parent.parent
+EXTRA_FILE = BASE_DIR / "mermeroo_extra_sources.txt"
+OUT_FILE = BASE_DIR / "extra_converted_for_mirror.txt"
 
 PROTO_PREFIXES = ("vless://", "vmess://", "trojan://", "ss://", "ssr://", "hysteria://", "hysteria2://", "hy2://", "tuic://")
 
