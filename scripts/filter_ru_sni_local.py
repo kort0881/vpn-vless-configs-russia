@@ -16,8 +16,8 @@ import base64
 from urllib.parse import urlparse, parse_qs, unquote
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
-CLEAN_DIR = os.path.join(BASE_PATH, "githubmirror", "clean")
-OUT_DIR = os.path.join(BASE_PATH, "githubmirror", "ru-sni-local")
+CLEAN_DIR = os.path.join(BASE_PATH, "data/githubmirror", "clean")
+OUT_DIR = os.path.join(BASE_PATH, "data/githubmirror", "ru-sni-local")
 
 # Только RU-домены, которые хотим тестировать как SNI
 RU_SNI_DOMAINS = [

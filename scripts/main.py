@@ -26,7 +26,7 @@ from urllib.parse import urlparse  # для дедупликации
 
 BASE_DIR = Path(__file__).parent.absolute()
 LOGS_DIR = BASE_DIR / "logs"
-STATS_FILE = BASE_DIR / "stats.json"
+STATS_FILE = BASE_DIR / "data/stats.json"
 
 # Создание директорий
 LOGS_DIR.mkdir(exist_ok=True)
@@ -137,8 +137,8 @@ def merge_cf_with_clean():
     с дедупликацией по (IP, port, scheme).
     Возвращает True всегда, кроме критических ошибок ввода-вывода.
     """
-    clean_path = BASE_DIR / "githubmirror" / "clean" / "vless.txt"
-    cf_fresh_path = BASE_DIR / "githubmirror" / "new" / "cf_fresh.txt"
+    clean_path = BASE_DIR / "data/githubmirror" / "clean" / "vless.txt"
+    cf_fresh_path = BASE_DIR / "data/githubmirror" / "new" / "cf_fresh.txt"
 
     if not cf_fresh_path.exists():
         logger.info("ℹ️ Нет свежих CF-конфигов (cf_fresh.txt) – пропускаем слияние")
@@ -238,7 +238,7 @@ def collect_statistics():
         # ────────────────────────────────────────────────────────────────
         # Статистика по githubmirror/clean (после географ. фильтра)
         # ────────────────────────────────────────────────────────────────
-        clean_dir = BASE_DIR / "githubmirror" / "clean"
+        clean_dir = BASE_DIR / "data/githubmirror" / "clean"
         if clean_dir.exists():
             logger.info("  📁 githubmirror/clean:")
             for protocol_file in sorted(clean_dir.glob("*.txt")):
@@ -258,7 +258,7 @@ def collect_statistics():
         # ────────────────────────────────────────────────────────────────
         # Статистика по ru-sni (после основного SNI-фильтра)
         # ────────────────────────────────────────────────────────────────
-        ru_sni_dir = BASE_DIR / "githubmirror" / "ru-sni"
+        ru_sni_dir = BASE_DIR / "data/githubmirror" / "ru-sni"
         if ru_sni_dir.exists():
             logger.info("  📁 githubmirror/ru-sni:")
             for protocol_file in sorted(ru_sni_dir.glob("*.txt")):
@@ -279,7 +279,7 @@ def collect_statistics():
             logger.warning("  ⚠️  Директория githubmirror/ru-sni не найдена")
         
         # ========= ДОБАВЛЕНО: Подсчёт новых CF-конфигов =========
-        cf_fresh_path = BASE_DIR / "githubmirror" / "new" / "cf_fresh.txt"
+        cf_fresh_path = BASE_DIR / "data/githubmirror" / "new" / "cf_fresh.txt"
         new_cf_count = 0
         if cf_fresh_path.exists():
             with open(cf_fresh_path, 'r', encoding='utf-8') as f:

@@ -4,7 +4,7 @@ import json
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 MERMEROO_FILE = os.path.join(BASE_PATH, "mermeroo_only_new_for_mirror.txt")
-CFG_FILE = os.path.join(BASE_PATH, "config_sources.json")
+CFG_FILE = os.path.join(BASE_PATH, "data/config_sources.json")
 
 def load_lines(path):
     if not os.path.exists(path):

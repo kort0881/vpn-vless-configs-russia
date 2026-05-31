@@ -16,8 +16,8 @@ import re
 from urllib.parse import urlparse, parse_qs, unquote
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
-CLEAN_DIR = os.path.join(BASE_PATH, "githubmirror", "clean")
-OUT_DIR = os.path.join(BASE_PATH, "githubmirror", "ru-sni")
+CLEAN_DIR = os.path.join(BASE_PATH, "data/githubmirror", "clean")
+OUT_DIR = os.path.join(BASE_PATH, "data/githubmirror", "ru-sni")
 
 # ─── Белый список доменов (SNI), которые считаем подходящими ───
 # Включает RU-домены + популярные глобальные, используемые в Reality/TLS

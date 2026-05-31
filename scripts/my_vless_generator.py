@@ -8,8 +8,8 @@ from datetime import datetime
 
 BASE_DIR = Path(__file__).parent.absolute()
 OUTPUT_DIR = BASE_DIR / "my_sources" / "generated"
-CLEAN_VLESS_PATH = BASE_DIR / "githubmirror" / "clean" / "vless.txt"
-ALL_NEW_PATH = BASE_DIR / "githubmirror" / "new" / "all_new.txt"   # все свежие ключи
+CLEAN_VLESS_PATH = BASE_DIR / "data/githubmirror" / "clean" / "vless.txt"
+ALL_NEW_PATH = BASE_DIR / "data/githubmirror" / "new" / "all_new.txt"   # все свежие ключи
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 CLEAN_VLESS_PATH.parent.mkdir(parents=True, exist_ok=True)

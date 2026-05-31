@@ -2,7 +2,7 @@
 import requests, random, ipaddress, uuid, os, sys
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
-NEW_DIR = os.path.join(BASE_PATH, "githubmirror", "new")
+NEW_DIR = os.path.join(BASE_PATH, "data/githubmirror", "new")
 os.makedirs(NEW_DIR, exist_ok=True)
 OUTPUT_FILE = os.path.join(NEW_DIR, "cf_fresh.txt")
 

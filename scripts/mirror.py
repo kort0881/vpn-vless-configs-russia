@@ -11,7 +11,7 @@ import json
 import re
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
-BASE_DIR = os.path.join(BASE_PATH, "githubmirror")
+BASE_DIR = os.path.join(BASE_PATH, "data/githubmirror")
 NEW_DIR = os.path.join(BASE_DIR, "new")
 CLEAN_DIR = os.path.join(BASE_DIR, "clean")
 NEW_BY_PROTO_DIR = os.path.join(NEW_DIR, "by_protocol")
@@ -50,7 +50,7 @@ GOOD_TAGS = [
 # ✅ НОВЫЙ СПИСОК ИСТОЧНИКОВ (объединённый, уникальный, только raw‑ссылки)
 URLS_BASE = []  # ПУСТОЙ СПИСОК — все источники берутся только из config_sources.json
 
-CONFIG_SOURCES_FILE = os.path.join(BASE_PATH, "config_sources.json")
+CONFIG_SOURCES_FILE = os.path.join(BASE_PATH, "data/config_sources.json")
 CHUNK_SIZE = 500
 
 # ==================== ДОБАВЛЕНО ДЛЯ SSTAP ====================
