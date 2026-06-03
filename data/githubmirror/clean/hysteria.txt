@@ -9,7 +9,7 @@ hysteria://199.247.7.82:8443?peer=de-hysteria.racevpn.com&upmbps=10&downmbps=50&
 hysteria://199.247.9.177:8443?peer=fr-hysteria.racevpn.com&upmbps=10&downmbps=50&obfs=xplus&obfsParam=U9kBKzCt5buOOQa#🔒 HYSTERIA-UDP 🇫🇷 FR-199.247.9.177:8443 📡 PING-000.00-MS
 hysteria://45.152.115.205:15666?insecure=1&upmbps=5&downmbps=12&obfs=xplus&obfsParam=Q_vtX%25%24R#🔒 HYSTERIA-UDP 🇳🇱 NL-45.152.115.205:15666 📡 PING-000.00-MS
 hysteria://46.17.41.174:10469?upmbps=11&downmbps=55&auth=dongtaiwang.com&insecure=1&peer=apple.com&alpn=h3#%F0%9F%87%B7%F0%9F%87%BARU%20%7C%20@V2ray_Collector
-hysteria://5.83.129.90:54177?alpn=h3&auth=dongtaiwang.com&auth_str=dongtaiwang.com&downmbps=1000&protocol=udp&insecure=1&peer=apple.com&udp=true&upmbps=500#%F0%9F%87%A9%F0%9F%87%AA%20%7C%20%40WhiteDNS%20%7C%20DE361%7C1.2MB%2Fs%7CGPT%E2%81%BA-DE%7CCL-DE%7CSP-DE
+hysteria://5.83.129.90:54177?alpn=h3&auth_str=dongtaiwang.com&downmbps=1000&obfsParam=&protocol=udp&insecure=1&peer=apple.com&upmbps=500#%F0%9F%87%A9%F0%9F%87%AA%20%7C%20%40WhiteDNS%20%7C%20DE131%7C1.5MB%2Fs%7CGPT%E2%81%BA-DE%7CCL-DE%7CSP-DE
 hysteria://51.158.54.46:11926/?insecure=1&peer=youku.com&auth=Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs&upmbps=11&downmbps=55&alpn=h3
 hysteria://51.158.54.46:49139?peer=www.paypal.com&auth=dongtaiwang.com&insecure=1&upmbps=50&downmbps=100&alpn=h3&obfs=&protocol=udp&fastopen=1#🔒 HYSTERIA-UDP 🇫🇷 FR-51.158.54.46:49139 📡 PING-000.00-MS
 hysteria://51.158.54.46:55396?upmbps=11&downmbps=55&auth=dongtaiwang.com&insecure=1&peer=youku.com&alpn=h3#%F0%9F%87%AB%F0%9F%87%B7%20France%20,%20Paris
