@@ -1,0 +1,1078 @@
+2026-06-04 12:42:37,612 | INFO     | ======================================================================
+2026-06-04 12:42:37,613 | INFO     | 🔍 VPN KEY CHECKER - Начало проверки
+2026-06-04 12:42:37,613 | INFO     | ⏰ Время старта: 2026-06-04 12:42:37
+2026-06-04 12:42:37,613 | INFO     | 📂 Рабочая директория: /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia
+2026-06-04 12:42:37,613 | INFO     | ======================================================================
+2026-06-04 12:42:37,613 | INFO     | 
+2026-06-04 12:42:37,613 | INFO     | 🔍 Проверка наличия скриптов...
+2026-06-04 12:42:37,613 | INFO     |   ✅ mirror.py
+2026-06-04 12:42:37,613 | INFO     |   ✅ generate_cf_vless.py
+2026-06-04 12:42:37,613 | INFO     |   ✅ filter_ru_sni.py
+2026-06-04 12:42:37,613 | INFO     |   ✅ filter_ru_sni_local.py
+2026-06-04 12:42:37,613 | INFO     | 
+2026-06-04 12:42:37,613 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-06-04 12:42:37,613 | INFO     | 📌 ЭТАП: Загрузка и geo-фильтрация
+2026-06-04 12:42:37,613 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-06-04 12:42:37,614 | INFO     | 🚀 Запуск mirror.py (Загрузка и фильтрация по РФ/СНГ/Европа)...
+2026-06-04 12:45:22,849 | INFO     |   → DEBUG: mirror.py started
+2026-06-04 12:45:22,849 | INFO     |   → DEBUG: BASE_PATH = /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia
+2026-06-04 12:45:22,849 | INFO     |   → DEBUG: CONFIG_SOURCES_FILE = /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia/data/config_sources.json
+2026-06-04 12:45:22,849 | INFO     |   → 📂 Загружено 935 источников из /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia/data/config_sources.json
+2026-06-04 12:45:22,849 | INFO     |   → 🚀 Старт: всего источников: 935
+2026-06-04 12:45:22,849 | INFO     |   → 1/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,849 | INFO     |   → 2/935: ✅ 13 взято | 🗑️ 242 мусор
+2026-06-04 12:45:22,849 | INFO     |   → 3/935 ⚠️ Ошибка: HTTPSConnectionPool(host='a.nodeshare.xyz', port=443): Max retries exceeded with url: /uploads/%7BYYYY%7D/%7BM%7D/%7BYYYY%7D%7BMM%7D%7BDD%7D.txt (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)'))) — https://a.nodeshare.xyz/uploads/{YYYY}/{M}/{YYYY}{MM}{DD}.txt
+2026-06-04 12:45:22,850 | INFO     |   → 4/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,850 | INFO     |   → 5/935 ❌ HTTP 404 — https://bitbucket.org/huwo1/proxy_nodes/raw/f31ca9ec67b84071515729ff45b011b6b09c10f2/clash.yaml
+2026-06-04 12:45:22,850 | INFO     |   → 6/935 ❌ HTTP 404 — https://cdn.jsdelivr.net/gh/cry0ice/genode@main/public/all.txt
+2026-06-04 12:45:22,850 | INFO     |   → 7/935 ❌ HTTP 404 — https://cdn.jsdelivr.net/gh/cry0ice/genode@main/public/ss.txt
+2026-06-04 12:45:22,850 | INFO     |   → 8/935 ❌ HTTP 404 — https://cdn.jsdelivr.net/gh/cry0ice/genode@main/public/ssr.txt
+2026-06-04 12:45:22,850 | INFO     |   → 9/935 ❌ HTTP 404 — https://cdn.jsdelivr.net/gh/cry0ice/genode@main/public/trojan.txt
+2026-06-04 12:45:22,850 | INFO     |   → 10/935 ❌ HTTP 404 — https://cdn.jsdelivr.net/gh/cry0ice/genode@main/public/vless.txt
+2026-06-04 12:45:22,850 | INFO     |   → 11/935 ❌ HTTP 404 — https://cdn.jsdelivr.net/gh/cry0ice/genode@main/public/vmess.txt
+2026-06-04 12:45:22,850 | INFO     |   → 12/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,850 | INFO     |   → 13/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,850 | INFO     |   → 14/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,850 | INFO     |   → 15/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,850 | INFO     |   → 16/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,850 | INFO     |   → 17/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,850 | INFO     |   → 18/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,850 | INFO     |   → 19/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,851 | INFO     |   → 20/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,851 | INFO     |   → 21/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,851 | INFO     |   → 22/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,851 | INFO     |   → 23/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,851 | INFO     |   → 24/935 ❌ HTTP 404 — https://free.datiya.com/uploads/{YYYY}{MM}{DD}-v2ray.txt
+2026-06-04 12:45:22,851 | INFO     |   → 25/935 ❌ HTTP 404 — https://freessrnode.github.io/uploads/2024/08/0-20240822.txt
+2026-06-04 12:45:22,851 | INFO     |   → 26/935 ❌ HTTP 404 — https://freessrnode.github.io/uploads/2024/08/1-20240822.txt
+2026-06-04 12:45:22,851 | INFO     |   → 27/935 ❌ HTTP 404 — https://freessrnode.github.io/uploads/2024/08/2-20240822.txt
+2026-06-04 12:45:22,851 | INFO     |   → 28/935 ❌ HTTP 404 — https://freessrnode.github.io/uploads/2024/08/3-20240822.txt
+2026-06-04 12:45:22,851 | INFO     |   → 29/935 ❌ HTTP 404 — https://freessrnode.github.io/uploads/2024/08/4-20240822.txt
+2026-06-04 12:45:22,851 | INFO     |   → 30/935 ⚠️ Ошибка: HTTPSConnectionPool(host='freevpnspy.githubrowcontent.com', port=443): Max retries exceeded with url: /2024/08/20240802_novless.yaml (Caused by NameResolutionError("HTTPSConnection(host='freevpnspy.githubrowcontent.com', port=443): Failed to resolve 'freevpnspy.githubrowcontent.com' ([Errno -2] Name or service not known)")) — https://freevpnspy.githubrowcontent.com/2024/08/20240802_novless.yaml
+2026-06-04 12:45:22,851 | INFO     |   → 31/935 ⚠️ Ошибка: HTTPSConnectionPool(host='freevpnspy.githubrowcontent.com', port=443): Max retries exceeded with url: /2024/08/20240802_vless.yaml (Caused by NameResolutionError("HTTPSConnection(host='freevpnspy.githubrowcontent.com', port=443): Failed to resolve 'freevpnspy.githubrowcontent.com' ([Errno -2] Name or service not known)")) — https://freevpnspy.githubrowcontent.com/2024/08/20240802_vless.yaml
+2026-06-04 12:45:22,851 | INFO     |   → 32/935: ✅ 10 взято | 🗑️ 151 мусор
+2026-06-04 12:45:22,851 | INFO     |   → 33/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,851 | INFO     |   → 34/935: ✅ 7 взято | 🗑️ 152 мусор
+2026-06-04 12:45:22,851 | INFO     |   → 35/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,851 | INFO     |   → 36/935: ✅ 1 взято | 🗑️ 125 мусор
+2026-06-04 12:45:22,851 | INFO     |   → 37/935: ✅ 0 взято | 🗑️ 130 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 38/935: ✅ 2 взято | 🗑️ 105 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 39/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 40/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 41/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 42/935 ❌ HTTP 404 — https://github.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/raw/main/sub/Albania/config.txt
+2026-06-04 12:45:22,852 | INFO     |   → 43/935 ❌ HTTP 404 — https://github.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/raw/main/sub/Cura%C3%A7ao/config.txt
+2026-06-04 12:45:22,852 | INFO     |   → 44/935 ❌ HTTP 404 — https://github.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/raw/main/sub/Finland/config.txt
+2026-06-04 12:45:22,852 | INFO     |   → 45/935 ❌ HTTP 404 — https://github.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/raw/main/sub/Iran/config.txt
+2026-06-04 12:45:22,852 | INFO     |   → 46/935 ❌ HTTP 404 — https://github.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/raw/main/sub/Netherlands/config.txt
+2026-06-04 12:45:22,852 | INFO     |   → 47/935 ❌ HTTP 404 — https://github.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/raw/main/sub/Norway/config.txt
+2026-06-04 12:45:22,852 | INFO     |   → 48/935 ❌ HTTP 404 — https://github.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/raw/main/sub/Russia/config.txt
+2026-06-04 12:45:22,852 | INFO     |   → 49/935: ✅ 13 взято | 🗑️ 70 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 50/935: ✅ 0 взято | 🗑️ 4 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 51/935: ✅ 0 взято | 🗑️ 7 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 52/935: ✅ 0 взято | 🗑️ 51 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 53/935: ✅ 0 взято | 🗑️ 8 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 54/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 55/935: ✅ 17 взято | 🗑️ 119 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 56/935 ❌ HTTP 404 — https://github.com/MrMohebi/xray-proxy-grabber-telegram/raw/master/collected-proxies/clash-meta/all.yaml
+2026-06-04 12:45:22,852 | INFO     |   → 57/935 ❌ HTTP 404 — https://github.com/MrMohebi/xray-proxy-grabber-telegram/raw/master/collected-proxies/row-url/all.txt
+2026-06-04 12:45:22,852 | INFO     |   → 58/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 59/935: ✅ 0 взято | 🗑️ 113 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 60/935: ✅ 0 взято | 🗑️ 119 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 61/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,852 | INFO     |   → 62/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 63/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 64/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 65/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 66/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 67/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 68/935 ❌ HTTP 404 — https://github.com/mermeroo/V2RAY-FREE/raw/main/All_Configs_base64_Sub.txt
+2026-06-04 12:45:22,853 | INFO     |   → 69/935 ❌ HTTP 404 — https://github.com/mermeroo/V2RAY-FREE/raw/main/Base64/Sub1_base64.txt
+2026-06-04 12:45:22,853 | INFO     |   → 70/935 ❌ HTTP 404 — https://github.com/mermeroo/V2RAY-FREE/raw/main/Base64/Sub2_base64.txt
+2026-06-04 12:45:22,853 | INFO     |   → 71/935 ❌ HTTP 404 — https://github.com/mermeroo/V2RAY-FREE/raw/main/Base64/Sub3_base64.txt
+2026-06-04 12:45:22,853 | INFO     |   → 72/935 ❌ HTTP 404 — https://github.com/mermeroo/V2RAY-FREE/raw/main/Base64/Sub4_base64.txt
+2026-06-04 12:45:22,853 | INFO     |   → 73/935 ❌ HTTP 404 — https://github.com/mermeroo/V2RAY-FREE/raw/main/Base64/Sub5_base64.txt
+2026-06-04 12:45:22,853 | INFO     |   → 74/935 ❌ HTTP 404 — https://github.com/mermeroo/telegram-configs-collector/raw/main/protocols/hysteria
+2026-06-04 12:45:22,853 | INFO     |   → 75/935 ❌ HTTP 404 — https://github.com/mermeroo/telegram-configs-collector/raw/main/protocols/juicity
+2026-06-04 12:45:22,853 | INFO     |   → 76/935 ❌ HTTP 404 — https://github.com/mermeroo/telegram-configs-collector/raw/main/protocols/tuic
+2026-06-04 12:45:22,853 | INFO     |   → 77/935: ✅ 5 взято | 🗑️ 16 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 78/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 79/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 80/935 ❌ HTTP 403 — https://gitlab.com/colloq168/nodefiltrate/-/raw/main/filtrate?ref_type=heads
+2026-06-04 12:45:22,853 | INFO     |   → 81/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 82/935: ✅ 0 взято | 🗑️ 103 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 83/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 84/935: ✅ 3 взято | 🗑️ 213 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 85/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 86/935: ✅ 1 взято | 🗑️ 130 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 87/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 88/935: ✅ 0 взято | 🗑️ 135 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 89/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 90/935: ✅ 0 взято | 🗑️ 145 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 91/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,853 | INFO     |   → 92/935 ⚠️ Ошибка: HTTPSConnectionPool(host='ivuxy.tech', port=443): Max retries exceeded with url: /v.txt (Caused by NameResolutionError("HTTPSConnection(host='ivuxy.tech', port=443): Failed to resolve 'ivuxy.tech' ([Errno -2] Name or service not known)")) — https://ivuxy.tech/v.txt
+2026-06-04 12:45:22,853 | INFO     |   → 93/935 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/blues.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/blues.txt
+2026-06-04 12:45:22,853 | INFO     |   → 94/935 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/halekj.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/halekj.txt
+2026-06-04 12:45:22,854 | INFO     |   → 95/935 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/kkzui.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/kkzui.txt
+2026-06-04 12:45:22,854 | INFO     |   → 96/935 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/merged.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/merged.txt
+2026-06-04 12:45:22,854 | INFO     |   → 97/935 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/nodefree.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/nodefree.txt
+2026-06-04 12:45:22,854 | INFO     |   → 98/935 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/openrunner.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/openrunner.txt
+2026-06-04 12:45:22,854 | INFO     |   → 99/935 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/v2rayshare.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/v2rayshare.txt
+2026-06-04 12:45:22,854 | INFO     |   → 100/935 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/wenode.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/wenode.txt
+2026-06-04 12:45:22,854 | INFO     |   → 101/935 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/yudou66.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/yudou66.txt
+2026-06-04 12:45:22,854 | INFO     |   → 102/935 ❌ HTTP 404 — https://node.freeclashnode.com/uploads/{YYYY}/{MM}/0-{YYYY}{MM}{DD}.txt
+2026-06-04 12:45:22,854 | INFO     |   → 103/935 ❌ HTTP 404 — https://node.freeclashnode.com/uploads/{YYYY}/{MM}/1-{YYYY}{MM}{DD}.txt
+2026-06-04 12:45:22,854 | INFO     |   → 104/935 ❌ HTTP 404 — https://node.freeclashnode.com/uploads/{YYYY}/{MM}/2-{YYYY}{MM}{DD}.txt
+2026-06-04 12:45:22,854 | INFO     |   → 105/935 ❌ HTTP 404 — https://node.freeclashnode.com/uploads/{YYYY}/{MM}/3-{YYYY}{MM}{DD}.txt
+2026-06-04 12:45:22,854 | INFO     |   → 106/935 ❌ HTTP 404 — https://node.freeclashnode.com/uploads/{YYYY}/{MM}/4-{YYYY}{MM}{DD}.txt
+2026-06-04 12:45:22,854 | INFO     |   → 107/935: ✅ 6 взято | 🗑️ 24 мусор
+2026-06-04 12:45:22,854 | INFO     |   → 108/935: ✅ 13 взято | 🗑️ 7 мусор
+2026-06-04 12:45:22,854 | INFO     |   → 109/935: ✅ 0 взято | 🗑️ 7 мусор
+2026-06-04 12:45:22,854 | INFO     |   → 110/935: ✅ 0 взято | 🗑️ 7 мусор
+2026-06-04 12:45:22,854 | INFO     |   → 111/935: ✅ 0 взято | 🗑️ 7 мусор
+2026-06-04 12:45:22,854 | INFO     |   → 112/935 ⚠️ Ошибка: HTTPSConnectionPool(host='nodefree.githubrowcontent.com', port=443): Max retries exceeded with url: /%7BYYYY%7D/%7BMM%7D/%7BYYYY%7D%7BMM%7D%7BDD%7D.txt (Caused by NameResolutionError("HTTPSConnection(host='nodefree.githubrowcontent.com', port=443): Failed to resolve 'nodefree.githubrowcontent.com' ([Errno -2] Name or service not known)")) — https://nodefree.githubrowcontent.com/{YYYY}/{MM}/{YYYY}{MM}{DD}.txt
+2026-06-04 12:45:22,854 | INFO     |   → 113/935 ❌ HTTP 403 — https://nodefree.org/dy/2023/08/20230806.yaml
+2026-06-04 12:45:22,854 | INFO     |   → 114/935 ❌ HTTP 403 — https://nodefree.org/dy/2023/12/20231221.txt
+2026-06-04 12:45:22,854 | INFO     |   → 115/935: ✅ 0 взято | 🗑️ 24 мусор
+2026-06-04 12:45:22,854 | INFO     |   → 116/935: ✅ 0 взято | 🗑️ 7 мусор
+2026-06-04 12:45:22,854 | INFO     |   → 117/935: ✅ 0 взято | 🗑️ 7 мусор
+2026-06-04 12:45:22,854 | INFO     |   → 118/935: ✅ 0 взято | 🗑️ 7 мусор
+2026-06-04 12:45:22,854 | INFO     |   → 119/935: ✅ 0 взято | 🗑️ 7 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 120/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 121/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 122/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 123/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 124/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 125/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 126/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 127/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 128/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 129/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 130/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 131/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 132/935 ❌ HTTP 404 — https://raw.githubusercontent.com/10ium/MihomoSaz/main/Sublist/shatakvpn.yaml4_Sub.txt
+2026-06-04 12:45:22,855 | INFO     |   → 133/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 134/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 135/935: ✅ 1105 взято | 🗑️ 3335 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 136/935: ✅ 7 взято | 🗑️ 340 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 137/935: ✅ 791 взято | 🗑️ 2396 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 138/935: ✅ 167 взято | 🗑️ 672 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 139/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 140/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 141/935: ✅ 11 взято | 🗑️ 399 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 142/935: ✅ 528 взято | 🗑️ 1024 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 143/935: ✅ 32 взято | 🗑️ 5 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 144/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,855 | INFO     |   → 145/935 ❌ HTTP 404 — https://raw.githubusercontent.com/9Fork/openit/main/Clash.yaml
+2026-06-04 12:45:22,856 | INFO     |   → 146/935: ✅ 50 взято | 🗑️ 75 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 147/935: ✅ 0 взято | 🗑️ 75 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 148/935: ✅ 75 взято | 🗑️ 303 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 149/935: ✅ 49 взято | 🗑️ 317 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 150/935: ✅ 25 взято | 🗑️ 341 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 151/935: ✅ 21 взято | 🗑️ 120 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 152/935: ✅ 32 взято | 🗑️ 334 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 153/935: ✅ 99 взято | 🗑️ 267 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 154/935: ✅ 115 взято | 🗑️ 196 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 155/935: ✅ 9 взято | 🗑️ 422 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 156/935: ✅ 19 взято | 🗑️ 81 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 157/935: ✅ 11 взято | 🗑️ 87 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 158/935: ✅ 27 взято | 🗑️ 73 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 159/935: ✅ 13 взято | 🗑️ 75 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 160/935: ✅ 10 взято | 🗑️ 83 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 161/935: ✅ 12 взято | 🗑️ 86 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 162/935: ✅ 11 взято | 🗑️ 87 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 163/935: ✅ 11 взято | 🗑️ 80 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 164/935: ✅ 9 взято | 🗑️ 82 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 165/935: ✅ 69 взято | 🗑️ 3 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 166/935: ✅ 3 взято | 🗑️ 75 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 167/935: ✅ 4 взято | 🗑️ 69 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 168/935: ✅ 4 взято | 🗑️ 80 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 169/935: ✅ 6 взято | 🗑️ 81 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 170/935: ✅ 5 взято | 🗑️ 79 мусор
+2026-06-04 12:45:22,856 | INFO     |   → 171/935: ✅ 11 взято | 🗑️ 78 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 172/935: ✅ 3 взято | 🗑️ 83 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 173/935: ✅ 14 взято | 🗑️ 76 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 174/935: ✅ 12 взято | 🗑️ 78 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 175/935: ✅ 26 взято | 🗑️ 218 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 176/935: ✅ 44 взято | 🗑️ 141 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 177/935: ✅ 10 взято | 🗑️ 71 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 178/935: ✅ 2 взято | 🗑️ 88 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 179/935: ✅ 0 взято | 🗑️ 3 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 180/935: ✅ 14 взято | 🗑️ 4 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 181/935: ✅ 673 взято | 🗑️ 2372 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 182/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Alvin9999/pac2/master/clash/1/config.yaml
+2026-06-04 12:45:22,857 | INFO     |   → 183/935 ❌ HTTP 404 — https://raw.githubusercontent.com/AmirHDevo/temp2/7f15e7ddb311a6f8c5ab338bd1af0e1f2136a84b/configs.txt
+2026-06-04 12:45:22,857 | INFO     |   → 184/935: ✅ 113 взято | 🗑️ 2125 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 185/935: ✅ 8 взято | 🗑️ 58 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 186/935: ✅ 4590 взято | 🗑️ 66439 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 187/935: ✅ 5 взято | 🗑️ 47 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 188/935: ✅ 0 взято | 🗑️ 50 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 189/935: ✅ 21 взято | 🗑️ 107 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 190/935: ✅ 78 взято | 🗑️ 347 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 191/935: ✅ 0 взято | 🗑️ 1373 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 192/935: ✅ 57 взято | 🗑️ 903 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 193/935: ✅ 339 взято | 🗑️ 1542 мусор
+2026-06-04 12:45:22,857 | INFO     |   → 194/935: ✅ 0 взято | 🗑️ 6 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 195/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 196/935: ✅ 1 взято | 🗑️ 235 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 197/935: ✅ 49 взято | 🗑️ 86 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 198/935: ✅ 0 взято | 🗑️ 16 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 199/935: ✅ 6 взято | 🗑️ 17 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 200/935: ✅ 1 взято | 🗑️ 12 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 201/935: ✅ 0 взято | 🗑️ 17 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 202/935: ✅ 0 взято | 🗑️ 17 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 203/935: ✅ 23 взято | 🗑️ 516 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 204/935: ✅ 1 взято | 🗑️ 324 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 205/935: ✅ 1 взято | 🗑️ 192 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 206/935: ✅ 5 взято | 🗑️ 158 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 207/935: ✅ 0 взято | 🗑️ 16 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 208/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 209/935: ✅ 0 взято | 🗑️ 14 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 210/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 211/935: ✅ 0 взято | 🗑️ 17 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 212/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 213/935: ✅ 0 взято | 🗑️ 12 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 214/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 215/935: ✅ 0 взято | 🗑️ 17 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 216/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 217/935: ✅ 0 взято | 🗑️ 17 мусор
+2026-06-04 12:45:22,858 | INFO     |   → 218/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,859 | INFO     |   → 219/935: ✅ 2 взято | 🗑️ 161 мусор
+2026-06-04 12:45:22,859 | INFO     |   → 220/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,859 | INFO     |   → 221/935: ✅ 26 взято | 🗑️ 331 мусор
+2026-06-04 12:45:22,859 | INFO     |   → 222/935: ✅ 16 взято | 🗑️ 4 мусор
+2026-06-04 12:45:22,859 | INFO     |   → 223/935: ✅ 5 взято | 🗑️ 76 мусор
+2026-06-04 12:45:22,859 | INFO     |   → 224/935: ✅ 80 взято | 🗑️ 1110 мусор
+2026-06-04 12:45:22,859 | INFO     |   → 225/935: ✅ 18 взято | 🗑️ 1257 мусор
+2026-06-04 12:45:22,859 | INFO     |   → 226/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Egkaz/Proxy-list-20k-server/main/stable.txt
+2026-06-04 12:45:22,859 | INFO     |   → 227/935: ✅ 5 взято | 🗑️ 13 мусор
+2026-06-04 12:45:22,859 | INFO     |   → 228/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Austria/config.txt
+2026-06-04 12:45:22,859 | INFO     |   → 229/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Canada/config.txt
+2026-06-04 12:45:22,859 | INFO     |   → 230/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Costa%20Rica/config.txt
+2026-06-04 12:45:22,859 | INFO     |   → 231/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/France/config.txt
+2026-06-04 12:45:22,859 | INFO     |   → 232/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Germany/config.txt
+2026-06-04 12:45:22,859 | INFO     |   → 233/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Indonesia/config.txt
+2026-06-04 12:45:22,859 | INFO     |   → 234/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Ireland/config.txt
+2026-06-04 12:45:22,859 | INFO     |   → 235/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Republic%20of%20Lithuania/config.txt
+2026-06-04 12:45:22,859 | INFO     |   → 236/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/South%20Africa/config.txt
+2026-06-04 12:45:22,859 | INFO     |   → 237/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Sweden/config.txt
+2026-06-04 12:45:22,859 | INFO     |   → 238/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Turkey/config.txt
+2026-06-04 12:45:22,859 | INFO     |   → 239/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/United%20Arab%20Emirates/config.txt
+2026-06-04 12:45:22,859 | INFO     |   → 240/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/United%20Kingdom/config.txt
+2026-06-04 12:45:22,859 | INFO     |   → 241/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/United%20States/config.txt
+2026-06-04 12:45:22,860 | INFO     |   → 242/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/mix.txt
+2026-06-04 12:45:22,860 | INFO     |   → 243/935: ✅ 122 взято | 🗑️ 366 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 244/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 245/935: ✅ 81 взято | 🗑️ 446 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 246/935: ✅ 306 взято | 🗑️ 2495 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 247/935: ✅ 35 взято | 🗑️ 558 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 248/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/v2ray-configs/raw/main/Splitted-By-Protocol/trojan.txt
+2026-06-04 12:45:22,860 | INFO     |   → 249/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/v2ray-configs/raw/main/Splitted-By-Protocol/vmess.txt
+2026-06-04 12:45:22,860 | INFO     |   → 250/935: ✅ 22 взято | 🗑️ 3768 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 251/935: ✅ 0 взято | 🗑️ 366 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 252/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 253/935: ✅ 0 взято | 🗑️ 446 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 254/935: ✅ 0 взято | 🗑️ 2495 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 255/935: ✅ 0 взято | 🗑️ 558 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 256/935: ✅ 549 взято | 🗑️ 478 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 257/935: ✅ 0 взято | 🗑️ 98 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 258/935: ✅ 0 взято | 🗑️ 153 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 259/935: ✅ 191 взято | 🗑️ 105 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 260/935: ✅ 109 взято | 🗑️ 7 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 261/935: ✅ 8 взято | 🗑️ 364 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 262/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Fido6/FreeNodes/57221e59caddde55ffdda21d491ae952cd608049/nodes/halekj.txt
+2026-06-04 12:45:22,860 | INFO     |   → 263/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Fido6/FreeNodes/57221e59caddde55ffdda21d491ae952cd608049/nodes/kkzui.txt
+2026-06-04 12:45:22,860 | INFO     |   → 264/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Fido6/FreeNodes/57221e59caddde55ffdda21d491ae952cd608049/nodes/wenode.txt
+2026-06-04 12:45:22,860 | INFO     |   → 265/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Firmfox/Proxify/main/v2ray_configs/mixed/subscription-2.txt
+2026-06-04 12:45:22,860 | INFO     |   → 266/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Firmfox/Proxify/main/v2ray_configs/seperated_by_protocol/other.txt
+2026-06-04 12:45:22,860 | INFO     |   → 267/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Firmfox/Proxify/main/v2ray_configs/seperated_by_protocol/shadowsocks.txt
+2026-06-04 12:45:22,860 | INFO     |   → 268/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Firmfox/Proxify/main/v2ray_configs/seperated_by_protocol/trojan.txt
+2026-06-04 12:45:22,860 | INFO     |   → 269/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Firmfox/Proxify/main/v2ray_configs/seperated_by_protocol/vless.txt
+2026-06-04 12:45:22,860 | INFO     |   → 270/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Firmfox/Proxify/main/v2ray_configs/seperated_by_protocol/vmess.txt
+2026-06-04 12:45:22,860 | INFO     |   → 271/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 272/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 273/935: ✅ 14 взято | 🗑️ 250 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 274/935: ✅ 2 взято | 🗑️ 19 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 275/935: ✅ 15 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 276/935: ✅ 0 взято | 🗑️ 609 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 277/935: ✅ 18 взято | 🗑️ 63 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 278/935: ✅ 1 взято | 🗑️ 17 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 279/935: ✅ 4 взято | 🗑️ 11 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 280/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 281/935: ✅ 0 взято | 🗑️ 137 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 282/935: ✅ 0 взято | 🗑️ 32 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 283/935: ✅ 2 взято | 🗑️ 19 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 284/935: ✅ 0 взято | 🗑️ 43 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 285/935: ✅ 0 взято | 🗑️ 43 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 286/935: ✅ 0 взято | 🗑️ 1 мусор
+2026-06-04 12:45:22,860 | INFO     |   → 287/935: ✅ 0 взято | 🗑️ 1 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 288/935: ✅ 0 взято | 🗑️ 28 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 289/935: ✅ 14 взято | 🗑️ 282 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 290/935: ✅ 0 взято | 🗑️ 94 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 291/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 292/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 293/935: ✅ 393 взято | 🗑️ 85 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 294/935: ✅ 94 взято | 🗑️ 426 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 295/935: ✅ 136 взято | 🗑️ 373 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 296/935: ✅ 5940 взято | 🗑️ 46237 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 297/935: ✅ 0 взято | 🗑️ 35 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 298/935: ✅ 0 взято | 🗑️ 9698 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 299/935: ✅ 0 взято | 🗑️ 31035 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 300/935: ✅ 0 взято | 🗑️ 5 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 301/935: ✅ 0 взято | 🗑️ 4 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 302/935: ✅ 0 взято | 🗑️ 51 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 303/935: ✅ 0 взято | 🗑️ 8 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 304/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Kwinshadow/TelegramV2rayCollector/raw/refs/heads/main/sublinks/mix.txt
+2026-06-04 12:45:22,861 | INFO     |   → 305/935: ✅ 7 взято | 🗑️ 1023 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 306/935 ❌ HTTP 404 — https://raw.githubusercontent.com/LalatinaHub/Mineral/raw/refs/heads/master/result/nodes
+2026-06-04 12:45:22,861 | INFO     |   → 307/935: ✅ 2 взято | 🗑️ 116 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 308/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Leon406/SubCrawler/main/sub/share/all3
+2026-06-04 12:45:22,861 | INFO     |   → 309/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Leon406/SubCrawler/main/sub/share/all4
+2026-06-04 12:45:22,861 | INFO     |   → 310/935: ✅ 4 взято | 🗑️ 335 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 311/935: ✅ 382 взято | 🗑️ 20143 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 312/935: ✅ 0 взято | 🗑️ 33 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 313/935: ✅ 0 взято | 🗑️ 6 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 314/935: ✅ 60 взято | 🗑️ 15 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 315/935: ✅ 0 взято | 🗑️ 147 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 316/935 ❌ HTTP 404 — https://raw.githubusercontent.com/M-Mashreghi/free-config-collector/main/Splitted-By-Protocol/ssr.txt
+2026-06-04 12:45:22,861 | INFO     |   → 317/935: ✅ 139 взято | 🗑️ 114 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 318/935: ✅ 126 взято | 🗑️ 137 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 319/935: ✅ 0 взято | 🗑️ 12 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 320/935: ✅ 0 взято | 🗑️ 1 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 321/935: ✅ 84 взято | 🗑️ 126 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 322/935: ✅ 0 взято | 🗑️ 126 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 323/935: ✅ 0 взято | 🗑️ 91 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 324/935 ❌ HTTP 404 — https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/hy2.txt
+2026-06-04 12:45:22,861 | INFO     |   → 325/935: ✅ 31 взято | 🗑️ 1436 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 326/935 ❌ HTTP 404 — https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/ssr.txt
+2026-06-04 12:45:22,861 | INFO     |   → 327/935: ✅ 65 взято | 🗑️ 587 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 328/935 ❌ HTTP 404 — https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/tuic.txt
+2026-06-04 12:45:22,861 | INFO     |   → 329/935: ✅ 5 взято | 🗑️ 60 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 330/935: ✅ 225 взято | 🗑️ 1539 мусор
+2026-06-04 12:45:22,861 | INFO     |   → 331/935: ✅ 346 взято | 🗑️ 3600 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 332/935: ✅ 24 взято | 🗑️ 170 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 333/935: ✅ 0 взято | 🗑️ 2 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 334/935: ✅ 114 взято | 🗑️ 1115 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 335/935: ✅ 0 взято | 🗑️ 568 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 336/935: ✅ 0 взято | 🗑️ 568 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 337/935: ✅ 0 взято | 🗑️ 41 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 338/935: ✅ 0 взято | 🗑️ 2 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 339/935: ✅ 0 взято | 🗑️ 435 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 340/935: ✅ 0 взято | 🗑️ 77 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 341/935 ❌ HTTP 404 — https://raw.githubusercontent.com/MhdiTaheri/V2rayCollector/raw/refs/heads/main/sub/mix
+2026-06-04 12:45:22,862 | INFO     |   → 342/935: ✅ 53 взято | 🗑️ 267 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 343/935 ❌ HTTP 404 — https://raw.githubusercontent.com/MhdiTaheri/V2rayCollector_Py/raw/refs/heads/main/sub/Mix/mix.txt
+2026-06-04 12:45:22,862 | INFO     |   → 344/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 345/935: ✅ 43 взято | 🗑️ 217 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 346/935: ✅ 0 взято | 🗑️ 31 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 347/935: ✅ 92 взято | 🗑️ 282 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 348/935: ✅ 0 взято | 🗑️ 26 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 349/935: ✅ 1 взято | 🗑️ 6 мусор
+2026-06-04 12:45:22,862 | INFO     |   → 350/935 ❌ HTTP 404 — https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/all.yaml
+2026-06-04 12:45:22,862 | INFO     |   → 351/935 ❌ HTTP 404 — https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/actives.txt
+2026-06-04 12:45:22,862 | INFO     |   → 352/935 ❌ HTTP 404 — https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/all.txt
+2026-06-04 12:45:22,862 | INFO     |   → 353/935: ✅ 0 взято | 🗑️ 13 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 354/935: ✅ 0 взято | 🗑️ 13 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 355/935: ✅ 5 взято | 🗑️ 15 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 356/935: ✅ 0 взято | 🗑️ 30 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 357/935: ✅ 0 взято | 🗑️ 15 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 358/935: ✅ 66 взято | 🗑️ 123 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 359/935: ✅ 50 взято | 🗑️ 30 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 360/935: ✅ 2 взято | 🗑️ 13 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 361/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 362/935 ❌ HTTP 404 — https://raw.githubusercontent.com/OpenCNLink/freevpn/3cfcff048bfdd1493ccffa52ecf30ce7f9fc6b28/src/list/vmess.txt
+2026-06-04 12:45:22,863 | INFO     |   → 363/935: ✅ 0 взято | 🗑️ 12 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 364/935: ✅ 0 взято | 🗑️ 12 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 365/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 366/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 367/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 368/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 369/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 370/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,863 | INFO     |   → 371/935: ✅ 48 взято | 🗑️ 105 мусор
+2026-06-04 12:45:22,864 | INFO     |   → 372/935 ❌ HTTP 404 — https://raw.githubusercontent.com/RKPchannel/RKP_bypass_configs/main/configs
+2026-06-04 12:45:22,864 | INFO     |   → 373/935: ✅ 0 взято | 🗑️ 35 мусор
+2026-06-04 12:45:22,864 | INFO     |   → 374/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,864 | INFO     |   → 375/935: ✅ 0 взято | 🗑️ 50 мусор
+2026-06-04 12:45:22,864 | INFO     |   → 376/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,864 | INFO     |   → 377/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,864 | INFO     |   → 378/935: ✅ 5 взято | 🗑️ 206 мусор
+2026-06-04 12:45:22,864 | INFO     |   → 379/935: ✅ 21 взято | 🗑️ 138 мусор
+2026-06-04 12:45:22,864 | INFO     |   → 380/935: ✅ 23 взято | 🗑️ 89 мусор
+2026-06-04 12:45:22,864 | INFO     |   → 381/935: ✅ 9 взято | 🗑️ 85 мусор
+2026-06-04 12:45:22,864 | INFO     |   → 382/935: ✅ 0 взято | 🗑️ 129 мусор
+2026-06-04 12:45:22,864 | INFO     |   → 383/935: ✅ 0 взято | 🗑️ 81 мусор
+2026-06-04 12:45:22,864 | INFO     |   → 384/935 ❌ HTTP 404 — https://raw.githubusercontent.com/STR97/STRUGOV/main/BYPASS
+2026-06-04 12:45:22,864 | INFO     |   → 385/935 ❌ HTTP 404 — https://raw.githubusercontent.com/STR97/STRUGOV/main/CUSTOM
+2026-06-04 12:45:22,864 | INFO     |   → 386/935 ❌ HTTP 404 — https://raw.githubusercontent.com/STR97/STRUGOV/main/STR
+2026-06-04 12:45:22,864 | INFO     |   → 387/935 ❌ HTTP 404 — https://raw.githubusercontent.com/STR97/STRUGOV/main/STR.BYPASS
+2026-06-04 12:45:22,865 | INFO     |   → 388/935 ❌ HTTP 404 — https://raw.githubusercontent.com/STR97/STRUGOV/main/Vless
+2026-06-04 12:45:22,865 | INFO     |   → 389/935 ❌ HTTP 404 — https://raw.githubusercontent.com/STR97/STRUGOV/refs/heads/main/STR.BYPASS
+2026-06-04 12:45:22,865 | INFO     |   → 390/935: ✅ 4 взято | 🗑️ 34 мусор
+2026-06-04 12:45:22,865 | INFO     |   → 391/935: ✅ 11 взято | 🗑️ 16 мусор
+2026-06-04 12:45:22,865 | INFO     |   → 392/935: ✅ 0 взято | 🗑️ 16 мусор
+2026-06-04 12:45:22,865 | INFO     |   → 393/935: ✅ 0 взято | 🗑️ 27 мусор
+2026-06-04 12:45:22,865 | INFO     |   → 394/935: ✅ 140 взято | 🗑️ 1153 мусор
+2026-06-04 12:45:22,865 | INFO     |   → 395/935: ✅ 69 взято | 🗑️ 1746 мусор
+2026-06-04 12:45:22,865 | INFO     |   → 396/935: ✅ 15 взято | 🗑️ 1062 мусор
+2026-06-04 12:45:22,865 | INFO     |   → 397/935: ✅ 120 взято | 🗑️ 3123 мусор
+2026-06-04 12:45:22,865 | INFO     |   → 398/935: ✅ 194 взято | 🗑️ 490 мусор
+2026-06-04 12:45:22,865 | INFO     |   → 399/935: ✅ 49 взято | 🗑️ 4927 мусор
+2026-06-04 12:45:22,865 | INFO     |   → 400/935: ✅ 76 взято | 🗑️ 362 мусор
+2026-06-04 12:45:22,865 | INFO     |   → 401/935: ✅ 29 взято | 🗑️ 54 мусор
+2026-06-04 12:45:22,865 | INFO     |   → 402/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,865 | INFO     |   → 403/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,866 | INFO     |   → 404/935: ✅ 157 взято | 🗑️ 2543 мусор
+2026-06-04 12:45:22,866 | INFO     |   → 405/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,866 | INFO     |   → 406/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,866 | INFO     |   → 407/935: ✅ 6 взято | 🗑️ 51 мусор
+2026-06-04 12:45:22,866 | INFO     |   → 408/935: ✅ 24 взято | 🗑️ 173 мусор
+2026-06-04 12:45:22,866 | INFO     |   → 409/935: ✅ 104 взято | 🗑️ 1912 мусор
+2026-06-04 12:45:22,866 | INFO     |   → 410/935: ✅ 0 взято | 🗑️ 80 мусор
+2026-06-04 12:45:22,866 | INFO     |   → 411/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,866 | INFO     |   → 412/935: ✅ 0 взято | 🗑️ 51 мусор
+2026-06-04 12:45:22,866 | INFO     |   → 413/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_TLS_activision.com.txt
+2026-06-04 12:45:22,866 | INFO     |   → 414/935: ✅ 3 взято | 🗑️ 1 мусор
+2026-06-04 12:45:22,866 | INFO     |   → 415/935: ✅ 3 взято | 🗑️ 1 мусор
+2026-06-04 12:45:22,866 | INFO     |   → 416/935: ✅ 3 взято | 🗑️ 1 мусор
+2026-06-04 12:45:22,866 | INFO     |   → 417/935: ✅ 3 взято | 🗑️ 1 мусор
+2026-06-04 12:45:22,866 | INFO     |   → 418/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_TLS_viber.com.txt
+2026-06-04 12:45:22,866 | INFO     |   → 419/935: ✅ 3 взято | 🗑️ 1 мусор
+2026-06-04 12:45:22,866 | INFO     |   → 420/935: ✅ 3 взято | 🗑️ 1 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 421/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_activision.com.txt
+2026-06-04 12:45:22,867 | INFO     |   → 422/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_css.rbxcdn.com.txt
+2026-06-04 12:45:22,867 | INFO     |   → 423/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_google.com.txt
+2026-06-04 12:45:22,867 | INFO     |   → 424/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_speedtest.tinkoff.ru.txt
+2026-06-04 12:45:22,867 | INFO     |   → 425/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_telegram.org.txt
+2026-06-04 12:45:22,867 | INFO     |   → 426/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_viber.com.txt
+2026-06-04 12:45:22,867 | INFO     |   → 427/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_vk.com.txt
+2026-06-04 12:45:22,867 | INFO     |   → 428/935 ❌ HTTP 404 — https://raw.githubusercontent.com/Syavar/V2ray-Configs/main/OK_whatsapp.com.txt
+2026-06-04 12:45:22,867 | INFO     |   → 429/935: ✅ 282 взято | 🗑️ 672 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 430/935: ✅ 4 взято | 🗑️ 291 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 431/935: ✅ 0 взято | 🗑️ 119 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 432/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 433/935 ❌ HTTP 404 — https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/V2RAY_SUB/main/V2RAY_SUB.txt
+2026-06-04 12:45:22,867 | INFO     |   → 434/935: ✅ 9 взято | 🗑️ 11 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 435/935: ✅ 6 взято | 🗑️ 11 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 436/935: ✅ 11 взято | 🗑️ 3 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 437/935: ✅ 8 взято | 🗑️ 9 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 438/935: ✅ 5 взято | 🗑️ 12 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 439/935: ✅ 3 взято | 🗑️ 14 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 440/935: ✅ 7 взято | 🗑️ 11 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 441/935: ✅ 9 взято | 🗑️ 8 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 442/935: ✅ 10 взято | 🗑️ 10 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 443/935: ✅ 5 взято | 🗑️ 10 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 444/935: ✅ 36 взято | 🗑️ 203 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 445/935: ✅ 0 взято | 🗑️ 5 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 446/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 447/935: ✅ 16 взято | 🗑️ 17 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 448/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 449/935: ✅ 0 взято | 🗑️ 17 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 450/935: ✅ 58 взято | 🗑️ 348 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 451/935: ✅ 0 взято | 🗑️ 231 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 452/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 453/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 454/935: ✅ 123 взято | 🗑️ 432 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 455/935: ✅ 0 взято | 🗑️ 83 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 456/935: ✅ 0 взято | 🗑️ 16 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 457/935: ✅ 0 взято | 🗑️ 16 мусор
+2026-06-04 12:45:22,867 | INFO     |   → 458/935 ❌ HTTP 404 — https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml
+2026-06-04 12:45:22,867 | INFO     |   → 459/935 ❌ HTTP 404 — https://raw.githubusercontent.com/aiboboxx/clashfree/refs/heads/main/clash.yml
+2026-06-04 12:45:22,867 | INFO     |   → 460/935 ❌ HTTP 404 — https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2
+2026-06-04 12:45:22,867 | INFO     |   → 461/935 ❌ HTTP 404 — https://raw.githubusercontent.com/amirmohammad-mohammad-88/Sub-Reality-Azadi-config/Config/Azadi-Reality-Different
+2026-06-04 12:45:22,867 | INFO     |   → 462/935 ❌ HTTP 404 — https://raw.githubusercontent.com/amirmohammad-mohammad-88/Sub-Reality-Azadi-config/Config/Azadi-Reality-Different-Base64
+2026-06-04 12:45:22,868 | INFO     |   → 463/935: ✅ 1 взято | 🗑️ 17 мусор
+2026-06-04 12:45:22,868 | INFO     |   → 464/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,868 | INFO     |   → 465/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,868 | INFO     |   → 466/935: ✅ 4 взято | 🗑️ 114 мусор
+2026-06-04 12:45:22,868 | INFO     |   → 467/935: ✅ 21 взято | 🗑️ 51 мусор
+2026-06-04 12:45:22,868 | INFO     |   → 468/935: ✅ 0 взято | 🗑️ 311 мусор
+2026-06-04 12:45:22,868 | INFO     |   → 469/935: ✅ 0 взято | 🗑️ 192 мусор
+2026-06-04 12:45:22,868 | INFO     |   → 470/935: ✅ 25 взято | 🗑️ 60 мусор
+2026-06-04 12:45:22,868 | INFO     |   → 471/935 ❌ HTTP 404 — https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/ss
+2026-06-04 12:45:22,868 | INFO     |   → 472/935 ❌ HTTP 404 — https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/ssr
+2026-06-04 12:45:22,868 | INFO     |   → 473/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,868 | INFO     |   → 474/935: ✅ 0 взято | 🗑️ 22 мусор
+2026-06-04 12:45:22,868 | INFO     |   → 475/935: ✅ 0 взято | 🗑️ 3336 мусор
+2026-06-04 12:45:22,869 | INFO     |   → 476/935: ✅ 0 взято | 🗑️ 310 мусор
+2026-06-04 12:45:22,869 | INFO     |   → 477/935: ✅ 0 взято | 🗑️ 2379 мусор
+2026-06-04 12:45:22,869 | INFO     |   → 478/935: ✅ 0 взято | 🗑️ 156 мусор
+2026-06-04 12:45:22,869 | INFO     |   → 479/935 ❌ HTTP 404 — https://raw.githubusercontent.com/barry-far/V2ray-Configs/ced94ddfff48276ec365b40227561f36b1b64bc8/Sub5.txt
+2026-06-04 12:45:22,869 | INFO     |   → 480/935 ❌ HTTP 404 — https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Splitted-By-Protocol/hysteria2.txt
+2026-06-04 12:45:22,869 | INFO     |   → 481/935 ❌ HTTP 404 — https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Splitted-By-Protocol/vless.txt
+2026-06-04 12:45:22,869 | INFO     |   → 482/935 ❌ HTTP 404 — https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub1.txt
+2026-06-04 12:45:22,869 | INFO     |   → 483/935 ❌ HTTP 404 — https://raw.githubusercontent.com/barry-far/V2ray-Configs/refs/heads/main/All_Configs_Sub.txt
+2026-06-04 12:45:22,869 | INFO     |   → 484/935: ✅ 0 взято | 🗑️ 310 мусор
+2026-06-04 12:45:22,869 | INFO     |   → 485/935: ✅ 0 взято | 🗑️ 2379 мусор
+2026-06-04 12:45:22,869 | INFO     |   → 486/935: ✅ 0 взято | 🗑️ 156 мусор
+2026-06-04 12:45:22,869 | INFO     |   → 487/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,869 | INFO     |   → 488/935 ❌ HTTP 404 — https://raw.githubusercontent.com/budamu/clashconfig/main/v2ray.txt
+2026-06-04 12:45:22,869 | INFO     |   → 489/935 ❌ HTTP 404 — https://raw.githubusercontent.com/budamu/clashconfig/main/v2ray2.txt
+2026-06-04 12:45:22,869 | INFO     |   → 490/935 ❌ HTTP 404 — https://raw.githubusercontent.com/bywarm/whitelists-vpns-etc/main/whitelists1-4pda.txt
+2026-06-04 12:45:22,869 | INFO     |   → 491/935: ✅ 0 взято | 🗑️ 3 мусор
+2026-06-04 12:45:22,870 | INFO     |   → 492/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,870 | INFO     |   → 493/935: ✅ 0 взято | 🗑️ 3 мусор
+2026-06-04 12:45:22,870 | INFO     |   → 494/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,870 | INFO     |   → 495/935: ✅ 0 взято | 🗑️ 442 мусор
+2026-06-04 12:45:22,870 | INFO     |   → 496/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,870 | INFO     |   → 497/935 ❌ HTTP 404 — https://raw.githubusercontent.com/chxxyz2004/zd/17fca23b73c46b5dd73e9be49b14d219b5e5f836/sub/2401/240110.txt
+2026-06-04 12:45:22,870 | INFO     |   → 498/935: ✅ 0 взято | 🗑️ 44 мусор
+2026-06-04 12:45:22,870 | INFO     |   → 499/935: ✅ 356 взято | 🗑️ 5284 мусор
+2026-06-04 12:45:22,870 | INFO     |   → 500/935: ✅ 236 взято | 🗑️ 517 мусор
+2026-06-04 12:45:22,870 | INFO     |   → 501/935 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/main/free.yaml
+2026-06-04 12:45:22,870 | INFO     |   → 502/935 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/main/mix.yaml
+2026-06-04 12:45:22,870 | INFO     |   → 503/935 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/main/ss.yaml
+2026-06-04 12:45:22,870 | INFO     |   → 504/935 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/main/ssr.yaml
+2026-06-04 12:45:22,870 | INFO     |   → 505/935 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/main/vmess.yaml
+2026-06-04 12:45:22,870 | INFO     |   → 506/935 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/refs/heads/main/18cj.json
+2026-06-04 12:45:22,870 | INFO     |   → 507/935 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/refs/heads/main/aaaaaaaa.yaml
+2026-06-04 12:45:22,870 | INFO     |   → 508/935 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/refs/heads/main/free.yaml
+2026-06-04 12:45:22,870 | INFO     |   → 509/935 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/refs/heads/main/ss2088.txt
+2026-06-04 12:45:22,871 | INFO     |   → 510/935: ✅ 0 взято | 🗑️ 18 мусор
+2026-06-04 12:45:22,871 | INFO     |   → 511/935: ✅ 0 взято | 🗑️ 18 мусор
+2026-06-04 12:45:22,871 | INFO     |   → 512/935: ✅ 6 взято | 🗑️ 78 мусор
+2026-06-04 12:45:22,871 | INFO     |   → 513/935: ✅ 6 взято | 🗑️ 4 мусор
+2026-06-04 12:45:22,871 | INFO     |   → 514/935: ✅ 0 взято | 🗑️ 2 мусор
+2026-06-04 12:45:22,871 | INFO     |   → 515/935: ✅ 0 взято | 🗑️ 2 мусор
+2026-06-04 12:45:22,871 | INFO     |   → 516/935: ✅ 0 взято | 🗑️ 2 мусор
+2026-06-04 12:45:22,871 | INFO     |   → 517/935: ✅ 0 взято | 🗑️ 3 мусор
+2026-06-04 12:45:22,871 | INFO     |   → 518/935: ✅ 0 взято | 🗑️ 2 мусор
+2026-06-04 12:45:22,871 | INFO     |   → 519/935: ✅ 0 взято | 🗑️ 9 мусор
+2026-06-04 12:45:22,871 | INFO     |   → 520/935: ✅ 1 взято | 🗑️ 1 мусор
+2026-06-04 12:45:22,871 | INFO     |   → 521/935: ✅ 0 взято | 🗑️ 10 мусор
+2026-06-04 12:45:22,871 | INFO     |   → 522/935: ✅ 0 взято | 🗑️ 2 мусор
+2026-06-04 12:45:22,871 | INFO     |   → 523/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,871 | INFO     |   → 524/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,871 | INFO     |   → 525/935: ✅ 6736 взято | 🗑️ 132819 мусор
+2026-06-04 12:45:22,872 | INFO     |   → 526/935: ✅ 6 взято | 🗑️ 135 мусор
+2026-06-04 12:45:22,872 | INFO     |   → 527/935: ✅ 7189 взято | 🗑️ 142367 мусор
+2026-06-04 12:45:22,872 | INFO     |   → 528/935: ✅ 5074 взято | 🗑️ 95946 мусор
+2026-06-04 12:45:22,872 | INFO     |   → 529/935: ✅ 82 взято | 🗑️ 5519 мусор
+2026-06-04 12:45:22,872 | INFO     |   → 530/935: ✅ 0 взято | 🗑️ 132819 мусор
+2026-06-04 12:45:22,872 | INFO     |   → 531/935: ✅ 0 взято | 🗑️ 135 мусор
+2026-06-04 12:45:22,872 | INFO     |   → 532/935: ✅ 6 взято | 🗑️ 113 мусор
+2026-06-04 12:45:22,872 | INFO     |   → 533/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,872 | INFO     |   → 534/935: ✅ 7 взято | 🗑️ 19 мусор
+2026-06-04 12:45:22,872 | INFO     |   → 535/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,872 | INFO     |   → 536/935: ✅ 13 взято | 🗑️ 19 мусор
+2026-06-04 12:45:22,872 | INFO     |   → 537/935: ✅ 0 взято | 🗑️ 5 мусор
+2026-06-04 12:45:22,872 | INFO     |   → 538/935: ✅ 2 взято | 🗑️ 80 мусор
+2026-06-04 12:45:22,873 | INFO     |   → 539/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,873 | INFO     |   → 540/935: ✅ 5 взято | 🗑️ 169 мусор
+2026-06-04 12:45:22,873 | INFO     |   → 541/935: ✅ 34 взято | 🗑️ 121 мусор
+2026-06-04 12:45:22,873 | INFO     |   → 542/935: ✅ 4 взято | 🗑️ 97 мусор
+2026-06-04 12:45:22,873 | INFO     |   → 543/935 ❌ HTTP 404 — https://raw.githubusercontent.com/free18/v2ray/main/Clash.yaml
+2026-06-04 12:45:22,873 | INFO     |   → 544/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,873 | INFO     |   → 545/935: ✅ 46 взято | 🗑️ 121 мусор
+2026-06-04 12:45:22,873 | INFO     |   → 546/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,873 | INFO     |   → 547/935: ✅ 0 взято | 🗑️ 15 мусор
+2026-06-04 12:45:22,873 | INFO     |   → 548/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,873 | INFO     |   → 549/935: ✅ 0 взято | 🗑️ 8 мусор
+2026-06-04 12:45:22,873 | INFO     |   → 550/935: ✅ 0 взято | 🗑️ 8 мусор
+2026-06-04 12:45:22,873 | INFO     |   → 551/935: ✅ 0 взято | 🗑️ 8 мусор
+2026-06-04 12:45:22,873 | INFO     |   → 552/935: ✅ 0 взято | 🗑️ 8 мусор
+2026-06-04 12:45:22,873 | INFO     |   → 553/935 ❌ HTTP 404 — https://raw.githubusercontent.com/freev2rayconfig/V2RAY_SUB/3e6a7786a1601ee3723e8d043ae79e70dbdfd9a8/v2rayconfigs.txt
+2026-06-04 12:45:22,874 | INFO     |   → 554/935 ❌ HTTP 404 — https://raw.githubusercontent.com/freev2rayconfig/V2RAY_SUBSCRIPTION_LINK/main/v2rayconfigs.txt
+2026-06-04 12:45:22,874 | INFO     |   → 555/935: ✅ 0 взято | 🗑️ 5 мусор
+2026-06-04 12:45:22,874 | INFO     |   → 556/935 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/http.txt
+2026-06-04 12:45:22,874 | INFO     |   → 557/935 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
+2026-06-04 12:45:22,874 | INFO     |   → 558/935 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/socks4.txt
+2026-06-04 12:45:22,874 | INFO     |   → 559/935 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/socks4a.txt
+2026-06-04 12:45:22,874 | INFO     |   → 560/935 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/socks5.txt
+2026-06-04 12:45:22,874 | INFO     |   → 561/935 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/socks5h.txt
+2026-06-04 12:45:22,874 | INFO     |   → 562/935 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/ss.txt
+2026-06-04 12:45:22,874 | INFO     |   → 563/935 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/ssr.txt
+2026-06-04 12:45:22,874 | INFO     |   → 564/935 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/trojan.txt
+2026-06-04 12:45:22,874 | INFO     |   → 565/935 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/vless.txt
+2026-06-04 12:45:22,874 | INFO     |   → 566/935 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/vmess.txt
+2026-06-04 12:45:22,874 | INFO     |   → 567/935: ✅ 0 взято | 🗑️ 17 мусор
+2026-06-04 12:45:22,874 | INFO     |   → 568/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,874 | INFO     |   → 569/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,874 | INFO     |   → 570/935: ✅ 4 взято | 🗑️ 63 мусор
+2026-06-04 12:45:22,874 | INFO     |   → 571/935: ✅ 517 взято | 🗑️ 1953 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 572/935: ✅ 393 взято | 🗑️ 1263 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 573/935: ✅ 382 взято | 🗑️ 4048 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 574/935: ✅ 69 взято | 🗑️ 2350 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 575/935 ❌ HTTP 404 — https://raw.githubusercontent.com/hameed-maleki/TVC/89a4522969c57dcc22458cae9898426e5c4f2679/lite/config.txt
+2026-06-04 12:45:22,875 | INFO     |   → 576/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 577/935: ✅ 5 взято | 🗑️ 132 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 578/935: ✅ 0 взято | 🗑️ 56 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 579/935 ❌ HTTP 404 — https://raw.githubusercontent.com/hkaa0/permalink/main/proxy/V2ray
+2026-06-04 12:45:22,875 | INFO     |   → 580/935: ✅ 2 взято | 🗑️ 131 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 581/935 ❌ HTTP 404 — https://raw.githubusercontent.com/hkaa0/permalink/main/proxy/clash
+2026-06-04 12:45:22,875 | INFO     |   → 582/935 ❌ HTTP 404 — https://raw.githubusercontent.com/hkpc/Autoproxy/6cf946ddfc677a29062007e4b47d70674474baa7/sub/2401/240110.txt
+2026-06-04 12:45:22,875 | INFO     |   → 583/935 ❌ HTTP 404 — https://raw.githubusercontent.com/hkpc/V2ray-Configs/7d9aa0dabf947af180a7dd6302818ed37950531a/Sub1.txt
+2026-06-04 12:45:22,875 | INFO     |   → 584/935: ✅ 0 взято | 🗑️ 14 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 585/935: ✅ 0 взято | 🗑️ 16 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 586/935 ❌ HTTP 404 — https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main
+2026-06-04 12:45:22,875 | INFO     |   → 587/935: ✅ 103 взято | 🗑️ 284 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 588/935: ✅ 0 взято | 🗑️ 25 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 589/935: ✅ 0 взято | 🗑️ 26 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 590/935: ✅ 0 взято | 🗑️ 218 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 591/935: ✅ 0 взято | 🗑️ 15 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 592/935: ✅ 4 взято | 🗑️ 3 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 593/935: ✅ 71 взято | 🗑️ 8 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 594/935: ✅ 0 взято | 🗑️ 11 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 595/935 ❌ HTTP 404 — https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/Vless-Reality-White-Lists-Rus-Cable.txt
+2026-06-04 12:45:22,875 | INFO     |   → 596/935: ✅ 11 взято | 🗑️ 2 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 597/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 598/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 599/935: ✅ 0 взято | 🗑️ 9 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 600/935: ✅ 6 взято | 🗑️ 377 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 601/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 602/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 603/935: ✅ 0 взято | 🗑️ 12 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 604/935: ✅ 0 взято | 🗑️ 43 мусор
+2026-06-04 12:45:22,875 | INFO     |   → 605/935 ❌ HTTP 404 — https://raw.githubusercontent.com/jw853355718/clash_233/master/config.yml
+2026-06-04 12:45:22,876 | INFO     |   → 606/935: ✅ 0 взято | 🗑️ 210 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 607/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 608/935 ❌ HTTP 404 — https://raw.githubusercontent.com/kismetpro/NodeSuber/main/Splitted-By-Protocol/vless.txt
+2026-06-04 12:45:22,876 | INFO     |   → 609/935 ❌ HTTP 404 — https://raw.githubusercontent.com/kismetpro/NodeSuber/main/out/All_Configs_Sub.txt
+2026-06-04 12:45:22,876 | INFO     |   → 610/935 ❌ HTTP 404 — https://raw.githubusercontent.com/kort0881/vpn-key-vless/main/subscriptions/all.txt
+2026-06-04 12:45:22,876 | INFO     |   → 611/935: ✅ 224 взято | 🗑️ 176 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 612/935: ✅ 0 взято | 🗑️ 29 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 613/935 ❌ HTTP 404 — https://raw.githubusercontent.com/koteey/Ms.Kerosin-VPN/main/proxies.txt
+2026-06-04 12:45:22,876 | INFO     |   → 614/935: ✅ 534 взято | 🗑️ 1494 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 615/935: ✅ 1 взято | 🗑️ 121 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 616/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 617/935 ❌ HTTP 404 — https://raw.githubusercontent.com/lcx12901/v2ray-/master/sspool.herokuapp.com/yzcloud.yaml
+2026-06-04 12:45:22,876 | INFO     |   → 618/935 ❌ HTTP 404 — https://raw.githubusercontent.com/lcx12901/v2ray-/master/sspool.herokuapp.com/yzcloud2.yaml
+2026-06-04 12:45:22,876 | INFO     |   → 619/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 620/935 ❌ HTTP 404 — https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/clash/config.yaml
+2026-06-04 12:45:22,876 | INFO     |   → 621/935: ✅ 0 взято | 🗑️ 8 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 622/935: ✅ 0 взято | 🗑️ 4 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 623/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 624/935: ✅ 0 взято | 🗑️ 4 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 625/935: ✅ 0 взято | 🗑️ 149 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 626/935: ✅ 0 взято | 🗑️ 421 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 627/935: ✅ 213 взято | 🗑️ 1155 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 628/935 ❌ HTTP 404 — https://raw.githubusercontent.com/lisylva-lee/v2dyku/main/ssr
+2026-06-04 12:45:22,876 | INFO     |   → 629/935 ❌ HTTP 404 — https://raw.githubusercontent.com/lisylva-lee/v2dyku/main/v2dy
+2026-06-04 12:45:22,876 | INFO     |   → 630/935: ✅ 0 взято | 🗑️ 53 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 631/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 632/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 633/935 ❌ HTTP 404 — https://raw.githubusercontent.com/luxl-1379/merge/77247d23def72b25226dfa741614e9b07a569c72/sub/sub_merge_base64.txt
+2026-06-04 12:45:22,876 | INFO     |   → 634/935 ❌ HTTP 404 — https://raw.githubusercontent.com/luxl-1379/merge/main/sub/sub_merge_base64.txt
+2026-06-04 12:45:22,876 | INFO     |   → 635/935: ✅ 146 взято | 🗑️ 343 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 636/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 637/935: ✅ 0 взято | 🗑️ 126 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 638/935: ✅ 0 взято | 🗑️ 126 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 639/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 640/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 641/935: ✅ 0 взято | 🗑️ 3499 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 642/935: ✅ 0 взято | 🗑️ 126 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 643/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 644/935: ✅ 0 взято | 🗑️ 3499 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 645/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 646/935: ✅ 20 взято | 🗑️ 370 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 647/935: ✅ 0 взято | 🗑️ 370 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 648/935 ❌ HTTP 404 — https://raw.githubusercontent.com/mermeroo/Clash-V2ray/main/v2ray
+2026-06-04 12:45:22,876 | INFO     |   → 649/935: ✅ 714 взято | 🗑️ 6258 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 650/935: ✅ 15 взято | 🗑️ 417 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 651/935: ✅ 6 взято | 🗑️ 102 мусор
+2026-06-04 12:45:22,876 | INFO     |   → 652/935: ✅ 0 взято | 🗑️ 6258 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 653/935: ✅ 8 взято | 🗑️ 853 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 654/935: ✅ 0 взято | 🗑️ 853 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 655/935: ✅ 32 взято | 🗑️ 69 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 656/935 ❌ HTTP 404 — https://raw.githubusercontent.com/mermeroo/free-v2ray-collector/main/main/mix
+2026-06-04 12:45:22,877 | INFO     |   → 657/935 ❌ HTTP 404 — https://raw.githubusercontent.com/mermeroo/free-v2ray-collector/main/main/reality
+2026-06-04 12:45:22,877 | INFO     |   → 658/935 ❌ HTTP 404 — https://raw.githubusercontent.com/mermeroo/free-v2ray-collector/main/main/shadowsocks
+2026-06-04 12:45:22,877 | INFO     |   → 659/935 ❌ HTTP 404 — https://raw.githubusercontent.com/mermeroo/free-v2ray-collector/main/main/trojan
+2026-06-04 12:45:22,877 | INFO     |   → 660/935 ❌ HTTP 404 — https://raw.githubusercontent.com/mermeroo/free-v2ray-collector/main/main/vless
+2026-06-04 12:45:22,877 | INFO     |   → 661/935 ❌ HTTP 404 — https://raw.githubusercontent.com/mermeroo/free-v2ray-collector/main/main/vmess
+2026-06-04 12:45:22,877 | INFO     |   → 662/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 663/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 664/935 ❌ HTTP 404 — https://raw.githubusercontent.com/mfuu/v2ray/master/merge/merge.txt
+2026-06-04 12:45:22,877 | INFO     |   → 665/935: ✅ 0 взято | 🗑️ 71 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 666/935: ✅ 0 взято | 🗑️ 71 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 667/935: ✅ 0 взято | 🗑️ 25 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 668/935: ✅ 520 взято | 🗑️ 13173 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 669/935: ✅ 0 взято | 🗑️ 13173 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 670/935: ✅ 0 взято | 🗑️ 2765 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 671/935: ✅ 0 взято | 🗑️ 1818 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 672/935: ✅ 0 взято | 🗑️ 4489 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 673/935: ✅ 0 взято | 🗑️ 4101 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 674/935 ❌ HTTP 404 — https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/config.txt
+2026-06-04 12:45:22,877 | INFO     |   → 675/935 ❌ HTTP 404 — https://raw.githubusercontent.com/miladtahanian/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt
+2026-06-04 12:45:22,877 | INFO     |   → 676/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 677/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 678/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 679/935: ✅ 15 взято | 🗑️ 46 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 680/935: ✅ 0 взято | 🗑️ 12 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 681/935: ✅ 0 взято | 🗑️ 218 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 682/935: ✅ 0 взято | 🗑️ 30 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 683/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 684/935: ✅ 28 взято | 🗑️ 93 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 685/935: ✅ 74 взято | 🗑️ 425 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 686/935: ✅ 168 взято | 🗑️ 330 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 687/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 688/935: ✅ 15 взято | 🗑️ 70 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 689/935: ✅ 127 взято | 🗑️ 492 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 690/935: ✅ 331 взято | 🗑️ 190 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 691/935: ✅ 79 взято | 🗑️ 1720 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 692/935: ✅ 37 взято | 🗑️ 1096 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 693/935: ✅ 5 взято | 🗑️ 134 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 694/935: ✅ 3 взято | 🗑️ 443 мусор
+2026-06-04 12:45:22,877 | INFO     |   → 695/935 ❌ HTTP 404 — https://raw.githubusercontent.com/obscure1990/freeVM/master/snippets/nodes.yml
+2026-06-04 12:45:22,878 | INFO     |   → 696/935: ✅ 1181 взято | 🗑️ 177 мусор
+2026-06-04 12:45:22,878 | INFO     |   → 697/935 ❌ HTTP 404 — https://raw.githubusercontent.com/op30mmd/things/909b38024ba14d69dc0f95c238f63bc6e930a00f/eut.txt
+2026-06-04 12:45:22,878 | INFO     |   → 698/935 ❌ HTTP 404 — https://raw.githubusercontent.com/openRunner/clash-freenode/main/v2ray.txt
+2026-06-04 12:45:22,878 | INFO     |   → 699/935 ❌ HTTP 404 — https://raw.githubusercontent.com/oslook/clash-freenode/main/clash.yaml
+2026-06-04 12:45:22,878 | INFO     |   → 700/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,878 | INFO     |   → 701/935: ✅ 4 взято | 🗑️ 1 мусор
+2026-06-04 12:45:22,878 | INFO     |   → 702/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,878 | INFO     |   → 703/935: ✅ 0 взято | 🗑️ 3 мусор
+2026-06-04 12:45:22,878 | INFO     |   → 704/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,878 | INFO     |   → 705/935: ✅ 0 взято | 🗑️ 3 мусор
+2026-06-04 12:45:22,878 | INFO     |   → 706/935: ✅ 0 взято | 🗑️ 3 мусор
+2026-06-04 12:45:22,878 | INFO     |   → 707/935: ✅ 4 взято | 🗑️ 3 мусор
+2026-06-04 12:45:22,878 | INFO     |   → 708/935: ✅ 6703 взято | 🗑️ 35561 мусор
+2026-06-04 12:45:22,878 | INFO     |   → 709/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,878 | INFO     |   → 710/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,878 | INFO     |   → 711/935: ✅ 0 взято | 🗑️ 19 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 712/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 713/935: ✅ 0 взято | 🗑️ 105 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 714/935: ✅ 0 взято | 🗑️ 1 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 715/935: ✅ 0 взято | 🗑️ 44 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 716/935: ✅ 63 взято | 🗑️ 521 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 717/935: ✅ 165 взято | 🗑️ 273 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 718/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 719/935: ✅ 13 взято | 🗑️ 211 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 720/935: ✅ 3 взято | 🗑️ 56 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 721/935: ✅ 0 взято | 🗑️ 79 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 722/935: ✅ 13 взято | 🗑️ 32 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 723/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 724/935: ✅ 2 взято | 🗑️ 9 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 725/935: ✅ 11 взято | 🗑️ 76 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 726/935: ✅ 0 взято | 🗑️ 168 мусор
+2026-06-04 12:45:22,879 | INFO     |   → 727/935: ✅ 0 взято | 🗑️ 79 мусор
+2026-06-04 12:45:22,880 | INFO     |   → 728/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,880 | INFO     |   → 729/935: ✅ 0 взято | 🗑️ 15 мусор
+2026-06-04 12:45:22,880 | INFO     |   → 730/935 ❌ HTTP 404 — https://raw.githubusercontent.com/ronghuaxueleng/get_v2/main/pub/changfengoss.yaml
+2026-06-04 12:45:22,880 | INFO     |   → 731/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,880 | INFO     |   → 732/935: ✅ 0 взято | 🗑️ 82 мусор
+2026-06-04 12:45:22,880 | INFO     |   → 733/935: ✅ 0 взято | 🗑️ 82 мусор
+2026-06-04 12:45:22,880 | INFO     |   → 734/935 ❌ HTTP 404 — https://raw.githubusercontent.com/rxsweet/CM_Vmess/refs/heads/main/test.txt
+2026-06-04 12:45:22,880 | INFO     |   → 735/935 ❌ HTTP 404 — https://raw.githubusercontent.com/rxsweet/proxies/main/sub/free.yaml
+2026-06-04 12:45:22,880 | INFO     |   → 736/935 ❌ HTTP 404 — https://raw.githubusercontent.com/rxsweet/proxies/main/sub/rx.yaml
+2026-06-04 12:45:22,880 | INFO     |   → 737/935 ❌ HTTP 404 — https://raw.githubusercontent.com/rxsweet/proxies/main/sub/sources/dynamicAll.yaml
+2026-06-04 12:45:22,880 | INFO     |   → 738/935 ❌ HTTP 404 — https://raw.githubusercontent.com/rxsweet/proxies/main/sub/sources/miningAll.yaml
+2026-06-04 12:45:22,880 | INFO     |   → 739/935 ❌ HTTP 404 — https://raw.githubusercontent.com/rxsweet/proxies/main/sub/srx.yaml
+2026-06-04 12:45:22,880 | INFO     |   → 740/935: ✅ 331 взято | 🗑️ 1534 мусор
+2026-06-04 12:45:22,880 | INFO     |   → 741/935 ❌ HTTP 404 — https://raw.githubusercontent.com/sajad-sajadi/V2ray-Collector/raw/main/output/protocols/vmess.txt
+2026-06-04 12:45:22,880 | INFO     |   → 742/935: ✅ 1414 взято | 🗑️ 1761 мусор
+2026-06-04 12:45:22,880 | INFO     |   → 743/935 ❌ HTTP 404 — https://raw.githubusercontent.com/sakha1370/OpenRay/raw/refs/heads/main/output/all_valid_proxies.txt
+2026-06-04 12:45:22,881 | INFO     |   → 744/935: ✅ 2 взято | 🗑️ 399 мусор
+2026-06-04 12:45:22,881 | INFO     |   → 745/935: ✅ 0 взято | 🗑️ 399 мусор
+2026-06-04 12:45:22,881 | INFO     |   → 746/935 ❌ HTTP 404 — https://raw.githubusercontent.com/samjoeyang/subscribe/main/fly
+2026-06-04 12:45:22,881 | INFO     |   → 747/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,881 | INFO     |   → 748/935 ❌ HTTP 404 — https://raw.githubusercontent.com/satrom/V2SSR/master/SSR/Sub.txt
+2026-06-04 12:45:22,881 | INFO     |   → 749/935 ❌ HTTP 404 — https://raw.githubusercontent.com/satrom/V2SSR/master/V2RAY/Sub.txt
+2026-06-04 12:45:22,881 | INFO     |   → 750/935: ✅ 5192 взято | 🗑️ 107517 мусор
+2026-06-04 12:45:22,881 | INFO     |   → 751/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,881 | INFO     |   → 752/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,881 | INFO     |   → 753/935: ✅ 3 взято | 🗑️ 49 мусор
+2026-06-04 12:45:22,881 | INFO     |   → 754/935: ✅ 254 взято | 🗑️ 1548 мусор
+2026-06-04 12:45:22,881 | INFO     |   → 755/935: ✅ 0 взято | 🗑️ 783 мусор
+2026-06-04 12:45:22,881 | INFO     |   → 756/935: ✅ 0 взято | 🗑️ 81 мусор
+2026-06-04 12:45:22,881 | INFO     |   → 757/935: ✅ 0 взято | 🗑️ 659 мусор
+2026-06-04 12:45:22,881 | INFO     |   → 758/935: ✅ 0 взято | 🗑️ 25 мусор
+2026-06-04 12:45:22,881 | INFO     |   → 759/935: ✅ 0 взято | 🗑️ 1548 мусор
+2026-06-04 12:45:22,882 | INFO     |   → 760/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,882 | INFO     |   → 761/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,882 | INFO     |   → 762/935 ❌ HTTP 404 — https://raw.githubusercontent.com/shirkerboy/scp/main/sub
+2026-06-04 12:45:22,882 | INFO     |   → 763/935 ❌ HTTP 404 — https://raw.githubusercontent.com/skywrt/v2ray-Collector/master/v2ray
+2026-06-04 12:45:22,882 | INFO     |   → 764/935 ❌ HTTP 404 — https://raw.githubusercontent.com/snakem982/proxypool/main/nodelist.txt
+2026-06-04 12:45:22,882 | INFO     |   → 765/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,882 | INFO     |   → 766/935: ✅ 0 взято | 🗑️ 3 мусор
+2026-06-04 12:45:22,882 | INFO     |   → 767/935 ❌ HTTP 404 — https://raw.githubusercontent.com/snakem982/proxypool/main/source/v2ray.txt
+2026-06-04 12:45:22,882 | INFO     |   → 768/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/hysteria
+2026-06-04 12:45:22,882 | INFO     |   → 769/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/juicity
+2026-06-04 12:45:22,882 | INFO     |   → 770/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/reality
+2026-06-04 12:45:22,882 | INFO     |   → 771/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/shadowsocks
+2026-06-04 12:45:22,882 | INFO     |   → 772/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/trojan
+2026-06-04 12:45:22,882 | INFO     |   → 773/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/tuic
+2026-06-04 12:45:22,882 | INFO     |   → 774/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/vless
+2026-06-04 12:45:22,882 | INFO     |   → 775/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/vmess
+2026-06-04 12:45:22,882 | INFO     |   → 776/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/jp/mixed
+2026-06-04 12:45:22,883 | INFO     |   → 777/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/hysteria
+2026-06-04 12:45:22,883 | INFO     |   → 778/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/juicity
+2026-06-04 12:45:22,883 | INFO     |   → 779/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/reality
+2026-06-04 12:45:22,883 | INFO     |   → 780/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/shadowsocks
+2026-06-04 12:45:22,883 | INFO     |   → 781/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/trojan
+2026-06-04 12:45:22,883 | INFO     |   → 782/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/tuic
+2026-06-04 12:45:22,883 | INFO     |   → 783/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vless
+2026-06-04 12:45:22,883 | INFO     |   → 784/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess
+2026-06-04 12:45:22,883 | INFO     |   → 785/935 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/splitted/subscribe
+2026-06-04 12:45:22,883 | INFO     |   → 786/935 ❌ HTTP 404 — https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yml
+2026-06-04 12:45:22,883 | INFO     |   → 787/935 ❌ HTTP 404 — https://raw.githubusercontent.com/ssrsub/ssr/master/V2Ray
+2026-06-04 12:45:22,883 | INFO     |   → 788/935 ❌ HTTP 404 — https://raw.githubusercontent.com/ssrsub/ssr/master/ss-sub
+2026-06-04 12:45:22,883 | INFO     |   → 789/935 ❌ HTTP 404 — https://raw.githubusercontent.com/ssrsub/ssr/master/ssrsub
+2026-06-04 12:45:22,883 | INFO     |   → 790/935 ❌ HTTP 404 — https://raw.githubusercontent.com/ssrsub/ssr/master/trojan
+2026-06-04 12:45:22,883 | INFO     |   → 791/935 ❌ HTTP 404 — https://raw.githubusercontent.com/ssrsub/ssr/master/vless.txt
+2026-06-04 12:45:22,883 | INFO     |   → 792/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,884 | INFO     |   → 793/935: ✅ 2 взято | 🗑️ 12 мусор
+2026-06-04 12:45:22,884 | INFO     |   → 794/935: ✅ 0 взято | 🗑️ 13 мусор
+2026-06-04 12:45:22,884 | INFO     |   → 795/935: ✅ 0 взято | 🗑️ 13 мусор
+2026-06-04 12:45:22,884 | INFO     |   → 796/935 ❌ HTTP 404 — https://raw.githubusercontent.com/tbbatbb/Proxy/master/dist/clash.config.yaml
+2026-06-04 12:45:22,884 | INFO     |   → 797/935: ✅ 63 взято | 🗑️ 237 мусор
+2026-06-04 12:45:22,884 | INFO     |   → 798/935: ✅ 49 взято | 🗑️ 251 мусор
+2026-06-04 12:45:22,884 | INFO     |   → 799/935: ✅ 25 взято | 🗑️ 275 мусор
+2026-06-04 12:45:22,884 | INFO     |   → 800/935: ✅ 14 взято | 🗑️ 285 мусор
+2026-06-04 12:45:22,884 | INFO     |   → 801/935: ✅ 48 взято | 🗑️ 252 мусор
+2026-06-04 12:45:22,884 | INFO     |   → 802/935: ✅ 32 взято | 🗑️ 268 мусор
+2026-06-04 12:45:22,884 | INFO     |   → 803/935: ✅ 99 взято | 🗑️ 201 мусор
+2026-06-04 12:45:22,884 | INFO     |   → 804/935: ✅ 150 взято | 🗑️ 150 мусор
+2026-06-04 12:45:22,884 | INFO     |   → 805/935 ❌ HTTP 404 — https://raw.githubusercontent.com/thuhollow2/myconfig/main/config.yaml
+2026-06-04 12:45:22,884 | INFO     |   → 806/935: ✅ 2 взято | 🗑️ 35 мусор
+2026-06-04 12:45:22,884 | INFO     |   → 807/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,885 | INFO     |   → 808/935: ✅ 5 взято | 🗑️ 111 мусор
+2026-06-04 12:45:22,885 | INFO     |   → 809/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,885 | INFO     |   → 810/935: ✅ 0 взято | 🗑️ 63 мусор
+2026-06-04 12:45:22,885 | INFO     |   → 811/935 ❌ HTTP 404 — https://raw.githubusercontent.com/v2clash/Autoproxy/a81f840ab2364124133572ec94e4b81fb0d4e58d/sub/2401/240104.txt
+2026-06-04 12:45:22,885 | INFO     |   → 812/935 ❌ HTTP 404 — https://raw.githubusercontent.com/v2clash/V2ray-Configs/31f493c584d0c7b56350f4a34d80c53ad82bcc18/Sub9.txt
+2026-06-04 12:45:22,885 | INFO     |   → 813/935: ✅ 36 взято | 🗑️ 303 мусор
+2026-06-04 12:45:22,885 | INFO     |   → 814/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,885 | INFO     |   → 815/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,885 | INFO     |   → 816/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,885 | INFO     |   → 817/935: ✅ 283 взято | 🗑️ 9640 мусор
+2026-06-04 12:45:22,885 | INFO     |   → 818/935: ✅ 281 взято | 🗑️ 10086 мусор
+2026-06-04 12:45:22,885 | INFO     |   → 819/935: ✅ 280 взято | 🗑️ 9675 мусор
+2026-06-04 12:45:22,885 | INFO     |   → 820/935: ✅ 334 взято | 🗑️ 9823 мусор
+2026-06-04 12:45:22,885 | INFO     |   → 821/935: ✅ 350 взято | 🗑️ 9639 мусор
+2026-06-04 12:45:22,885 | INFO     |   → 822/935: ✅ 125 взято | 🗑️ 7919 мусор
+2026-06-04 12:45:22,885 | INFO     |   → 823/935: ✅ 135 взято | 🗑️ 4836 мусор
+2026-06-04 12:45:22,885 | INFO     |   → 824/935: ✅ 502 взято | 🗑️ 7659 мусор
+2026-06-04 12:45:22,886 | INFO     |   → 825/935: ✅ 631 взято | 🗑️ 8081 мусор
+2026-06-04 12:45:22,886 | INFO     |   → 826/935: ✅ 202 взято | 🗑️ 5131 мусор
+2026-06-04 12:45:22,886 | INFO     |   → 827/935 ❌ HTTP 404 — https://raw.githubusercontent.com/vsevjik/OBSpiskov/main/wwh
+2026-06-04 12:45:22,886 | INFO     |   → 828/935 ❌ HTTP 404 — https://raw.githubusercontent.com/vsevjik/OBSpiskov/main/wwhjk
+2026-06-04 12:45:22,886 | INFO     |   → 829/935 ❌ HTTP 404 — https://raw.githubusercontent.com/vsevjik/OBSpiskov/main/wwhljjjkk
+2026-06-04 12:45:22,886 | INFO     |   → 830/935 ❌ HTTP 404 — https://raw.githubusercontent.com/vveg26/chromego_merge/main/sub/merged_proxies.yaml
+2026-06-04 12:45:22,886 | INFO     |   → 831/935 ❌ HTTP 404 — https://raw.githubusercontent.com/vveg26/get_proxy/main/dist/clash.config.yaml
+2026-06-04 12:45:22,886 | INFO     |   → 832/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,886 | INFO     |   → 833/935: ✅ 0 взято | 🗑️ 10 мусор
+2026-06-04 12:45:22,886 | INFO     |   → 834/935: ✅ 0 взято | 🗑️ 10 мусор
+2026-06-04 12:45:22,886 | INFO     |   → 835/935: ✅ 0 взято | 🗑️ 4 мусор
+2026-06-04 12:45:22,886 | INFO     |   → 836/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,886 | INFO     |   → 837/935: ✅ 0 взято | 🗑️ 4 мусор
+2026-06-04 12:45:22,886 | INFO     |   → 838/935: ✅ 106 взято | 🗑️ 689 мусор
+2026-06-04 12:45:22,886 | INFO     |   → 839/935: ✅ 48 взято | 🗑️ 841 мусор
+2026-06-04 12:45:22,886 | INFO     |   → 840/935: ✅ 21 взято | 🗑️ 789 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 841/935: ✅ 24 взято | 🗑️ 774 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 842/935: ✅ 52 взято | 🗑️ 756 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 843/935: ✅ 191 взято | 🗑️ 745 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 844/935: ✅ 9 взято | 🗑️ 651 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 845/935: ✅ 185 взято | 🗑️ 388 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 846/935: ✅ 130 взято | 🗑️ 523 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 847/935: ✅ 67 взято | 🗑️ 533 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 848/935: ✅ 98 взято | 🗑️ 444 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 849/935: ✅ 102 взято | 🗑️ 670 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 850/935: ✅ 86 взято | 🗑️ 476 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 851/935: ✅ 95 взято | 🗑️ 657 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 852/935: ✅ 105 взято | 🗑️ 645 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 853/935: ✅ 115 взято | 🗑️ 985 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 854/935: ✅ 3 взято | 🗑️ 63 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 855/935: ✅ 3 взято | 🗑️ 62 мусор
+2026-06-04 12:45:22,887 | INFO     |   → 856/935: ✅ 13 взято | 🗑️ 489 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 857/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 858/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 859/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 860/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 861/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 862/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 863/935: ✅ 0 взято | 🗑️ 52 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 864/935: ✅ 5 взято | 🗑️ 10 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 865/935: ✅ 1 взято | 🗑️ 124 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 866/935: ✅ 158 взято | 🗑️ 167 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 867/935: ✅ 0 взято | 🗑️ 9 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 868/935: ✅ 7 взято | 🗑️ 591 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 869/935: ✅ 0 взято | 🗑️ 574 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 870/935: ✅ 0 взято | 🗑️ 10 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 871/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 872/935: ✅ 0 взято | 🗑️ 591 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 873/935 ❌ HTTP 404 — https://raw.githubusercontent.com/xiaozhu2007/xiaozhu2007/61a755a044dbaeea678bc2d1e20f21a21c6d7170/docs/fxxk.txt
+2026-06-04 12:45:22,888 | INFO     |   → 874/935: ✅ 0 взято | 🗑️ 159 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 875/935: ✅ 0 взято | 🗑️ 22 мусор
+2026-06-04 12:45:22,888 | INFO     |   → 876/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,889 | INFO     |   → 877/935 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TVC/0f745f92bf381e505f1245abbc7c145b19b11503/config.txt
+2026-06-04 12:45:22,889 | INFO     |   → 878/935 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TVC/9fac69239c69327fb7a61f5a8d79d107133889e1/lite/config.txt
+2026-06-04 12:45:22,889 | INFO     |   → 879/935 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/donated
+2026-06-04 12:45:22,889 | INFO     |   → 880/935 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/hysteria2
+2026-06-04 12:45:22,889 | INFO     |   → 881/935 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/mix
+2026-06-04 12:45:22,889 | INFO     |   → 882/935 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/reality
+2026-06-04 12:45:22,889 | INFO     |   → 883/935 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/shadowsocks
+2026-06-04 12:45:22,889 | INFO     |   → 884/935 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/trojan
+2026-06-04 12:45:22,889 | INFO     |   → 885/935 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/tuic
+2026-06-04 12:45:22,889 | INFO     |   → 886/935 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/vless
+2026-06-04 12:45:22,889 | INFO     |   → 887/935 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/vmess
+2026-06-04 12:45:22,889 | INFO     |   → 888/935 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/V2Hub/main/Split/Normal/shadowsocks
+2026-06-04 12:45:22,889 | INFO     |   → 889/935 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/V2Hub/main/merged
+2026-06-04 12:45:22,889 | INFO     |   → 890/935: ✅ 0 взято | 🗑️ 30 мусор
+2026-06-04 12:45:22,889 | INFO     |   → 891/935: ✅ 965 взято | 🗑️ 8582 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 892/935: ✅ 0 взято | 🗑️ 8582 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 893/935: ✅ 7 взято | 🗑️ 385 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 894/935: ✅ 12 взято | 🗑️ 317 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 895/935: ✅ 219 взято | 🗑️ 322 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 896/935: ✅ 110 взято | 🗑️ 1462 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 897/935: ✅ 1 взято | 🗑️ 391 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 898/935 ❌ HTTP 404 — https://raw.githubusercontent.com/yyyr-otz/tele-providers-collector/019cb3e07ee52fddbc7caa54fc670c6b9bae6539/sub/proxies.txt
+2026-06-04 12:45:22,890 | INFO     |   → 899/935 ❌ HTTP 404 — https://raw.githubusercontent.com/yyyr-otz/tele-providers-collector/b7a74ee98bcf02c5a507d688a1bed3aa9f7f4ed1/script/raw/protocols/mixed.txt
+2026-06-04 12:45:22,890 | INFO     |   → 900/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 901/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 902/935: ✅ 0 взято | 🗑️ 18 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 903/935: ✅ 311 взято | 🗑️ 18 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 904/935: ✅ 0 взято | 🗑️ 16 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 905/935: ✅ 0 взято | 🗑️ 5 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 906/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 907/935 ⚠️ Ошибка: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — https://sub.pmsub.me/clash.yaml
+2026-06-04 12:45:22,890 | INFO     |   → 908/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 909/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 910/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 911/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 912/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,890 | INFO     |   → 913/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 914/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 915/935: ✅ 0 взято | 🗑️ 1 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 916/935: ✅ 7 взято | 🗑️ 12 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 917/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 918/935: ✅ 0 взято | 🗑️ 7 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 919/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 920/935: ✅ 4 взято | 🗑️ 8 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 921/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 922/935: ✅ 8 взято | 🗑️ 12 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 923/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 924/935: ✅ 3 взято | 🗑️ 12 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 925/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 926/935: ✅ 8 взято | 🗑️ 12 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 927/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 928/935: ✅ 1 взято | 🗑️ 10 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 929/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 930/935: ✅ 6 взято | 🗑️ 14 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 931/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 932/935: ✅ 0 взято | 🗑️ 19 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 933/935: ✅ 0 взято | 🗑️ 0 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 934/935 ⚠️ Ошибка: HTTPSConnectionPool(host='v2rayshare.githubrowcontent.com', port=443): Max retries exceeded with url: /%7BYYYY%7D/%7BMM%7D/%7BYYYY%7D%7BMM%7D%7BDD%7D.txt (Caused by NameResolutionError("HTTPSConnection(host='v2rayshare.githubrowcontent.com', port=443): Failed to resolve 'v2rayshare.githubrowcontent.com' ([Errno -2] Name or service not known)")) — https://v2rayshare.githubrowcontent.com/{YYYY}/{MM}/{YYYY}{MM}{DD}.txt
+2026-06-04 12:45:22,891 | INFO     |   → 935/935: ✅ 0 взято | 🗑️ 7 мусор
+2026-06-04 12:45:22,891 | INFO     |   → 📡 С sstap.org получено 0 ключей
+2026-06-04 12:45:22,891 | INFO     |   → 📡 С sstap.org не добавлено ни одного ключа (все 0 отклонены фильтром)
+2026-06-04 12:45:22,891 | INFO     |   → ✅ ГОТОВО!
+2026-06-04 12:45:22,891 | INFO     |   →    📥 Всего ключей после фильтра: 68410
+2026-06-04 12:45:22,891 | INFO     |   →    🔗 Уникальных IP:PORT:SCHEME: 23490
+2026-06-04 12:45:22,891 | INFO     |   →    🗑️ Выброшено мусора: 1134713
+2026-06-04 12:45:22,891 | INFO     |   → 📊 По протоколам:
+2026-06-04 12:45:22,891 | INFO     |   →    vless: 9775
+2026-06-04 12:45:22,891 | INFO     |   →    vmess: 4518
+2026-06-04 12:45:22,891 | INFO     |   →    trojan: 3930
+2026-06-04 12:45:22,891 | INFO     |   →    ss: 5097
+2026-06-04 12:45:22,891 | INFO     |   →    hysteria: 18
+2026-06-04 12:45:22,891 | INFO     |   →    hysteria2: 32
+2026-06-04 12:45:22,891 | INFO     |   →    hy2: 67
+2026-06-04 12:45:22,891 | INFO     |   →    tuic: 53
+2026-06-04 12:45:22,891 | INFO     | ✅ mirror.py завершён успешно
+2026-06-04 12:45:22,892 | INFO     | 
+2026-06-04 12:45:22,892 | INFO     | 
+2026-06-04 12:45:22,892 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-06-04 12:45:22,892 | INFO     | 📌 ЭТАП: Генерация 50 уникальных CF-VLESS
+2026-06-04 12:45:22,892 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-06-04 12:45:22,892 | INFO     | 🚀 Запуск generate_cf_vless.py (50 новых CF-VLESS)...
+2026-06-04 12:45:23,086 | INFO     |   → === Генератор свежих VLESS-конфигов на IP Cloudflare ===
+2026-06-04 12:45:23,086 | INFO     |   → ✅ Сгенерировано и сохранено 50 VLESS-конфигов.
+2026-06-04 12:45:23,086 | INFO     |   → 📂 Файл: /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia/data/githubmirror/new/cf_fresh.txt
+2026-06-04 12:45:23,086 | INFO     | ✅ generate_cf_vless.py завершён успешно
+2026-06-04 12:45:23,086 | INFO     | 
+2026-06-04 12:45:23,086 | INFO     | 
+2026-06-04 12:45:23,086 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-06-04 12:45:23,086 | INFO     | 📌 ЭТАП: Слияние CF с основным списком
+2026-06-04 12:45:23,086 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-06-04 12:45:23,209 | INFO     | 🔄 Добавлено 49 новых CF-VLESS в /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia/data/githubmirror/clean/vless.txt
+2026-06-04 12:45:23,209 | INFO     | 📊 Всего в clean/vless.txt теперь: 9824
+2026-06-04 12:45:23,212 | INFO     | 
+2026-06-04 12:45:23,212 | INFO     | 
+2026-06-04 12:45:23,212 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-06-04 12:45:23,212 | INFO     | 📌 ЭТАП: Фильтрация по реальному SNI
+2026-06-04 12:45:23,212 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-06-04 12:45:23,212 | INFO     | 🚀 Запуск filter_ru_sni.py (Фильтр по реальному SNI (CDN+RU))...
+2026-06-04 12:45:23,800 | INFO     |   → hy2.txt: 67 → 19 (SNI-filtered)
+2026-06-04 12:45:23,800 | INFO     |   →   hysteria.txt: 18 → 0 (SNI-filtered)
+2026-06-04 12:45:23,800 | INFO     |   →   hysteria2.txt: 32 → 4 (SNI-filtered)
+2026-06-04 12:45:23,800 | INFO     |   →   ss.txt: 5097 → 349 (SNI-filtered)
+2026-06-04 12:45:23,800 | INFO     |   →   trojan.txt: 3930 → 11 (SNI-filtered)
+2026-06-04 12:45:23,800 | INFO     |   →   tuic.txt: 53 → 0 (SNI-filtered)
+2026-06-04 12:45:23,800 | INFO     |   →   vless.txt: 9824 → 1689 (SNI-filtered)
+2026-06-04 12:45:23,800 | INFO     |   →   vmess.txt: 4518 → 54 (SNI-filtered)
+2026-06-04 12:45:23,800 | INFO     |   → ==================================================
+2026-06-04 12:45:23,800 | INFO     |   →   Всего входных:  23539
+2026-06-04 12:45:23,800 | INFO     |   →   Прошли фильтр:  2126
+2026-06-04 12:45:23,801 | INFO     |   →   Отброшено:      21413
+2026-06-04 12:45:23,801 | INFO     |   → ==================================================
+2026-06-04 12:45:23,801 | INFO     |   → Готово → /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia/data/githubmirror/ru-sni
+2026-06-04 12:45:23,801 | INFO     | ✅ filter_ru_sni.py завершён успешно
+2026-06-04 12:45:23,801 | INFO     | 
+2026-06-04 12:45:23,801 | INFO     | 
+2026-06-04 12:45:23,801 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-06-04 12:45:23,801 | INFO     | 📌 ЭТАП: Экспериментальный RU-SNI фильтр
+2026-06-04 12:45:23,801 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-06-04 12:45:23,801 | INFO     | 🚀 Запуск filter_ru_sni_local.py (Экспериментальный фильтр по RU-SNI)...
+2026-06-04 12:45:24,177 | INFO     |   → hy2.txt: 67 → 0 (RU-SNI)
+2026-06-04 12:45:24,178 | INFO     |   → hysteria.txt: 18 → 0 (RU-SNI)
+2026-06-04 12:45:24,178 | INFO     |   → hysteria2.txt: 32 → 0 (RU-SNI)
+2026-06-04 12:45:24,178 | INFO     |   → ss.txt: 5097 → 79 (RU-SNI)
+2026-06-04 12:45:24,178 | INFO     |   → trojan.txt: 3930 → 0 (RU-SNI)
+2026-06-04 12:45:24,178 | INFO     |   → tuic.txt: 53 → 0 (RU-SNI)
+2026-06-04 12:45:24,178 | INFO     |   → vless.txt: 9824 → 727 (RU-SNI)
+2026-06-04 12:45:24,178 | INFO     |   → vmess.txt: 4518 → 0 (RU-SNI)
+2026-06-04 12:45:24,178 | INFO     |   → ==================================================
+2026-06-04 12:45:24,178 | INFO     |   → Всего входных:  23539
+2026-06-04 12:45:24,178 | INFO     |   → Прошли RU-SNI:  806
+2026-06-04 12:45:24,178 | INFO     |   → Отброшено:      22733
+2026-06-04 12:45:24,178 | INFO     |   → ==================================================
+2026-06-04 12:45:24,178 | INFO     |   → Готово → /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia/data/githubmirror/ru-sni-local
+2026-06-04 12:45:24,178 | INFO     | ✅ filter_ru_sni_local.py завершён успешно
+2026-06-04 12:45:24,178 | INFO     | 
+2026-06-04 12:45:24,178 | INFO     | 
+2026-06-04 12:45:24,178 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-06-04 12:45:24,178 | INFO     | 📌 ЭТАП: Сбор статистики
+2026-06-04 12:45:24,178 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-06-04 12:45:24,179 | INFO     | 📊 Сбор статистики...
+2026-06-04 12:45:24,179 | INFO     |   📁 githubmirror/clean:
+2026-06-04 12:45:24,179 | INFO     |     • hy2         :    67 конфигов
+2026-06-04 12:45:24,179 | INFO     |     • hysteria    :    18 конфигов
+2026-06-04 12:45:24,179 | INFO     |     • hysteria2   :    32 конфигов
+2026-06-04 12:45:24,183 | INFO     |     • ss          :  5097 конфигов
+2026-06-04 12:45:24,185 | INFO     |     • trojan      :  3930 конфигов
+2026-06-04 12:45:24,186 | INFO     |     • tuic        :    53 конфигов
+2026-06-04 12:45:24,194 | INFO     |     • vless       :  9824 конфигов
+2026-06-04 12:45:24,198 | INFO     |     • vmess       :  4518 конфигов
+2026-06-04 12:45:24,198 | INFO     |   📁 githubmirror/ru-sni:
+2026-06-04 12:45:24,198 | INFO     |     • hy2         :    19 конфигов ( 28.4% от clean)
+2026-06-04 12:45:24,199 | INFO     |     • hysteria    :     0 конфигов (  0.0% от clean)
+2026-06-04 12:45:24,199 | INFO     |     • hysteria2   :     4 конфигов ( 12.5% от clean)
+2026-06-04 12:45:24,199 | INFO     |     • ss          :   349 конфигов (  6.8% от clean)
+2026-06-04 12:45:24,199 | INFO     |     • trojan      :    11 конфигов (  0.3% от clean)
+2026-06-04 12:45:24,199 | INFO     |     • tuic        :     0 конфигов (  0.0% от clean)
+2026-06-04 12:45:24,201 | INFO     |     • vless       :  1689 конфигов ( 17.2% от clean)
+2026-06-04 12:45:24,202 | INFO     |     • vmess       :    54 конфигов (  1.2% от clean)
+2026-06-04 12:45:24,202 | INFO     |   ✨ Новых CF-VLESS в этом запуске: 50
+2026-06-04 12:45:24,202 | INFO     | 
+2026-06-04 12:45:24,202 | INFO     |   ──────────────────────────────────────────────────
+2026-06-04 12:45:24,202 | INFO     |   📈 ИТОГО:
+2026-06-04 12:45:24,202 | INFO     |     Clean (после geo-фильтра):    23539
+2026-06-04 12:45:24,202 | INFO     |     RU-SNI (после SNI-фильтра):    2126
+2026-06-04 12:45:24,202 | INFO     |     Прошло фильтр:                  9.0%
+2026-06-04 12:45:24,202 | INFO     |   ──────────────────────────────────────────────────
+2026-06-04 12:45:24,203 | INFO     | ✅ Статистика сохранена: /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia/data/stats.json
+2026-06-04 12:45:24,203 | INFO     | 
+2026-06-04 12:45:24,203 | INFO     | ======================================================================
+2026-06-04 12:45:24,203 | INFO     | 📊 ИТОГОВЫЙ ОТЧЁТ
+2026-06-04 12:45:24,203 | INFO     | ======================================================================
+2026-06-04 12:45:24,203 | INFO     |   ✅ OK         | Загрузка и geo-фильтрация
+2026-06-04 12:45:24,203 | INFO     |   ✅ OK         | Генерация 50 уникальных CF-VLESS
+2026-06-04 12:45:24,203 | INFO     |   ✅ OK         | Слияние CF с основным списком
+2026-06-04 12:45:24,203 | INFO     |   ✅ OK         | Фильтрация по реальному SNI
+2026-06-04 12:45:24,203 | INFO     |   ✅ OK         | Экспериментальный RU-SNI фильтр
+2026-06-04 12:45:24,203 | INFO     |   ✅ OK         | Сбор статистики
+2026-06-04 12:45:24,203 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-06-04 12:45:24,203 | INFO     | ✅ ВСЕ ЭТАПЫ УСПЕШНЫ (6/6)
+2026-06-04 12:45:24,203 | INFO     | ⏰ Время завершения: 2026-06-04 12:45:24
+2026-06-04 12:45:24,203 | INFO     | ======================================================================
