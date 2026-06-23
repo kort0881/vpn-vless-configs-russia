@@ -1,0 +1,23 @@
+name: OpenRabbit Review
+
+on:
+  pull_request_target:
+    types: [opened, reopened, edited, synchronize]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: OpenRabbit
+        uses: aryanbrite/openrabbit@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          llm_api_key: ${{ secrets.LLM_API_KEY }}
+          llm_provider: openrouter
+          llm_model: openrouter/free
+          review_mode: both
+          tone_mode: balanced
