@@ -1,0 +1,1006 @@
+2026-07-07 21:21:55,564 | INFO     | ======================================================================
+2026-07-07 21:21:55,564 | INFO     | 🔍 VPN KEY CHECKER - Начало проверки
+2026-07-07 21:21:55,565 | INFO     | ⏰ Время старта: 2026-07-07 21:21:55
+2026-07-07 21:21:55,565 | INFO     | 📂 Рабочая директория: /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia
+2026-07-07 21:21:55,565 | INFO     | ======================================================================
+2026-07-07 21:21:55,565 | INFO     | 
+2026-07-07 21:21:55,565 | INFO     | 🔍 Проверка наличия скриптов...
+2026-07-07 21:21:55,565 | INFO     |   ✅ mirror.py
+2026-07-07 21:21:55,565 | INFO     |   ✅ generate_cf_vless.py
+2026-07-07 21:21:55,565 | INFO     |   ✅ filter_ru_sni.py
+2026-07-07 21:21:55,565 | INFO     |   ✅ filter_ru_sni_local.py
+2026-07-07 21:21:55,565 | INFO     | 
+2026-07-07 21:21:55,565 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-07-07 21:21:55,565 | INFO     | 📌 ЭТАП: Загрузка и geo-фильтрация
+2026-07-07 21:21:55,565 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-07-07 21:21:55,565 | INFO     | 🚀 Запуск mirror.py (Загрузка и фильтрация по РФ/СНГ/Европа)...
+2026-07-07 21:26:42,848 | INFO     |   → DEBUG: mirror.py started
+2026-07-07 21:26:42,848 | INFO     |   → DEBUG: BASE_PATH = /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia
+2026-07-07 21:26:42,848 | INFO     |   → DEBUG: CONFIG_SOURCES_FILE = /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia/data/config_sources.json
+2026-07-07 21:26:42,848 | INFO     |   → 📂 Загружено 868 источников из /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia/data/config_sources.json
+2026-07-07 21:26:42,848 | INFO     |   → 🚀 Старт: всего источников: 868
+2026-07-07 21:26:42,848 | INFO     |   → 1/868 ⚠️ Ошибка: HTTPConnectionPool(host='104.168.244.47', port=12580): Max retries exceeded with url: /clash/proxies (Caused by NewConnectionError("HTTPConnection(host='104.168.244.47', port=12580): Failed to establish a new connection: [Errno 111] Connection refused")) — http://104.168.244.47:12580/clash/proxies
+2026-07-07 21:26:42,848 | INFO     |   → 2/868 ⚠️ Ошибка: HTTPConnectionPool(host='150.230.195.209', port=12580): Max retries exceeded with url: /clash/proxies (Caused by NewConnectionError("HTTPConnection(host='150.230.195.209', port=12580): Failed to establish a new connection: [Errno 111] Connection refused")) — http://150.230.195.209:12580/clash/proxies
+2026-07-07 21:26:42,848 | INFO     |   → 3/868 ⚠️ Ошибка: HTTPConnectionPool(host='155.248.172.106', port=12580): Max retries exceeded with url: /clash/proxies (Caused by NewConnectionError("HTTPConnection(host='155.248.172.106', port=12580): Failed to establish a new connection: [Errno 111] Connection refused")) — http://155.248.172.106:12580/clash/proxies
+2026-07-07 21:26:42,848 | INFO     |   → 4/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,848 | INFO     |   → 5/868 ⚠️ Ошибка: HTTPConnectionPool(host='174.137.58.32', port=12580): Max retries exceeded with url: /clash/proxies (Caused by ConnectTimeoutError(<HTTPConnection(host='174.137.58.32', port=12580) at 0x7fa101b6d3d0>, 'Connection to 174.137.58.32 timed out. (connect timeout=15)')) — http://174.137.58.32:12580/clash/proxies
+2026-07-07 21:26:42,848 | INFO     |   → 6/868 ⚠️ Ошибка: HTTPConnectionPool(host='175.178.182.178', port=12580): Max retries exceeded with url: /clash/proxies (Caused by ConnectTimeoutError(<HTTPConnection(host='175.178.182.178', port=12580) at 0x7fa101b40750>, 'Connection to 175.178.182.178 timed out. (connect timeout=15)')) — http://175.178.182.178:12580/clash/proxies
+2026-07-07 21:26:42,848 | INFO     |   → 7/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,848 | INFO     |   → 8/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,848 | INFO     |   → 9/868 ⚠️ Ошибка: HTTPConnectionPool(host='beetle.lander.work', port=80): Max retries exceeded with url: /clash/proxies (Caused by NameResolutionError("HTTPConnection(host='beetle.lander.work', port=80): Failed to resolve 'beetle.lander.work' ([Errno -2] Name or service not known)")) — http://beetle.lander.work/clash/proxies
+2026-07-07 21:26:42,848 | INFO     |   → 10/868 ⚠️ Ошибка: HTTPConnectionPool(host='best.momoxiaodian.cc', port=80): Max retries exceeded with url: /mo99/serve/axiba/gov?token=42763f88aad0cf9243ed69b5c16364f4 (Caused by NameResolutionError("HTTPConnection(host='best.momoxiaodian.cc', port=80): Failed to resolve 'best.momoxiaodian.cc' ([Errno -2] Name or service not known)")) — http://best.momoxiaodian.cc/mo99/serve/axiba/gov?token=42763f88aad0cf9243ed69b5c16364f4
+2026-07-07 21:26:42,849 | INFO     |   → 11/868 ⚠️ Ошибка: HTTPConnectionPool(host='subxfxssr.xfxvpn.me', port=80): Max retries exceeded with url: /api/v1/client/subscribe?token=0d5306ab80abb3f2012edf9169f5f00a (Caused by NameResolutionError("HTTPConnection(host='subxfxssr.xfxvpn.me', port=80): Failed to resolve 'subxfxssr.xfxvpn.me' ([Errno -2] Name or service not known)")) — http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=0d5306ab80abb3f2012edf9169f5f00a
+2026-07-07 21:26:42,849 | INFO     |   → 12/868 ⚠️ Ошибка: HTTPConnectionPool(host='subxfxssr.xfxvpn.me', port=80): Max retries exceeded with url: /api/v1/client/subscribe?token=4a4d0189598386f07fd07b758caf07a8 (Caused by NameResolutionError("HTTPConnection(host='subxfxssr.xfxvpn.me', port=80): Failed to resolve 'subxfxssr.xfxvpn.me' ([Errno -2] Name or service not known)")) — http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=4a4d0189598386f07fd07b758caf07a8
+2026-07-07 21:26:42,849 | INFO     |   → 13/868 ⚠️ Ошибка: HTTPConnectionPool(host='subxfxssr.xfxvpn.me', port=80): Max retries exceeded with url: /api/v1/client/subscribe?token=4ce4cc4513e5d3ef87abc677a9f7951d (Caused by NameResolutionError("HTTPConnection(host='subxfxssr.xfxvpn.me', port=80): Failed to resolve 'subxfxssr.xfxvpn.me' ([Errno -2] Name or service not known)")) — http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=4ce4cc4513e5d3ef87abc677a9f7951d
+2026-07-07 21:26:42,849 | INFO     |   → 14/868 ⚠️ Ошибка: HTTPConnectionPool(host='subxfxssr.xfxvpn.me', port=80): Max retries exceeded with url: /api/v1/client/subscribe?token=6b67e83b516748e040bf75bfee8bc395 (Caused by NameResolutionError("HTTPConnection(host='subxfxssr.xfxvpn.me', port=80): Failed to resolve 'subxfxssr.xfxvpn.me' ([Errno -2] Name or service not known)")) — http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=6b67e83b516748e040bf75bfee8bc395
+2026-07-07 21:26:42,849 | INFO     |   → 15/868 ⚠️ Ошибка: HTTPConnectionPool(host='subxfxssr.xfxvpn.me', port=80): Max retries exceeded with url: /api/v1/client/subscribe?token=72d106079ec3134106e0dd093ddc1066 (Caused by NameResolutionError("HTTPConnection(host='subxfxssr.xfxvpn.me', port=80): Failed to resolve 'subxfxssr.xfxvpn.me' ([Errno -2] Name or service not known)")) — http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=72d106079ec3134106e0dd093ddc1066
+2026-07-07 21:26:42,849 | INFO     |   → 16/868 ⚠️ Ошибка: HTTPConnectionPool(host='subxfxssr.xfxvpn.me', port=80): Max retries exceeded with url: /api/v1/client/subscribe?token=87f969d8db0c6686c5755b68a4bb44d0 (Caused by NameResolutionError("HTTPConnection(host='subxfxssr.xfxvpn.me', port=80): Failed to resolve 'subxfxssr.xfxvpn.me' ([Errno -2] Name or service not known)")) — http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=87f969d8db0c6686c5755b68a4bb44d0
+2026-07-07 21:26:42,849 | INFO     |   → 17/868 ⚠️ Ошибка: HTTPConnectionPool(host='subxfxssr.xfxvpn.me', port=80): Max retries exceeded with url: /api/v1/client/subscribe?token=a2674079883a41e7c86aba3a1b3e1f2c (Caused by NameResolutionError("HTTPConnection(host='subxfxssr.xfxvpn.me', port=80): Failed to resolve 'subxfxssr.xfxvpn.me' ([Errno -2] Name or service not known)")) — http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=a2674079883a41e7c86aba3a1b3e1f2c
+2026-07-07 21:26:42,849 | INFO     |   → 18/868 ⚠️ Ошибка: HTTPConnectionPool(host='subxfxssr.xfxvpn.me', port=80): Max retries exceeded with url: /api/v1/client/subscribe?token=b344d811746fd4e205ee140236652825 (Caused by NameResolutionError("HTTPConnection(host='subxfxssr.xfxvpn.me', port=80): Failed to resolve 'subxfxssr.xfxvpn.me' ([Errno -2] Name or service not known)")) — http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=b344d811746fd4e205ee140236652825
+2026-07-07 21:26:42,849 | INFO     |   → 19/868 ⚠️ Ошибка: HTTPConnectionPool(host='subxfxssr.xfxvpn.me', port=80): Max retries exceeded with url: /api/v1/client/subscribe?token=b96bab593efe4ceb68ae69e153ab8a49 (Caused by NameResolutionError("HTTPConnection(host='subxfxssr.xfxvpn.me', port=80): Failed to resolve 'subxfxssr.xfxvpn.me' ([Errno -2] Name or service not known)")) — http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=b96bab593efe4ceb68ae69e153ab8a49
+2026-07-07 21:26:42,849 | INFO     |   → 20/868 ⚠️ Ошибка: HTTPConnectionPool(host='subxfxssr.xfxvpn.me', port=80): Max retries exceeded with url: /api/v1/client/subscribe?token=f7dd7772a6a2d2879f1d27e5ad72e984 (Caused by NameResolutionError("HTTPConnection(host='subxfxssr.xfxvpn.me', port=80): Failed to resolve 'subxfxssr.xfxvpn.me' ([Errno -2] Name or service not known)")) — http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=f7dd7772a6a2d2879f1d27e5ad72e984
+2026-07-07 21:26:42,849 | INFO     |   → 21/868: ✅ 4 взято | 🗑️ 147 мусор
+2026-07-07 21:26:42,849 | INFO     |   → 22/868 ❌ HTTP 404 — https://0xerfan.github.io/v2ray/
+2026-07-07 21:26:42,849 | INFO     |   → 23/868 ❌ HTTP 410 — https://1321078938-11mmjf3qkb-hk.scf.tencentcs.com/api/v1/client/subscribe?token=cb1270a6aa0980c4de79b49aad8098f7
+2026-07-07 21:26:42,849 | INFO     |   → 24/868 ⚠️ Ошибка: HTTPSConnectionPool(host='1st.sub-airport.com', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=5ef4ec7751819025fcba66de831dd380 (Caused by NameResolutionError("HTTPSConnection(host='1st.sub-airport.com', port=443): Failed to resolve '1st.sub-airport.com' ([Errno -2] Name or service not known)")) — https://1st.sub-airport.com/api/v1/client/subscribe?token=5ef4ec7751819025fcba66de831dd380
+2026-07-07 21:26:42,849 | INFO     |   → 25/868 ❌ HTTP 404 — https://9527521.xyz/config/lxB7k130djsSomFT
+2026-07-07 21:26:42,849 | INFO     |   → 26/868 ❌ HTTP 404 — https://9527521.xyz/pubconfig/YCw0l6R3PoDbGFq5
+2026-07-07 21:26:42,849 | INFO     |   → 27/868: ✅ 0 взято | 🗑️ 3 мусор
+2026-07-07 21:26:42,849 | INFO     |   → 28/868 ⚠️ Ошибка: HTTPSConnectionPool(host='a.nodeshare.xyz', port=443): Max retries exceeded with url: /uploads/%7BYYYY%7D/%7BM%7D/%7BYYYY%7D%7BMM%7D%7BDD%7D.txt (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)'))) — https://a.nodeshare.xyz/uploads/{YYYY}/{M}/{YYYY}{MM}{DD}.txt
+2026-07-07 21:26:42,849 | INFO     |   → 29/868 ❌ HTTP 403 — https://ablnk.absslk.xyz/OcSPtpH
+2026-07-07 21:26:42,849 | INFO     |   → 30/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,849 | INFO     |   → 31/868 ❌ HTTP 404 — https://ap.niaodi.top/niao?token=cdaa1b1f44005a4ed020ea98e001d0c5
+2026-07-07 21:26:42,849 | INFO     |   → 32/868 ⚠️ Ошибка: HTTPSConnectionPool(host='api.xqc.best', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=d2b3434d2072026c1f7553f5616f34c7 (Caused by NameResolutionError("HTTPSConnection(host='api.xqc.best', port=443): Failed to resolve 'api.xqc.best' ([Errno -2] Name or service not known)")) — https://api.xqc.best/api/v1/client/subscribe?token=d2b3434d2072026c1f7553f5616f34c7
+2026-07-07 21:26:42,849 | INFO     |   → 33/868 ⚠️ Ошибка: HTTPSConnectionPool(host='apisudunw.sudunv.com', port=443): Read timed out. (read timeout=15) — https://apisudunw.sudunv.com/api/v1/client/subscribe?token=9688430be4948a401d447b54fd50122f
+2026-07-07 21:26:42,849 | INFO     |   → 34/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,849 | INFO     |   → 35/868 ⚠️ Ошибка: HTTPSConnectionPool(host='bayoeorescentpossessicoanseparateuneforescenphocommitte.adoptangelaboradvacotionclwonthorughconfrmcompimentdeseertaltar.org', port=443): Max retries exceeded with url: /link/wUb3aAiSamxS64nu?clash=2 (Caused by NameResolutionError("HTTPSConnection(host='bayoeorescentpossessicoanseparateuneforescenphocommitte.adoptangelaboradvacotionclwonthorughconfrmcompimentdeseertaltar.org', port=443): Failed to resolve 'bayoeorescentpossessicoanseparateuneforescenphocommitte.adoptangelaboradvacotionclwonthorughconfrmcompimentdeseertaltar.org' ([Errno -2] Name or service not known)")) — https://bayoeorescentpossessicoanseparateuneforescenphocommitte.adoptangelaboradvacotionclwonthorughconfrmcompimentdeseertaltar.org/link/wUb3aAiSamxS64nu?clash=2
+2026-07-07 21:26:42,849 | INFO     |   → 36/868 ❌ HTTP 404 — https://bitbucket.org/huwo1/proxy_nodes/raw/f31ca9ec67b84071515729ff45b011b6b09c10f2/clash.yaml
+2026-07-07 21:26:42,849 | INFO     |   → 37/868 ❌ HTTP 404 — https://bitbucket.org/huwo1/proxy_nodes/src/main/
+2026-07-07 21:26:42,849 | INFO     |   → 38/868 ❌ HTTP 404 — https://c7dabe95.proxy-978.pages.dev/767b6340-96dc-4aa0-8013-a8af7513d920?clash
+2026-07-07 21:26:42,849 | INFO     |   → 39/868 ❌ HTTP 404 — https://cdn.jsdelivr.net/gh/cry0ice/genode@main/public/all.txt
+2026-07-07 21:26:42,849 | INFO     |   → 40/868 ❌ HTTP 404 — https://cdn.jsdelivr.net/gh/cry0ice/genode@main/public/ss.txt
+2026-07-07 21:26:42,849 | INFO     |   → 41/868 ❌ HTTP 404 — https://cdn.jsdelivr.net/gh/cry0ice/genode@main/public/ssr.txt
+2026-07-07 21:26:42,849 | INFO     |   → 42/868 ❌ HTTP 404 — https://cdn.jsdelivr.net/gh/cry0ice/genode@main/public/trojan.txt
+2026-07-07 21:26:42,849 | INFO     |   → 43/868 ❌ HTTP 404 — https://cdn.jsdelivr.net/gh/cry0ice/genode@main/public/vless.txt
+2026-07-07 21:26:42,849 | INFO     |   → 44/868 ❌ HTTP 404 — https://cdn.jsdelivr.net/gh/cry0ice/genode@main/public/vmess.txt
+2026-07-07 21:26:42,849 | INFO     |   → 45/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,849 | INFO     |   → 46/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,849 | INFO     |   → 47/868 ❌ HTTP 404 — https://clash.221207.xyz/pubclashyaml
+2026-07-07 21:26:42,850 | INFO     |   → 48/868 ⚠️ Ошибка: HTTPSConnectionPool(host='clashe.eu.org', port=443): Max retries exceeded with url: /clash/proxies (Caused by ConnectTimeoutError(<HTTPSConnection(host='clashe.eu.org', port=443) at 0x7fa101b9b810>, 'Connection to clashe.eu.org timed out. (connect timeout=15)')) — https://clashe.eu.org/clash/proxies
+2026-07-07 21:26:42,850 | INFO     |   → 49/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 50/868 ⚠️ Ошибка: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — https://clashnode.com/wp-content/uploads/2023/03/20230310.txt
+2026-07-07 21:26:42,850 | INFO     |   → 51/868 ⚠️ Ошибка: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — https://clashnode.com/wp-content/uploads/2023/12/20231221.txt
+2026-07-07 21:26:42,850 | INFO     |   → 52/868: ✅ 0 взято | 🗑️ 4 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 53/868 ⚠️ Ошибка: HTTPSConnectionPool(host='cxsub.club', port=443): Max retries exceeded with url: /link/V3Th0AyWhutlptyH?clash=1 (Caused by NameResolutionError("HTTPSConnection(host='cxsub.club', port=443): Failed to resolve 'cxsub.club' ([Errno -2] Name or service not known)")) — https://cxsub.club/link/V3Th0AyWhutlptyH?clash=1
+2026-07-07 21:26:42,850 | INFO     |   → 54/868 ⚠️ Ошибка: HTTPSConnectionPool(host='dd.csjc.win', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=5791161d7d526f6155f4b3cc5a15a162 (Caused by NameResolutionError("HTTPSConnection(host='dd.csjc.win', port=443): Failed to resolve 'dd.csjc.win' ([Errno -2] Name or service not known)")) — https://dd.csjc.win/api/v1/client/subscribe?token=5791161d7d526f6155f4b3cc5a15a162
+2026-07-07 21:26:42,850 | INFO     |   → 55/868 ⚠️ Ошибка: HTTPSConnectionPool(host='dy.smjc.top', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=c5b3cf0d6668c4a4f74c5a859ab41daa (Caused by NameResolutionError("HTTPSConnection(host='dy.smjc.top', port=443): Failed to resolve 'dy.smjc.top' ([Errno -2] Name or service not known)")) — https://dy.smjc.top/api/v1/client/subscribe?token=c5b3cf0d6668c4a4f74c5a859ab41daa
+2026-07-07 21:26:42,850 | INFO     |   → 56/868 ❌ HTTP 403 — https://dy11.baipiaoyes.com/api/v1/client/subscribe?token=44d630622d921db99f73216300e45020
+2026-07-07 21:26:42,850 | INFO     |   → 57/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 58/868 ❌ HTTP 404 — https://fanqiang.network/free-v2ray
+2026-07-07 21:26:42,850 | INFO     |   → 59/868 ⚠️ Ошибка: HTTPSConnectionPool(host='fetchjiedian.feisu360.xyz', port=443): Max retries exceeded with url: /clash/proxies (Caused by NameResolutionError("HTTPSConnection(host='fetchjiedian.feisu360.xyz', port=443): Failed to resolve 'fetchjiedian.feisu360.xyz' ([Errno -2] Name or service not known)")) — https://fetchjiedian.feisu360.xyz/clash/proxies
+2026-07-07 21:26:42,850 | INFO     |   → 60/868: ✅ 0 взято | 🗑️ 4 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 61/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 62/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 63/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 64/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 65/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 66/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 67/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 68/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 69/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 70/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 71/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 72/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 73/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 74/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 75/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 76/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 77/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 78/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 79/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 80/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 81/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 82/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 83/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 84/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 85/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 86/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,850 | INFO     |   → 87/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 88/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 89/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 90/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 91/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 92/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 93/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 94/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 95/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 96/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 97/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 98/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 99/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 100/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 101/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 102/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 103/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 104/868 ❌ HTTP 404 — https://free.datiya.com/uploads/{YYYY}{MM}{DD}-v2ray.txt
+2026-07-07 21:26:42,851 | INFO     |   → 105/868 ⚠️ Ошибка: HTTPSConnectionPool(host='free.dsdog.tk', port=443): Max retries exceeded with url: /clash/proxies (Caused by NameResolutionError("HTTPSConnection(host='free.dsdog.tk', port=443): Failed to resolve 'free.dsdog.tk' ([Errno -5] No address associated with hostname)")) — https://free.dsdog.tk/clash/proxies
+2026-07-07 21:26:42,851 | INFO     |   → 106/868 ⚠️ Ошибка: HTTPSConnectionPool(host='free.iam7.tk', port=443): Max retries exceeded with url: /clash/proxies (Caused by NameResolutionError("HTTPSConnection(host='free.iam7.tk', port=443): Failed to resolve 'free.iam7.tk' ([Errno -2] Name or service not known)")) — https://free.iam7.tk/clash/proxies
+2026-07-07 21:26:42,851 | INFO     |   → 107/868 ⚠️ Ошибка: HTTPSConnectionPool(host='free.jingfu.cf', port=443): Max retries exceeded with url: /clash/proxies (Caused by NameResolutionError("HTTPSConnection(host='free.jingfu.cf', port=443): Failed to resolve 'free.jingfu.cf' ([Errno -2] Name or service not known)")) — https://free.jingfu.cf/clash/proxies
+2026-07-07 21:26:42,851 | INFO     |   → 108/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 109/868 ❌ HTTP 403 — https://freemc.mcsslk.xyz/lVyzvUQ
+2026-07-07 21:26:42,851 | INFO     |   → 110/868 ❌ HTTP 404 — https://freessrnode.github.io/uploads/2024/08/0-20240822.txt
+2026-07-07 21:26:42,851 | INFO     |   → 111/868 ❌ HTTP 404 — https://freessrnode.github.io/uploads/2024/08/1-20240822.txt
+2026-07-07 21:26:42,851 | INFO     |   → 112/868 ❌ HTTP 404 — https://freessrnode.github.io/uploads/2024/08/2-20240822.txt
+2026-07-07 21:26:42,851 | INFO     |   → 113/868 ❌ HTTP 404 — https://freessrnode.github.io/uploads/2024/08/3-20240822.txt
+2026-07-07 21:26:42,851 | INFO     |   → 114/868 ❌ HTTP 404 — https://freessrnode.github.io/uploads/2024/08/4-20240822.txt
+2026-07-07 21:26:42,851 | INFO     |   → 115/868 ⚠️ Ошибка: HTTPSConnectionPool(host='freevpnspy.githubrowcontent.com', port=443): Max retries exceeded with url: /2024/08/20240802_novless.yaml (Caused by NameResolutionError("HTTPSConnection(host='freevpnspy.githubrowcontent.com', port=443): Failed to resolve 'freevpnspy.githubrowcontent.com' ([Errno -2] Name or service not known)")) — https://freevpnspy.githubrowcontent.com/2024/08/20240802_novless.yaml
+2026-07-07 21:26:42,851 | INFO     |   → 116/868 ⚠️ Ошибка: HTTPSConnectionPool(host='freevpnspy.githubrowcontent.com', port=443): Max retries exceeded with url: /2024/08/20240802_vless.yaml (Caused by NameResolutionError("HTTPSConnection(host='freevpnspy.githubrowcontent.com', port=443): Failed to resolve 'freevpnspy.githubrowcontent.com' ([Errno -2] Name or service not known)")) — https://freevpnspy.githubrowcontent.com/2024/08/20240802_vless.yaml
+2026-07-07 21:26:42,851 | INFO     |   → 117/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 118/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 119/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 120/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 121/868 ⚠️ Ошибка: HTTPSConnectionPool(host='gfwglass.tk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='gfwglass.tk', port=443): Failed to resolve 'gfwglass.tk' ([Errno -2] Name or service not known)")) — https://gfwglass.tk
+2026-07-07 21:26:42,851 | INFO     |   → 122/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 123/868: ✅ 5 взято | 🗑️ 133 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 124/868: ✅ 5 взято | 🗑️ 166 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 125/868: ✅ 2 взято | 🗑️ 114 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 126/868: ✅ 0 взято | 🗑️ 115 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 127/868: ✅ 5 взято | 🗑️ 161 мусор
+2026-07-07 21:26:42,851 | INFO     |   → 128/868: ✅ 2 взято | 🗑️ 60 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 129/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 130/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 131/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 132/868: ✅ 1 взято | 🗑️ 226 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 133/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 134/868: ✅ 1 взято | 🗑️ 169 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 135/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 136/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 137/868: ✅ 1 взято | 🗑️ 213 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 138/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 139/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 140/868: ✅ 2 взято | 🗑️ 60 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 141/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 142/868: ✅ 3 взято | 🗑️ 99 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 143/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 144/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 145/868: ✅ 1 взято | 🗑️ 96 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 146/868: ✅ 0 взято | 🗑️ 117 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 147/868: ✅ 11 взято | 🗑️ 225 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 148/868: ✅ 1 взято | 🗑️ 141 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 149/868: ✅ 0 взято | 🗑️ 96 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 150/868: ✅ 0 взято | 🗑️ 263 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 151/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 152/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 153/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 154/868: ✅ 0 взято | 🗑️ 137 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 155/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 156/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 157/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 158/868: ✅ 0 взято | 🗑️ 112 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 159/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,852 | INFO     |   → 160/868 ❌ HTTP 404 — https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7
+2026-07-07 21:26:42,852 | INFO     |   → 161/868 ❌ HTTP 404 — https://github.com/Alvin9999/new-pac/wiki/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7
+2026-07-07 21:26:42,852 | INFO     |   → 162/868 ❌ HTTP 404 — https://github.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/raw/main/sub/Albania/config.txt
+2026-07-07 21:26:42,852 | INFO     |   → 163/868 ❌ HTTP 404 — https://github.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/raw/main/sub/Cura%C3%A7ao/config.txt
+2026-07-07 21:26:42,852 | INFO     |   → 164/868 ❌ HTTP 404 — https://github.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/raw/main/sub/Finland/config.txt
+2026-07-07 21:26:42,852 | INFO     |   → 165/868 ❌ HTTP 404 — https://github.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/raw/main/sub/Iran/config.txt
+2026-07-07 21:26:42,853 | INFO     |   → 166/868 ❌ HTTP 404 — https://github.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/raw/main/sub/Netherlands/config.txt
+2026-07-07 21:26:42,853 | INFO     |   → 167/868 ❌ HTTP 404 — https://github.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/raw/main/sub/Norway/config.txt
+2026-07-07 21:26:42,853 | INFO     |   → 168/868 ❌ HTTP 404 — https://github.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/raw/main/sub/Russia/config.txt
+2026-07-07 21:26:42,853 | INFO     |   → 169/868: ✅ 13 взято | 🗑️ 70 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 170/868: ✅ 0 взято | 🗑️ 4 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 171/868: ✅ 0 взято | 🗑️ 7 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 172/868: ✅ 0 взято | 🗑️ 51 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 173/868: ✅ 0 взято | 🗑️ 8 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 174/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 175/868: ✅ 17 взято | 🗑️ 119 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 176/868 ❌ HTTP 404 — https://github.com/MrMohebi/xray-proxy-grabber-telegram/raw/master/collected-proxies/clash-meta/all.yaml
+2026-07-07 21:26:42,853 | INFO     |   → 177/868 ❌ HTTP 404 — https://github.com/MrMohebi/xray-proxy-grabber-telegram/raw/master/collected-proxies/row-url/all.txt
+2026-07-07 21:26:42,853 | INFO     |   → 178/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 179/868: ✅ 0 взято | 🗑️ 113 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 180/868: ✅ 0 взято | 🗑️ 119 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 181/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 182/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 183/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 184/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 185/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 186/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 187/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 188/868 ❌ HTTP 404 — https://github.com/mermeroo/V2RAY-FREE/raw/main/All_Configs_base64_Sub.txt
+2026-07-07 21:26:42,853 | INFO     |   → 189/868 ❌ HTTP 404 — https://github.com/mermeroo/V2RAY-FREE/raw/main/Base64/Sub1_base64.txt
+2026-07-07 21:26:42,853 | INFO     |   → 190/868 ❌ HTTP 404 — https://github.com/mermeroo/V2RAY-FREE/raw/main/Base64/Sub2_base64.txt
+2026-07-07 21:26:42,853 | INFO     |   → 191/868 ❌ HTTP 404 — https://github.com/mermeroo/V2RAY-FREE/raw/main/Base64/Sub3_base64.txt
+2026-07-07 21:26:42,853 | INFO     |   → 192/868 ❌ HTTP 404 — https://github.com/mermeroo/V2RAY-FREE/raw/main/Base64/Sub4_base64.txt
+2026-07-07 21:26:42,853 | INFO     |   → 193/868 ❌ HTTP 404 — https://github.com/mermeroo/V2RAY-FREE/raw/main/Base64/Sub5_base64.txt
+2026-07-07 21:26:42,853 | INFO     |   → 194/868 ❌ HTTP 404 — https://github.com/mermeroo/telegram-configs-collector/raw/main/protocols/hysteria
+2026-07-07 21:26:42,853 | INFO     |   → 195/868 ❌ HTTP 404 — https://github.com/mermeroo/telegram-configs-collector/raw/main/protocols/juicity
+2026-07-07 21:26:42,853 | INFO     |   → 196/868 ❌ HTTP 404 — https://github.com/mermeroo/telegram-configs-collector/raw/main/protocols/tuic
+2026-07-07 21:26:42,853 | INFO     |   → 197/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,853 | INFO     |   → 198/868: ✅ 5 взято | 🗑️ 16 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 199/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 200/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 201/868 ❌ HTTP 403 — https://gitlab.com/colloq168/nodefiltrate/-/raw/main/filtrate?ref_type=heads
+2026-07-07 21:26:42,854 | INFO     |   → 202/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 203/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 204/868: ✅ 3 взято | 🗑️ 100 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 205/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 206/868: ✅ 1 взято | 🗑️ 171 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 207/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 208/868: ✅ 0 взято | 🗑️ 202 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 209/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 210/868: ✅ 0 взято | 🗑️ 138 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 211/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 212/868: ✅ 0 взято | 🗑️ 236 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 213/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 214/868: ✅ 0 взято | 🗑️ 192 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 215/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 216/868: ✅ 1 взято | 🗑️ 174 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 217/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 218/868: ✅ 0 взято | 🗑️ 149 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 219/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 220/868: ✅ 0 взято | 🗑️ 147 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 221/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 222/868: ✅ 2 взято | 🗑️ 196 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 223/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 224/868: ✅ 2 взято | 🗑️ 277 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 225/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 226/868: ✅ 0 взято | 🗑️ 211 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 227/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 228/868: ✅ 1 взято | 🗑️ 229 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 229/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 230/868: ✅ 1 взято | 🗑️ 131 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 231/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 232/868: ✅ 3 взято | 🗑️ 257 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 233/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 234/868: ✅ 0 взято | 🗑️ 180 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 235/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 236/868: ✅ 0 взято | 🗑️ 191 мусор
+2026-07-07 21:26:42,854 | INFO     |   → 237/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,855 | INFO     |   → 238/868: ✅ 1 взято | 🗑️ 224 мусор
+2026-07-07 21:26:42,855 | INFO     |   → 239/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,855 | INFO     |   → 240/868: ✅ 2 взято | 🗑️ 183 мусор
+2026-07-07 21:26:42,855 | INFO     |   → 241/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,855 | INFO     |   → 242/868: ✅ 0 взято | 🗑️ 171 мусор
+2026-07-07 21:26:42,855 | INFO     |   → 243/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,855 | INFO     |   → 244/868: ✅ 1 взято | 🗑️ 11 мусор
+2026-07-07 21:26:42,855 | INFO     |   → 245/868 ⚠️ Ошибка: HTTPSConnectionPool(host='igdux.top', port=443): Max retries exceeded with url: /5Hna (Caused by NameResolutionError("HTTPSConnection(host='igdux.top', port=443): Failed to resolve 'igdux.top' ([Errno -2] Name or service not known)")) — https://igdux.top/5Hna
+2026-07-07 21:26:42,855 | INFO     |   → 246/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,855 | INFO     |   → 247/868 ⚠️ Ошибка: HTTPSConnectionPool(host='ivuxy.tech', port=443): Max retries exceeded with url: /v.txt (Caused by NameResolutionError("HTTPSConnection(host='ivuxy.tech', port=443): Failed to resolve 'ivuxy.tech' ([Errno -2] Name or service not known)")) — https://ivuxy.tech/v.txt
+2026-07-07 21:26:42,855 | INFO     |   → 248/868: ✅ 0 взято | 🗑️ 39 мусор
+2026-07-07 21:26:42,855 | INFO     |   → 249/868: ✅ 86 взято | 🗑️ 73 мусор
+2026-07-07 21:26:42,855 | INFO     |   → 250/868 ⚠️ Ошибка: HTTPSConnectionPool(host='kkkkkkk.vvvv.ee', port=443): Read timed out. (read timeout=15) — https://kkkkkkk.vvvv.ee/K
+2026-07-07 21:26:42,855 | INFO     |   → 251/868 ❌ HTTP 404 — https://laxcity.pages.dev/clash/proxies
+2026-07-07 21:26:42,855 | INFO     |   → 252/868 ❌ HTTP 404 — https://link01.fliggylink.xyz/api/v1/client/subscribe?token=fe86cc67f7404c08e5f9d70343329667
+2026-07-07 21:26:42,855 | INFO     |   → 253/868 ⚠️ Ошибка: HTTPSConnectionPool(host='lncn.org', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='lncn.org', port=443): Failed to resolve 'lncn.org' ([Errno -2] Name or service not known)")) — https://lncn.org
+2026-07-07 21:26:42,855 | INFO     |   → 254/868 ❌ HTTP 404 — https://m4y2z.no-mad-world.club/link/NornheyemazUtarM?clash=3
+2026-07-07 21:26:42,855 | INFO     |   → 255/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,855 | INFO     |   → 256/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,855 | INFO     |   → 257/868 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/blues.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/blues.txt
+2026-07-07 21:26:42,855 | INFO     |   → 258/868 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/halekj.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/halekj.txt
+2026-07-07 21:26:42,855 | INFO     |   → 259/868 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/kkzui.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/kkzui.txt
+2026-07-07 21:26:42,855 | INFO     |   → 260/868 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/merged.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/merged.txt
+2026-07-07 21:26:42,855 | INFO     |   → 261/868 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/nodefree.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/nodefree.txt
+2026-07-07 21:26:42,855 | INFO     |   → 262/868 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/openrunner.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/openrunner.txt
+2026-07-07 21:26:42,855 | INFO     |   → 263/868 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/v2rayshare.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/v2rayshare.txt
+2026-07-07 21:26:42,855 | INFO     |   → 264/868 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/wenode.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/wenode.txt
+2026-07-07 21:26:42,855 | INFO     |   → 265/868 ⚠️ Ошибка: HTTPSConnectionPool(host='mirror.ghproxy.com', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/yudou66.txt (Caused by NameResolutionError("HTTPSConnection(host='mirror.ghproxy.com', port=443): Failed to resolve 'mirror.ghproxy.com' ([Errno -2] Name or service not known)")) — https://mirror.ghproxy.com/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/yudou66.txt
+2026-07-07 21:26:42,856 | INFO     |   → 266/868: ✅ 0 взято | 🗑️ 30 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 267/868: ✅ 0 взято | 🗑️ 30 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 268/868: ✅ 0 взято | 🗑️ 30 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 269/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 270/868 ⚠️ Ошибка: HTTPSConnectionPool(host='mxlsub.me', port=443): Max retries exceeded with url: /newfull (Caused by NameResolutionError("HTTPSConnection(host='mxlsub.me', port=443): Failed to resolve 'mxlsub.me' ([Errno -2] Name or service not known)")) — https://mxlsub.me/newfull
+2026-07-07 21:26:42,856 | INFO     |   → 271/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 272/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 273/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 274/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 275/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 276/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 277/868: ✅ 5 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 278/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 279/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 280/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 281/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 282/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 283/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 284/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 285/868: ✅ 13 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 286/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,856 | INFO     |   → 287/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 288/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 289/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 290/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 291/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 292/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 293/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 294/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 295/868: ✅ 13 взято | 🗑️ 7 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 296/868: ✅ 0 взято | 🗑️ 7 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 297/868 ⚠️ Ошибка: HTTPSConnectionPool(host='nodefree.githubrowcontent.com', port=443): Max retries exceeded with url: /%7BYYYY%7D/%7BMM%7D/%7BYYYY%7D%7BMM%7D%7BDD%7D.txt (Caused by NameResolutionError("HTTPSConnection(host='nodefree.githubrowcontent.com', port=443): Failed to resolve 'nodefree.githubrowcontent.com' ([Errno -2] Name or service not known)")) — https://nodefree.githubrowcontent.com/{YYYY}/{MM}/{YYYY}{MM}{DD}.txt
+2026-07-07 21:26:42,857 | INFO     |   → 298/868 ⚠️ Ошибка: HTTPSConnectionPool(host='nodefree.githubrowcontent.com', port=443): Max retries exceeded with url: /2024/07/20240705.yaml (Caused by NameResolutionError("HTTPSConnection(host='nodefree.githubrowcontent.com', port=443): Failed to resolve 'nodefree.githubrowcontent.com' ([Errno -2] Name or service not known)")) — https://nodefree.org/dy/2023/08/20230806.yaml
+2026-07-07 21:26:42,857 | INFO     |   → 299/868 ⚠️ Ошибка: HTTPSConnectionPool(host='nodefree.githubrowcontent.com', port=443): Max retries exceeded with url: /2024/07/20240705.txt (Caused by NameResolutionError("HTTPSConnection(host='nodefree.githubrowcontent.com', port=443): Failed to resolve 'nodefree.githubrowcontent.com' ([Errno -2] Name or service not known)")) — https://nodefree.org/dy/2023/12/20231221.txt
+2026-07-07 21:26:42,857 | INFO     |   → 300/868 ❌ HTTP 404 — https://ohayoo-pm.hf.space/api/v1/subscribe?token=neu4ecumvl2fuk6v&target=clash&list=0
+2026-07-07 21:26:42,857 | INFO     |   → 301/868: ✅ 0 взято | 🗑️ 30 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 302/868: ✅ 0 взято | 🗑️ 30 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 303/868: ✅ 73 взято | 🗑️ 721 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 304/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 305/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 306/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 307/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,857 | INFO     |   → 308/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 309/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 310/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 311/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 312/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 313/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 314/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 315/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 316/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 317/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 318/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 319/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 320/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 321/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 322/868: ✅ 0 взято | 🗑️ 7 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 323/868: ✅ 0 взято | 🗑️ 7 мусор
+2026-07-07 21:26:42,858 | INFO     |   → 324/868 ❌ HTTP 403 — https://platform.djjc.cfd/api/v1/client/subscribe?token=8f2ada45a6cfe2f7e41b2a9fd6203e2c
+2026-07-07 21:26:42,858 | INFO     |   → 325/868 ⚠️ Ошибка: HTTPSConnectionPool(host='pool.sagithome.com', port=443): Max retries exceeded with url: /clash/proxies (Caused by NameResolutionError("HTTPSConnection(host='pool.sagithome.com', port=443): Failed to resolve 'pool.sagithome.com' ([Errno -5] No address associated with hostname)")) — https://pool.sagithome.com/clash/proxies
+2026-07-07 21:26:42,858 | INFO     |   → 326/868 ⚠️ Ошибка: HTTPSConnectionPool(host='proxy.crazygeeky.com', port=443): Max retries exceeded with url: /clash/proxies (Caused by NameResolutionError("HTTPSConnection(host='proxy.crazygeeky.com', port=443): Failed to resolve 'proxy.crazygeeky.com' ([Errno -5] No address associated with hostname)")) — https://proxy.crazygeeky.com/clash/proxies
+2026-07-07 21:26:42,859 | INFO     |   → 327/868 ❌ HTTP 403 — https://proxy.fldhhhhhh.top/clash/proxies
+2026-07-07 21:26:42,859 | INFO     |   → 328/868 ⚠️ Ошибка: HTTPSConnectionPool(host='proxy.yiun.xyz', port=443): Max retries exceeded with url: /clash/proxies (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)'))) — https://proxy.yiun.xyz/clash/proxies
+2026-07-07 21:26:42,859 | INFO     |   → 329/868 ⚠️ Ошибка: HTTPSConnectionPool(host='proxy.yugogo.xyz', port=443): Max retries exceeded with url: /clash/proxie (Caused by NameResolutionError("HTTPSConnection(host='proxy.yugogo.xyz', port=443): Failed to resolve 'proxy.yugogo.xyz' ([Errno -2] Name or service not known)")) — https://proxy.yugogo.xyz/clash/proxie
+2026-07-07 21:26:42,859 | INFO     |   → 330/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,859 | INFO     |   → 331/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,859 | INFO     |   → 332/868: ✅ 115 взято | 🗑️ 58 мусор
+2026-07-07 21:26:42,859 | INFO     |   → 333/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,859 | INFO     |   → 334/868: ✅ 0 взято | 🗑️ 1 мусор
+2026-07-07 21:26:42,859 | INFO     |   → 335/868 ⚠️ Ошибка: HTTPSConnectionPool(host='raw.fastgit.org', port=443): Max retries exceeded with url: /freefq/free/master/v2 (Caused by NameResolutionError("HTTPSConnection(host='raw.fastgit.org', port=443): Failed to resolve 'raw.fastgit.org' ([Errno -2] Name or service not known)")) — https://raw.fastgit.org/freefq/free/master/v2
+2026-07-07 21:26:42,859 | INFO     |   → 336/868: ✅ 745 взято | 🗑️ 2468 мусор
+2026-07-07 21:26:42,859 | INFO     |   → 337/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,859 | INFO     |   → 338/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,859 | INFO     |   → 339/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,859 | INFO     |   → 340/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,859 | INFO     |   → 341/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,859 | INFO     |   → 342/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,859 | INFO     |   → 343/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,859 | INFO     |   → 344/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 345/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 346/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 347/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 348/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 349/868 ❌ HTTP 404 — https://raw.githubusercontent.com/10ium/MihomoSaz/main/Sublist/shatakvpn.yaml4_Sub.txt
+2026-07-07 21:26:42,860 | INFO     |   → 350/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 351/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 352/868: ✅ 167 взято | 🗑️ 672 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 353/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 354/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 355/868: ✅ 11 взято | 🗑️ 399 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 356/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 357/868 ❌ HTTP 404 — https://raw.githubusercontent.com/9Fork/openit/main/Clash.yaml
+2026-07-07 21:26:42,860 | INFO     |   → 358/868: ✅ 115 взято | 🗑️ 736 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 359/868: ✅ 0 взято | 🗑️ 736 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 360/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Alvin9999/pac2/master/clash/1/config.yaml
+2026-07-07 21:26:42,860 | INFO     |   → 361/868: ✅ 0 взято | 🗑️ 43 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 362/868: ✅ 21 взято | 🗑️ 107 мусор
+2026-07-07 21:26:42,860 | INFO     |   → 363/868: ✅ 78 взято | 🗑️ 347 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 364/868: ✅ 0 взято | 🗑️ 1373 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 365/868: ✅ 0 взято | 🗑️ 6 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 366/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 367/868: ✅ 23 взято | 🗑️ 516 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 368/868: ✅ 1 взято | 🗑️ 324 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 369/868: ✅ 1 взято | 🗑️ 192 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 370/868: ✅ 5 взято | 🗑️ 158 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 371/868: ✅ 0 взято | 🗑️ 16 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 372/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 373/868: ✅ 0 взято | 🗑️ 14 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 374/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 375/868: ✅ 6 взято | 🗑️ 17 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 376/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 377/868: ✅ 1 взято | 🗑️ 12 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 378/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 379/868: ✅ 0 взято | 🗑️ 17 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 380/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,861 | INFO     |   → 381/868: ✅ 0 взято | 🗑️ 17 мусор
+2026-07-07 21:26:42,862 | INFO     |   → 382/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,862 | INFO     |   → 383/868: ✅ 3 взято | 🗑️ 161 мусор
+2026-07-07 21:26:42,862 | INFO     |   → 384/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,862 | INFO     |   → 385/868: ✅ 5 взято | 🗑️ 76 мусор
+2026-07-07 21:26:42,862 | INFO     |   → 386/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Austria/config.txt
+2026-07-07 21:26:42,862 | INFO     |   → 387/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Canada/config.txt
+2026-07-07 21:26:42,862 | INFO     |   → 388/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Costa%20Rica/config.txt
+2026-07-07 21:26:42,862 | INFO     |   → 389/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/France/config.txt
+2026-07-07 21:26:42,862 | INFO     |   → 390/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Germany/config.txt
+2026-07-07 21:26:42,862 | INFO     |   → 391/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Indonesia/config.txt
+2026-07-07 21:26:42,862 | INFO     |   → 392/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Ireland/config.txt
+2026-07-07 21:26:42,862 | INFO     |   → 393/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Republic%20of%20Lithuania/config.txt
+2026-07-07 21:26:42,862 | INFO     |   → 394/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/South%20Africa/config.txt
+2026-07-07 21:26:42,862 | INFO     |   → 395/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Sweden/config.txt
+2026-07-07 21:26:42,862 | INFO     |   → 396/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/Turkey/config.txt
+2026-07-07 21:26:42,862 | INFO     |   → 397/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/United%20Arab%20Emirates/config.txt
+2026-07-07 21:26:42,862 | INFO     |   → 398/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/United%20Kingdom/config.txt
+2026-07-07 21:26:42,862 | INFO     |   → 399/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/bulk-xray-v2ray-vless-vmess-...-configs/main/sub/United%20States/config.txt
+2026-07-07 21:26:42,863 | INFO     |   → 400/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/mix.txt
+2026-07-07 21:26:42,863 | INFO     |   → 401/868: ✅ 6 взято | 🗑️ 520 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 402/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 403/868: ✅ 37 взято | 🗑️ 1054 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 404/868: ✅ 147 взято | 🗑️ 4965 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 405/868: ✅ 12 взято | 🗑️ 201 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 406/868: ✅ 2 взято | 🗑️ 6769 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 407/868: ✅ 0 взято | 🗑️ 520 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 408/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 409/868: ✅ 0 взято | 🗑️ 1054 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 410/868: ✅ 0 взято | 🗑️ 4965 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 411/868: ✅ 0 взято | 🗑️ 201 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 412/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 413/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 414/868: ✅ 1 взято | 🗑️ 8 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 415/868: ✅ 1 взято | 🗑️ 17 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 416/868: ✅ 4 взято | 🗑️ 11 мусор
+2026-07-07 21:26:42,863 | INFO     |   → 417/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 418/868: ✅ 0 взято | 🗑️ 137 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 419/868: ✅ 0 взято | 🗑️ 32 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 420/868: ✅ 2 взято | 🗑️ 19 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 421/868: ✅ 0 взято | 🗑️ 43 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 422/868: ✅ 0 взято | 🗑️ 43 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 423/868: ✅ 0 взято | 🗑️ 1 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 424/868: ✅ 0 взято | 🗑️ 1 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 425/868: ✅ 0 взято | 🗑️ 28 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 426/868: ✅ 14 взято | 🗑️ 282 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 427/868: ✅ 0 взято | 🗑️ 94 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 428/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 429/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 430/868: ✅ 502 взято | 🗑️ 1846 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 431/868: ✅ 0 взято | 🗑️ 106 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 432/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Leon406/SubCrawler/main/sub/share/all3
+2026-07-07 21:26:42,864 | INFO     |   → 433/868 ❌ HTTP 404 — https://raw.githubusercontent.com/Leon406/SubCrawler/main/sub/share/all4
+2026-07-07 21:26:42,864 | INFO     |   → 434/868: ✅ 4 взято | 🗑️ 335 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 435/868: ✅ 674 взято | 🗑️ 28882 мусор
+2026-07-07 21:26:42,864 | INFO     |   → 436/868: ✅ 0 взято | 🗑️ 33 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 437/868: ✅ 0 взято | 🗑️ 6 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 438/868: ✅ 0 взято | 🗑️ 12 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 439/868: ✅ 0 взято | 🗑️ 1 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 440/868: ✅ 68 взято | 🗑️ 61 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 441/868 ❌ HTTP 404 — https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/hy2.txt
+2026-07-07 21:26:42,865 | INFO     |   → 442/868: ✅ 27 взято | 🗑️ 1139 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 443/868 ❌ HTTP 404 — https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/ssr.txt
+2026-07-07 21:26:42,865 | INFO     |   → 444/868: ✅ 49 взято | 🗑️ 536 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 445/868 ❌ HTTP 404 — https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/tuic.txt
+2026-07-07 21:26:42,865 | INFO     |   → 446/868: ✅ 19 взято | 🗑️ 422 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 447/868: ✅ 253 взято | 🗑️ 1530 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 448/868: ✅ 0 взято | 🗑️ 2 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 449/868: ✅ 259 взято | 🗑️ 1399 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 450/868: ✅ 0 взято | 🗑️ 667 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 451/868: ✅ 0 взято | 🗑️ 667 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 452/868: ✅ 0 взято | 🗑️ 113 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 453/868: ✅ 0 взято | 🗑️ 2 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 454/868: ✅ 0 взято | 🗑️ 548 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 455/868: ✅ 0 взято | 🗑️ 77 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 456/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,865 | INFO     |   → 457/868: ✅ 43 взято | 🗑️ 217 мусор
+2026-07-07 21:26:42,866 | INFO     |   → 458/868: ✅ 0 взято | 🗑️ 31 мусор
+2026-07-07 21:26:42,866 | INFO     |   → 459/868: ✅ 0 взято | 🗑️ 26 мусор
+2026-07-07 21:26:42,866 | INFO     |   → 460/868 ❌ HTTP 404 — https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/all.yaml
+2026-07-07 21:26:42,866 | INFO     |   → 461/868 ❌ HTTP 404 — https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/actives.txt
+2026-07-07 21:26:42,866 | INFO     |   → 462/868 ❌ HTTP 404 — https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/all.txt
+2026-07-07 21:26:42,866 | INFO     |   → 463/868: ✅ 0 взято | 🗑️ 13 мусор
+2026-07-07 21:26:42,866 | INFO     |   → 464/868: ✅ 0 взято | 🗑️ 13 мусор
+2026-07-07 21:26:42,866 | INFO     |   → 465/868: ✅ 5 взято | 🗑️ 15 мусор
+2026-07-07 21:26:42,866 | INFO     |   → 466/868: ✅ 0 взято | 🗑️ 30 мусор
+2026-07-07 21:26:42,866 | INFO     |   → 467/868: ✅ 0 взято | 🗑️ 15 мусор
+2026-07-07 21:26:42,866 | INFO     |   → 468/868: ✅ 2 взято | 🗑️ 13 мусор
+2026-07-07 21:26:42,866 | INFO     |   → 469/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,866 | INFO     |   → 470/868: ✅ 0 взято | 🗑️ 13 мусор
+2026-07-07 21:26:42,866 | INFO     |   → 471/868: ✅ 0 взято | 🗑️ 13 мусор
+2026-07-07 21:26:42,866 | INFO     |   → 472/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,866 | INFO     |   → 473/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,866 | INFO     |   → 474/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,866 | INFO     |   → 475/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 476/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 477/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 478/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 479/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 480/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 481/868: ✅ 5 взято | 🗑️ 206 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 482/868: ✅ 21 взято | 🗑️ 138 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 483/868: ✅ 23 взято | 🗑️ 89 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 484/868: ✅ 9 взято | 🗑️ 85 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 485/868: ✅ 0 взято | 🗑️ 129 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 486/868: ✅ 0 взято | 🗑️ 81 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 487/868: ✅ 11 взято | 🗑️ 16 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 488/868: ✅ 0 взято | 🗑️ 16 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 489/868: ✅ 474 взято | 🗑️ 7072 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 490/868: ✅ 29 взято | 🗑️ 54 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 491/868: ✅ 3 взято | 🗑️ 5 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 492/868: ✅ 1 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 493/868: ✅ 15 взято | 🗑️ 64 мусор
+2026-07-07 21:26:42,867 | INFO     |   → 494/868: ✅ 0 взято | 🗑️ 5 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 495/868: ✅ 0 взято | 🗑️ 64 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 496/868: ✅ 0 взято | 🗑️ 119 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 497/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 498/868 ❌ HTTP 404 — https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/V2RAY_SUB/main/V2RAY_SUB.txt
+2026-07-07 21:26:42,868 | INFO     |   → 499/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 500/868: ✅ 88 взято | 🗑️ 44 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 501/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 502/868: ✅ 58 взято | 🗑️ 348 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 503/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 504/868: ✅ 4 взято | 🗑️ 458 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 505/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 506/868: ✅ 1 взято | 🗑️ 164 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 507/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 508/868: ✅ 6 взято | 🗑️ 221 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 509/868: ✅ 1 взято | 🗑️ 231 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 510/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 511/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,868 | INFO     |   → 512/868: ✅ 1 взято | 🗑️ 83 мусор
+2026-07-07 21:26:42,869 | INFO     |   → 513/868: ✅ 0 взято | 🗑️ 16 мусор
+2026-07-07 21:26:42,869 | INFO     |   → 514/868: ✅ 0 взято | 🗑️ 16 мусор
+2026-07-07 21:26:42,869 | INFO     |   → 515/868 ❌ HTTP 404 — https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml
+2026-07-07 21:26:42,869 | INFO     |   → 516/868 ❌ HTTP 404 — https://raw.githubusercontent.com/aiboboxx/clashfree/refs/heads/main/clash.yml
+2026-07-07 21:26:42,869 | INFO     |   → 517/868 ❌ HTTP 404 — https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2
+2026-07-07 21:26:42,869 | INFO     |   → 518/868 ❌ HTTP 404 — https://raw.githubusercontent.com/amirmohammad-mohammad-88/Sub-Reality-Azadi-config/Config/Azadi-Reality-Different
+2026-07-07 21:26:42,869 | INFO     |   → 519/868 ❌ HTTP 404 — https://raw.githubusercontent.com/amirmohammad-mohammad-88/Sub-Reality-Azadi-config/Config/Azadi-Reality-Different-Base64
+2026-07-07 21:26:42,869 | INFO     |   → 520/868: ✅ 1 взято | 🗑️ 17 мусор
+2026-07-07 21:26:42,869 | INFO     |   → 521/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,869 | INFO     |   → 522/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,869 | INFO     |   → 523/868: ✅ 22 взято | 🗑️ 134 мусор
+2026-07-07 21:26:42,869 | INFO     |   → 524/868 ❌ HTTP 404 — https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/ss
+2026-07-07 21:26:42,869 | INFO     |   → 525/868 ❌ HTTP 404 — https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/ssr
+2026-07-07 21:26:42,869 | INFO     |   → 526/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,869 | INFO     |   → 527/868: ✅ 1 взято | 🗑️ 22 мусор
+2026-07-07 21:26:42,869 | INFO     |   → 528/868 ❌ HTTP 404 — https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Splitted-By-Protocol/hysteria2.txt
+2026-07-07 21:26:42,869 | INFO     |   → 529/868 ❌ HTTP 404 — https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Splitted-By-Protocol/vless.txt
+2026-07-07 21:26:42,869 | INFO     |   → 530/868 ❌ HTTP 404 — https://raw.githubusercontent.com/barry-far/V2ray-Configs/refs/heads/main/All_Configs_Sub.txt
+2026-07-07 21:26:42,869 | INFO     |   → 531/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,870 | INFO     |   → 532/868 ❌ HTTP 404 — https://raw.githubusercontent.com/budamu/clashconfig/main/v2ray.txt
+2026-07-07 21:26:42,870 | INFO     |   → 533/868 ❌ HTTP 404 — https://raw.githubusercontent.com/budamu/clashconfig/main/v2ray2.txt
+2026-07-07 21:26:42,870 | INFO     |   → 534/868: ✅ 10 взято | 🗑️ 72 мусор
+2026-07-07 21:26:42,870 | INFO     |   → 535/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,870 | INFO     |   → 536/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,870 | INFO     |   → 537/868: ✅ 0 взято | 🗑️ 442 мусор
+2026-07-07 21:26:42,870 | INFO     |   → 538/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,870 | INFO     |   → 539/868: ✅ 0 взято | 🗑️ 44 мусор
+2026-07-07 21:26:42,870 | INFO     |   → 540/868 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/main/free.yaml
+2026-07-07 21:26:42,870 | INFO     |   → 541/868 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/main/mix.yaml
+2026-07-07 21:26:42,870 | INFO     |   → 542/868 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/main/ss.yaml
+2026-07-07 21:26:42,870 | INFO     |   → 543/868 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/main/ssr.yaml
+2026-07-07 21:26:42,870 | INFO     |   → 544/868 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/main/vmess.yaml
+2026-07-07 21:26:42,870 | INFO     |   → 545/868 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/refs/heads/main/18cj.json
+2026-07-07 21:26:42,870 | INFO     |   → 546/868 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/refs/heads/main/aaaaaaaa.yaml
+2026-07-07 21:26:42,870 | INFO     |   → 547/868 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/refs/heads/main/free.yaml
+2026-07-07 21:26:42,870 | INFO     |   → 548/868 ❌ HTTP 404 — https://raw.githubusercontent.com/cxr9912/cxr2022/refs/heads/main/ss2088.txt
+2026-07-07 21:26:42,870 | INFO     |   → 549/868: ✅ 0 взято | 🗑️ 18 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 550/868: ✅ 0 взято | 🗑️ 2 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 551/868: ✅ 0 взято | 🗑️ 2 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 552/868: ✅ 7 взято | 🗑️ 6 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 553/868: ✅ 0 взято | 🗑️ 2 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 554/868: ✅ 0 взято | 🗑️ 2 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 555/868: ✅ 0 взято | 🗑️ 2 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 556/868: ✅ 1 взято | 🗑️ 1 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 557/868: ✅ 0 взято | 🗑️ 6 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 558/868: ✅ 0 взято | 🗑️ 2 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 559/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 560/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 561/868: ✅ 16778 взято | 🗑️ 301870 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 562/868: ✅ 20 взято | 🗑️ 748 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 563/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 564/868: ✅ 14 взято | 🗑️ 13 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 565/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 566/868: ✅ 13 взято | 🗑️ 19 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 567/868: ✅ 0 взято | 🗑️ 5 мусор
+2026-07-07 21:26:42,871 | INFO     |   → 568/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,872 | INFO     |   → 569/868 ❌ HTTP 404 — https://raw.githubusercontent.com/free18/v2ray/main/Clash.yaml
+2026-07-07 21:26:42,872 | INFO     |   → 570/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,872 | INFO     |   → 571/868: ✅ 69 взято | 🗑️ 297 мусор
+2026-07-07 21:26:42,872 | INFO     |   → 572/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,872 | INFO     |   → 573/868: ✅ 0 взято | 🗑️ 15 мусор
+2026-07-07 21:26:42,872 | INFO     |   → 574/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,872 | INFO     |   → 575/868: ✅ 0 взято | 🗑️ 8 мусор
+2026-07-07 21:26:42,872 | INFO     |   → 576/868: ✅ 0 взято | 🗑️ 8 мусор
+2026-07-07 21:26:42,872 | INFO     |   → 577/868: ✅ 0 взято | 🗑️ 8 мусор
+2026-07-07 21:26:42,872 | INFO     |   → 578/868: ✅ 0 взято | 🗑️ 8 мусор
+2026-07-07 21:26:42,872 | INFO     |   → 579/868 ❌ HTTP 404 — https://raw.githubusercontent.com/freev2rayconfig/V2RAY_SUBSCRIPTION_LINK/main/v2rayconfigs.txt
+2026-07-07 21:26:42,872 | INFO     |   → 580/868 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/http.txt
+2026-07-07 21:26:42,872 | INFO     |   → 581/868 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/https.txt
+2026-07-07 21:26:42,872 | INFO     |   → 582/868 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/socks4.txt
+2026-07-07 21:26:42,872 | INFO     |   → 583/868 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/socks4a.txt
+2026-07-07 21:26:42,872 | INFO     |   → 584/868 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/socks5.txt
+2026-07-07 21:26:42,872 | INFO     |   → 585/868 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/socks5h.txt
+2026-07-07 21:26:42,872 | INFO     |   → 586/868 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/ss.txt
+2026-07-07 21:26:42,872 | INFO     |   → 587/868 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/ssr.txt
+2026-07-07 21:26:42,872 | INFO     |   → 588/868 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/trojan.txt
+2026-07-07 21:26:42,873 | INFO     |   → 589/868 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/vless.txt
+2026-07-07 21:26:42,873 | INFO     |   → 590/868 ❌ HTTP 404 — https://raw.githubusercontent.com/gfpcom/free-proxy-list/main/list/vmess.txt
+2026-07-07 21:26:42,873 | INFO     |   → 591/868: ✅ 0 взято | 🗑️ 17 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 592/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 593/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 594/868: ✅ 4 взято | 🗑️ 63 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 595/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 596/868: ✅ 0 взято | 🗑️ 56 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 597/868 ❌ HTTP 404 — https://raw.githubusercontent.com/hkaa0/permalink/main/proxy/V2ray
+2026-07-07 21:26:42,873 | INFO     |   → 598/868: ✅ 2 взято | 🗑️ 131 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 599/868 ❌ HTTP 404 — https://raw.githubusercontent.com/hkaa0/permalink/main/proxy/clash
+2026-07-07 21:26:42,873 | INFO     |   → 600/868: ✅ 0 взято | 🗑️ 14 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 601/868: ✅ 16 взято | 🗑️ 16 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 602/868 ❌ HTTP 404 — https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main
+2026-07-07 21:26:42,873 | INFO     |   → 603/868: ✅ 2 взято | 🗑️ 32 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 604/868: ✅ 13 взято | 🗑️ 38 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 605/868: ✅ 114 взято | 🗑️ 189 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 606/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 607/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 608/868: ✅ 23 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 609/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 610/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 611/868: ✅ 0 взято | 🗑️ 12 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 612/868: ✅ 0 взято | 🗑️ 43 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 613/868 ❌ HTTP 404 — https://raw.githubusercontent.com/jw853355718/clash_233/master/config.yml
+2026-07-07 21:26:42,873 | INFO     |   → 614/868: ✅ 0 взято | 🗑️ 210 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 615/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 616/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 617/868 ❌ HTTP 404 — https://raw.githubusercontent.com/lcx12901/v2ray-/master/sspool.herokuapp.com/yzcloud.yaml
+2026-07-07 21:26:42,873 | INFO     |   → 618/868 ❌ HTTP 404 — https://raw.githubusercontent.com/lcx12901/v2ray-/master/sspool.herokuapp.com/yzcloud2.yaml
+2026-07-07 21:26:42,873 | INFO     |   → 619/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,873 | INFO     |   → 620/868 ❌ HTTP 404 — https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/clash/config.yaml
+2026-07-07 21:26:42,874 | INFO     |   → 621/868: ✅ 0 взято | 🗑️ 8 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 622/868: ✅ 0 взято | 🗑️ 4 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 623/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 624/868: ✅ 0 взято | 🗑️ 4 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 625/868: ✅ 0 взято | 🗑️ 149 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 626/868 ❌ HTTP 404 — https://raw.githubusercontent.com/lisylva-lee/v2dyku/main/ssr
+2026-07-07 21:26:42,874 | INFO     |   → 627/868 ❌ HTTP 404 — https://raw.githubusercontent.com/lisylva-lee/v2dyku/main/v2dy
+2026-07-07 21:26:42,874 | INFO     |   → 628/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 629/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 630/868 ❌ HTTP 404 — https://raw.githubusercontent.com/luxl-1379/merge/77247d23def72b25226dfa741614e9b07a569c72/sub/sub_merge_base64.txt
+2026-07-07 21:26:42,874 | INFO     |   → 631/868 ❌ HTTP 404 — https://raw.githubusercontent.com/luxl-1379/merge/main/sub/sub_merge_base64.txt
+2026-07-07 21:26:42,874 | INFO     |   → 632/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 633/868: ✅ 74 взято | 🗑️ 126 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 634/868: ✅ 0 взято | 🗑️ 126 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 635/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 636/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 637/868: ✅ 722 взято | 🗑️ 4209 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 638/868: ✅ 0 взято | 🗑️ 126 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 639/868: ✅ 0 взято | 🗑️ 4209 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 640/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 641/868 ❌ HTTP 404 — https://raw.githubusercontent.com/match muff/v2ray-pixels/master/v2ray
+2026-07-07 21:26:42,874 | INFO     |   → 642/868 ❌ HTTP 404 — https://raw.githubusercontent.com/mermeroo/Clash-V2ray/main/v2ray
+2026-07-07 21:26:42,874 | INFO     |   → 643/868: ✅ 15 взято | 🗑️ 417 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 644/868: ✅ 6 взято | 🗑️ 102 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 645/868: ✅ 716 взято | 🗑️ 6258 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 646/868: ✅ 8 взято | 🗑️ 853 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 647/868: ✅ 32 взято | 🗑️ 69 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 648/868 ❌ HTTP 404 — https://raw.githubusercontent.com/mermeroo/free-v2ray-collector/main/main/mix
+2026-07-07 21:26:42,874 | INFO     |   → 649/868 ❌ HTTP 404 — https://raw.githubusercontent.com/mermeroo/free-v2ray-collector/main/main/reality
+2026-07-07 21:26:42,874 | INFO     |   → 650/868 ❌ HTTP 404 — https://raw.githubusercontent.com/mermeroo/free-v2ray-collector/main/main/shadowsocks
+2026-07-07 21:26:42,874 | INFO     |   → 651/868 ❌ HTTP 404 — https://raw.githubusercontent.com/mermeroo/free-v2ray-collector/main/main/trojan
+2026-07-07 21:26:42,874 | INFO     |   → 652/868 ❌ HTTP 404 — https://raw.githubusercontent.com/mermeroo/free-v2ray-collector/main/main/vless
+2026-07-07 21:26:42,874 | INFO     |   → 653/868 ❌ HTTP 404 — https://raw.githubusercontent.com/mermeroo/free-v2ray-collector/main/main/vmess
+2026-07-07 21:26:42,874 | INFO     |   → 654/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 655/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,874 | INFO     |   → 656/868 ❌ HTTP 404 — https://raw.githubusercontent.com/mfuu/v2ray/master/merge/merge.txt
+2026-07-07 21:26:42,875 | INFO     |   → 657/868: ✅ 5 взято | 🗑️ 107 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 658/868: ✅ 0 взято | 🗑️ 107 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 659/868: ✅ 0 взято | 🗑️ 25 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 660/868: ✅ 700 взято | 🗑️ 17546 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 661/868: ✅ 0 взято | 🗑️ 17546 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 662/868: ✅ 0 взято | 🗑️ 2866 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 663/868: ✅ 0 взято | 🗑️ 2532 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 664/868: ✅ 0 взято | 🗑️ 7818 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 665/868: ✅ 0 взято | 🗑️ 4330 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 666/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 667/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 668/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 669/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 670/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 671/868 ❌ HTTP 404 — https://raw.githubusercontent.com/obscure1990/freeVM/master/snippets/nodes.yml
+2026-07-07 21:26:42,875 | INFO     |   → 672/868 ❌ HTTP 404 — https://raw.githubusercontent.com/openRunner/clash-freenode/main/v2ray.txt
+2026-07-07 21:26:42,875 | INFO     |   → 673/868 ❌ HTTP 404 — https://raw.githubusercontent.com/oslook/clash-freenode/main/clash.yaml
+2026-07-07 21:26:42,875 | INFO     |   → 674/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 675/868: ✅ 4 взято | 🗑️ 1 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 676/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 677/868: ✅ 12 взято | 🗑️ 88 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 678/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 679/868: ✅ 0 взято | 🗑️ 88 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 680/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 681/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 682/868: ✅ 0 взято | 🗑️ 19 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 683/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 684/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 685/868: ✅ 3 взято | 🗑️ 56 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 686/868: ✅ 27 взято | 🗑️ 79 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 687/868: ✅ 13 взято | 🗑️ 32 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 688/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 689/868: ✅ 2 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,875 | INFO     |   → 690/868: ✅ 11 взято | 🗑️ 76 мусор
+2026-07-07 21:26:42,876 | INFO     |   → 691/868: ✅ 10 взято | 🗑️ 168 мусор
+2026-07-07 21:26:42,876 | INFO     |   → 692/868: ✅ 0 взято | 🗑️ 79 мусор
+2026-07-07 21:26:42,876 | INFO     |   → 693/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,876 | INFO     |   → 694/868: ✅ 0 взято | 🗑️ 14 мусор
+2026-07-07 21:26:42,876 | INFO     |   → 695/868 ❌ HTTP 404 — https://raw.githubusercontent.com/ronghuaxueleng/get_v2/main/pub/changfengoss.yaml
+2026-07-07 21:26:42,876 | INFO     |   → 696/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,876 | INFO     |   → 697/868: ✅ 94 взято | 🗑️ 56 мусор
+2026-07-07 21:26:42,876 | INFO     |   → 698/868 ❌ HTTP 404 — https://raw.githubusercontent.com/rxsweet/CM_Vmess/refs/heads/main/test.txt
+2026-07-07 21:26:42,876 | INFO     |   → 699/868 ❌ HTTP 404 — https://raw.githubusercontent.com/rxsweet/proxies/main/sub/free.yaml
+2026-07-07 21:26:42,876 | INFO     |   → 700/868 ❌ HTTP 404 — https://raw.githubusercontent.com/rxsweet/proxies/main/sub/rx.yaml
+2026-07-07 21:26:42,876 | INFO     |   → 701/868 ❌ HTTP 404 — https://raw.githubusercontent.com/rxsweet/proxies/main/sub/sources/dynamicAll.yaml
+2026-07-07 21:26:42,876 | INFO     |   → 702/868 ❌ HTTP 404 — https://raw.githubusercontent.com/rxsweet/proxies/main/sub/sources/miningAll.yaml
+2026-07-07 21:26:42,876 | INFO     |   → 703/868 ❌ HTTP 404 — https://raw.githubusercontent.com/rxsweet/proxies/main/sub/srx.yaml
+2026-07-07 21:26:42,876 | INFO     |   → 704/868: ✅ 919 взято | 🗑️ 3296 мусор
+2026-07-07 21:26:42,876 | INFO     |   → 705/868: ✅ 53 взято | 🗑️ 399 мусор
+2026-07-07 21:26:42,876 | INFO     |   → 706/868 ❌ HTTP 404 — https://raw.githubusercontent.com/samjoeyang/subscribe/main/fly
+2026-07-07 21:26:42,876 | INFO     |   → 707/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,876 | INFO     |   → 708/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,877 | INFO     |   → 709/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,877 | INFO     |   → 710/868: ✅ 364 взято | 🗑️ 2535 мусор
+2026-07-07 21:26:42,877 | INFO     |   → 711/868: ✅ 0 взято | 🗑️ 1200 мусор
+2026-07-07 21:26:42,877 | INFO     |   → 712/868: ✅ 0 взято | 🗑️ 226 мусор
+2026-07-07 21:26:42,877 | INFO     |   → 713/868: ✅ 0 взято | 🗑️ 1081 мусор
+2026-07-07 21:26:42,877 | INFO     |   → 714/868: ✅ 0 взято | 🗑️ 28 мусор
+2026-07-07 21:26:42,877 | INFO     |   → 715/868: ✅ 0 взято | 🗑️ 2535 мусор
+2026-07-07 21:26:42,877 | INFO     |   → 716/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,877 | INFO     |   → 717/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,877 | INFO     |   → 718/868 ❌ HTTP 404 — https://raw.githubusercontent.com/shirkerboy/scp/main/sub
+2026-07-07 21:26:42,877 | INFO     |   → 719/868 ❌ HTTP 404 — https://raw.githubusercontent.com/skywrt/v2ray-Collector/master/v2ray
+2026-07-07 21:26:42,877 | INFO     |   → 720/868 ❌ HTTP 404 — https://raw.githubusercontent.com/snakem982/proxypool/main/nodelist.txt
+2026-07-07 21:26:42,877 | INFO     |   → 721/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,877 | INFO     |   → 722/868: ✅ 1 взято | 🗑️ 2 мусор
+2026-07-07 21:26:42,877 | INFO     |   → 723/868 ❌ HTTP 404 — https://raw.githubusercontent.com/snakem982/proxypool/main/source/v2ray.txt
+2026-07-07 21:26:42,877 | INFO     |   → 724/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/hysteria
+2026-07-07 21:26:42,877 | INFO     |   → 725/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/juicity
+2026-07-07 21:26:42,877 | INFO     |   → 726/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/reality
+2026-07-07 21:26:42,878 | INFO     |   → 727/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/shadowsocks
+2026-07-07 21:26:42,878 | INFO     |   → 728/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/trojan
+2026-07-07 21:26:42,878 | INFO     |   → 729/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/tuic
+2026-07-07 21:26:42,878 | INFO     |   → 730/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/vless
+2026-07-07 21:26:42,878 | INFO     |   → 731/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/vmess
+2026-07-07 21:26:42,878 | INFO     |   → 732/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/jp/mixed
+2026-07-07 21:26:42,878 | INFO     |   → 733/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/hysteria
+2026-07-07 21:26:42,878 | INFO     |   → 734/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/juicity
+2026-07-07 21:26:42,878 | INFO     |   → 735/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/reality
+2026-07-07 21:26:42,878 | INFO     |   → 736/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/shadowsocks
+2026-07-07 21:26:42,878 | INFO     |   → 737/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/trojan
+2026-07-07 21:26:42,878 | INFO     |   → 738/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/tuic
+2026-07-07 21:26:42,878 | INFO     |   → 739/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vless
+2026-07-07 21:26:42,878 | INFO     |   → 740/868 ❌ HTTP 404 — https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess
+2026-07-07 21:26:42,878 | INFO     |   → 741/868 ❌ HTTP 404 — https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yml
+2026-07-07 21:26:42,878 | INFO     |   → 742/868 ❌ HTTP 404 — https://raw.githubusercontent.com/ssrsub/ssr/master/V2Ray
+2026-07-07 21:26:42,878 | INFO     |   → 743/868 ❌ HTTP 404 — https://raw.githubusercontent.com/ssrsub/ssr/master/ss-sub
+2026-07-07 21:26:42,878 | INFO     |   → 744/868 ❌ HTTP 404 — https://raw.githubusercontent.com/ssrsub/ssr/master/ssrsub
+2026-07-07 21:26:42,878 | INFO     |   → 745/868 ❌ HTTP 404 — https://raw.githubusercontent.com/ssrsub/ssr/master/trojan
+2026-07-07 21:26:42,879 | INFO     |   → 746/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 747/868 ❌ HTTP 404 — https://raw.githubusercontent.com/tbbatbb/Proxy/master/dist/clash.config.yaml
+2026-07-07 21:26:42,879 | INFO     |   → 748/868 ❌ HTTP 404 — https://raw.githubusercontent.com/thuhollow2/myconfig/main/config.yaml
+2026-07-07 21:26:42,879 | INFO     |   → 749/868: ✅ 2 взято | 🗑️ 35 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 750/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 751/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 752/868: ✅ 8 взято | 🗑️ 142 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 753/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 754/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 755/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 756/868: ✅ 283 взято | 🗑️ 9640 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 757/868: ✅ 281 взято | 🗑️ 10086 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 758/868: ✅ 280 взято | 🗑️ 9675 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 759/868: ✅ 334 взято | 🗑️ 9823 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 760/868: ✅ 350 взято | 🗑️ 9639 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 761/868: ✅ 127 взято | 🗑️ 7919 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 762/868: ✅ 135 взято | 🗑️ 4836 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 763/868: ✅ 502 взято | 🗑️ 7659 мусор
+2026-07-07 21:26:42,879 | INFO     |   → 764/868: ✅ 631 взято | 🗑️ 8081 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 765/868: ✅ 202 взято | 🗑️ 5131 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 766/868 ❌ HTTP 404 — https://raw.githubusercontent.com/vveg26/chromego_merge/main/sub/merged_proxies.yaml
+2026-07-07 21:26:42,880 | INFO     |   → 767/868 ❌ HTTP 404 — https://raw.githubusercontent.com/vveg26/get_proxy/main/dist/clash.config.yaml
+2026-07-07 21:26:42,880 | INFO     |   → 768/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 769/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 770/868: ✅ 0 взято | 🗑️ 10 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 771/868: ✅ 0 взято | 🗑️ 4 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 772/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 773/868: ✅ 0 взято | 🗑️ 4 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 774/868: ✅ 8 взято | 🗑️ 63 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 775/868: ✅ 9 взято | 🗑️ 62 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 776/868: ✅ 50 взято | 🗑️ 489 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 777/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 778/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 779/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 780/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 781/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,880 | INFO     |   → 782/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,881 | INFO     |   → 783/868: ✅ 0 взято | 🗑️ 52 мусор
+2026-07-07 21:26:42,881 | INFO     |   → 784/868: ✅ 0 взято | 🗑️ 9 мусор
+2026-07-07 21:26:42,881 | INFO     |   → 785/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,881 | INFO     |   → 786/868: ✅ 458 взято | 🗑️ 2500 мусор
+2026-07-07 21:26:42,881 | INFO     |   → 787/868: ✅ 0 взято | 🗑️ 159 мусор
+2026-07-07 21:26:42,881 | INFO     |   → 788/868: ✅ 16 взято | 🗑️ 22 мусор
+2026-07-07 21:26:42,881 | INFO     |   → 789/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,881 | INFO     |   → 790/868 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/donated
+2026-07-07 21:26:42,881 | INFO     |   → 791/868 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/hysteria2
+2026-07-07 21:26:42,881 | INFO     |   → 792/868 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/reality
+2026-07-07 21:26:42,881 | INFO     |   → 793/868 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/shadowsocks
+2026-07-07 21:26:42,881 | INFO     |   → 794/868 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/trojan
+2026-07-07 21:26:42,881 | INFO     |   → 795/868 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/tuic
+2026-07-07 21:26:42,881 | INFO     |   → 796/868 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/vless
+2026-07-07 21:26:42,881 | INFO     |   → 797/868 ❌ HTTP 404 — https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/vmess
+2026-07-07 21:26:42,881 | INFO     |   → 798/868: ✅ 0 взято | 🗑️ 30 мусор
+2026-07-07 21:26:42,881 | INFO     |   → 799/868: ✅ 23 взято | 🗑️ 515 мусор
+2026-07-07 21:26:42,881 | INFO     |   → 800/868: ✅ 13 взято | 🗑️ 351 мусор
+2026-07-07 21:26:42,881 | INFO     |   → 801/868: ✅ 213 взято | 🗑️ 511 мусор
+2026-07-07 21:26:42,882 | INFO     |   → 802/868: ✅ 131 взято | 🗑️ 1983 мусор
+2026-07-07 21:26:42,882 | INFO     |   → 803/868: ✅ 3 взято | 🗑️ 545 мусор
+2026-07-07 21:26:42,882 | INFO     |   → 804/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,882 | INFO     |   → 805/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,882 | INFO     |   → 806/868: ✅ 1 взято | 🗑️ 18 мусор
+2026-07-07 21:26:42,882 | INFO     |   → 807/868: ✅ 0 взято | 🗑️ 30 мусор
+2026-07-07 21:26:42,882 | INFO     |   → 808/868: ✅ 0 взято | 🗑️ 5 мусор
+2026-07-07 21:26:42,882 | INFO     |   → 809/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,882 | INFO     |   → 810/868 ⚠️ Ошибка: HTTPSConnectionPool(host='rgergergergerg6555.saojc.xyz', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=750810736ea0883ffd61f1b1c416b885 (Caused by NameResolutionError("HTTPSConnection(host='rgergergergerg6555.saojc.xyz', port=443): Failed to resolve 'rgergergergerg6555.saojc.xyz' ([Errno -2] Name or service not known)")) — https://rgergergergerg6555.saojc.xyz/api/v1/client/subscribe?token=750810736ea0883ffd61f1b1c416b885
+2026-07-07 21:26:42,882 | INFO     |   → 811/868 ⚠️ Ошибка: HTTPSConnectionPool(host='rvorch.treze.cc', port=443): Max retries exceeded with url: /clash/proxies (Caused by NameResolutionError("HTTPSConnection(host='rvorch.treze.cc', port=443): Failed to resolve 'rvorch.treze.cc' ([Errno -2] Name or service not known)")) — https://rvorch.treze.cc/clash/proxies
+2026-07-07 21:26:42,882 | INFO     |   → 812/868 ❌ HTTP 403 — https://s1.byte16.com/api/v1/client/subscribe?token=feba159f3478ff8936f52a43d88aae8b
+2026-07-07 21:26:42,882 | INFO     |   → 813/868 ❌ HTTP 404 — https://shadow-socks-share.herokuapp.com
+2026-07-07 21:26:42,882 | INFO     |   → 814/868 ❌ HTTP 403 — https://shadowmere.akiel.dev/api/b64sub
+2026-07-07 21:26:42,882 | INFO     |   → 815/868: ✅ 0 взято | 🗑️ 11 мусор
+2026-07-07 21:26:42,882 | INFO     |   → 816/868: ✅ 0 взято | 🗑️ 1 мусор
+2026-07-07 21:26:42,882 | INFO     |   → 817/868 ⚠️ Ошибка: HTTPSConnectionPool(host='sub.fqzsnai.ggff.net', port=443): Max retries exceeded with url: /auto (Caused by NameResolutionError("HTTPSConnection(host='sub.fqzsnai.ggff.net', port=443): Failed to resolve 'sub.fqzsnai.ggff.net' ([Errno -2] Name or service not known)")) — https://sub.fqzsnai.ggff.net/auto
+2026-07-07 21:26:42,882 | INFO     |   → 818/868 ⚠️ Ошибка: HTTPSConnectionPool(host='sub.pmsub.me', port=443): Max retries exceeded with url: /base64 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)'))) — https://sub.pmsub.me/base64
+2026-07-07 21:26:42,882 | INFO     |   → 819/868 ⚠️ Ошибка: HTTPSConnectionPool(host='sub.pmsub.me', port=443): Max retries exceeded with url: /clash.yaml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)'))) — https://sub.pmsub.me/clash.yaml
+2026-07-07 21:26:42,882 | INFO     |   → 820/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,883 | INFO     |   → 821/868 ⚠️ Ошибка: HTTPSConnectionPool(host='sub.sharecentre.online', port=443): Max retries exceeded with url: /sub&flag=clash (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)'))) — https://sub.sharecentre.online/sub&flag=clash
+2026-07-07 21:26:42,883 | INFO     |   → 822/868 ⚠️ Ошибка: HTTPSConnectionPool(host='sub.tgzdyz2.xyz', port=443): Max retries exceeded with url: /sub (Caused by NameResolutionError("HTTPSConnection(host='sub.tgzdyz2.xyz', port=443): Failed to resolve 'sub.tgzdyz2.xyz' ([Errno -2] Name or service not known)")) — https://sub.tgzdyz2.xyz/sub
+2026-07-07 21:26:42,883 | INFO     |   → 823/868 ⚠️ Ошибка: HTTPSConnectionPool(host='sub123.71345.xyz', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=67d0e817bbb631b2aa14bfe031334415 (Caused by NameResolutionError("HTTPSConnection(host='sub123.71345.xyz', port=443): Failed to resolve 'sub123.71345.xyz' ([Errno -5] No address associated with hostname)")) — https://sub123.71345.xyz/api/v1/client/subscribe?token=67d0e817bbb631b2aa14bfe031334415
+2026-07-07 21:26:42,883 | INFO     |   → 824/868 ⚠️ Ошибка: HTTPSConnectionPool(host='sub123.71345.xyz', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=7eb7f9c181fe90a98a53d28b1a905b5d (Caused by NameResolutionError("HTTPSConnection(host='sub123.71345.xyz', port=443): Failed to resolve 'sub123.71345.xyz' ([Errno -5] No address associated with hostname)")) — https://sub123.71345.xyz/api/v1/client/subscribe?token=7eb7f9c181fe90a98a53d28b1a905b5d
+2026-07-07 21:26:42,883 | INFO     |   → 825/868 ⚠️ Ошибка: HTTPSConnectionPool(host='sub123.71345.xyz', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=95388132afab15570d496c96fe99474d (Caused by NameResolutionError("HTTPSConnection(host='sub123.71345.xyz', port=443): Failed to resolve 'sub123.71345.xyz' ([Errno -5] No address associated with hostname)")) — https://sub123.71345.xyz/api/v1/client/subscribe?token=95388132afab15570d496c96fe99474d
+2026-07-07 21:26:42,883 | INFO     |   → 826/868 ⚠️ Ошибка: HTTPSConnectionPool(host='sub123.71345.xyz', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=b34b2e4e8eeec829e368fd631b20fbd1 (Caused by NameResolutionError("HTTPSConnection(host='sub123.71345.xyz', port=443): Failed to resolve 'sub123.71345.xyz' ([Errno -5] No address associated with hostname)")) — https://sub123.71345.xyz/api/v1/client/subscribe?token=b34b2e4e8eeec829e368fd631b20fbd1
+2026-07-07 21:26:42,883 | INFO     |   → 827/868 ⚠️ Ошибка: HTTPSConnectionPool(host='sub123.71345.xyz', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=ba1d0c5044be749390ee0eb2e6af88e3 (Caused by NameResolutionError("HTTPSConnection(host='sub123.71345.xyz', port=443): Failed to resolve 'sub123.71345.xyz' ([Errno -5] No address associated with hostname)")) — https://sub123.71345.xyz/api/v1/client/subscribe?token=ba1d0c5044be749390ee0eb2e6af88e3
+2026-07-07 21:26:42,883 | INFO     |   → 828/868 ⚠️ Ошибка: HTTPSConnectionPool(host='sub123.71345.xyz', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=f0858ff0a06e3e5c377ab69522abc04d (Caused by NameResolutionError("HTTPSConnection(host='sub123.71345.xyz', port=443): Failed to resolve 'sub123.71345.xyz' ([Errno -5] No address associated with hostname)")) — https://sub123.71345.xyz/api/v1/client/subscribe?token=f0858ff0a06e3e5c377ab69522abc04d
+2026-07-07 21:26:42,883 | INFO     |   → 829/868 ⚠️ Ошибка: HTTPSConnectionPool(host='subscribe.suwas.xyz', port=443): Max retries exceeded with url: /api/v1/client/subscribe (Caused by ConnectTimeoutError(<HTTPSConnection(host='subscribe.suwas.xyz', port=443) at 0x7fa0fc420c50>, 'Connection to subscribe.suwas.xyz timed out. (connect timeout=15)')) — https://subscribe.suwas.xyz/api/v1/client/subscribe?
+2026-07-07 21:26:42,883 | INFO     |   → 830/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,883 | INFO     |   → 831/868 ❌ HTTP 404 — https://tgscan.onrender.com/sub10/base64
+2026-07-07 21:26:42,883 | INFO     |   → 832/868 ❌ HTTP 404 — https://tgscan.onrender.com/sub3
+2026-07-07 21:26:42,883 | INFO     |   → 833/868 ❌ HTTP 404 — https://tgscan.onrender.com/sub5
+2026-07-07 21:26:42,883 | INFO     |   → 834/868 ❌ HTTP 404 — https://tgscan.onrender.com/sub9/base64
+2026-07-07 21:26:42,883 | INFO     |   → 835/868 ❌ HTTP 404 — https://timell.pages.dev/clash/proxies
+2026-07-07 21:26:42,883 | INFO     |   → 836/868: ✅ 0 взято | 🗑️ 45 мусор
+2026-07-07 21:26:42,883 | INFO     |   → 837/868 ❌ HTTP 403 — https://toshare.tosslk.xyz/RCbVccf
+2026-07-07 21:26:42,883 | INFO     |   → 838/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,884 | INFO     |   → 839/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,884 | INFO     |   → 840/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,884 | INFO     |   → 841/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,884 | INFO     |   → 842/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,884 | INFO     |   → 843/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,884 | INFO     |   → 844/868 ❌ HTTP 404 — https://v1.mk/HuaplNe
+2026-07-07 21:26:42,884 | INFO     |   → 845/868: ✅ 0 взято | 🗑️ 1 мусор
+2026-07-07 21:26:42,884 | INFO     |   → 846/868 ⚠️ Ошибка: HTTPSConnectionPool(host='v2rayshare.githubrowcontent.com', port=443): Max retries exceeded with url: /2024/07/20240701.txt (Caused by NameResolutionError("HTTPSConnection(host='v2rayshare.githubrowcontent.com', port=443): Failed to resolve 'v2rayshare.githubrowcontent.com' ([Errno -2] Name or service not known)")) — https://v2rayshare.com/wp-content/uploads/2022/12/20221208.txt
+2026-07-07 21:26:42,884 | INFO     |   → 847/868 ⚠️ Ошибка: HTTPSConnectionPool(host='v2rayshare.githubrowcontent.com', port=443): Max retries exceeded with url: /%7BYYYY%7D/%7BMM%7D/%7BYYYY%7D%7BMM%7D%7BDD%7D.txt (Caused by NameResolutionError("HTTPSConnection(host='v2rayshare.githubrowcontent.com', port=443): Failed to resolve 'v2rayshare.githubrowcontent.com' ([Errno -2] Name or service not known)")) — https://v2rayshare.githubrowcontent.com/{YYYY}/{MM}/{YYYY}{MM}{DD}.txt
+2026-07-07 21:26:42,884 | INFO     |   → 848/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,884 | INFO     |   → 849/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,884 | INFO     |   → 850/868 ⚠️ Ошибка: HTTPSConnectionPool(host='vpnyyds.link', port=443): Max retries exceeded with url: /free (Caused by NameResolutionError("HTTPSConnection(host='vpnyyds.link', port=443): Failed to resolve 'vpnyyds.link' ([Errno -2] Name or service not known)")) — https://vpnyyds.link/free
+2026-07-07 21:26:42,884 | INFO     |   → 851/868 ⚠️ Ошибка: HTTPSConnectionPool(host='wub.zongyunti.site', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=d6fa4e49f9d115926ac97f45e96c572d (Caused by NameResolutionError("HTTPSConnection(host='wub.zongyunti.site', port=443): Failed to resolve 'wub.zongyunti.site' ([Errno -2] Name or service not known)")) — https://wub.zongyunti.site/api/v1/client/subscribe?token=d6fa4e49f9d115926ac97f45e96c572d
+2026-07-07 21:26:42,884 | INFO     |   → 852/868 ⚠️ Ошибка: HTTPSConnectionPool(host='www.4spaces.org', port=443): Read timed out. (read timeout=15) — https://www.4spaces.org/free/
+2026-07-07 21:26:42,884 | INFO     |   → 853/868 ❌ HTTP 404 — https://www.ccsub.org/link/psKMg3RzcKphYYMO?clash=1
+2026-07-07 21:26:42,884 | INFO     |   → 854/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,884 | INFO     |   → 855/868 ❌ HTTP 404 — https://www.freefq.com/free-ss/](https://www.freefq.com/free-ss/
+2026-07-07 21:26:42,884 | INFO     |   → 856/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,885 | INFO     |   → 857/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,885 | INFO     |   → 858/868 ⚠️ Ошибка: HTTPSConnectionPool(host='www.freevpnnet.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.freevpnnet.com', port=443): Failed to resolve 'www.freevpnnet.com' ([Errno -2] Name or service not known)")) — https://www.freevpnnet.com
+2026-07-07 21:26:42,885 | INFO     |   → 859/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,885 | INFO     |   → 860/868 ⚠️ Ошибка: HTTPSConnectionPool(host='www.vns735p8.xyz', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=cf734613f8dc3ca00cf2a690a5c54b58&connection=relay (Caused by NameResolutionError("HTTPSConnection(host='www.vns735p8.xyz', port=443): Failed to resolve 'www.vns735p8.xyz' ([Errno -2] Name or service not known)")) — https://www.vns735p8.xyz/api/v1/client/subscribe?token=cf734613f8dc3ca00cf2a690a5c54b58&connection=relay
+2026-07-07 21:26:42,885 | INFO     |   → 861/868: ✅ 0 взято | 🗑️ 24 мусор
+2026-07-07 21:26:42,885 | INFO     |   → 862/868 ❌ HTTP 403 — https://www.yfjc.xyz/api/v1/client/subscribe?token=7cda8ee5472db4dcb6779955e4211996
+2026-07-07 21:26:42,885 | INFO     |   → 863/868 ❌ HTTP 403 — https://www.yfjc.xyz/api/v1/client/subscribe?token=7d9cb26c107f04ecd6fdec6644f810c9
+2026-07-07 21:26:42,885 | INFO     |   → 864/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,885 | INFO     |   → 865/868 ⚠️ Ошибка: HTTPSConnectionPool(host='wwy.yyenh.cn', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=6ba3caadae1dd5294a2b896ab6d4eadb (Caused by NameResolutionError("HTTPSConnection(host='wwy.yyenh.cn', port=443): Failed to resolve 'wwy.yyenh.cn' ([Errno -5] No address associated with hostname)")) — https://wwy.yyenh.cn/api/v1/client/subscribe?token=6ba3caadae1dd5294a2b896ab6d4eadb
+2026-07-07 21:26:42,885 | INFO     |   → 866/868 ⚠️ Ошибка: HTTPSConnectionPool(host='xsus.wiki', port=443): Max retries exceeded with url: /api/v1/client/subscribe?token=d0bd22a534e76a5eb6aca4f3e60b5af5&flag=clash (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)'))) — https://xsus.wiki/api/v1/client/subscribe?token=d0bd22a534e76a5eb6aca4f3e60b5af5&flag=clash
+2026-07-07 21:26:42,885 | INFO     |   → 867/868 ❌ HTTP 404 — https://youlianboshi.netlify.app
+2026-07-07 21:26:42,885 | INFO     |   → 868/868: ✅ 0 взято | 🗑️ 0 мусор
+2026-07-07 21:26:42,885 | INFO     |   → 📡 С sstap.org получено 0 ключей
+2026-07-07 21:26:42,885 | INFO     |   → 📡 С sstap.org не добавлено ни одного ключа (все 0 отклонены фильтром)
+2026-07-07 21:26:42,885 | INFO     |   → ✅ ГОТОВО!
+2026-07-07 21:26:42,885 | INFO     |   →    📥 Всего ключей после фильтра: 29426
+2026-07-07 21:26:42,885 | INFO     |   →    🔗 Уникальных IP:PORT:SCHEME: 11493
+2026-07-07 21:26:42,885 | INFO     |   →    🗑️ Выброшено мусора: 562758
+2026-07-07 21:26:42,886 | INFO     |   → 📊 По протоколам:
+2026-07-07 21:26:42,886 | INFO     |   →    vless: 5088
+2026-07-07 21:26:42,886 | INFO     |   →    vmess: 3055
+2026-07-07 21:26:42,886 | INFO     |   →    trojan: 1831
+2026-07-07 21:26:42,886 | INFO     |   →    ss: 1337
+2026-07-07 21:26:42,886 | INFO     |   →    hysteria: 3
+2026-07-07 21:26:42,886 | INFO     |   →    hysteria2: 175
+2026-07-07 21:26:42,886 | INFO     |   →    hy2: 4
+2026-07-07 21:26:42,886 | INFO     | ✅ mirror.py завершён успешно
+2026-07-07 21:26:42,886 | INFO     | 
+2026-07-07 21:26:42,886 | INFO     | 
+2026-07-07 21:26:42,886 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-07-07 21:26:42,886 | INFO     | 📌 ЭТАП: Генерация 50 уникальных CF-VLESS
+2026-07-07 21:26:42,886 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-07-07 21:26:42,886 | INFO     | 🚀 Запуск generate_cf_vless.py (50 новых CF-VLESS)...
+2026-07-07 21:26:43,051 | INFO     |   → === Генератор свежих VLESS-конфигов на IP Cloudflare ===
+2026-07-07 21:26:43,051 | INFO     |   → ✅ Сгенерировано и сохранено 50 VLESS-конфигов.
+2026-07-07 21:26:43,051 | INFO     |   → 📂 Файл: /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia/data/githubmirror/new/cf_fresh.txt
+2026-07-07 21:26:43,051 | INFO     | ✅ generate_cf_vless.py завершён успешно
+2026-07-07 21:26:43,051 | INFO     | 
+2026-07-07 21:26:43,051 | INFO     | 
+2026-07-07 21:26:43,051 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-07-07 21:26:43,051 | INFO     | 📌 ЭТАП: Слияние CF с основным списком
+2026-07-07 21:26:43,051 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-07-07 21:26:43,121 | INFO     | 🔄 Добавлено 50 новых CF-VLESS в /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia/data/githubmirror/clean/vless.txt
+2026-07-07 21:26:43,121 | INFO     | 📊 Всего в clean/vless.txt теперь: 5138
+2026-07-07 21:26:43,122 | INFO     | 
+2026-07-07 21:26:43,122 | INFO     | 
+2026-07-07 21:26:43,122 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-07-07 21:26:43,122 | INFO     | 📌 ЭТАП: Фильтрация по реальному SNI
+2026-07-07 21:26:43,122 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-07-07 21:26:43,123 | INFO     | 🚀 Запуск filter_ru_sni.py (Фильтр по реальному SNI (CDN+RU))...
+2026-07-07 21:26:43,436 | INFO     |   → hy2.txt: 4 → 2 (SNI-filtered)
+2026-07-07 21:26:43,436 | INFO     |   →   hysteria.txt: 3 → 0 (SNI-filtered)
+2026-07-07 21:26:43,436 | INFO     |   →   hysteria2.txt: 175 → 8 (SNI-filtered)
+2026-07-07 21:26:43,436 | INFO     |   →   ss.txt: 1337 → 1 (SNI-filtered)
+2026-07-07 21:26:43,437 | INFO     |   →   trojan.txt: 1831 → 34 (SNI-filtered)
+2026-07-07 21:26:43,437 | INFO     |   →   vless.txt: 5138 → 1075 (SNI-filtered)
+2026-07-07 21:26:43,437 | INFO     |   →   vmess.txt: 3055 → 38 (SNI-filtered)
+2026-07-07 21:26:43,437 | INFO     |   → ==================================================
+2026-07-07 21:26:43,437 | INFO     |   →   Всего входных:  11543
+2026-07-07 21:26:43,437 | INFO     |   →   Прошли фильтр:  1158
+2026-07-07 21:26:43,437 | INFO     |   →   Отброшено:      10385
+2026-07-07 21:26:43,437 | INFO     |   → ==================================================
+2026-07-07 21:26:43,437 | INFO     |   → Готово → /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia/data/githubmirror/ru-sni
+2026-07-07 21:26:43,437 | INFO     | ✅ filter_ru_sni.py завершён успешно
+2026-07-07 21:26:43,437 | INFO     | 
+2026-07-07 21:26:43,437 | INFO     | 
+2026-07-07 21:26:43,437 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-07-07 21:26:43,437 | INFO     | 📌 ЭТАП: Экспериментальный RU-SNI фильтр
+2026-07-07 21:26:43,437 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-07-07 21:26:43,437 | INFO     | 🚀 Запуск filter_ru_sni_local.py (Экспериментальный фильтр по RU-SNI)...
+2026-07-07 21:26:43,646 | INFO     |   → hy2.txt: 4 → 0 (RU-SNI)
+2026-07-07 21:26:43,646 | INFO     |   → hysteria.txt: 3 → 0 (RU-SNI)
+2026-07-07 21:26:43,646 | INFO     |   → hysteria2.txt: 175 → 0 (RU-SNI)
+2026-07-07 21:26:43,646 | INFO     |   → ss.txt: 1337 → 0 (RU-SNI)
+2026-07-07 21:26:43,646 | INFO     |   → trojan.txt: 1831 → 1 (RU-SNI)
+2026-07-07 21:26:43,646 | INFO     |   → vless.txt: 5138 → 137 (RU-SNI)
+2026-07-07 21:26:43,646 | INFO     |   → vmess.txt: 3055 → 0 (RU-SNI)
+2026-07-07 21:26:43,646 | INFO     |   → ==================================================
+2026-07-07 21:26:43,646 | INFO     |   → Всего входных:  11543
+2026-07-07 21:26:43,646 | INFO     |   → Прошли RU-SNI:  138
+2026-07-07 21:26:43,646 | INFO     |   → Отброшено:      11405
+2026-07-07 21:26:43,646 | INFO     |   → ==================================================
+2026-07-07 21:26:43,647 | INFO     |   → Готово → /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia/data/githubmirror/ru-sni-local
+2026-07-07 21:26:43,647 | INFO     | ✅ filter_ru_sni_local.py завершён успешно
+2026-07-07 21:26:43,647 | INFO     | 
+2026-07-07 21:26:43,647 | INFO     | 
+2026-07-07 21:26:43,647 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-07-07 21:26:43,647 | INFO     | 📌 ЭТАП: Сбор статистики
+2026-07-07 21:26:43,647 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-07-07 21:26:43,647 | INFO     | 📊 Сбор статистики...
+2026-07-07 21:26:43,647 | INFO     |   📁 githubmirror/clean:
+2026-07-07 21:26:43,647 | INFO     |     • hy2         :     4 конфигов
+2026-07-07 21:26:43,648 | INFO     |     • hysteria    :     3 конфигов
+2026-07-07 21:26:43,648 | INFO     |     • hysteria2   :   175 конфигов
+2026-07-07 21:26:43,649 | INFO     |     • ss          :  1337 конфигов
+2026-07-07 21:26:43,651 | INFO     |     • trojan      :  1831 конфигов
+2026-07-07 21:26:43,658 | INFO     |     • vless       :  5138 конфигов
+2026-07-07 21:26:43,660 | INFO     |     • vmess       :  3055 конфигов
+2026-07-07 21:26:43,661 | INFO     |   📁 githubmirror/ru-sni:
+2026-07-07 21:26:43,661 | INFO     |     • hy2         :     2 конфигов ( 50.0% от clean)
+2026-07-07 21:26:43,661 | INFO     |     • hysteria    :     0 конфигов (  0.0% от clean)
+2026-07-07 21:26:43,661 | INFO     |     • hysteria2   :     8 конфигов (  4.6% от clean)
+2026-07-07 21:26:43,661 | INFO     |     • ss          :     1 конфигов (  0.1% от clean)
+2026-07-07 21:26:43,662 | INFO     |     • trojan      :    34 конфигов (  1.9% от clean)
+2026-07-07 21:26:43,664 | INFO     |     • vless       :  1075 конфигов ( 20.9% от clean)
+2026-07-07 21:26:43,664 | INFO     |     • vmess       :    38 конфигов (  1.2% от clean)
+2026-07-07 21:26:43,664 | INFO     |   ✨ Новых CF-VLESS в этом запуске: 50
+2026-07-07 21:26:43,664 | INFO     | 
+2026-07-07 21:26:43,664 | INFO     |   ──────────────────────────────────────────────────
+2026-07-07 21:26:43,664 | INFO     |   📈 ИТОГО:
+2026-07-07 21:26:43,664 | INFO     |     Clean (после geo-фильтра):    11543
+2026-07-07 21:26:43,664 | INFO     |     RU-SNI (после SNI-фильтра):    1158
+2026-07-07 21:26:43,664 | INFO     |     Прошло фильтр:                 10.0%
+2026-07-07 21:26:43,664 | INFO     |   ──────────────────────────────────────────────────
+2026-07-07 21:26:43,665 | INFO     | ✅ Статистика сохранена: /home/runner/work/vpn-vless-configs-russia/vpn-vless-configs-russia/data/stats.json
+2026-07-07 21:26:43,665 | INFO     | 
+2026-07-07 21:26:43,665 | INFO     | ======================================================================
+2026-07-07 21:26:43,665 | INFO     | 📊 ИТОГОВЫЙ ОТЧЁТ
+2026-07-07 21:26:43,665 | INFO     | ======================================================================
+2026-07-07 21:26:43,665 | INFO     |   ✅ OK         | Загрузка и geo-фильтрация
+2026-07-07 21:26:43,665 | INFO     |   ✅ OK         | Генерация 50 уникальных CF-VLESS
+2026-07-07 21:26:43,665 | INFO     |   ✅ OK         | Слияние CF с основным списком
+2026-07-07 21:26:43,665 | INFO     |   ✅ OK         | Фильтрация по реальному SNI
+2026-07-07 21:26:43,665 | INFO     |   ✅ OK         | Экспериментальный RU-SNI фильтр
+2026-07-07 21:26:43,666 | INFO     |   ✅ OK         | Сбор статистики
+2026-07-07 21:26:43,666 | INFO     | ──────────────────────────────────────────────────────────────────────
+2026-07-07 21:26:43,666 | INFO     | ✅ ВСЕ ЭТАПЫ УСПЕШНЫ (6/6)
+2026-07-07 21:26:43,666 | INFO     | ⏰ Время завершения: 2026-07-07 21:26:43
+2026-07-07 21:26:43,666 | INFO     | ======================================================================
