@@ -83,7 +83,7 @@ def run_script(script_name: str, description: str, timeout: int = 300) -> bool:
         return False
 
 def run_mirror_script():
-    return run_script("mirror.py", "Загрузка и фильтрация по РФ/СНГ/Европа", timeout=600)
+    return run_script("mirror.py", "Загрузка и фильтрация по РФ/СНГ/Европа", timeout=900)
 
 def generate_cf_vless():
     return run_script("generate_cf_vless.py", "50 новых CF-VLESS", timeout=90)
