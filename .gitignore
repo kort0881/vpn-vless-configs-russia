@@ -1,0 +1,15 @@
+# Hermes Agent cleanup script
+cleanup_repo.py
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temporary files
+*.tmp
+*.bak
+*.old
+*.orig
+
+# Logs (keep only latest via main.py)
+logs/
