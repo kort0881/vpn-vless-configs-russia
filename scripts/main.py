@@ -20,6 +20,7 @@ BASE_DIR = Path(__file__).parent.parent  # корень репозитория
 SCRIPTS_DIR = BASE_DIR / "scripts"
 LOGS_DIR = BASE_DIR / "logs"
 STATS_FILE = BASE_DIR / "data" / "stats.json"
+GEOIP_PATH = BASE_DIR / "data" / "geoip.dat"  # путь к geoip.dat
 
 LOGS_DIR.mkdir(exist_ok=True)
 
@@ -45,16 +46,19 @@ logger = setup_logging()
 # ОСНОВНЫЕ ФУНКЦИИ
 # ============================================================================
 
-def run_script(script_name: str, description: str, timeout: int = 300) -> bool:
-    """Запускает скрипт из папки scripts/"""
+def run_script(script_name: str, description: str, timeout: int = 300, args: list = None) -> bool:
+    """Запускает скрипт из папки scripts/ с дополнительными аргументами"""
     logger.info(f"🚀 Запуск {script_name} ({description})...")
     script_path = SCRIPTS_DIR / script_name
     if not script_path.exists():
         logger.error(f"❌ Скрипт {script_name} не найден в {SCRIPTS_DIR}")
         return False
+    cmd = [sys.executable, str(script_path)]
+    if args:
+        cmd.extend(args)
     try:
         result = subprocess.run(
-            [sys.executable, str(script_path)],
+            cmd,
             cwd=BASE_DIR,
             capture_output=True,
             text=True,
@@ -83,7 +87,14 @@ def run_script(script_name: str, description: str, timeout: int = 300) -> bool:
         return False
 
 def run_mirror_script():
-    return run_script("mirror.py", "Загрузка и фильтрация по РФ/СНГ/Европа", timeout=900)
+    # Увеличиваем таймаут до 1800 секунд (30 минут) и передаём путь к geoip
+    args = []
+    if GEOIP_PATH.exists():
+        args = ["--geoip", str(GEOIP_PATH)]
+        logger.info(f"📌 Передаём geoip.dat: {GEOIP_PATH}")
+    else:
+        logger.warning("⚠️ geoip.dat не найден, проверка по стране будет отключена")
+    return run_script("mirror.py", "Загрузка и фильтрация по РФ/СНГ/Европа", timeout=1800, args=args)
 
 def generate_cf_vless():
     return run_script("generate_cf_vless.py", "50 новых CF-VLESS", timeout=90)
