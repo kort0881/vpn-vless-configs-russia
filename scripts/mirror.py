@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Mirror.py — WHITELIST ONLY + ALIVE CHECK (TCP/TLS) + geoip фильтр
+# Mirror.py — WHITELIST ONLY + ALIVE CHECK (TCP/TLS) + geoip фильтр с кешем
 
 import os
 import sys
@@ -16,7 +16,6 @@ import ssl
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# ---------- ДОБАВЛЕНО: импорт для geoip ----------
 import maxminddb
 
 print("DEBUG: mirror.py started", flush=True)
@@ -56,7 +55,7 @@ print(f"DEBUG: CONFIG_SOURCES_FILE = {CONFIG_SOURCES_FILE}", flush=True)
 
 CHUNK_SIZE = 500
 
-# ---------- ДОБАВЛЕНО: загрузка geoip.dat ----------
+# ---------- Загрузка geoip.dat ----------
 GEOIP_PATH = os.path.join(BASE_PATH, "data", "geoip.dat")
 geoip_reader = None
 try:
@@ -65,19 +64,27 @@ try:
 except Exception as e:
     print(f"⚠️ geoip.dat not loaded: {e}", flush=True)
 
-# ---------- НОВАЯ ФУНКЦИЯ ДЛЯ ПРОВЕРКИ IP ПО GEOIP ----------
+# ---------- Кеш для geoip ----------
+geoip_cache = {}
+
+# ---------- Функция проверки IP с кешем ----------
 def is_ip_allowed(ip_str):
     if not ip_str or geoip_reader is None:
         return True
+    if ip_str in geoip_cache:
+        return geoip_cache[ip_str]
     try:
         info = geoip_reader.get(ip_str)
+        allowed = False
         if info and 'country' in info and 'iso_code' in info['country']:
             country = info['country']['iso_code'].upper()
-            allowed = {'RU','BY','KZ','DE','NL','FI','GB','FR','SE','PL','CZ','AT','CH','IT','ES','NO','DK','BE','IE','LU','EE','LV','LT'}
-            return country in allowed
+            allowed_countries = {'RU','BY','KZ','DE','NL','FI','GB','FR','SE','PL','CZ','AT','CH','IT','ES','NO','DK','BE','IE','LU','EE','LV','LT'}
+            allowed = country in allowed_countries
+        geoip_cache[ip_str] = allowed
+        return allowed
     except:
-        pass
-    return True
+        geoip_cache[ip_str] = False
+        return False
 
 # ============================================================================
 # НОВАЯ ФУНКЦИЯ ПРОВЕРКИ ДОСТУПНОСТИ (TCP + TLS handshake)
@@ -104,7 +111,6 @@ def check_alive(line: str, timeout: float = 2.0) -> tuple[bool, float]:
             sni = query.get('sni', [None])[0] or query.get('peer', [None])[0]
             if not sni and '#' in line:
                 frag = urllib.parse.unquote(line.split('#')[-1])
-                # Если фрагмент похож на домен — используем его как SNI
                 if re.match(r'^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', frag):
                     sni = frag
 
@@ -112,13 +118,11 @@ def check_alive(line: str, timeout: float = 2.0) -> tuple[bool, float]:
         with socket.create_connection((host, port), timeout=timeout) as sock:
             elapsed = (time.time() - start) * 1000  # миллисекунды
 
-            # Если есть SNI и протокол с TLS — делаем handshake
             if scheme in ('vless', 'trojan', 'vmess') and sni:
                 context = ssl.create_default_context()
                 context.check_hostname = False
                 context.verify_mode = ssl.CERT_NONE
                 with context.wrap_socket(sock, server_hostname=sni) as ssock:
-                    # успешный handshake
                     pass
 
             return True, elapsed
@@ -201,7 +205,7 @@ def is_ip_address(s: str) -> bool:
     return bool(re.match(ipv4_pattern, s) or re.match(ipv6_pattern, s))
 
 
-# ---------- ИЗМЕНЁННАЯ ФУНКЦИЯ is_good_key с geoip ----------
+# ---------- ИЗМЕНЁННАЯ ФУНКЦИЯ is_good_key с geoip и кешем ----------
 def is_good_key(line: str) -> bool:
     line_upper = line.upper()
     name = ""
@@ -216,10 +220,9 @@ def is_good_key(line: str) -> bool:
         for dom in GOOD_DOMAINS:
             if host_lower.endswith("." + dom) or host_lower == dom:
                 return True
-    # ДОБАВЛЕНО: проверка IP через geoip
+    # Проверка IP через geoip (с кешем)
     if host and is_ip_address(host):
         return is_ip_allowed(host)
-    # Если это домен, но мы его не проверили – пропускаем (можно дополнительно через geosite)
     return True
 
 
@@ -332,7 +335,6 @@ def main() -> int:
                 try:
                     alive, delay = future.result()
                     if alive:
-                        # Добавляем задержку в комментарий
                         if '#' in line:
                             base, frag = line.split('#', 1)
                             line = f"{base}#{frag} | {delay:.0f}ms"
@@ -344,7 +346,6 @@ def main() -> int:
 
         print(f"✅ Из {total} уникальных узлов работают: {len(alive_lines)}", flush=True)
 
-        # Сортируем по задержке (первые — самые быстрые)
         def extract_delay(s):
             m = re.search(r'\| (\d+)ms', s)
             return int(m.group(1)) if m else 9999
@@ -380,7 +381,6 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-
 
 
 
