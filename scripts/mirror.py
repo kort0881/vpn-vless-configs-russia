@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Mirror.py — WHITELIST ONLY + ALIVE CHECK (TCP/TLS)
+# Mirror.py — WHITELIST ONLY + ALIVE CHECK (TCP/TLS) + geoip фильтр
 
 import os
 import sys
@@ -15,6 +15,9 @@ import socket
 import ssl
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
+# ---------- ДОБАВЛЕНО: импорт для geoip ----------
+import maxminddb
 
 print("DEBUG: mirror.py started", flush=True)
 
@@ -53,6 +56,28 @@ print(f"DEBUG: CONFIG_SOURCES_FILE = {CONFIG_SOURCES_FILE}", flush=True)
 
 CHUNK_SIZE = 500
 
+# ---------- ДОБАВЛЕНО: загрузка geoip.dat ----------
+GEOIP_PATH = os.path.join(BASE_PATH, "data", "geoip.dat")
+geoip_reader = None
+try:
+    geoip_reader = maxminddb.open(GEOIP_PATH)
+    print("✅ geoip.dat loaded for mirror.py", flush=True)
+except Exception as e:
+    print(f"⚠️ geoip.dat not loaded: {e}", flush=True)
+
+# ---------- НОВАЯ ФУНКЦИЯ ДЛЯ ПРОВЕРКИ IP ПО GEOIP ----------
+def is_ip_allowed(ip_str):
+    if not ip_str or geoip_reader is None:
+        return True
+    try:
+        info = geoip_reader.get(ip_str)
+        if info and 'country' in info and 'iso_code' in info['country']:
+            country = info['country']['iso_code'].upper()
+            allowed = {'RU','BY','KZ','DE','NL','FI','GB','FR','SE','PL','CZ','AT','CH','IT','ES','NO','DK','BE','IE','LU','EE','LV','LT'}
+            return country in allowed
+    except:
+        pass
+    return True
 
 # ============================================================================
 # НОВАЯ ФУНКЦИЯ ПРОВЕРКИ ДОСТУПНОСТИ (TCP + TLS handshake)
@@ -176,6 +201,7 @@ def is_ip_address(s: str) -> bool:
     return bool(re.match(ipv4_pattern, s) or re.match(ipv6_pattern, s))
 
 
+# ---------- ИЗМЕНЁННАЯ ФУНКЦИЯ is_good_key с geoip ----------
 def is_good_key(line: str) -> bool:
     line_upper = line.upper()
     name = ""
@@ -190,7 +216,11 @@ def is_good_key(line: str) -> bool:
         for dom in GOOD_DOMAINS:
             if host_lower.endswith("." + dom) or host_lower == dom:
                 return True
-    return False
+    # ДОБАВЛЕНО: проверка IP через geoip
+    if host and is_ip_address(host):
+        return is_ip_allowed(host)
+    # Если это домен, но мы его не проверили – пропускаем (можно дополнительно через geosite)
+    return True
 
 
 def write_chunks_by_protocol(base_dir: str, protocol: str, items: list, chunk_size: int = 500):
