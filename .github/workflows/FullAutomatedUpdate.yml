@@ -36,8 +36,13 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install requests pyyaml
+          pip install requests pyyaml maxminddb geoip2
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Download geoip.dat from ru-routing-dat
+        run: |
+          mkdir -p data
+          wget -q -O data/geoip.dat https://cdn.jsdelivr.net/gh/GrimbirdUsers/ru-routing-dat@main/geoip.dat
 
       # Шаг 1: Сбор источников через proxy-collect (создаёт data/config_sources.json)
       - name: Merge sources from proxy-collect manifest
@@ -53,7 +58,7 @@ jobs:
 
       # Шаг 4: Запуск основного checker'а (main.py) для финальной обработки
       - name: Run checker (main.py)
-        run: python scripts/main.py
+        run: python scripts/main.py --geoip data/geoip.dat
 
       # Финальный коммит всех изменений
       - name: Commit and push all changes
