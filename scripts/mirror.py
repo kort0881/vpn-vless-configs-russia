@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Mirror.py — WHITELIST ONLY + ALIVE CHECK (TCP/TLS) + geoip фильтр с кешем
+# Оптимизирован: параллельная загрузка источников, таймаут 1.2с, max_workers=150
 
 import os
 import sys
@@ -15,6 +16,7 @@ import socket
 import ssl
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import threading
 
 import maxminddb
 
@@ -87,15 +89,9 @@ def is_ip_allowed(ip_str):
         return False
 
 # ============================================================================
-# НОВАЯ ФУНКЦИЯ ПРОВЕРКИ ДОСТУПНОСТИ (TCP + TLS handshake)
+# ФУНКЦИЯ ПРОВЕРКИ ДОСТУПНОСТИ (TCP + TLS handshake) - ОПТИМИЗИРОВАНА
 # ============================================================================
-def check_alive(line: str, timeout: float = 2.0) -> tuple[bool, float]:
-    """
-    Проверяет доступность узла:
-      - TCP-коннект к host:port (таймаут 2 сек)
-      - Если протокол требует TLS (vless/trojan/vmess) и есть SNI — выполняет TLS handshake
-    Возвращает (доступен, задержка_в_мс)
-    """
+def check_alive(line: str, timeout: float = 1.2) -> tuple[bool, float]:
     try:
         parsed = urllib.parse.urlparse(line)
         host = parsed.hostname
@@ -104,7 +100,6 @@ def check_alive(line: str, timeout: float = 2.0) -> tuple[bool, float]:
         if not host:
             return False, 0.0
 
-        # Извлекаем SNI из параметров или из фрагмента (#)
         sni = None
         if scheme in ('vless', 'trojan', 'vmess'):
             query = urllib.parse.parse_qs(parsed.query)
@@ -116,15 +111,13 @@ def check_alive(line: str, timeout: float = 2.0) -> tuple[bool, float]:
 
         start = time.time()
         with socket.create_connection((host, port), timeout=timeout) as sock:
-            elapsed = (time.time() - start) * 1000  # миллисекунды
-
+            elapsed = (time.time() - start) * 1000
             if scheme in ('vless', 'trojan', 'vmess') and sni:
                 context = ssl.create_default_context()
                 context.check_hostname = False
                 context.verify_mode = ssl.CERT_NONE
                 with context.wrap_socket(sock, server_hostname=sni) as ssock:
                     pass
-
             return True, elapsed
     except Exception:
         return False, 0.0
@@ -171,7 +164,7 @@ def load_all_urls():
             print(f"⚠️ Не удалось прочитать config_sources.json: {e}", flush=True)
     else:
         print(f"⚠️ Файл {CONFIG_SOURCES_FILE} не найден", flush=True)
-    return sorted(urls)
+    return list(urls)
 
 
 def clean_start():
@@ -205,7 +198,6 @@ def is_ip_address(s: str) -> bool:
     return bool(re.match(ipv4_pattern, s) or re.match(ipv6_pattern, s))
 
 
-# ---------- ИЗМЕНЁННАЯ ФУНКЦИЯ is_good_key с geoip и кешем ----------
 def is_good_key(line: str) -> bool:
     line_upper = line.upper()
     name = ""
@@ -220,7 +212,6 @@ def is_good_key(line: str) -> bool:
         for dom in GOOD_DOMAINS:
             if host_lower.endswith("." + dom) or host_lower == dom:
                 return True
-    # Проверка IP через geoip (с кешем)
     if host and is_ip_address(host):
         return is_ip_allowed(host)
     return True
@@ -236,45 +227,66 @@ def write_chunks_by_protocol(base_dir: str, protocol: str, items: list, chunk_si
             f.write("\n".join(part))
 
 
+# ---------- Функция загрузки одного источника (для параллельного выполнения) ----------
+def fetch_source(url: str, timeout: int = 15) -> tuple[str, str]:
+    """Возвращает (url, content) или (url, '') при ошибке"""
+    try:
+        r = requests.get(url, timeout=timeout, headers={"User-Agent": "Mozilla/5.0"})
+        if r.status_code == 200:
+            return url, r.text
+        else:
+            return url, ""
+    except Exception as e:
+        return url, ""
+
+
 def main() -> int:
     try:
         clean_start()
         all_keys = set()
         trash_count = 0
-
         urls = load_all_urls()
-        print(f"🚀 Старт: всего источников: {len(urls)}", flush=True)
+        total_urls = len(urls)
+        print(f"🚀 Старт: всего источников: {total_urls}", flush=True)
 
-        for i, url in enumerate(urls, 1):
-            try:
-                r = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
-                if r.status_code != 200:
-                    print(f"{i}/{len(urls)} ❌ HTTP {r.status_code} — {url}", flush=True)
-                    continue
-                content = r.text.strip()
-                if "://" not in content:
-                    try:
-                        content = base64.b64decode(content + "==").decode("utf-8", errors="ignore")
-                    except Exception:
-                        pass
-                lines = content.splitlines()
-                added_local = 0
-                trash_local = 0
-                for line in lines:
-                    line = line.strip()
-                    if not protocol_of(line):
+        # ---------- ПАРАЛЛЕЛЬНАЯ ЗАГРУЗКА ВСЕХ ИСТОЧНИКОВ ----------
+        print("⏳ Загрузка источников параллельно...", flush=True)
+        loaded = 0
+        with ThreadPoolExecutor(max_workers=30) as executor:
+            future_to_url = {executor.submit(fetch_source, url, 15): url for url in urls}
+            for future in as_completed(future_to_url):
+                url = future_to_url[future]
+                loaded += 1
+                try:
+                    url, content = future.result()
+                    if not content:
+                        print(f"{loaded}/{total_urls} ❌ Не удалось загрузить {url}", flush=True)
                         continue
-                    if is_good_key(line):
-                        if line not in all_keys:
-                            all_keys.add(line)
-                            added_local += 1
-                    else:
-                        trash_local += 1
-                trash_count += trash_local
-                print(f"{i}/{len(urls)}: ✅ {added_local} взято | 🗑️ {trash_local} мусор", flush=True)
-            except Exception as e:
-                print(f"{i}/{len(urls)} ⚠️ Ошибка: {e} — {url}", flush=True)
+                    # Обработка содержимого
+                    if "://" not in content:
+                        try:
+                            content = base64.b64decode(content + "==").decode("utf-8", errors="ignore")
+                        except Exception:
+                            pass
+                    lines = content.splitlines()
+                    added_local = 0
+                    trash_local = 0
+                    for line in lines:
+                        line = line.strip()
+                        if not protocol_of(line):
+                            continue
+                        if is_good_key(line):
+                            if line not in all_keys:
+                                all_keys.add(line)
+                                added_local += 1
+                        else:
+                            trash_local += 1
+                    trash_count += trash_local
+                    print(f"{loaded}/{total_urls} ✅ +{added_local} ключей (мусор {trash_local})", flush=True)
+                except Exception as e:
+                    print(f"{loaded}/{total_urls} ⚠️ Ошибка при обработке {url}: {e}", flush=True)
 
+        # ---------- SSTAP (отдельно, т.к. это не URL из config_sources) ----------
         sstap_keys = fetch_keys_from_sstap()
         sstap_added = 0
         sstap_trash = 0
@@ -306,9 +318,7 @@ def main() -> int:
             if items:
                 write_chunks_by_protocol(NEW_BY_PROTO_DIR, p, items, CHUNK_SIZE)
 
-        # ============================================================
-        #  УДАЛЕНИЕ ДУБЛЕЙ ПО IP:PORT:SCHEME + ПРОВЕРКА НА ЖИЗНЬ
-        # ============================================================
+        # ---------- УДАЛЕНИЕ ДУБЛЕЙ И ПРОВЕРКА НА ЖИЗНЬ ----------
         seen_ip = set()
         unique_lines = []
         for line in all_keys_list:
@@ -320,13 +330,13 @@ def main() -> int:
                 seen_ip.add(key)
                 unique_lines.append(line)
 
-        print("⏳ Проверка доступности узлов (TCP/TLS)...", flush=True)
+        print(f"⏳ Проверка доступности {len(unique_lines)} уникальных узлов (таймаут 1.2с)...", flush=True)
         alive_lines = []
         total = len(unique_lines)
         checked = 0
 
-        with ThreadPoolExecutor(max_workers=50) as executor:
-            future_to_line = {executor.submit(check_alive, line, 2.0): line for line in unique_lines}
+        with ThreadPoolExecutor(max_workers=150) as executor:
+            future_to_line = {executor.submit(check_alive, line, 1.2): line for line in unique_lines}
             for future in as_completed(future_to_line):
                 line = future_to_line[future]
                 checked += 1
@@ -353,9 +363,7 @@ def main() -> int:
 
         clean_keys = alive_lines
 
-        # ============================================================
-        #  ЗАПИСЬ В clean/ ПО ПРОТОКОЛАМ
-        # ============================================================
+        # ---------- ЗАПИСЬ В clean/ ПО ПРОТОКОЛАМ ----------
         for p in PROTOCOLS:
             items = [k for k in clean_keys if protocol_of(k) == p]
             if items:
@@ -381,7 +389,6 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-
 
 
 
