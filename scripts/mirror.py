@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Mirror.py — WHITELIST ONLY (Super Clean)
+# Mirror.py — WHITELIST ONLY + ALIVE CHECK (TCP/TLS)
 
 import os
 import sys
@@ -11,6 +11,10 @@ import base64
 import json
 import re
 import traceback
+import socket
+import ssl
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 print("DEBUG: mirror.py started", flush=True)
 
@@ -49,6 +53,54 @@ print(f"DEBUG: CONFIG_SOURCES_FILE = {CONFIG_SOURCES_FILE}", flush=True)
 
 CHUNK_SIZE = 500
 
+
+# ============================================================================
+# НОВАЯ ФУНКЦИЯ ПРОВЕРКИ ДОСТУПНОСТИ (TCP + TLS handshake)
+# ============================================================================
+def check_alive(line: str, timeout: float = 2.0) -> tuple[bool, float]:
+    """
+    Проверяет доступность узла:
+      - TCP-коннект к host:port (таймаут 2 сек)
+      - Если протокол требует TLS (vless/trojan/vmess) и есть SNI — выполняет TLS handshake
+    Возвращает (доступен, задержка_в_мс)
+    """
+    try:
+        parsed = urllib.parse.urlparse(line)
+        host = parsed.hostname
+        port = parsed.port or 443
+        scheme = parsed.scheme
+        if not host:
+            return False, 0.0
+
+        # Извлекаем SNI из параметров или из фрагмента (#)
+        sni = None
+        if scheme in ('vless', 'trojan', 'vmess'):
+            query = urllib.parse.parse_qs(parsed.query)
+            sni = query.get('sni', [None])[0] or query.get('peer', [None])[0]
+            if not sni and '#' in line:
+                frag = urllib.parse.unquote(line.split('#')[-1])
+                # Если фрагмент похож на домен — используем его как SNI
+                if re.match(r'^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', frag):
+                    sni = frag
+
+        start = time.time()
+        with socket.create_connection((host, port), timeout=timeout) as sock:
+            elapsed = (time.time() - start) * 1000  # миллисекунды
+
+            # Если есть SNI и протокол с TLS — делаем handshake
+            if scheme in ('vless', 'trojan', 'vmess') and sni:
+                context = ssl.create_default_context()
+                context.check_hostname = False
+                context.verify_mode = ssl.CERT_NONE
+                with context.wrap_socket(sock, server_hostname=sni) as ssock:
+                    # успешный handshake
+                    pass
+
+            return True, elapsed
+    except Exception:
+        return False, 0.0
+
+
 def fetch_keys_from_sstap():
     url = "https://sstap.org/node-real-time-update/"
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
@@ -74,6 +126,7 @@ def fetch_keys_from_sstap():
         print(f"❌ Ошибка при парсинге sstap.org: {e}", flush=True)
         return []
 
+
 def load_all_urls():
     urls = set()
     if os.path.exists(CONFIG_SOURCES_FILE):
@@ -91,6 +144,7 @@ def load_all_urls():
         print(f"⚠️ Файл {CONFIG_SOURCES_FILE} не найден", flush=True)
     return sorted(urls)
 
+
 def clean_start():
     if os.path.exists(BASE_DIR):
         shutil.rmtree(BASE_DIR)
@@ -98,11 +152,13 @@ def clean_start():
     os.makedirs(CLEAN_DIR, exist_ok=True)
     os.makedirs(NEW_BY_PROTO_DIR, exist_ok=True)
 
+
 def protocol_of(line: str):
     for p in PROTOCOLS:
         if line.startswith(p + "://"):
             return p
     return None
+
 
 def extract_host_port_scheme(line: str):
     try:
@@ -111,12 +167,14 @@ def extract_host_port_scheme(line: str):
     except Exception:
         return None, None, None
 
+
 def is_ip_address(s: str) -> bool:
     if not s:
         return False
     ipv4_pattern = r'^(\d{1,3}\.){3}\d{1,3}$'
     ipv6_pattern = r'^[0-9a-fA-F:]+$'
     return bool(re.match(ipv4_pattern, s) or re.match(ipv6_pattern, s))
+
 
 def is_good_key(line: str) -> bool:
     line_upper = line.upper()
@@ -134,6 +192,7 @@ def is_good_key(line: str) -> bool:
                 return True
     return False
 
+
 def write_chunks_by_protocol(base_dir: str, protocol: str, items: list, chunk_size: int = 500):
     proto_dir = os.path.join(base_dir, protocol)
     os.makedirs(proto_dir, exist_ok=True)
@@ -142,6 +201,7 @@ def write_chunks_by_protocol(base_dir: str, protocol: str, items: list, chunk_si
         part_num = start // chunk_size + 1
         with open(os.path.join(proto_dir, f"{protocol}_{part_num:03d}.txt"), "w", encoding="utf-8") as f:
             f.write("\n".join(part))
+
 
 def main() -> int:
     try:
@@ -213,8 +273,11 @@ def main() -> int:
             if items:
                 write_chunks_by_protocol(NEW_BY_PROTO_DIR, p, items, CHUNK_SIZE)
 
+        # ============================================================
+        #  УДАЛЕНИЕ ДУБЛЕЙ ПО IP:PORT:SCHEME + ПРОВЕРКА НА ЖИЗНЬ
+        # ============================================================
         seen_ip = set()
-        clean_keys = []
+        unique_lines = []
         for line in all_keys_list:
             host, port, scheme = extract_host_port_scheme(line)
             if not host:
@@ -222,8 +285,46 @@ def main() -> int:
             key = (host, port, scheme)
             if key not in seen_ip:
                 seen_ip.add(key)
-                clean_keys.append(line)
+                unique_lines.append(line)
 
+        print("⏳ Проверка доступности узлов (TCP/TLS)...", flush=True)
+        alive_lines = []
+        total = len(unique_lines)
+        checked = 0
+
+        with ThreadPoolExecutor(max_workers=50) as executor:
+            future_to_line = {executor.submit(check_alive, line, 2.0): line for line in unique_lines}
+            for future in as_completed(future_to_line):
+                line = future_to_line[future]
+                checked += 1
+                if checked % 500 == 0:
+                    print(f"   Проверено {checked}/{total}", flush=True)
+                try:
+                    alive, delay = future.result()
+                    if alive:
+                        # Добавляем задержку в комментарий
+                        if '#' in line:
+                            base, frag = line.split('#', 1)
+                            line = f"{base}#{frag} | {delay:.0f}ms"
+                        else:
+                            line = f"{line}#{delay:.0f}ms"
+                        alive_lines.append(line)
+                except Exception:
+                    pass
+
+        print(f"✅ Из {total} уникальных узлов работают: {len(alive_lines)}", flush=True)
+
+        # Сортируем по задержке (первые — самые быстрые)
+        def extract_delay(s):
+            m = re.search(r'\| (\d+)ms', s)
+            return int(m.group(1)) if m else 9999
+        alive_lines.sort(key=extract_delay)
+
+        clean_keys = alive_lines
+
+        # ============================================================
+        #  ЗАПИСЬ В clean/ ПО ПРОТОКОЛАМ
+        # ============================================================
         for p in PROTOCOLS:
             items = [k for k in clean_keys if protocol_of(k) == p]
             if items:
@@ -232,9 +333,10 @@ def main() -> int:
 
         print("\n✅ ГОТОВО!", flush=True)
         print(f"   📥 Всего ключей после фильтра: {len(all_keys_list)}", flush=True)
-        print(f"   🔗 Уникальных IP:PORT:SCHEME: {len(clean_keys)}", flush=True)
+        print(f"   🔗 Уникальных IP:PORT:SCHEME: {len(unique_lines)}", flush=True)
+        print(f"   🟢 Работающих (TCP/TLS): {len(clean_keys)}", flush=True)
         print(f"   🗑️ Выброшено мусора: {trash_count}", flush=True)
-        print("\n📊 По протоколам:", flush=True)
+        print("\n📊 По протоколам (только живые):", flush=True)
         for p in PROTOCOLS:
             count = len([k for k in clean_keys if protocol_of(k) == p])
             if count > 0:
@@ -245,9 +347,9 @@ def main() -> int:
         traceback.print_exc(file=sys.stderr)
         return 1
 
+
 if __name__ == "__main__":
     sys.exit(main())
-
 
 
 
