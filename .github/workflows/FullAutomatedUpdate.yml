@@ -71,4 +71,6 @@ jobs:
             exit 0
           fi
           git commit -m "🤖 Full auto-update $(date -u '+%Y-%m-%d %H:%M:%S')"
+          # Добавляем pull --rebase, чтобы подтянуть возможные удалённые изменения
+          git pull --rebase origin main
           git push origin main
