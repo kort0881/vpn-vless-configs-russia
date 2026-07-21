@@ -13,3 +13,6 @@ __pycache__/
 
 # Logs (keep only latest via main.py)
 logs/
+
+# ===== ДОБАВЛЕНО ДЛЯ ИСКЛЮЧЕНИЯ БОЛЬШОГО ФАЙЛА =====
+data/githubmirror/new/all_new.txt
