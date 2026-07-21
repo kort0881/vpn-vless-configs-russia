@@ -1,4 +1,6 @@
+tuic://1ae7c1a7-53a4-49d3-87ef-597634834c6c:1ae7c1a7-53a4-49d3-87ef-597634834c6c@q5rvfp.yydzx.xyz:27104?sni=q5rvfp.yydzx.xyz&alpn=h3&path=%2f&congestion_control=bbr&udp_relay_mode=bbr#%f0%9f%87%ad%f0%9f%87%b0%20HK%203
 tuic://2d1ad594-80a4-4bfb-87a6-038e39701f51:2d1ad594-80a4-4bfb-87a6-038e39701f51@sg2-8sb.6121999.dpdns.org:33738?alpn=h3&congestion_control=bbr&sni=sg2-8sb.6121999.dpdns.org&udp=true&udp_relay_mode=quic#%F0%9F%87%B8%F0%9F%87%ACSG_6%7C2.6MB%2Fs%2001
-tuic://9adb384a-0f16-4501-a8f3-b6b2556fce87:dongtaiwang.com@62.210.24.143:33888/?congestion_control=cubic&udp_relay_mode=native&sni=bing.com&alpn=h3&allow_insecure=1# By EbraSha 🎛️
-tuic://9adb384a-0f16-4501-a8f3-b6b2556fce87:dongtaiwang.com@62.210.24.143:33888/?congestion_control=cubic&udp_relay_mode=native&sni=bing.com&alpn=h3&allow_insecure=1#FR 🇫🇷 | @Raydikalx | 1602
+tuic://9adb384a-0f16-4501-a8f3-b6b2556fce87:dongtaiwang.com@62.210.24.143:33888/?congestion_control=cubic&udp_relay_mode=native&sni=bing.com&alpn=h3&allow_insecure=1# By EbraSha 🔌
+tuic://9adb384a-0f16-4501-a8f3-b6b2556fce87:dongtaiwang.com@62.210.24.143:33888/?congestion_control=cubic&udp_relay_mode=native&sni=bing.com&alpn=h3&allow_insecure=1#FR 🇫🇷 | @Raydikalx | 1640
 tuic://9adb384a-0f16-4501-a8f3-b6b2556fce87:dongtaiwang.com@62.210.24.143:33888?alpn=h3&congestion_control=cubic&allow_insecure=1&sni=bing.com&sub_tag=P002-260618&udp_relay_mode=native#%F0%9F%87%AB%F0%9F%87%B7FR_172%7C3.5MB%2Fs%7CP002-260618%2001
+tuic://9adb384a-0f16-4501-a8f3-b6b2556fce87:dongtaiwang.com@62.210.24.143:33888?sni=bing.com&alpn=h3&path=%2f&congestion_control=cubic&udp_relay_mode=cubic&allow_insecure=1#%f0%9f%87%ab%f0%9f%87%b7%20FR%2017
