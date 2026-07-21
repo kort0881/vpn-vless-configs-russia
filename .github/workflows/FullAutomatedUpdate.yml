@@ -44,32 +44,26 @@ jobs:
           mkdir -p data
           wget -q -O data/geoip.dat https://cdn.jsdelivr.net/gh/GrimbirdUsers/ru-routing-dat@main/geoip.dat
 
-      # Шаг 1: Сбор источников через proxy-collect (создаёт data/config_sources.json)
       - name: Merge sources from proxy-collect manifest
         run: python scripts/proxy_collect_merge.py
 
-      # Шаг 2: mirror.py загружает и фильтрует ключи по config_sources.json
       - name: Update githubmirror (mirror.py)
         run: python scripts/mirror.py
 
-      # Шаг 3: Генерация дополнительных конфигов на основе собранных хостов
       - name: Generate my own VLESS configs
         run: python scripts/my_vless_generator.py
 
-      # Шаг 4: Запуск основного checker'а (main.py) для финальной обработки
       - name: Run checker (main.py)
         run: python scripts/main.py --geoip data/geoip.dat
 
-      # Финальный коммит всех изменений (с исключением all_new.txt)
       - name: Commit and push all changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Добавляем все изменения
           git add .
           
-          # Явно исключаем большой файл из индекса (даже если .gitignore не сработал)
+          # Явно исключаем большой файл из индекса
           git reset data/githubmirror/new/all_new.txt 2>/dev/null || true
           
           if git diff --cached --quiet; then
@@ -78,5 +72,6 @@ jobs:
           fi
           
           git commit -m "🤖 Full auto-update $(date -u '+%Y-%m-%d %H:%M:%S')"
-          git pull --rebase origin main
-          git push origin main
+          
+          # Вместо pull --rebase используем force-with-lease, т.к. локальная ветка всегда синхронизирована
+          git push --force-with-lease origin main
