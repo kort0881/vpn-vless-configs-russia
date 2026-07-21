@@ -60,17 +60,23 @@ jobs:
       - name: Run checker (main.py)
         run: python scripts/main.py --geoip data/geoip.dat
 
-      # Финальный коммит всех изменений
+      # Финальный коммит всех изменений (с исключением all_new.txt)
       - name: Commit and push all changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Добавляем все изменения
           git add .
+          
+          # Явно исключаем большой файл из индекса (даже если .gitignore не сработал)
+          git reset data/githubmirror/new/all_new.txt 2>/dev/null || true
+          
           if git diff --cached --quiet; then
             echo "Нет изменений для коммита"
             exit 0
           fi
+          
           git commit -m "🤖 Full auto-update $(date -u '+%Y-%m-%d %H:%M:%S')"
-          # Добавляем pull --rebase, чтобы подтянуть возможные удалённые изменения
           git pull --rebase origin main
           git push origin main
