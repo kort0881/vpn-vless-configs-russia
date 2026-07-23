@@ -1,7 +1,7 @@
-vmess://89371dfc-2618-40d7-a558-693ff4f7f1eb@51.195.203.247:2053?alpn=h3%2Ch2%2Chttp%2F1.1&amp;encryption=auto&amp;security=tls&amp;sni=uk5.taskflowhub.org&amp;type=tcp#7%20TCI%20@OpenSSTPVpn | 132ms
-vmess://04621bae-ab36-11ec-b909-0242ac120002@85.90.217.42:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%A5%8933@oneclickvpnkeys | 162ms
-vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn | 168ms
-vmess://04621bae-ab36-11ec-b909-0242ac120002@5.188.190.252:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%AA%A983@oneclickvpnkeys | 183ms
-vmess://af1ccd89-b66b-44e8-99b8-0d945078c04b@tg.hrmp.kdns.fr:8443?encryption=auto&amp;host=tg.hrmp.kdns.fr&amp;path=%2Ftirexvmess&amp;security=tls&amp;sni=tg.hrmp.kdns.fr&amp;type=ws#1%F0%9F%A5%89@oneclickvpnkeys | 201ms
-vmess://5a4ea216-9597-4df7-a119-02949a3b6b82@ger.wafer.fun:443?alpn=http%2F1.1&amp;encryption=auto&amp;host=ger.wafer.fun&amp;path=%2FYgpuN95HyS2aFuy7hnbpM3&amp;security=tls&amp;sni=ger.wafer.fun&amp;type=httpupgrade#%F0%9F%93%8A61@oneclickvpnkeys | 203ms
-vmess://fbd2b2f1-af4a-4e5f-9556-af37edea9db5@me.echo-license.gr:14991?encryption=auto&amp;headerType=http&amp;host=play.google.com&amp;path=%2F&amp;security=none&amp;type=tcp#%F0%9F%A5%8914@oneclickvpnkeys | 334ms
+vmess://89371dfc-2618-40d7-a558-693ff4f7f1eb@51.195.203.247:2053?alpn=h3%2Ch2%2Chttp%2F1.1&amp;encryption=auto&amp;security=tls&amp;sni=uk5.taskflowhub.org&amp;type=tcp#7%20TCI%20@OpenSSTPVpn | 141ms
+vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn | 154ms
+vmess://af1ccd89-b66b-44e8-99b8-0d945078c04b@tg.hrmp.kdns.fr:8443?encryption=auto&amp;host=tg.hrmp.kdns.fr&amp;path=%2Ftirexvmess&amp;security=tls&amp;sni=tg.hrmp.kdns.fr&amp;type=ws#1%F0%9F%A5%89@oneclickvpnkeys | 169ms
+vmess://04621bae-ab36-11ec-b909-0242ac120002@85.90.217.42:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%A5%8933@oneclickvpnkeys | 173ms
+vmess://fbd2b2f1-af4a-4e5f-9556-af37edea9db5@me.echo-license.gr:14991?encryption=auto&amp;headerType=http&amp;host=play.google.com&amp;path=%2F&amp;security=none&amp;type=tcp#%F0%9F%A5%8914@oneclickvpnkeys | 178ms
+vmess://04621bae-ab36-11ec-b909-0242ac120002@5.188.190.252:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%AA%A983@oneclickvpnkeys | 184ms
+vmess://5a4ea216-9597-4df7-a119-02949a3b6b82@ger.wafer.fun:443?alpn=http%2F1.1&amp;encryption=auto&amp;host=ger.wafer.fun&amp;path=%2FYgpuN95HyS2aFuy7hnbpM3&amp;security=tls&amp;sni=ger.wafer.fun&amp;type=httpupgrade#%F0%9F%93%8A61@oneclickvpnkeys | 196ms
