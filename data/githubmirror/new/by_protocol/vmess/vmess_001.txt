@@ -1,6 +1,8 @@
 vmess://04621bae-ab36-11ec-b909-0242ac120002@45.92.70.236:22324?encryption=auto&amp;security=none&amp;type=tcp#2%20Asiatech%20@OpenSSTPVpn
+vmess://04621bae-ab36-11ec-b909-0242ac120002@5.188.190.252:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%93%AA93@oneclickvpnkeys
 vmess://04621bae-ab36-11ec-b909-0242ac120002@5.188.190.252:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%AA%A983@oneclickvpnkeys
 vmess://04621bae-ab36-11ec-b909-0242ac120002@5.188.190.252:22324?encryption=auto&security=none&type=tcp#📪93@oneclickvpnkeys
+vmess://04621bae-ab36-11ec-b909-0242ac120002@85.90.217.42:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%93%AA41@oneclickvpnkeys
 vmess://04621bae-ab36-11ec-b909-0242ac120002@85.90.217.42:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%A5%8933@oneclickvpnkeys
 vmess://04621bae-ab36-11ec-b909-0242ac120002@85.90.217.42:22324?encryption=auto&security=none&type=tcp#📪41@oneclickvpnkeys
 vmess://399f7f1b-0f5e-43a1-b0b5-6f255367d778@136.244.92.167:48824?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%93%8A3@oneclickvpnkeys
@@ -8,7 +10,6 @@ vmess://399f7f1b-0f5e-43a1-b0b5-6f255367d778@136.244.95.190:17367?encryption=aut
 vmess://3cd9077d-76f7-4104-bd82-eb6916b89d43@c87s5.portablesubmarines.com:18339?encryption=auto&amp;security=none&amp;type=tcp#%E2%9A%99%EF%B8%8F41@oneclickvpnkeys
 vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn
 vmess://5a4ea216-9597-4df7-a119-02949a3b6b82@ger.wafer.fun:443?alpn=http%2F1.1&amp;encryption=auto&amp;host=ger.wafer.fun&amp;path=%2FYgpuN95HyS2aFuy7hnbpM3&amp;security=tls&amp;sni=ger.wafer.fun&amp;type=httpupgrade#%F0%9F%93%8A61@oneclickvpnkeys
-vmess://5ed7206a-cd8d-4b02-add1-4f7b787178c9@31.77.149.131:110?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%AA%998@oneclickvpnkeys
 vmess://89371dfc-2618-40d7-a558-693ff4f7f1eb@51.195.203.247:2053?alpn=h3%2Ch2%2Chttp%2F1.1&amp;encryption=auto&amp;security=tls&amp;sni=uk5.taskflowhub.org&amp;type=tcp#7%20TCI%20@OpenSSTPVpn
 vmess://MDQ2MjFiYWUtYWIzNi0xMWVjLWI5MDktMDI0MmFjMTIwMDAyQDUuMTg4LjE5MC4yNTI6MjIzMjQ/ZW5jcnlwdGlvbj1hdXRvJnNlY3VyaXR5PW5vbmUmdHlwZT10Y3A=
 vmess://MDQ2MjFiYWUtYWIzNi0xMWVjLWI5MDktMDI0MmFjMTIwMDAyQDg1LjkwLjIxNy40MjoyMjMyND9lbmNyeXB0aW9uPWF1dG8mc2VjdXJpdHk9bm9uZSZ0eXBlPXRjcA==
@@ -415,7 +416,6 @@ vmess://bm9uZToxMjM0LTU2NzgtOTAxMi0zNDU2QGxvY2FsaG9zdDo4MA?remarks=推荐机场|
 vmess://cbb3f877-d1fb-344c-87a9-d153bffd5484@48.193.46.7:30806?encryption=auto&amp;security=none&amp;type=tcp#7%20MCI%20@OpenSSTPVpn
 vmess://cbb3f877-d1fb-344c-87a9-d153bffd5484@48.193.46.7:30833?encryption=auto&amp;security=none&amp;type=tcp#8%20MCI%20@OpenSSTPVpn
 vmess://cd80d0a4-a8ef-4492-b956-da82a6cecaf9@[2001:bc8:32d7:225::3]:55009?encryption=auto&amp;path=%2F0zNW56sF&amp;security=none&amp;type=ws#%E2%9A%BD19@oneclickvpnkeys
-vmess://d1b0c103-a7ff-4bd6-887d-a73d6ebf1f50@94.103.167.116:80?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%AA%9916@oneclickvpnkeys
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIiIsDQogICJhZGQiOiAiMTQzLjE5OC42NC4yMTgiLA0KICAicG9ydCI6ICIzMTAwMiIsDQogICJpZCI6ICJjYjBkMjMwYy1hMjM5LTQwZTItYzIwZi0yYmQ5M2FjODFjMjMiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogImtjcCIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIiLA0KICAicGF0aCI6ICJ5S09CTFUwSU9YIiwNCiAgInRscyI6ICJub25lIiwNCiAgInNuaSI6ICIiLA0KICAiYWxwbiI6ICIiDQp9
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIihATXlQcmVtaXVtOTgpIiwNCiAgImFkZCI6ICIxNDAuODMuNTcuODAiLA0KICAicG9ydCI6ICI0OTg0MCIsDQogICJpZCI6ICIyOTY5YWQxYi05Nzg3LTQ5MjctOTRlNi0yMmY1OTc2MThkZTAiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogInRjcCIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIiLA0KICAicGF0aCI6ICIiLA0KICAidGxzIjogIiIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIg0KfQ==
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIihAVm1lc3NQcm90b2NvbCnYqNix2KfbjCDYrtix24zYryDZiCDYp9iq2LXYp9mEINiv2KfYptmF24wg2KzZiNuM2YYg2LTZiPCfh6nwn4eqIiwNCiAgImFkZCI6ICJjbG91ZGNvbmVhYWEuZ29yZ29yY2hpY2tlbi5vbmUiLA0KICAicG9ydCI6ICI4NDQzIiwNCiAgImlkIjogIjFjZWMxZWJjLWI0ODktNDc2OS1mMmQ5LWUwNzliNTgzMmE2MCIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiY2xvdWRjb25lYWFhLmdvcmdvcmNoaWNrZW4ub25lIiwNCiAgInBhdGgiOiAiL2Nsb3VkY29uZWFhYSIsDQogICJ0bHMiOiAidGxzIiwNCiAgInNuaSI6ICJjbG91ZGNvbmVhYWEuZ29yZ29yY2hpY2tlbi5vbmUiLA0KICAiYWxwbiI6ICIiDQp9
