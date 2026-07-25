@@ -1,6 +1,7 @@
-vmess://89371dfc-2618-40d7-a558-693ff4f7f1eb@51.195.203.247:2053?alpn=h3%2Ch2%2Chttp%2F1.1&amp;encryption=auto&amp;security=tls&amp;sni=uk5.taskflowhub.org&amp;type=tcp#7%20TCI%20@OpenSSTPVpn | 163ms
-vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn | 170ms
-vmess://04621bae-ab36-11ec-b909-0242ac120002@85.90.217.42:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%93%AA41@oneclickvpnkeys | 176ms
-vmess://04621bae-ab36-11ec-b909-0242ac120002@5.188.190.252:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%93%AA93@oneclickvpnkeys | 194ms
-vmess://fbd2b2f1-af4a-4e5f-9556-af37edea9db5@me.echo-license.gr:14991?encryption=auto&amp;headerType=http&amp;host=play.google.com&amp;path=%2F&amp;security=none&amp;type=tcp#%F0%9F%A5%8914@oneclickvpnkeys | 194ms
-vmess://af1ccd89-b66b-44e8-99b8-0d945078c04b@tg.hrmp.kdns.fr:8443?encryption=auto&amp;host=tg.hrmp.kdns.fr&amp;path=%2Ftirexvmess&amp;security=tls&amp;sni=tg.hrmp.kdns.fr&amp;type=ws#1%F0%9F%A5%89@oneclickvpnkeys | 367ms
+vmess://b65a2d69-5634-42a2-e4be-54e8a6176900@165.140.216.142:443?encryption=auto&security=none&type=tcp#🎀78@oneclickvpnkeys | 56ms
+vmess://89371dfc-2618-40d7-a558-693ff4f7f1eb@51.195.203.247:2053?alpn=h3%2Ch2%2Chttp%2F1.1&amp;encryption=auto&amp;security=tls&amp;sni=uk5.taskflowhub.org&amp;type=tcp#7%20TCI%20@OpenSSTPVpn | 134ms
+vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn | 136ms
+vmess://04621bae-ab36-11ec-b909-0242ac120002@85.90.217.42:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%93%AA41@oneclickvpnkeys | 153ms
+vmess://04621bae-ab36-11ec-b909-0242ac120002@5.188.190.252:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%93%AA93@oneclickvpnkeys | 162ms
+vmess://af1ccd89-b66b-44e8-99b8-0d945078c04b@tg.hrmp.kdns.fr:8443?encryption=auto&amp;host=tg.hrmp.kdns.fr&amp;path=%2Ftirexvmess&amp;security=tls&amp;sni=tg.hrmp.kdns.fr&amp;type=ws#1%F0%9F%A5%89@oneclickvpnkeys | 321ms
+vmess://fbd2b2f1-af4a-4e5f-9556-af37edea9db5@me.echo-license.gr:14991?encryption=auto&amp;headerType=http&amp;host=play.google.com&amp;path=%2F&amp;security=none&amp;type=tcp#%F0%9F%A5%8914@oneclickvpnkeys | 366ms
