@@ -3,7 +3,9 @@ vmess://04621bae-ab36-11ec-b909-0242ac120002@45.92.70.236:22324?encryption=auto&
 vmess://04621bae-ab36-11ec-b909-0242ac120002@66.163.117.58:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%91%81%EF%B8%8F%E2%80%8D%F0%9F%97%A8%EF%B8%8F31@oneclickvpnkeys
 vmess://04621bae-ab36-11ec-b909-0242ac120002@67.220.72.237:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%91%81%EF%B8%8F%E2%80%8D%F0%9F%97%A8%EF%B8%8F90@oneclickvpnkeys
 vmess://071a8a71-c656-4fb6-a908-4e42eb72243d@45.76.202.45:4010?encryption=auto&amp;path=%2Fliksuzcp&amp;security=none&amp;type=ws#%F0%9F%90%B01@oneclickvpnkeys
+vmess://0e288730-2200-4578-8e70-bc2b562bef7f@140.235.37.128:32203?encryption=aes-128-gcm&amp;security=none&amp;type=tcp#%F0%9F%9B%B0%EF%B8%8F89@oneclickvpnkeys
 vmess://0e288730-2200-4578-8e70-bc2b562bef7f@140.235.37.128:32203?encryption=aes-128-gcm&security=none&type=tcp#JP 🇯🇵 | @Raydikalx | 689E5A
+vmess://0e288730-2200-4578-8e70-bc2b562bef7f@140.235.37.128:32203?encryption=aes-128-gcm&security=none&type=tcp#日本/Japan
 vmess://11c3627f-31e8-4695-dfbd-34076e2f1f5d@168.138.43.75:80?encryption=auto&amp;host=jp01.a0a.xyz&amp;path=%2Fcctv13.m3u8&amp;security=none&amp;type=ws#%F0%9F%90%B071@oneclickvpnkeys
 vmess://1610f8dc-0661-4032-ac6a-a7250603f608@161.33.139.138:58905?encryption=auto&amp;path=%2F1610f8dc-0661-4032-ac6a-a7250603f608-vm&amp;security=none&amp;type=ws#%F0%9F%90%B02@oneclickvpnkeys
 vmess://40b25dc2-8e1a-4889-b334-e3376ab3d865@node-uk.connectsuite.org:2052?encryption=auto&amp;headerType=http&amp;host=node-uk.connectsuite.org&amp;path=%2F&amp;security=none&amp;type=tcp#%F0%9F%A7%AC77@oneclickvpnkeys
@@ -13,10 +15,11 @@ vmess://500cdc83-b189-4d79-b06b-139c7972a57f@91.107.139.186:51459?encryption=aut
 vmess://5155860e-d07d-46c3-9128-3afbd84626c7@132.145.80.230:80?encryption=auto&amp;host=kr02.a0a.xyz&amp;path=%2Fcctv13.m3u8&amp;security=none&amp;type=ws#%F0%9F%90%B073@oneclickvpnkeys
 vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn
 vmess://63d54df4-02eb-413e-beba-95e27bee760f@154.64.228.51:7739?encryption=auto&amp;path=%2Farki&amp;security=none&amp;type=ws#%F0%9F%90%B029@oneclickvpnkeys
+vmess://6733c357-ba11-4e9f-f00f-7d87f2776ff9@140.83.51.161:25686?encryption=auto&amp;path=%2Fcctv13.m3u8&amp;security=none&amp;type=ws#1%F0%9F%9B%B0%EF%B8%8F@oneclickvpnkeys
 vmess://6733c357-ba11-4e9f-f00f-7d87f2776ff9@140.83.51.161:25686?encryption=auto&path=/cctv13.m3u8&security=none&type=ws#JP 🇯🇵 | @Raydikalx | 184AF9
-vmess://7e25875e-50bb-47ed-9627-261e6d232f69@154.17.234.39:2086?encryption=auto&amp;host=www.bing.com&amp;path=7e25875e-50bb-47ed-9627-261e6d232f69-vm&amp;security=none&amp;type=ws#%F0%9F%8E%B465@oneclickvpnkeys
 vmess://845e6b08-2919-4290-ade0-5dc7dcea59ca@47.244.120.197:44867?encryption=auto&amp;path=%2Farki&amp;security=none&amp;type=ws#%F0%9F%90%B067@oneclickvpnkeys
 vmess://89371dfc-2618-40d7-a558-693ff4f7f1eb@51.195.203.247:2053?alpn=h3%2Ch2%2Chttp%2F1.1&amp;encryption=auto&amp;security=tls&amp;sni=uk5.taskflowhub.org&amp;type=tcp#7%20TCI%20@OpenSSTPVpn
+vmess://959a8caf-4cea-43d0-a548-3628e7ddfafc@165.154.195.38:35034?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%9B%B0%EF%B8%8F94@oneclickvpnkeys
 vmess://959a8caf-4cea-43d0-a548-3628e7ddfafc@165.154.195.38:35034?encryption=auto&security=none&type=tcp#TW 🇹🇼 | @Raydikalx | F8C330
 vmess://98e2be3c-8f84-4b85-996b-b68dcc2fbcb6@fj260203.freechatup.com:27726?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%90%B064@oneclickvpnkeys
 vmess://98e2be3c-8f84-4b85-996b-b68dcc2fbcb6@fj260304.freechatup.com:27726?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%90%B063@oneclickvpnkeys
@@ -418,8 +421,6 @@ vmess://ZXlKaFpHUWlPaUpqYVc1a2VUVXlMbU5sYjJscGFTNWpiMjBpTENKaGFXUWlPaUl3SWl3aVlX
 vmess://ZjgzNmM3MzYtODdmYy00ZmRlLWFhYmMtMDA4NTdlY2RmZjNlQDEyOS4xNDYuNzcuMjQ4OjM5NDk1P2VuY3J5cHRpb249YXV0byZob3N0PTEyOS4xNDYuNzcuMjQ4JnBhdGg9L2NjdHYxMy5tM3U4JnNlY3VyaXR5PW5vbmUmdHlwZT13cw==
 vmess://a25cbf11-2908-4a1b-a3a8-9a571777dca3@57.129.132.223:80?encryption=auto&amp;host=google.com&amp;path=%2Fvmess%2F&amp;security=none&amp;type=ws#%F0%9F%A7%AC48@oneclickvpnkeys
 vmess://a25cbf11-2908-4a1b-a3a8-9a571777dca3@57.129.132.223:80?encryption=auto&host=google.com&path=/vmess/&security=none&type=ws#GB 🇬🇧 | @Raydikalx | 59504B
-vmess://b7479b73-8cea-4a82-97e8-bacf9bd86605@154.17.238.183:8880?encryption=auto&amp;host=www.bing.com&amp;path=b7479b73-8cea-4a82-97e8-bacf9bd86605-vm&amp;security=none&amp;type=ws#%F0%9F%8E%B444@oneclickvpnkeys
-vmess://ba58ca0c-0411-444e-80f7-e361ce49012d@85.113.71.85:2086?encryption=auto&amp;host=www.bing.com&amp;path=ba58ca0c-0411-444e-80f7-e361ce49012d-vm&amp;security=none&amp;type=ws#%F0%9F%8E%B464@oneclickvpnkeys
 vmess://bm9uZToxMjM0LTU2NzgtOTAxMi0zNDU2QDEuMS4xLjE6ODA?remarks=https://vpn-free.sn-m.xyz/school.html|推荐机场&tfo=1&mux=1
 vmess://bm9uZToxMjM0LTU2NzgtOTAxMi0zNDU2QDEuMS4xLjE6ODA?remarks=推荐机场|https://vpn-free.sn-m.xyz/school.html&tfo=1&mux=1
 vmess://bm9uZToxMjM0LTU2NzgtOTAxMi0zNDU2QG1pY3Jvc29mdC5jb206ODA?remarks=https://vpn-free.sn-m.xyz/ky.html|推荐机场&tfo=1&mux=1
@@ -434,7 +435,9 @@ vmess://cd80d0a4-a8ef-4492-b956-da82a6cecaf9@[2001:bc8:32d7:225::3]:55009?encryp
 vmess://d13fc2f5-3e05-4795-81eb-44143a09e552@82.198.246.233:180?encryption=auto&amp;security=none&amp;type=tcp#5%F0%9F%91%81%EF%B8%8F%E2%80%8D%F0%9F%97%A8%EF%B8%8F@oneclickvpnkeys
 vmess://d13fc2f5-3e05-4795-81eb-44143a09e552@82.198.246.97:180?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%90%B068@oneclickvpnkeys
 vmess://d9865d63-d95c-454b-ba07-8e88b838a801@129.226.157.220:59121?encryption=auto&amp;headerType=http&amp;path=%2F&amp;security=none&amp;type=tcp#%F0%9F%90%B072@oneclickvpnkeys
+vmess://e02c67a8-d769-4d73-833a-ab6acdb86e6e@107.172.75.141:10086?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%9B%B0%EF%B8%8F58@oneclickvpnkeys
 vmess://e02c67a8-d769-4d73-833a-ab6acdb86e6e@107.172.75.141:10086?encryption=auto&security=none&type=tcp#US 🇺🇸 | @Raydikalx | D1A224
+vmess://e02c67a8-d769-4d73-833a-ab6acdb86e6e@107.172.75.141:10086?encryption=auto&security=none&type=tcp#美国/水牛城/United States/Buffalo
 vmess://ed81c339-eca0-463a-c671-fce729a683b3@dsl081-033-205.lax1.dsl.speakeasy.net:24548?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%90%B070@oneclickvpnkeys
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIiIsDQogICJhZGQiOiAiMTQzLjE5OC42NC4yMTgiLA0KICAicG9ydCI6ICIzMTAwMiIsDQogICJpZCI6ICJjYjBkMjMwYy1hMjM5LTQwZTItYzIwZi0yYmQ5M2FjODFjMjMiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogImtjcCIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIiLA0KICAicGF0aCI6ICJ5S09CTFUwSU9YIiwNCiAgInRscyI6ICJub25lIiwNCiAgInNuaSI6ICIiLA0KICAiYWxwbiI6ICIiDQp9
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIihATXlQcmVtaXVtOTgpIiwNCiAgImFkZCI6ICIxNDAuODMuNTcuODAiLA0KICAicG9ydCI6ICI0OTg0MCIsDQogICJpZCI6ICIyOTY5YWQxYi05Nzg3LTQ5MjctOTRlNi0yMmY1OTc2MThkZTAiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogInRjcCIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIiLA0KICAicGF0aCI6ICIiLA0KICAidGxzIjogIiIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIg0KfQ==
@@ -495,6 +498,3 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIk1P44CQ5LuY6LS55o6o6I2Q77yaZ29vLmdzL3Zp
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIk1P44CQ5LuY6LS55o6o6I2Q77yaZ29vLmdzL3ZpcOOAkSIsDQogICJhZGQiOiAibWFjLmxvYy1tLnh5eiIsDQogICJwb3J0IjogIjQ0MyIsDQogICJpZCI6ICJiNDI4MmMzZi00NzczLTRmYjItYTBhNC0xZDM2YWI2ZTA5OWQiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogImpwMS5sb2MtbS54eXoiLA0KICAicGF0aCI6ICIvIiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogIiINCn0=
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIk1Z44CQ5LuY6LS55o6o6I2Q77yaZ29vLmdzL3ZpcOOAkSIsDQogICJhZGQiOiAiMTIzLjI1My4zMi41MCIsDQogICJwb3J0IjogIjMxMzcyIiwNCiAgImlkIjogIjY3OGQwZDdkLWM2NTEtNGFlMS1jZWQxLTMyMDc4MzU2NTc0OSIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAidGNwIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIiIsDQogICJwYXRoIjogIiIsDQogICJ0bHMiOiAiIiwNCiAgInNuaSI6ICIiDQp9
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIk1haHNhICA6IPCfh7jwn4esIFNpbmdhcG9yZSIsDQogICJhZGQiOiAiMTk0LjIzMy44MS4xMjUiLA0KICAicG9ydCI6ICI4MCIsDQogICJpZCI6ICJjZWI4YTkyMS1lYzcyLTQ4MDQtYWU5Mi1jYmQzMDlmMmYyMTMiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInNnLXYuc3NobWF4Lnh5eiIsDQogICJwYXRoIjogIi92bWVzcyIsDQogICJ0bHMiOiAiIiwNCiAgInNuaSI6ICIiLA0KICAiYWxwbiI6ICIiDQp9
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIk1haHNhIDog8J+HuvCfh7ggVW5pdGVkIFN0YXRlcyIsDQogICJhZGQiOiAiMTM1LjE0OC40Ny4yNDAiLA0KICAicG9ydCI6ICI4MCIsDQogICJpZCI6ICJkZWFmYzU2ZC1iYTc2LTRmZjItYjNiMy1hOTMzNWIwOTgyZTAiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInVzLXYuc3NobWF4Lnh5eiIsDQogICJwYXRoIjogIi92bWVzcyIsDQogICJ0bHMiOiAiIiwNCiAgInNuaSI6ICIiLA0KICAiYWxwbiI6ICIiDQp9
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIk1haHNhIPCfh7jwn4esIiwNCiAgImFkZCI6ICIxMzkuOTkuNDcuMzYiLA0KICAicG9ydCI6ICI4MCIsDQogICJpZCI6ICIwYmYwY2M2My1jYzRkLTRhNmYtODc3MC1hN2ZhNWEwZDFjNTUiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInNnMi52MnJheXNlcnYuY29tIiwNCiAgInBhdGgiOiAiL3NzaG9jZWFuIiwNCiAgInRscyI6ICIiLA0KICAic25pIjogIiIsDQogICJhbHBuIjogIiINCn0=
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIk5M6I235YWwKHlvdXR1YmXpmL/kvJ/np5HmioApXzMiLA0KICAiYWRkIjogImhlbmRvc3Rhbi5mb3JpcmFuLm5sIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjgzNTc4MTZiLTY4ZTQtNGEyYi04MzBjLWU5YmRkMzY5ZWEyMiIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiaGVuZG9zdGFuLmZvcmlyYW4ubmwiLA0KICAicGF0aCI6ICIvN291V3dqMWpIMklidU9mUWoyY2hnIiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogIiINCn0=
