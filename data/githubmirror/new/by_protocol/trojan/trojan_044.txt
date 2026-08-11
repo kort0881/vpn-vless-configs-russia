@@ -1,3 +1,14 @@
+trojan://auto@104.17.64.70:443?security=tls&sni=trojanmz.pages.dev&type=ws&host=trojanmz.pages.dev&path=%2Ftrojanmz.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.64.70:443
+trojan://auto@104.18.1.89:443/?type=tcp&security=tls&sni=join-midas-x-x-----join-midas-x-x-----join-midas-x-x.join-midas-x-x-a14.workers.dev# By EbraSha 🪐
+trojan://auto@104.18.1.89:443/?type=tcp&security=tls&sni=join-midas-x-x-----join-midas-x-x-----join-midas-x-x.join-midas-x-x-a14.workers.dev#[6125][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
+trojan://auto@104.18.1.89:443/?type=ws&host=join-midas-x-x-----join-midas-x-x-----join-midas-x-x.join-midas-x-x-a14.workers.dev&path=%2F%3Fed%3D2560&security=tls&sni=join-midas-x-x-----join-midas-x-x-----join-midas-x-x.join-midas-x-x-a14.workers.dev# By EbraSha 🐺
+trojan://auto@104.18.1.89:443/?type=ws&host=join-midas-x-x-----join-midas-x-x-----join-midas-x-x.join-midas-x-x-a14.workers.dev&path=%2F%3Fed%3D2560&security=tls&sni=join-midas-x-x-----join-midas-x-x-----join-midas-x-x.join-midas-x-x-a14.workers.dev#[6126][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
+trojan://auto@104.18.1.89:443?security=tls&sni=join-midas-x-x-----join-midas-x-x-----join-midas-x-x.join-midas-x-x-a14.workers.dev&type=ws&host=join-midas-x-x-----join-midas-x-x-----join-midas-x-x.join-midas-x-x-a14.workers.dev#🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.1.89:443
+trojan://auto@104.18.12.229:2053?security=tls&sni=e9464f45.trauma-2r4.pages.dev&type=ws&host=e9464f45.trauma-2r4.pages.dev&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.12.229:2053
+trojan://auto@104.18.41.190:443?security=tls&sni=trojanmz.pages.dev&type=ws&host=trojanmz.pages.dev&path=%2Ftrojanmz.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.41.190:443
+trojan://auto@104.19.173.68:443?sni=trojanfree-76s.pages.dev&allowInsecure=0#🔒 TR-TCP-NA 🏴‍☠️ NA-104.19.173.68:443
+trojan://auto@104.19.174.68:443?security=tls&sni=trojanfree-76s.pages.dev&type=ws&host=trojanfree-76s.pages.dev&path=%2Ftrojanfree-76s.pages.dev%2F%3Fed%3D2560&fp=randomized#🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.174.68:443
+trojan://auto@104.19.222.79:443?security=tls&sni=trojanfree-76s.pages.dev&type=ws&host=trojanfree-76s.pages.dev&path=%2Ftrojanfree-76s.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.222.79:443
 trojan://auto@104.19.223.79:443?security=tls&sni=trojanfree-76s.pages.dev&type=ws&host=trojanfree-76s.pages.dev&path=%2Ftrojanfree-76s.pages.dev%2F%3Fed%3D2560&fp=randomized#🔒 TR-WS-TLS 🏴‍☠️ NA-104.19.223.79:443
 trojan://auto@104.20.17.0:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.17.0:443
 trojan://auto@104.20.17.104:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.17.104:443
@@ -17,10 +28,10 @@ trojan://auto@104.20.17.146:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.d
 trojan://auto@104.20.17.157:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.17.157:443
 trojan://auto@104.20.17.158:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.17.158:443
 trojan://auto@104.20.17.161:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.17.161:443
-trojan://auto@104.20.17.176:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🔋
+trojan://auto@104.20.17.176:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🦾
 trojan://auto@104.20.17.176:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev#[6127][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.20.17.176:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.17.176:443
-trojan://auto@104.20.17.176:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🚨
+trojan://auto@104.20.17.176:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🧨
 trojan://auto@104.20.17.176:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#[6128][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.20.17.177:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.17.177:443
 trojan://auto@104.20.17.178:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.17.178:443
@@ -50,7 +61,7 @@ trojan://auto@104.20.17.81:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.de
 trojan://auto@104.20.17.90:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.17.90:443
 trojan://auto@104.20.18.110:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.18.110:443
 trojan://auto@104.20.18.112:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.18.112:443
-trojan://auto@104.20.18.119:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🚧
+trojan://auto@104.20.18.119:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🕹️
 trojan://auto@104.20.18.119:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev#[6129][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.20.18.119:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.18.119:443
 trojan://auto@104.20.18.121:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.18.121:443
@@ -86,7 +97,7 @@ trojan://auto@104.20.18.253:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.d
 trojan://auto@104.20.18.30:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.18.30:443
 trojan://auto@104.20.18.30:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#%E6%9C%AA%E7%9F%A541
 trojan://auto@104.20.18.31:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.18.31:443
-trojan://auto@104.20.18.34:443?security=tls&amp;type=ws&amp;sni=b96ef9ae.trojanfree-76s.pages.dev&amp;path=/b96ef9ae.trojanfree-76s.pages.dev/&amp;host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🧩
+trojan://auto@104.20.18.34:443?security=tls&amp;type=ws&amp;sni=b96ef9ae.trojanfree-76s.pages.dev&amp;path=/b96ef9ae.trojanfree-76s.pages.dev/&amp;host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 📱
 trojan://auto@104.20.18.34:443?security=tls&amp;type=ws&amp;sni=b96ef9ae.trojanfree-76s.pages.dev&amp;path=/b96ef9ae.trojanfree-76s.pages.dev/&amp;host=b96ef9ae.trojanfree-76s.pages.dev#[6130][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.20.18.34:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.18.34:443
 trojan://auto@104.20.18.35:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.18.35:443
@@ -99,7 +110,7 @@ trojan://auto@104.20.18.67:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.
 trojan://auto@104.20.18.71:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.18.71:443
 trojan://auto@104.20.18.72:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.18.72:443
 trojan://auto@104.20.18.74:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.18.74:443
-trojan://auto@104.20.18.74:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🦈
+trojan://auto@104.20.18.74:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🩸
 trojan://auto@104.20.18.74:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#[6131][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.20.18.79:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.18.79:443
 trojan://auto@104.20.18.83:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.18.83:443
@@ -132,9 +143,9 @@ trojan://auto@104.20.19.166:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.d
 trojan://auto@104.20.19.166:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#%E6%9C%AA%E7%9F%A5142
 trojan://auto@104.20.19.167:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.19.167:443
 trojan://auto@104.20.19.167:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#%E6%9C%AA%E7%9F%A599
-trojan://auto@104.20.19.168:2083/?type=ws&host=e9464f45.trauma-2r4.pages.dev&path=%2F&security=tls&sni=e9464f45.trauma-2r4.pages.dev# By EbraSha 🎛️
+trojan://auto@104.20.19.168:2083/?type=ws&host=e9464f45.trauma-2r4.pages.dev&path=%2F&security=tls&sni=e9464f45.trauma-2r4.pages.dev# By EbraSha 🕶️
 trojan://auto@104.20.19.168:2083/?type=ws&host=e9464f45.trauma-2r4.pages.dev&path=%2F&security=tls&sni=e9464f45.trauma-2r4.pages.dev#[6132][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
-trojan://auto@104.20.19.168:2083?path=/&security=tls&host=e9464f45.trauma-2r4.pages.dev&type=ws&sni=e9464f45.trauma-2r4.pages.dev# By EbraSha 🕹️
+trojan://auto@104.20.19.168:2083?path=/&security=tls&host=e9464f45.trauma-2r4.pages.dev&type=ws&sni=e9464f45.trauma-2r4.pages.dev# By EbraSha 🌍
 trojan://auto@104.20.19.168:2083?path=/&security=tls&host=e9464f45.trauma-2r4.pages.dev&type=ws&sni=e9464f45.trauma-2r4.pages.dev#[6133][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.20.19.168:2083?security=tls&sni=e9464f45.trauma-2r4.pages.dev&type=ws&host=e9464f45.trauma-2r4.pages.dev&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.19.168:2083
 trojan://auto@104.20.19.169:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.19.169:443
@@ -150,7 +161,7 @@ trojan://auto@104.20.19.19:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.
 trojan://auto@104.20.19.206:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.19.206:443
 trojan://auto@104.20.19.212:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.19.212:443
 trojan://auto@104.20.19.218:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.19.218:443
-trojan://auto@104.20.19.218:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha ✨
+trojan://auto@104.20.19.218:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🦂
 trojan://auto@104.20.19.218:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#[6134][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.20.19.219:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.19.219:443
 trojan://auto@104.20.19.219:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#%E6%9C%AA%E7%9F%A539
@@ -159,7 +170,7 @@ trojan://auto@104.20.19.220:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.d
 trojan://auto@104.20.19.232:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.19.232:443
 trojan://auto@104.20.19.238:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.19.238:443
 trojan://auto@104.20.19.238:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#%E6%9C%AA%E7%9F%A5111
-trojan://auto@104.20.19.25:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🎯
+trojan://auto@104.20.19.25:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🗿
 trojan://auto@104.20.19.25:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev#[6135][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.20.19.25:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.19.25:443
 trojan://auto@104.20.19.30:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.19.30:443
@@ -182,15 +193,15 @@ trojan://auto@104.20.20.127:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.d
 trojan://auto@104.20.20.132:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.20.132:443
 trojan://auto@104.20.20.142:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.20.142:443
 trojan://auto@104.20.20.148:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.20.148:443
-trojan://auto@104.20.20.150:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha ♠️
+trojan://auto@104.20.20.150:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🤖
 trojan://auto@104.20.20.150:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev#[6136][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.20.20.150:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.20.150:443
-trojan://auto@104.20.20.150:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🧲
+trojan://auto@104.20.20.150:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🖥️
 trojan://auto@104.20.20.150:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#[6137][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.20.20.152:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.20.152:443
 trojan://auto@104.20.20.156:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.20.156:443
 trojan://auto@104.20.20.160:443?sni=b96ef9ae.trojanfree-76s.pages.dev&allowInsecure=0#🔒 TR-TCP-NA 🏴‍☠️ NA-104.20.20.160:443
-trojan://auto@104.20.20.162:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🪐
+trojan://auto@104.20.20.162:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 💎
 trojan://auto@104.20.20.162:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev#[6138][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.20.20.163:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.20.163:443
 trojan://auto@104.20.20.166:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.20.166:443
@@ -254,9 +265,9 @@ trojan://auto@104.20.21.205:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.d
 trojan://auto@104.20.21.207:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.21.207:443
 trojan://auto@104.20.21.211:443?allowInsecure=0&sni=b96ef9ae.trojanfree-76s.pages.dev&ws=1&wspath=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20CloudFlare%E8%8A%82%E7%82%B9
 trojan://auto@104.20.21.211:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.21.211:443
-trojan://auto@104.20.21.229:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🕹️
+trojan://auto@104.20.21.229:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha ⚡
 trojan://auto@104.20.21.229:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev#[6139][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
-trojan://auto@104.20.21.229:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🌍
+trojan://auto@104.20.21.229:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha ⚙️
 trojan://auto@104.20.21.229:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#[6140][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.20.21.231:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.21.231:443
 trojan://auto@104.20.21.231:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#%E6%9C%AA%E7%9F%A5140
@@ -281,13 +292,13 @@ trojan://auto@104.20.21.97:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.de
 trojan://auto@104.20.21.99:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.21.99:443
 trojan://auto@104.20.22.0:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.22.0:443
 trojan://auto@104.20.22.10:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.22.10:443
-trojan://auto@104.20.22.111:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 📼
+trojan://auto@104.20.22.111:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🚬
 trojan://auto@104.20.22.111:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev#[6141][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.20.22.124:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.22.124:443
 trojan://auto@104.20.22.145:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.22.145:443
 trojan://auto@104.20.22.148:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.22.148:443
 trojan://auto@104.20.22.148:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#%E6%9C%AA%E7%9F%A563
-trojan://auto@104.20.22.149:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🧩
+trojan://auto@104.20.22.149:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🌑
 trojan://auto@104.20.22.149:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#[6142][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.20.22.155:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.22.155:443
 trojan://auto@104.20.22.157:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.22.157:443
@@ -308,9 +319,9 @@ trojan://auto@104.20.22.1:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev
 trojan://auto@104.20.22.232:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.22.232:443
 trojan://auto@104.20.22.236:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.22.236:443
 trojan://auto@104.20.22.239:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.22.239:443
-trojan://auto@104.20.22.241:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🤖
+trojan://auto@104.20.22.241:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🚀
 trojan://auto@104.20.22.241:443/?type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F&security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev#[6143][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
-trojan://auto@104.20.22.241:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🚀
+trojan://auto@104.20.22.241:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev# By EbraSha 🧲
 trojan://auto@104.20.22.241:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#[6144][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.20.22.253:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.20.22.253:443
 trojan://auto@104.20.22.253:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#%E6%9C%AA%E7%9F%A5103
@@ -333,34 +344,34 @@ trojan://auto@104.20.6.134:443?security=tls&type=ws&sni=e9464f45.trauma-2r4.page
 trojan://auto@104.21.14.176:443?security=tls&sni=trojanmz.pages.dev&type=ws&host=trojanmz.pages.dev&path=%2Ftrojanmz.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.14.176:443
 trojan://auto@104.21.14.176:443?security=tls&type=ws&sni=trojanmz.pages.dev&path=/trojanmz.pages.dev/?ed=2560&host=trojanmz.pages.dev#%E6%9C%AA%E7%9F%A528
 trojan://auto@104.21.15.212:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.15.212:443
-trojan://auto@104.21.21.129:443/?type=ws&host=trojanmz.pages.dev&security=tls&sni=trojanmz.pages.dev# By EbraSha 🪬
+trojan://auto@104.21.21.129:443/?type=ws&host=trojanmz.pages.dev&security=tls&sni=trojanmz.pages.dev# By EbraSha 🐉
 trojan://auto@104.21.21.129:443/?type=ws&host=trojanmz.pages.dev&security=tls&sni=trojanmz.pages.dev#[6145][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.21.21.129:443?security=tls&sni=trojanmz.pages.dev&type=ws&host=trojanmz.pages.dev&path=%2Ftrojanmz.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.21.129:443
-trojan://auto@104.21.31.51:443/?type=ws&host=esetsecuritylicense1.vowexa5791.workers.dev&path=%2F&security=tls&sni=esetsecuritylicense1.vowexa5791.workers.dev# By EbraSha 🚀
+trojan://auto@104.21.31.51:443/?type=ws&host=esetsecuritylicense1.vowexa5791.workers.dev&path=%2F&security=tls&sni=esetsecuritylicense1.vowexa5791.workers.dev# By EbraSha 📛
 trojan://auto@104.21.31.51:443/?type=ws&host=esetsecuritylicense1.vowexa5791.workers.dev&path=%2F&security=tls&sni=esetsecuritylicense1.vowexa5791.workers.dev#[6146][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.21.31.51:443?security=tls&sni=esetsecuritylicense1.vowexa5791.workers.dev&type=ws&host=esetsecuritylicense1.vowexa5791.workers.dev&path=%2F#VL-0603-062
 trojan://auto@104.21.31.51:443?security=tls&sni=esetsecuritylicense1.vowexa5791.workers.dev&type=ws&host=esetsecuritylicense1.vowexa5791.workers.dev&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.31.51:443
 trojan://auto@104.21.35.43:443?peer=esetsecuritylicense3.wawafec355.workers.dev&plugin=obfs-local;obfs=websocket;obfs-host=esetsecuritylicense3.wawafec355.workers.dev;obfs-uri=/#United+States
 trojan://auto@104.21.35.43:443?security=tls&sni=esetsecuritylicense3.wawafec355.workers.dev&type=ws&host=esetsecuritylicense3.wawafec355.workers.dev&path=%2F#VL-0321-042
-trojan://auto@104.21.48.61:443?security=tls&sni=nameless-term-9c25.vpnconnect202020.workers.dev&type=ws&host=nameless-term-9c25.vpnconnect202020.workers.dev&path=%2F%3Fed%3D2560# By EbraSha 🩸
+trojan://auto@104.21.48.61:443?security=tls&sni=nameless-term-9c25.vpnconnect202020.workers.dev&type=ws&host=nameless-term-9c25.vpnconnect202020.workers.dev&path=%2F%3Fed%3D2560# By EbraSha 🦈
 trojan://auto@104.21.48.61:443?security=tls&sni=nameless-term-9c25.vpnconnect202020.workers.dev&type=ws&host=nameless-term-9c25.vpnconnect202020.workers.dev&path=%2F%3Fed%3D2560#VL-0603-065
 trojan://auto@104.21.48.61:443?security=tls&sni=nameless-term-9c25.vpnconnect202020.workers.dev&type=ws&host=nameless-term-9c25.vpnconnect202020.workers.dev&path=%2F%3Fed%3D2560#[6147][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
-trojan://auto@104.21.48.61:443?security=tls&type=ws&sni=nameless-term-9c25.vpnconnect202020.workers.dev# By EbraSha 🩸
+trojan://auto@104.21.48.61:443?security=tls&type=ws&sni=nameless-term-9c25.vpnconnect202020.workers.dev# By EbraSha 🧨
 trojan://auto@104.21.48.61:443?security=tls&type=ws&sni=nameless-term-9c25.vpnconnect202020.workers.dev#[6148][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.21.56.71:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.56.71:443
 trojan://auto@104.21.64.10:443?security=tls&sni=trojanmz.pages.dev&type=ws&host=trojanmz.pages.dev&path=%2Ftrojanmz.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.64.10:443
-trojan://auto@104.21.72.108:443/?type=ws&host=esetsecuritylicense1.cxlrazo.workers.dev&path=%2F&security=tls&sni=esetsecuritylicense1.cxlrazo.workers.dev# By EbraSha 🦂
+trojan://auto@104.21.72.108:443/?type=ws&host=esetsecuritylicense1.cxlrazo.workers.dev&path=%2F&security=tls&sni=esetsecuritylicense1.cxlrazo.workers.dev# By EbraSha 🚨
 trojan://auto@104.21.72.108:443/?type=ws&host=esetsecuritylicense1.cxlrazo.workers.dev&path=%2F&security=tls&sni=esetsecuritylicense1.cxlrazo.workers.dev#[6149][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.21.72.108:443?peer=esetsecuritylicense1.cxlrazo.workers.dev&plugin=obfs-local;obfs=websocket;obfs-host=esetsecuritylicense1.cxlrazo.workers.dev;obfs-uri=/#United+States
-trojan://auto@104.21.72.108:443?security=tls&sni=esetsecuritylicense1.cxlrazo.workers.dev&type=ws&host=esetsecuritylicense1.cxlrazo.workers.dev&path=%2F# By EbraSha 🧊
+trojan://auto@104.21.72.108:443?security=tls&sni=esetsecuritylicense1.cxlrazo.workers.dev&type=ws&host=esetsecuritylicense1.cxlrazo.workers.dev&path=%2F# By EbraSha 🕷️
 trojan://auto@104.21.72.108:443?security=tls&sni=esetsecuritylicense1.cxlrazo.workers.dev&type=ws&host=esetsecuritylicense1.cxlrazo.workers.dev&path=%2F#VL-0321-011
 trojan://auto@104.21.72.108:443?security=tls&sni=esetsecuritylicense1.cxlrazo.workers.dev&type=ws&host=esetsecuritylicense1.cxlrazo.workers.dev&path=%2F#[6150][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
-trojan://auto@104.21.72.108:443?security=tls&type=ws&sni=esetsecuritylicense1.cxlrazo.workers.dev&path=/?ed=2560&host=esetsecuritylicense1.cxlrazo.workers.dev# By EbraSha 🚨
+trojan://auto@104.21.72.108:443?security=tls&type=ws&sni=esetsecuritylicense1.cxlrazo.workers.dev&path=/?ed=2560&host=esetsecuritylicense1.cxlrazo.workers.dev# By EbraSha 🔋
 trojan://auto@104.21.72.108:443?security=tls&type=ws&sni=esetsecuritylicense1.cxlrazo.workers.dev&path=/?ed=2560&host=esetsecuritylicense1.cxlrazo.workers.dev#[6151][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.21.81.225:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.81.225:443
 trojan://auto@104.21.90.210:2053?security=tls&sni=e9464f45.trauma-2r4.pages.dev&type=ws&host=e9464f45.trauma-2r4.pages.dev&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.90.210:2053
 trojan://auto@104.21.90.210:443/?type=tcp&security=tls...
-trojan://auto@104.21.90.210:443/?type=tcp&security=tls...# By EbraSha 🦇
+trojan://auto@104.21.90.210:443/?type=tcp&security=tls...# By EbraSha 🛡️
 trojan://auto@104.21.90.210:443/?type=tcp&security=tls...#[6152][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@104.22.36.243:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.22.36.243:443
 trojan://auto@104.22.37.243:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-104.22.37.243:443
@@ -404,29 +415,29 @@ trojan://auto@108.162.195.199:443?security=tls&sni=trojanmz.pages.dev&type=ws&ho
 trojan://auto@108.162.195.199:443?security=tls&type=ws&sni=trojanmz.pages.dev&path=/trojanmz.pages.dev/?ed=2560&host=trojanmz.pages.dev#%E6%9C%AA%E7%9F%A53
 trojan://auto@108.162.195.202:443?security=tls&sni=trojanmz.pages.dev&type=ws&host=trojanmz.pages.dev&path=%2Ftrojanmz.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-108.162.195.202:443
 trojan://auto@108.162.195.207:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-108.162.195.207:443
-trojan://auto@108.162.195.209:443/?type=ws&host=trojanmz.pages.dev&security=tls&sni=trojanmz.pages.dev# By EbraSha 💻
+trojan://auto@108.162.195.209:443/?type=ws&host=trojanmz.pages.dev&security=tls&sni=trojanmz.pages.dev# By EbraSha 🌃
 trojan://auto@108.162.195.209:443/?type=ws&host=trojanmz.pages.dev&security=tls&sni=trojanmz.pages.dev#[6153][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@108.162.195.209:443?security=tls&sni=trojanmz.pages.dev&type=ws&host=trojanmz.pages.dev&path=%2Ftrojanmz.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-108.162.195.209:443
 trojan://auto@108.162.195.217:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/#🔒 TR-WS-TLS 🏴‍☠️ NA-108.162.195.217:443
 trojan://auto@108.162.195.83:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-108.162.195.83:443
-trojan://auto@129.146.254.39:443?path=/@Azarakhsh_Proxy?ed=2560&security=tls&alpn=http/1.1&host=tg.cmliussss.us.kg&fp=chrome&type=ws&sni=tg.cmliussss.us.kg# By EbraSha 🎛️
+trojan://auto@129.146.254.39:443?path=/@Azarakhsh_Proxy?ed=2560&security=tls&alpn=http/1.1&host=tg.cmliussss.us.kg&fp=chrome&type=ws&sni=tg.cmliussss.us.kg# By EbraSha 🧬
 trojan://auto@129.146.254.39:443?path=/@Azarakhsh_Proxy?ed=2560&security=tls&alpn=http/1.1&host=tg.cmliussss.us.kg&fp=chrome&type=ws&sni=tg.cmliussss.us.kg#4Nika-eb310b2d9f
 trojan://auto@129.146.254.39:443?path=/@Azarakhsh_Proxy?ed=2560&security=tls&alpn=http/1.1&host=tg.cmliussss.us.kg&fp=chrome&type=ws&sni=tg.cmliussss.us.kg#US 🇺🇸 | @Raydikalx | 5B729E
 trojan://auto@129.146.254.39:443?path=/@Azarakhsh_Proxy?ed=2560&security=tls&alpn=http/1.1&host=tg.cmliussss.us.kg&fp=chrome&type=ws&sni=tg.cmliussss.us.kg#[6154][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@129.146.254.39:443?path=/@Azarakhsh_Proxy?ed=2560&security=tls&alpn=http/1.1&host=tg.cmliussss.us.kg&fp=chrome&type=ws&sni=tg.cmliussss.us.kg#[6155][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@129.146.254.39:443?path=/@Azarakhsh_Proxy?ed=2560&security=tls&alpn=http/1.1&host=tg.cmliussss.us.kg&fp=chrome&type=ws&sni=tg.cmliussss.us.kg#🔥Join+Telegram:@Farah_VPN🟣
 trojan://auto@159.246.55.132:443/?type=tcp&security=tl...
-trojan://auto@159.246.55.132:443/?type=tcp&security=tl...# By EbraSha 📀
+trojan://auto@159.246.55.132:443/?type=tcp&security=tl...# By EbraSha 🤖
 trojan://auto@159.246.55.132:443/?type=tcp&security=tl...#[6156][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
-trojan://auto@162.159.128.233:8443/?type=ws&host=e9464f45.trauma-2r4.pages.dev&path=%2F&security=tls&sni=e9464f45.trauma-2r4.pages.dev# By EbraSha 🦅
+trojan://auto@162.159.128.233:8443/?type=ws&host=e9464f45.trauma-2r4.pages.dev&path=%2F&security=tls&sni=e9464f45.trauma-2r4.pages.dev# By EbraSha 🧬
 trojan://auto@162.159.128.233:8443/?type=ws&host=e9464f45.trauma-2r4.pages.dev&path=%2F&security=tls&sni=e9464f45.trauma-2r4.pages.dev#[6157][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@162.159.128.233:8443?path=%2FTelegram-%40V2ray_Alpha%2F%3Fed%3D2048&security=tls&host=e9464f45.trauma-2r4.pages.dev&type=ws&sni=e9464f45.trauma-2r4.pages.dev#MCI-%40V2ray_Alpha-06
 trojan://auto@162.159.128.233:8443?security=tls&sni=e9464f45.trauma-2r4.pages.dev&type=ws&host=e9464f45.trauma-2r4.pages.dev&path=%2FTelegram-%40V2ray_Alpha%2F%3Fed%3D2048#🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.128.233:8443
-trojan://auto@162.159.128.233:8443?security=tls&type=ws&sni=e9464f45.trauma-2r4.pages.dev&path=/TELEGRAM-@PROXY_MTM-TELEGRAM-@PROXY_MTM/?ed=2048&host=e9464f45.trauma-2r4.pages.dev# By EbraSha 🗿
+trojan://auto@162.159.128.233:8443?security=tls&type=ws&sni=e9464f45.trauma-2r4.pages.dev&path=/TELEGRAM-@PROXY_MTM-TELEGRAM-@PROXY_MTM/?ed=2048&host=e9464f45.trauma-2r4.pages.dev# By EbraSha 🖥️
 trojan://auto@162.159.128.233:8443?security=tls&type=ws&sni=e9464f45.trauma-2r4.pages.dev&path=/TELEGRAM-@PROXY_MTM-TELEGRAM-@PROXY_MTM/?ed=2048&host=e9464f45.trauma-2r4.pages.dev#[6158][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@162.159.133.85:443?security=tls&sni=trojanfree-76s.pages.dev&type=ws&host=trojanfree-76s.pages.dev&path=%2Ftrojanfree-76s.pages.dev%2F%3Fed%3D2560&fp=randomized#🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.133.85:443
 trojan://auto@162.159.135.232:8443?security=tls&sni=e9464f45.trauma-2r4.pages.dev&type=ws&host=e9464f45.trauma-2r4.pages.dev&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.135.232:8443
-trojan://auto@162.159.136.232:8443/?type=tcp&security=tls&sni=e9464f45.trauma-2r4.pages.dev# By EbraSha 🔋
+trojan://auto@162.159.136.232:8443/?type=tcp&security=tls&sni=e9464f45.trauma-2r4.pages.dev# By EbraSha 🚬
 trojan://auto@162.159.136.232:8443/?type=tcp&security=tls&sni=e9464f45.trauma-2r4.pages.dev#[6159][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@162.159.136.232:8443?security=tls&sni=e9464f45.trauma-2r4.pages.dev&type=ws&host=e9464f45.trauma-2r4.pages.dev&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.136.232:8443
 trojan://auto@162.159.138.232:8443?security=tls&sni=e9464f45.trauma-2r4.pages.dev&type=ws&host=e9464f45.trauma-2r4.pages.dev&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.138.232:8443
@@ -434,7 +445,7 @@ trojan://auto@162.159.152.101:443#[6160][US][0][TROJAN][None][ext_raw.githubuser
 trojan://auto@162.159.44.110:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.44.110:443
 trojan://auto@162.159.44.110:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#%E6%9C%AA%E7%9F%A597
 trojan://auto@162.159.44.135:443?security=tls&sni=trojanmz.pages.dev&type=ws&host=trojanmz.pages.dev&path=%2Ftrojanmz.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.44.135:443
-trojan://auto@162.159.44.148:443/?type=tcp&security=tls&sni=trojanfree-76s.pages.dev# By EbraSha 🦇
+trojan://auto@162.159.44.148:443/?type=tcp&security=tls&sni=trojanfree-76s.pages.dev# By EbraSha 🚧
 trojan://auto@162.159.44.148:443/?type=tcp&security=tls&sni=trojanfree-76s.pages.dev#[6161][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@162.159.44.148:443?security=tls&sni=trojanfree-76s.pages.dev&type=ws&host=trojanfree-76s.pages.dev&path=%2Ftrojanfree-76s.pages.dev%2F%3Fed%3D2560&fp=randomized#🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.44.148:443
 trojan://auto@162.159.44.154:443?security=tls&sni=trojanfree-76s.pages.dev&type=ws&host=trojanfree-76s.pages.dev&path=%2Ftrojanfree-76s.pages.dev%2F%3Fed%3D2560&fp=randomized#🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.44.154:443
@@ -442,7 +453,7 @@ trojan://auto@162.159.44.159:443?security=tls&sni=trojanmz.pages.dev&type=ws&hos
 trojan://auto@162.159.44.161:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.44.161:443
 trojan://auto@162.159.44.168:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/#🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.44.168:443
 trojan://auto@162.159.44.169:443?security=tls&sni=trojanmz.pages.dev&type=ws&host=trojanmz.pages.dev&path=%2Ftrojanmz.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.44.169:443
-trojan://auto@162.159.44.176:443/?type=ws&host=trojanmz.pages.dev&security=tls&sni=trojanmz.pages.dev# By EbraSha 🪖
+trojan://auto@162.159.44.176:443/?type=ws&host=trojanmz.pages.dev&security=tls&sni=trojanmz.pages.dev# By EbraSha 🛸
 trojan://auto@162.159.44.176:443/?type=ws&host=trojanmz.pages.dev&security=tls&sni=trojanmz.pages.dev#[6162][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@162.159.44.176:443?security=tls&sni=trojanmz.pages.dev&type=ws&host=trojanmz.pages.dev&path=%2Ftrojanmz.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.44.176:443
 trojan://auto@162.159.44.192:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.44.192:443
@@ -472,29 +483,18 @@ trojan://auto@172.64.35.187:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.d
 trojan://auto@172.64.35.192:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-172.64.35.192:443
 trojan://auto@172.64.35.199:443?security=tls&sni=trojanmz.pages.dev&type=ws&host=trojanmz.pages.dev&path=%2Ftrojanmz.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-172.64.35.199:443
 trojan://auto@172.64.35.202:443?security=tls&sni=trojanmz.pages.dev&type=ws&host=trojanmz.pages.dev&path=%2Ftrojanmz.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-172.64.35.202:443
-trojan://auto@172.64.35.202:443?security=tls&type=ws&sni=trojanmz.pages.dev&host=trojanmz.pages.dev# By EbraSha ♦️
+trojan://auto@172.64.35.202:443?security=tls&type=ws&sni=trojanmz.pages.dev&host=trojanmz.pages.dev# By EbraSha 🐉
 trojan://auto@172.64.35.202:443?security=tls&type=ws&sni=trojanmz.pages.dev&host=trojanmz.pages.dev#[6163][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@172.64.35.205:443?security=tls&sni=trojanmz.pages.dev&type=ws&host=trojanmz.pages.dev&path=%2Ftrojanmz.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-172.64.35.205:443
 trojan://auto@172.64.35.205:443?security=tls&type=ws&sni=trojanmz.pages.dev&path=/trojanmz.pages.dev/?ed=2560&host=trojanmz.pages.dev#%E6%9C%AA%E7%9F%A529
 trojan://auto@172.64.35.207:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-172.64.35.207:443
 trojan://auto@172.64.35.207:443?security=tls&type=ws&sni=b96ef9ae.trojanfree-76s.pages.dev&path=/b96ef9ae.trojanfree-76s.pages.dev/&host=b96ef9ae.trojanfree-76s.pages.dev#%E6%9C%AA%E7%9F%A5143
 trojan://auto@172.64.35.209:443?security=tls&sni=trojanmz.pages.dev&type=ws&host=trojanmz.pages.dev&path=%2Ftrojanmz.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-172.64.35.209:443
-trojan://auto@172.64.35.209:443?security=tls&type=ws&sni=trojanmz.pages.dev&path=/trojanmz.pages.dev/?ed=2560&host=trojanmz.pages.dev# By EbraSha 🚀
+trojan://auto@172.64.35.209:443?security=tls&type=ws&sni=trojanmz.pages.dev&path=/trojanmz.pages.dev/?ed=2560&host=trojanmz.pages.dev# By EbraSha 📼
 trojan://auto@172.64.35.209:443?security=tls&type=ws&sni=trojanmz.pages.dev&path=/trojanmz.pages.dev/?ed=2560&host=trojanmz.pages.dev#[6164][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@172.64.35.217:443?security=tls&sni=b96ef9ae.trojanfree-76s.pages.dev&type=ws&host=b96ef9ae.trojanfree-76s.pages.dev&path=%2Fb96ef9ae.trojanfree-76s.pages.dev%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-172.64.35.217:443
 trojan://auto@172.64.35.83:443?security=tls&sni=trojanmz.pages.dev&type=ws&host=trojanmz.pages.dev&path=%2Ftrojanmz.pages.dev%2F%3Fed%3D2560#🔒 TR-WS-TLS 🏴‍☠️ NA-172.64.35.83:443
 trojan://auto@172.66.44.106:443?security=tls&sni=e9464f45.trauma-2r4.pages.dev&type=ws&path=/&fp=chrome#🔒 TR-WS-TLS 🏴‍☠️ NA-172.66.44.106:443
-trojan://auto@172.66.44.106:8443/?type=ws&path=%2F&security=tls&sni=e9464f45.trauma-2r4.pages.dev# By EbraSha ⛓️
+trojan://auto@172.66.44.106:8443/?type=ws&path=%2F&security=tls&sni=e9464f45.trauma-2r4.pages.dev# By EbraSha 🚨
 trojan://auto@172.66.44.106:8443/?type=ws&path=%2F&security=tls&sni=e9464f45.trauma-2r4.pages.dev#[6165][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
 trojan://auto@172.66.44.106:8443?security=tls&sni=e9464f45.trauma-2r4.pages.dev&type=ws&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-172.66.44.106:8443
-trojan://auto@172.66.44.131:443?security=tls&sni=e9464f45.trauma-2r4.pages.dev&type=ws&host=e9464f45.trauma-2r4.pages.dev&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-172.66.44.131:443
-trojan://auto@172.66.44.86:443?security=tls&sni=trojanfree-76s.pages.dev&type=ws&path=/trojanfree-76s.pages.dev/?ed%3D2560&fp=randomized#🔒 TR-WS-TLS 🏴‍☠️ NA-172.66.44.86:443
-trojan://auto@172.66.45.2:443/?type=tcp&security=tls&sni=dcf741e8.epeius-2gy.pages.dev# By EbraSha 🌀
-trojan://auto@172.66.45.2:443/?type=tcp&security=tls&sni=dcf741e8.epeius-2gy.pages.dev#[6166][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
-trojan://auto@172.66.45.2:443/?type=tcp&security=tls&sni=dcf741e8.epeius-2gy.pages.dev&allowInsecure=1# By EbraSha 📛
-trojan://auto@172.66.45.2:443/?type=tcp&security=tls&sni=dcf741e8.epeius-2gy.pages.dev&allowInsecure=1#[6167][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
-trojan://auto@172.66.45.2:443?security=tls&sni=dcf741e8.epeius-2gy.pages.dev&type=ws&host=dcf741e8.epeius-2gy.pages.dev&path=%2F#VL-0313-069
-trojan://auto@172.66.46.254:443/?type=tcp&security=tls&sni=dcf741e8.epeius-2gy.pages.dev# By EbraSha 🌐
-trojan://auto@172.66.46.254:443/?type=tcp&security=tls&sni=dcf741e8.epeius-2gy.pages.dev#[6168][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-10][2026-08-10 00:49]
-trojan://auto@172.66.47.150:443?security=tls&sni=e9464f45.trauma-2r4.pages.dev&type=ws&path=/&fp=chrome#🔒 TR-WS-TLS 🏴‍☠️ NA-172.66.47.150:443
-trojan://auto@172.66.47.150:8443/?type=ws&path=%2F&security=tls&sni=e9464f45.trauma-2r4.pages.dev# By EbraSha 🕹️
