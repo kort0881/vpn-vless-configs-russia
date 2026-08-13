@@ -1,105 +1,64 @@
 #!/usr/bin/env python3
-"""Генератор реальных VLESS-конфигов на основе реальных UUID из собранных ключей"""
+# -*- coding: utf-8 -*-
+"""
+Генератор VLESS-конфигов с автоматической подгрузкой данных.
+Если локальный файл отсутствует или пуст – скачивает с репозитория.
+"""
 
-import re
+import os
+import sys
+import urllib.request
 from pathlib import Path
 
+# ==================== КОНФИГУРАЦИЯ ====================
 BASE_DIR = Path(__file__).parent.parent
-ALL_NEW_FILE = BASE_DIR / "data" / "githubmirror" / "new" / "all_new.txt"
-CLEAN_VLESS_FILE = BASE_DIR / "data" / "githubmirror" / "clean" / "vless.txt"
-OUTPUT_GENERATED = BASE_DIR / "data" / "githubmirror" / "new" / "generated_real.txt"
+DATA_FILE = BASE_DIR / "data" / "githubmirror" / "clean" / "vless.txt"
+OUTPUT_DIR = BASE_DIR / "output"
+OUTPUT_FILE = OUTPUT_DIR / "vless.txt"
 
-def extract_components_from_vless(line: str):
-    """Извлекает uuid, host, port, sni из строки vless://..."""
-    line = line.strip()
-    if not line.startswith("vless://"):
-        return None
-    # Формат: vless://uuid@host:port?params
-    match = re.match(r'vless://([^@]+)@([^:]+):(\d+)\?(.*)', line)
-    if not match:
-        return None
-    uuid = match.group(1)
-    host = match.group(2)
-    port = match.group(3)
-    params = match.group(4)
-    sni_match = re.search(r'sni=([^&]+)', params)
-    sni = sni_match.group(1) if sni_match else host
-    return (uuid, host, port, sni)
+# ==================== FALLBACK: ЗАГРУЗКА ДАННЫХ ====================
+def ensure_data():
+    """Проверяет наличие данных, при необходимости скачивает"""
+    if DATA_FILE.exists() and DATA_FILE.stat().st_size > 0:
+        print(f"✅ Данные найдены: {DATA_FILE} (размер {DATA_FILE.stat().st_size} байт)")
+        return True
 
-def extract_components_from_file(file_path):
-    """Возвращает список (uuid, host, port, sni) для всех vless-строк в файле"""
-    if not file_path.exists():
-        return []
-    components = []
-    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
-        for line in f:
-            comp = extract_components_from_vless(line)
-            if comp:
-                components.append(comp)
-    # Дедупликация по host+port
-    seen = set()
-    unique = []
-    for uuid, host, port, sni in components:
-        key = (host, port)
-        if key not in seen:
-            seen.add(key)
-            unique.append((uuid, host, port, sni))
-    return unique
+    print("⚠️ Локальный файл отсутствует или пуст. Скачиваю свежий vless.txt...")
+    DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
+    url = "https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/githubmirror/clean/vless.txt"
+    try:
+        urllib.request.urlretrieve(url, DATA_FILE)
+        print(f"✅ Скачано: {DATA_FILE}")
+        return True
+    except Exception as e:
+        print(f"❌ Ошибка скачивания: {e}")
+        return False
 
-def generate_vless_from_real(uuid, host, port, sni, remark=None):
-    """Генерирует конфиг с реальным UUID, но с изменёнными параметрами (sni, flow)"""
-    params = {
-        "encryption": "none",
-        "security": "tls",
-        "type": "tcp",
-        "flow": "xtls-rprx-vision",
-    }
-    if sni:
-        params["sni"] = sni
-    query = "&".join(f"{k}={v}" for k, v in params.items())
-    tag = remark if remark else f"real-{host}"
-    return f"vless://{uuid}@{host}:{port}?{query}#{tag}"
-
-def load_existing_clean_vless():
-    if not CLEAN_VLESS_FILE.exists():
-        return set()
-    with open(CLEAN_VLESS_FILE, 'r', encoding='utf-8', errors='ignore') as f:
-        return {line.strip() for line in f if line.strip()}
-
-def add_to_clean_vless(new_configs):
-    existing = load_existing_clean_vless()
-    added = [cfg for cfg in new_configs if cfg not in existing]
-    if not added:
-        return 0
-    all_configs = sorted(existing.union(added))
-    with open(CLEAN_VLESS_FILE, 'w', encoding='utf-8') as f:
-        f.write("\n".join(all_configs) + "\n")
-    return len(added)
-
+# ==================== ОСНОВНАЯ ЛОГИКА ====================
 def main():
-    print("=== Реальный генератор VLESS (на основе оригинальных UUID) ===")
-    components = extract_components_from_file(ALL_NEW_FILE)
-    if not components:
-        components = extract_components_from_file(CLEAN_VLESS_FILE)
-    if not components:
-        print("❌ Нет данных для генерации. Запустите mirror.py сначала.")
-        return 1
+    if not ensure_data():
+        print("❌ Не удалось получить данные. Выход.")
+        sys.exit(1)
 
-    print(f"🔍 Найдено уникальных серверов с реальными UUID: {len(components)}")
-    generated = []
-    for uuid, host, port, sni in components:
-        cfg = generate_vless_from_real(uuid, host, port, sni, remark=f"real-{host}")
-        generated.append(cfg)
+    # Читаем все строки
+    with open(DATA_FILE, 'r', encoding='utf-8') as f:
+        lines = [line.strip() for line in f if line.strip()]
 
-    OUTPUT_GENERATED.parent.mkdir(parents=True, exist_ok=True)
-    with open(OUTPUT_GENERATED, 'w', encoding='utf-8') as f:
-        f.write("\n".join(generated) + "\n")
+    if not lines:
+        print("❌ Файл пуст после загрузки. Выход.")
+        sys.exit(1)
 
-    print(f"📁 Сгенерировано {len(generated)} конфигов, сохранено в {OUTPUT_GENERATED}")
+    print(f"📥 Загружено {len(lines)} VLESS-конфигов.")
 
-    added = add_to_clean_vless(generated)
-    print(f"✅ Добавлено в основной пул (clean/vless.txt): {added} новых конфигов")
-    return 0
+    # ====== ВСТАВЬТЕ СЮДА ВАШУ ГЕНЕРАЦИЮ ======
+    # Здесь вы можете преобразовывать строки, добавлять параметры,
+    # фильтровать, объединять, сохранять в другом формате и т.д.
+    # Для примера просто копируем файл в output/
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+        f.write("\n".join(lines))
+
+    print(f"✅ Готово! {len(lines)} конфигов сохранено в {OUTPUT_FILE}")
 
 if __name__ == "__main__":
-    exit(main())
+    main()
