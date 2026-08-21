@@ -1,18 +1,17 @@
-vmess://04621bae-ab36-11ec-b909-0242ac120002@216.106.185.141:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%A6%8195@oneclickvpnkeys | 42ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@169.197.142.22:18000?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%A6%8197@oneclickvpnkeys | 42ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@23.162.200.198:18000?encryption=auto&amp;security=none&amp;type=tcp#%E2%9A%9B%EF%B8%8F83@oneclickvpnkeys | 46ms
-vmess://d13fc2f5-3e05-4795-81eb-44143a09e552@82.198.246.97:180?encryption=auto&amp;security=none&amp;type=tcp#%E2%9A%9B%EF%B8%8F94@oneclickvpnkeys | 49ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@67.220.85.46:18000?encryption=aes-128-gcm&amp;security=none&amp;type=tcp#%F0%9F%9B%8E%EF%B8%8F44@oneclickvpnkeys | 49ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@67.220.95.3:18000?encryption=aes-128-gcm&amp;security=none&amp;type=tcp#%F0%9F%9B%8E%EF%B8%8F47@oneclickvpnkeys | 49ms
-vmess://3935c2dc-dbb0-43f7-b367-fe89abe87fdf@173.249.209.146:20086?encryption=auto&path=/&security=none&type=ws#US 🇺🇸 | @Raydikalx | AD54EA | 56ms
-vmess://e7d72a8d-26f2-4b54-b366-0c43e0bcba7d@165.140.216.141:443?encryption=auto&security=none&type=tcp#US 🇺🇸 | @Raydikalx | 44BA16 | 65ms
-vmess://b65a2d69-5634-42a2-e4be-54e8a6176900@165.140.216.142:443?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%8E%97%EF%B8%8F95@oneclickvpnkeys | 72ms
-vmess://d4603cc2-e0ee-4651-83f5-1db5b7168177@129.146.143.80:48111?encryption=auto&amp;security=none&amp;type=tcp#%E2%9A%9B%EF%B8%8F95@oneclickvpnkeys | 107ms
-vmess://03fcc618-b93d-6796-6aed-8a38c975d581@rush-72frf.meeopp.site:443?encryption=auto&amp;host=rush-72frf.meeopp.site&amp;path=%2F&amp;security=tls&amp;sni=rush-72frf.meeopp.site&amp;type=ws#%F0%9F%9B%9771@oneclickvpnkeys | 114ms
-vmess://ebca559c-a4a1-4062-9453-6412d8ff5255@216.128.176.166:28809?encryption=auto&path=/ebca559c-a4a1-4062-9453-6412d8ff5255&security=none&type=ws#CA 🇨🇦 | @Raydikalx | 871A47 | 160ms
-vmess://d13fc2f5-3e05-4795-81eb-44143a09e552@82.198.246.233:180?encryption=auto&amp;security=none&amp;type=tcp#%E2%9A%9B%EF%B8%8F92@oneclickvpnkeys | 165ms
-vmess://959a8caf-4cea-43d0-a548-3628e7ddfafc@165.154.195.38:35034?encryption=auto&security=none&type=tcp#TW 🇹🇼 | @Raydikalx | F8C330 | 167ms
-vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn | 168ms
-vmess://9e5c6ebf-35f9-49a3-9f12-cba2b7cdbccb@43.228.126.187:47630?encryption=auto&security=none&type=tcp#SG 🇸🇬 | @Raydikalx | 817503 | 202ms
-vmess://72f2cbe4-2874-45b7-b6aa-b93077c10c72@node-uk.connectsuite.org:2053?alpn=h2%2Chttp%2F1.1&amp;encryption=auto&amp;security=tls&amp;type=tcp#%F0%9F%8C%8030@oneclickvpnkeys | 283ms
-vmess://9a1a05d9-69be-45d3-e326-c6621edf7b31@deapp.jisuyun.top:2053?encryption=auto&amp;host=deapp.jisuyun.top&amp;path=%2Fdevm&amp;security=tls&amp;sni=deapp.jisuyun.top&amp;type=ws#%E2%9A%9B%EF%B8%8F70@oneclickvpnkeys | 382ms
+vmess://d4603cc2-e0ee-4651-83f5-1db5b7168177@129.146.143.80:48111?encryption=auto&amp;security=none&amp;type=tcp#%E2%9A%9B%EF%B8%8F95@oneclickvpnkeys | 8ms
+vmess://d13fc2f5-3e05-4795-81eb-44143a09e552@82.198.246.97:180?encryption=auto&amp;security=none&amp;type=tcp#%E2%9A%9B%EF%B8%8F94@oneclickvpnkeys | 11ms
+vmess://d13fc2f5-3e05-4795-81eb-44143a09e552@82.198.246.233:180?encryption=auto&amp;security=none&amp;type=tcp#%E2%9A%9B%EF%B8%8F92@oneclickvpnkeys | 12ms
+vmess://04621bae-ab36-11ec-b909-0242ac120002@216.106.185.141:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%A6%8195@oneclickvpnkeys | 17ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@169.197.142.22:18000?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%A6%8197@oneclickvpnkeys | 17ms
+vmess://3935c2dc-dbb0-43f7-b367-fe89abe87fdf@173.249.209.146:20086?encryption=auto&path=/&security=none&type=ws#US 🇺🇸 | @Raydikalx | AD54EA | 18ms
+vmess://b65a2d69-5634-42a2-e4be-54e8a6176900@165.140.216.142:443?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%8E%97%EF%B8%8F95@oneclickvpnkeys | 21ms
+vmess://e7d72a8d-26f2-4b54-b366-0c43e0bcba7d@165.140.216.141:443?encryption=auto&security=none&type=tcp#US 🇺🇸 | @Raydikalx | 44BA16 | 24ms
+vmess://03fcc618-b93d-6796-6aed-8a38c975d581@rush-72frf.meeopp.site:443?encryption=auto&amp;host=rush-72frf.meeopp.site&amp;path=%2F&amp;security=tls&amp;sni=rush-72frf.meeopp.site&amp;type=ws#%F0%9F%9B%9771@oneclickvpnkeys | 36ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@67.220.95.3:18000?encryption=aes-128-gcm&amp;security=none&amp;type=tcp#%F0%9F%9B%8E%EF%B8%8F47@oneclickvpnkeys | 52ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@67.220.85.46:18000?encryption=aes-128-gcm&amp;security=none&amp;type=tcp#%F0%9F%9B%8E%EF%B8%8F44@oneclickvpnkeys | 58ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@23.162.200.198:18000?encryption=auto&amp;security=none&amp;type=tcp#%E2%9A%9B%EF%B8%8F83@oneclickvpnkeys | 66ms
+vmess://72f2cbe4-2874-45b7-b6aa-b93077c10c72@node-uk.connectsuite.org:2053?alpn=h2%2Chttp%2F1.1&amp;encryption=auto&amp;security=tls&amp;type=tcp#%F0%9F%8C%8030@oneclickvpnkeys | 198ms
+vmess://9e5c6ebf-35f9-49a3-9f12-cba2b7cdbccb@43.228.126.187:47630?encryption=auto&security=none&type=tcp#SG 🇸🇬 | @Raydikalx | 817503 | 217ms
+vmess://959a8caf-4cea-43d0-a548-3628e7ddfafc@165.154.195.38:35034?encryption=auto&security=none&type=tcp#TW 🇹🇼 | @Raydikalx | F8C330 | 220ms
+vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn | 224ms
+vmess://9a1a05d9-69be-45d3-e326-c6621edf7b31@deapp.jisuyun.top:2053?encryption=auto&amp;host=deapp.jisuyun.top&amp;path=%2Fdevm&amp;security=tls&amp;sni=deapp.jisuyun.top&amp;type=ws#%E2%9A%9B%EF%B8%8F70@oneclickvpnkeys | 230ms
