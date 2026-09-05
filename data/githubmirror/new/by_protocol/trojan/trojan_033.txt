@@ -1,3 +1,12 @@
+trojan://NISHIKUITAN222@190.93.244.113:443?#🔒 TR-TCP-NA 🏴‍☠️ NA-190.93.244.113:443
+trojan://NISHIKUITAN222@190.93.244.123:443?security=tls&sni=ij.ylks.xyz&type=ws&host=ij.ylks.xyz&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.244.123:443
+trojan://NISHIKUITAN222@190.93.244.125:443?security=tls&sni=im.ylks.xyz&type=ws&host=im.ylks.xyz&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.244.125:443
+trojan://NISHIKUITAN222@190.93.244.163:443?security=tls&sni=ij.ylks.xyz&type=ws&host=ij.ylks.xyz&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.244.163:443
+trojan://NISHIKUITAN222@190.93.244.40:443?security=tls&sni=im.ylks.xyz&type=ws&host=im.ylks.xyz&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.244.40:443
+trojan://NISHIKUITAN222@190.93.244.40:443?security=tls&type=ws&sni=im.ylks.xyz&path=/&host=im.ylks.xyz#%E6%9C%AA%E7%9F%A594
+trojan://NISHIKUITAN222@190.93.244.41:443?security=tls&sni=in.ylks.xyz&type=ws&host=in.ylks.xyz&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.244.41:443
+trojan://NISHIKUITAN222@190.93.244.42:443?security=tls&sni=ik.ylks.xyz&type=ws&host=ik.ylks.xyz&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.244.42:443
+trojan://NISHIKUITAN222@190.93.244.69:443?security=tls&sni=il.ylks.xyz&type=ws&host=il.ylks.xyz&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.244.69:443
 trojan://NISHIKUITAN222@190.93.244.69:443?security=tls&type=ws&sni=il.ylks.xyz&path=/&host=il.ylks.xyz#%E6%9C%AA%E7%9F%A5116
 trojan://NISHIKUITAN222@190.93.245.10:443?security=tls&sni=im.ylks.xyz&type=ws&host=im.ylks.xyz&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.245.10:443
 trojan://NISHIKUITAN222@190.93.245.186:443?security=tls&sni=im.ylks.xyz&type=ws&host=im.ylks.xyz&path=%2F#🔒 TR-WS-TLS 🏴‍☠️ NA-190.93.245.186:443
@@ -124,10 +133,11 @@ trojan://NQ26071394@95.85.94.144:443?fp=chrome#JP 🇯🇵 | @Raydikalx | 864A66
 trojan://NQ26071394@95.85.94.208:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=ready-kangaroo.rooster465.autos#JP 🇯🇵 | @Raydikalx | FFB04D
 trojan://NQ26071394@95.85.94.57:443?sni=gentle-mastiff.rooster465.autos&fp=chrome&type=tcp&path=/#JP 🇯🇵 | @Raydikalx | BC5515
 trojan://NQ26071394@able-dane.rooster465.autos:443?allowInsecure=0&sni=able-dane.rooster465.autos#KR 🇰🇷 | @Raydikalx | 70394E
-trojan://NQ26071394@accurate-cat.rooster465.autos:443?security=tls# By EbraSha 🛰️
+trojan://NQ26071394@accurate-cat.rooster465.autos:443?security=tls# By EbraSha 🌌
 trojan://NQ26071394@accurate-cat.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-54.180.128.171-4716
 trojan://NQ26071394@accurate-cat.rooster465.autos:443?security=tls#4Mohsen-c91edbad87
 trojan://NQ26071394@accurate-cat.rooster465.autos:443?security=tls#[3630][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
+trojan://NQ26071394@accurate-cat.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 18
 trojan://NQ26071394@accurate-cat.rooster465.autos:443?sni=accurate-cat.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR_194
 trojan://NQ26071394@accurate-cat.rooster465.autos:443?sni=accurate-cat.rooster465.autos#KR 🇰🇷 | @Raydikalx | 5A4B8B
 trojan://NQ26071394@ace-liger.rooster465.autos:443?allowInsecure=0&sni=ace-liger.rooster465.autos#SG 🇸🇬 | @Raydikalx | CB86FA
@@ -148,59 +158,60 @@ trojan://NQ26071394@bold-eagle.rooster465.autos:443?allowInsecure=0&sni=bold-eag
 trojan://NQ26071394@brief-hare.rooster465.autos:443?allowInsecure=0&sni=brief-hare.rooster465.autos#SG 🇸🇬 | @Raydikalx | B2C5D0
 trojan://NQ26071394@bursting-racer.rooster465.autos:443?allowInsecure=1&sni=bursting-racer.rooster465.autos#JP 🇯🇵 | @Raydikalx | C751FB
 trojan://NQ26071394@busy-hermit.rooster465.autos:443?sni=busy-hermit.rooster465.autos&fp=chrome&type=tcp&path=%2f#SG 🇸🇬 | @Raydikalx | 632E26
-trojan://NQ26071394@calm-muskrat.rooster465.autos:443?security=tls# By EbraSha 🧠
+trojan://NQ26071394@calm-muskrat.rooster465.autos:443?security=tls# By EbraSha 🔮
 trojan://NQ26071394@calm-muskrat.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%9F%87%ACSG-47.130.132.222-4642
 trojan://NQ26071394@calm-muskrat.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%9F%87%ACSG-47.130.132.222-5071
 trojan://NQ26071394@calm-muskrat.rooster465.autos:443?security=tls#4Jadi-d1795a87c4
 trojan://NQ26071394@calm-muskrat.rooster465.autos:443?security=tls#SG 🇸🇬 | @Raydikalx | A35001
 trojan://NQ26071394@calm-muskrat.rooster465.autos:443?security=tls#[3631][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@calm-muskrat.rooster465.autos:443?security=tls#[3632][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@calm-muskrat.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 797
+trojan://NQ26071394@calm-muskrat.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 367
 trojan://NQ26071394@calm-muskrat.rooster465.autos:443?sni=calm-muskrat.rooster465.autos#%F0%9F%87%A6%F0%9F%87%BAAU_24
 trojan://NQ26071394@capable-baboon.rooster465.autos:443?allowInsecure=0&sni=capable-baboon.rooster465.autos#JP 🇯🇵 | @Raydikalx | 51535C
 trojan://NQ26071394@capable-baboon.rooster465.autos:443?security=tls#[3633][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@capable-baboon.rooster465.autos:443?security=tls#[3634][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@capable-baboon.rooster465.autos:443?sni=capable-baboon.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP_182
 trojan://NQ26071394@capable-dory.rooster465.autos:443?allowInsecure=1&sni=capable-dory.rooster465.autos#JP 🇯🇵 | @Raydikalx | 63EED6
-trojan://NQ26071394@capable-jay.rooster465.autos:443?security=tls# By EbraSha 📟
+trojan://NQ26071394@capable-jay.rooster465.autos:443?security=tls# By EbraSha 🦈
 trojan://NQ26071394@capable-jay.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%9F%87%ACSG-54.169.137.148-4654
 trojan://NQ26071394@capable-jay.rooster465.autos:443?security=tls#4Jadi-142815a52e
-trojan://NQ26071394@capable-jay.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 819
+trojan://NQ26071394@capable-jay.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 648
 trojan://NQ26071394@capable-jay.rooster465.autos:443?sni=capable-jay.rooster465.autos#%F0%9F%87%A6%F0%9F%87%BAAU_25
 trojan://NQ26071394@capable-jay.rooster465.autos:443?sni=capable-jay.rooster465.autos#SG 🇸🇬 | @Raydikalx | 9D3BC9
-trojan://NQ26071394@certain-prawn.rooster465.autos:443?security=tls# By EbraSha 🧨
+trojan://NQ26071394@certain-prawn.rooster465.autos:443?security=tls# By EbraSha 💻
 trojan://NQ26071394@certain-prawn.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%9F%87%ACSG-45.135.228.82-4739
 trojan://NQ26071394@certain-prawn.rooster465.autos:443?security=tls#4FreeIran-5618f04042
 trojan://NQ26071394@certain-prawn.rooster465.autos:443?sni=certain-prawn.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8US_290
 trojan://NQ26071394@chief-cricket.rooster465.autos:443?fp=chrome#JP 🇯🇵 | @Raydikalx | 5BB724
-trojan://NQ26071394@chief-cricket.rooster465.autos:443?security=tls# By EbraSha 👾
+trojan://NQ26071394@chief-cricket.rooster465.autos:443?security=tls# By EbraSha 🌑
 trojan://NQ26071394@chief-cricket.rooster465.autos:443?security=tls#%F0%9F%87%AF%F0%9F%87%B5JP-31.223.184.85-4669
 trojan://NQ26071394@chief-cricket.rooster465.autos:443?security=tls#4Mohsen-75ecde8d34
 trojan://NQ26071394@chief-cricket.rooster465.autos:443?security=tls#[3635][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
+trojan://NQ26071394@chief-cricket.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 17
 trojan://NQ26071394@chief-cricket.rooster465.autos:443?sni=chief-cricket.rooster465.autos#%F0%9F%87%AB%F0%9F%87%B7FR_58
 trojan://NQ26071394@comic-poodle.rooster465.autos:443?allowInsecure=1&sni=comic-poodle.rooster465.autos#JP 🇯🇵 | @Raydikalx | AA402C
 trojan://NQ26071394@correct-starfish.rooster465.autos:443?fp=chrome#JP 🇯🇵 | @Raydikalx | 9ED04E
-trojan://NQ26071394@correct-starfish.rooster465.autos:443?security=tls# By EbraSha 👾
+trojan://NQ26071394@correct-starfish.rooster465.autos:443?security=tls# By EbraSha ♠️
 trojan://NQ26071394@correct-starfish.rooster465.autos:443?security=tls#%F0%9F%87%AF%F0%9F%87%B5JP-31.223.184.104-4685
 trojan://NQ26071394@correct-starfish.rooster465.autos:443?security=tls#4Jadi-4e1ddd6589
 trojan://NQ26071394@correct-starfish.rooster465.autos:443?security=tls#[3636][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@correct-starfish.rooster465.autos:443?security=tls#[3637][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@correct-starfish.rooster465.autos:443?type=raw&headerType=none&security=tls&sni=correct-starfish.rooster465.autos# By EbraSha 🧲
+trojan://NQ26071394@correct-starfish.rooster465.autos:443?type=raw&headerType=none&security=tls&sni=correct-starfish.rooster465.autos# By EbraSha ⚙️
 trojan://NQ26071394@correct-starfish.rooster465.autos:443?type=raw&headerType=none&security=tls&sni=correct-starfish.rooster465.autos#[3638][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@crack-martin.rooster465.autos:443?sni=crack-martin.rooster465.autos&fp=chrome&type=tcp&path=%2f#SG 🇸🇬 | @Raydikalx | 0FCC4C
-trojan://NQ26071394@devoted-heron.rooster465.autos:443?security=tls# By EbraSha 🛜
+trojan://NQ26071394@devoted-heron.rooster465.autos:443?security=tls# By EbraSha 🐉
 trojan://NQ26071394@devoted-heron.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-3.35.140.206-4657
 trojan://NQ26071394@devoted-heron.rooster465.autos:443?security=tls#4Jadi-df9aee4bed
 trojan://NQ26071394@devoted-heron.rooster465.autos:443?security=tls#[3639][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@devoted-heron.rooster465.autos:443?security=tls#[3640][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
+trojan://NQ26071394@devoted-heron.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 417
 trojan://NQ26071394@devoted-heron.rooster465.autos:443?sni=devoted-heron.rooster465.autos#%F0%9F%87%A6%F0%9F%87%BAAU_14
 trojan://NQ26071394@devoted-heron.rooster465.autos:443?sni=devoted-heron.rooster465.autos#KR 🇰🇷 | @Raydikalx | 34D03D
-trojan://NQ26071394@direct-hawk.rooster465.autos:443?security=tls# By EbraSha ♦️
+trojan://NQ26071394@direct-hawk.rooster465.autos:443?security=tls# By EbraSha 🦈
 trojan://NQ26071394@direct-hawk.rooster465.autos:443?security=tls#%F0%9F%87%A9%F0%9F%87%AADE-18.192.67.47-4708
 trojan://NQ26071394@direct-hawk.rooster465.autos:443?security=tls#4Mohsen-b4d1a47f2e
 trojan://NQ26071394@direct-hawk.rooster465.autos:443?security=tls#[3641][DE][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@direct-hawk.rooster465.autos:443?security=tls#[3642][DE][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@direct-hawk.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 470
 trojan://NQ26071394@direct-hawk.rooster465.autos:443?sni=direct-hawk.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP_151
 trojan://NQ26071394@direct-hawk.rooster465.autos:443?sni=direct-hawk.rooster465.autos#DE 🇩🇪 | @Raydikalx | C9CFBD
 trojan://NQ26071394@driving-antelope.rooster465.autos:443#SG 🇸🇬 | @Raydikalx | 3F7EE7
@@ -210,12 +221,12 @@ trojan://NQ26071394@elegant-marten.rooster465.autos:443?allowInsecure=1&sni=eleg
 trojan://NQ26071394@elegant-marten.rooster465.autos:443?security=tls#[3643][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@elegant-marten.rooster465.autos:443?security=tls#[3644][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@elegant-marten.rooster465.autos:443?sni=elegant-marten.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP_180
-trojan://NQ26071394@emerging-baboon.rooster465.autos:443?security=tls# By EbraSha 🥷
+trojan://NQ26071394@emerging-baboon.rooster465.autos:443?security=tls# By EbraSha 🌐
 trojan://NQ26071394@emerging-baboon.rooster465.autos:443?security=tls#%F0%9F%87%AE%F0%9F%87%AAIE-18.203.81.6-4735
 trojan://NQ26071394@emerging-baboon.rooster465.autos:443?security=tls#4Nika-99245b5158
 trojan://NQ26071394@emerging-baboon.rooster465.autos:443?security=tls#[3645][IE][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@emerging-baboon.rooster465.autos:443?security=tls#[3646][IE][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@emerging-baboon.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 495
+trojan://NQ26071394@emerging-baboon.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 82
 trojan://NQ26071394@emerging-baboon.rooster465.autos:443?sni=emerging-baboon.rooster465.autos#%F0%9F%87%B8%F0%9F%87%ACSG_226
 trojan://NQ26071394@emerging-baboon.rooster465.autos:443?sni=emerging-baboon.rooster465.autos#IE 🇮🇪 | @Raydikalx | 79DD03
 trojan://NQ26071394@emerging-hagfish.rooster465.autos:443?sni=emerging-hagfish.rooster465.autos&fp=chrome&type=tcp&path=%2f#SG 🇸🇬 | @Raydikalx | F95612
@@ -227,85 +238,85 @@ trojan://NQ26071394@equal-labrador.rooster465.autos:443?allowInsecure=1&sni=equa
 trojan://NQ26071394@expert-muskrat.rooster465.autos:443?allowInsecure=1&sni=expert-muskrat.rooster465.autos#KR 🇰🇷 | @Raydikalx | 506F9A
 trojan://NQ26071394@fast-drum.rooster465.autos:443?sni=fast-drum.rooster465.autos&fp=chrome&type=tcp&path=%2f#JP 🇯🇵 | @Raydikalx | BD5A57
 trojan://NQ26071394@firm-krill.rooster465.autos:443?allowInsecure=0&sni=firm-krill.rooster465.autos#JP 🇯🇵 | @Raydikalx | 2B70EA
-trojan://NQ26071394@fit-marten.rooster465.autos:443?security=tls# By EbraSha 🌀
+trojan://NQ26071394@fit-marten.rooster465.autos:443?security=tls# By EbraSha ♠️
 trojan://NQ26071394@fit-marten.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-52.78.7.106-4695
 trojan://NQ26071394@fit-marten.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-52.78.7.106-5106
 trojan://NQ26071394@fit-marten.rooster465.autos:443?security=tls#4Nika-336a646bee
 trojan://NQ26071394@fit-marten.rooster465.autos:443?security=tls#[3647][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@fit-marten.rooster465.autos:443?security=tls#[3648][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@fit-marten.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 48
+trojan://NQ26071394@fit-marten.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 694
 trojan://NQ26071394@fit-marten.rooster465.autos:443?sni=fit-marten.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP_142
 trojan://NQ26071394@fit-marten.rooster465.autos:443?sni=fit-marten.rooster465.autos#KR 🇰🇷 | @Raydikalx | 642107
 trojan://NQ26071394@flexible-gannet.rooster465.autos:443?security=tls#[3649][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@flexible-gannet.rooster465.autos:443?security=tls#[3650][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@flexible-gannet.rooster465.autos:443?sni=flexible-gannet.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP_175
 trojan://NQ26071394@flexible-gannet.rooster465.autos:443?sni=flexible-gannet.rooster465.autos#SG 🇸🇬 | @Raydikalx | 669C3C
-trojan://NQ26071394@flexible-titmouse.rooster465.autos:443?security=tls# By EbraSha 🌀
+trojan://NQ26071394@flexible-titmouse.rooster465.autos:443?security=tls# By EbraSha 🩸
 trojan://NQ26071394@flexible-titmouse.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-3.35.231.219-4725
 trojan://NQ26071394@flexible-titmouse.rooster465.autos:443?security=tls#4FreeIran-2e76b1a608
 trojan://NQ26071394@flexible-titmouse.rooster465.autos:443?security=tls#[3651][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@flexible-titmouse.rooster465.autos:443?security=tls#[3652][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@flexible-titmouse.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 184
 trojan://NQ26071394@flexible-titmouse.rooster465.autos:443?sni=flexible-titmouse.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR_192
 trojan://NQ26071394@flexible-titmouse.rooster465.autos:443?sni=flexible-titmouse.rooster465.autos#KR 🇰🇷 | @Raydikalx | E06A57
 trojan://NQ26071394@flying-swift.rooster465.autos:443?allowInsecure=1&sni=flying-swift.rooster465.autos#KR 🇰🇷 | @Raydikalx | 7A35CD
 trojan://NQ26071394@free-hare.rooster465.autos:443?sni=free-hare.rooster465.autos&fp=chrome&type=tcp&path=%2f#JP 🇯🇵 | @Raydikalx | 665F40
 trojan://NQ26071394@full-ox.rooster465.autos:443?sni=full-ox.rooster465.autos&type=tcp&fp=chrome#HK 🇭🇰 | @Raydikalx | 870ED6
 trojan://NQ26071394@fun-labrador.rooster465.autos:443?fp=chrome#SG 🇸🇬 | @Raydikalx | FF9983
-trojan://NQ26071394@fun-labrador.rooster465.autos:443?security=tls# By EbraSha 🔌
+trojan://NQ26071394@fun-labrador.rooster465.autos:443?security=tls# By EbraSha 🔥
 trojan://NQ26071394@fun-labrador.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%9F%87%ACSG-45.135.228.19-4684
 trojan://NQ26071394@fun-labrador.rooster465.autos:443?security=tls#4Jadi-853f39a72f
 trojan://NQ26071394@fun-labrador.rooster465.autos:443?security=tls#[3653][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@fun-labrador.rooster465.autos:443?security=tls#[3654][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@fun-labrador.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 216
-trojan://NQ26071394@fun-labrador.rooster465.autos:443?security=tls&sni=fun-labrador.rooster465.autos&fp=chrome&insecure=0&allowInsecure=0&type=tcp&headerType=none# By EbraSha 📛
+trojan://NQ26071394@fun-labrador.rooster465.autos:443?security=tls&sni=fun-labrador.rooster465.autos&fp=chrome&insecure=0&allowInsecure=0&type=tcp&headerType=none# By EbraSha 📶
 trojan://NQ26071394@fun-labrador.rooster465.autos:443?security=tls&sni=fun-labrador.rooster465.autos&fp=chrome&insecure=0&allowInsecure=0&type=tcp&headerType=none#[3655][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@funky-opossum.rooster465.autos:443?security=tls&sni=funky-opossum.rooster465.autos#JP 🇯🇵 | @Raydikalx | EB45EC
-trojan://NQ26071394@funky-opossum.rooster465.autos:443?security=tls&sni=funky-opossum.rooster465.autos&fp=chrome&insecure=0&allowInsecure=0&type=tcp&headerType=none# By EbraSha 🌍
+trojan://NQ26071394@funky-opossum.rooster465.autos:443?security=tls&sni=funky-opossum.rooster465.autos&fp=chrome&insecure=0&allowInsecure=0&type=tcp&headerType=none# By EbraSha 📛
 trojan://NQ26071394@funky-opossum.rooster465.autos:443?security=tls&sni=funky-opossum.rooster465.autos&fp=chrome&insecure=0&allowInsecure=0&type=tcp&headerType=none#[3656][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@gentle-mastiff.rooster465.autos:443?sni=gentle-mastiff.rooster465.autos&fp=chrome&type=tcp&path=%2f#JP 🇯🇵 | @Raydikalx | FF0259
 trojan://NQ26071394@gentle-platypus.rooster465.autos:443?allowInsecure=0&sni=gentle-platypus.rooster465.autos#JP 🇯🇵 | @Raydikalx | 65D952
-trojan://NQ26071394@gentle-platypus.rooster465.autos:443?security=tls# By EbraSha 🎯
+trojan://NQ26071394@gentle-platypus.rooster465.autos:443?security=tls# By EbraSha 🌌
 trojan://NQ26071394@gentle-platypus.rooster465.autos:443?security=tls#%F0%9F%87%AF%F0%9F%87%B5JP-85.234.83.45-4717
 trojan://NQ26071394@gentle-platypus.rooster465.autos:443?security=tls#4FreeIran-279d52b2e8
 trojan://NQ26071394@gentle-platypus.rooster465.autos:443?security=tls#[3657][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@gentle-platypus.rooster465.autos:443?security=tls#[3658][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@gentle-platypus.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 772
+trojan://NQ26071394@gentle-platypus.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 446
 trojan://NQ26071394@gentle-tuna.rooster465.autos:443?sni=gentle-tuna.rooster465.autos&fp=chrome&type=tcp&path=%2f#SG 🇸🇬 | @Raydikalx | 84253F
-trojan://NQ26071394@gentle-turtle.rooster465.autos:443?security=tls# By EbraSha 🚬
+trojan://NQ26071394@gentle-turtle.rooster465.autos:443?security=tls# By EbraSha 🌍
 trojan://NQ26071394@gentle-turtle.rooster465.autos:443?security=tls#%F0%9F%87%BA%F0%9F%87%B8US-54.70.161.72-4699
 trojan://NQ26071394@gentle-turtle.rooster465.autos:443?security=tls#4Mohsen-0be0586fc3
 trojan://NQ26071394@gentle-turtle.rooster465.autos:443?security=tls#[3659][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@gentle-turtle.rooster465.autos:443?security=tls#[3660][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@gentle-turtle.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 934
+trojan://NQ26071394@gentle-turtle.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 155
 trojan://NQ26071394@gentle-turtle.rooster465.autos:443?sni=gentle-turtle.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP_187
 trojan://NQ26071394@gentle-turtle.rooster465.autos:443?sni=gentle-turtle.rooster465.autos#US 🇺🇸 | @Raydikalx | B07B47
 trojan://NQ26071394@glad-roughy.rooster465.autos:443?security=tls&sni=glad-roughy.rooster465.autos#HK 🇭🇰 | @Raydikalx | 03704A
-trojan://NQ26071394@grand-grub.rooster465.autos:443?security=tls# By EbraSha 🦾
+trojan://NQ26071394@grand-grub.rooster465.autos:443?security=tls# By EbraSha 🔮
 trojan://NQ26071394@grand-grub.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-43.202.54.120-4700
 trojan://NQ26071394@grand-grub.rooster465.autos:443?security=tls#4FreeIran-5140d08835
 trojan://NQ26071394@grand-grub.rooster465.autos:443?security=tls#[3661][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@grand-grub.rooster465.autos:443?security=tls#[3662][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
+trojan://NQ26071394@grand-grub.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 871
 trojan://NQ26071394@grand-grub.rooster465.autos:443?sni=grand-grub.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP_188
 trojan://NQ26071394@grand-grub.rooster465.autos:443?sni=grand-grub.rooster465.autos#KR 🇰🇷 | @Raydikalx | C75667
 trojan://NQ26071394@grateful-bedbug.rooster465.autos:443?security=tls&sni=grateful-bedbug.rooster465.autos#NL 🇳🇱 | @Raydikalx | 3CB188
 trojan://NQ26071394@grateful-crawdad.rooster465.autos:443?sni=grateful-crawdad.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP_178
 trojan://NQ26071394@guided-ferret.rooster465.autos:443?sni=guided-ferret.rooster465.autos&type=tcp&fp=chrome#US 🇺🇸 | @Raydikalx | 2898D5
-trojan://NQ26071394@guided-pelican.rooster465.autos:443?security=tls# By EbraSha 🦇
+trojan://NQ26071394@guided-pelican.rooster465.autos:443?security=tls# By EbraSha 🌑
 trojan://NQ26071394@guided-pelican.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-3.36.112.57-4639
 trojan://NQ26071394@guided-pelican.rooster465.autos:443?security=tls#4Sarina-5190fc3858
 trojan://NQ26071394@guided-pelican.rooster465.autos:443?security=tls#KR 🇰🇷 | @Raydikalx | FF6282
 trojan://NQ26071394@guided-pelican.rooster465.autos:443?security=tls#[3663][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@guided-pelican.rooster465.autos:443?security=tls#[3664][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
+trojan://NQ26071394@guided-pelican.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 232
 trojan://NQ26071394@guided-pelican.rooster465.autos:443?sni=guided-pelican.rooster465.autos#%F0%9F%87%A6%F0%9F%87%BAAU_12
 trojan://NQ26071394@harmless-lab.rooster465.autos:443?sni=harmless-lab.rooster465.autos&fp=chrome&type=tcp&path=%2f#SG 🇸🇬 | @Raydikalx | B5B1DB
 trojan://NQ26071394@harmless-pegasus.rooster465.autos:443?allowInsecure=1&sni=harmless-pegasus.rooster465.autos#JP 🇯🇵 | @Raydikalx | 17DBF1
-trojan://NQ26071394@helped-jennet.rooster465.autos:443?security=tls# By EbraSha 🧿
+trojan://NQ26071394@helped-jennet.rooster465.autos:443?security=tls# By EbraSha ⌨️
 trojan://NQ26071394@helped-jennet.rooster465.autos:443?security=tls#%F0%9F%87%BA%F0%9F%87%B8US-34.216.104.24-4643
 trojan://NQ26071394@helped-jennet.rooster465.autos:443?security=tls#4Kian-1fdd463068
 trojan://NQ26071394@helped-jennet.rooster465.autos:443?security=tls#[3665][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@helped-jennet.rooster465.autos:443?security=tls#[3666][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@helped-jennet.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 231
+trojan://NQ26071394@helped-jennet.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 542
 trojan://NQ26071394@helped-jennet.rooster465.autos:443?sni=helped-jennet.rooster465.autos#%F0%9F%87%A6%F0%9F%87%BAAU_02
 trojan://NQ26071394@helping-newt.rooster465.autos:443?allowInsecure=1&sni=helping-newt.rooster465.autos#JP 🇯🇵 | @Raydikalx | 0CAA26
 trojan://NQ26071394@hot-tapir.rooster465.autos:443?allowInsecure=0&sni=hot-tapir.rooster465.autos#JP 🇯🇵 | @Raydikalx | D8EF15
@@ -316,14 +327,15 @@ trojan://NQ26071394@innocent-mullet.rooster465.autos:443?allowInsecure=1&sni=inn
 trojan://NQ26071394@innocent-mullet.rooster465.autos:443?security=tls#[3667][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@innocent-mullet.rooster465.autos:443?security=tls#[3668][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@innocent-mullet.rooster465.autos:443?sni=innocent-mullet.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP_179
-trojan://NQ26071394@internal-peacock.rooster465.autos:443?security=tls# By EbraSha 🌍
+trojan://NQ26071394@internal-peacock.rooster465.autos:443?security=tls# By EbraSha 🧲
 trojan://NQ26071394@internal-peacock.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-3.34.132.193-4745
 trojan://NQ26071394@internal-peacock.rooster465.autos:443?security=tls#4Jadi-ce0eecbdf5
 trojan://NQ26071394@internal-peacock.rooster465.autos:443?security=tls#[3669][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@internal-peacock.rooster465.autos:443?security=tls#[3670][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
+trojan://NQ26071394@internal-peacock.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 762
 trojan://NQ26071394@internal-peacock.rooster465.autos:443?sni=internal-peacock.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8US_281
 trojan://NQ26071394@inviting-ferret.rooster465.autos:443?allowInsecure=1&sni=inviting-ferret.rooster465.autos#SG 🇸🇬 | @Raydikalx | 192409
-trojan://NQ26071394@inviting-rabbit.rooster465.autos:443?security=tls# By EbraSha 🌌
+trojan://NQ26071394@inviting-rabbit.rooster465.autos:443?security=tls# By EbraSha 🛜
 trojan://NQ26071394@inviting-rabbit.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-3.36.52.203-4704
 trojan://NQ26071394@inviting-rabbit.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-3.36.52.203-5124
 trojan://NQ26071394@inviting-rabbit.rooster465.autos:443?security=tls#4Nika-c304181597
@@ -337,61 +349,63 @@ trojan://NQ26071394@joint-ewe.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%
 trojan://NQ26071394@joint-ewe.rooster465.autos:443?security=tls#4Kian-6d0974106e
 trojan://NQ26071394@joint-ewe.rooster465.autos:443?security=tls#[3673][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@joint-ewe.rooster465.autos:443?security=tls#[3674][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@joint-ewe.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 665
+trojan://NQ26071394@joint-ewe.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 949
 trojan://NQ26071394@joint-ewe.rooster465.autos:443?sni=joint-ewe.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP_185
 trojan://NQ26071394@kind-unicorn.rooster465.autos:443?allowInsecure=0&sni=kind-unicorn.rooster465.autos#HK 🇭🇰 | @Raydikalx | 660857
-trojan://NQ26071394@kind-unicorn.rooster465.autos:443?security=tls# By EbraSha 🕹️
+trojan://NQ26071394@kind-unicorn.rooster465.autos:443?security=tls# By EbraSha 🦾
 trojan://NQ26071394@kind-unicorn.rooster465.autos:443?security=tls#%F0%9F%87%AD%F0%9F%87%B0HK-185.14.47.56-4677
 trojan://NQ26071394@kind-unicorn.rooster465.autos:443?security=tls#4FreeIran-2aaa856c9f
 trojan://NQ26071394@kind-unicorn.rooster465.autos:443?security=tls#[3675][HK][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@kind-unicorn.rooster465.autos:443?security=tls#[3676][HK][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@kind-unicorn.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 521
+trojan://NQ26071394@kind-unicorn.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 146
 trojan://NQ26071394@learning-fawn.rooster465.autos:443?allowInsecure=1&sni=learning-fawn.rooster465.autos#SG 🇸🇬 | @Raydikalx | ACA542
 trojan://NQ26071394@legible-ocelot.rooster465.autos:443?allowInsecure=1&sni=legible-ocelot.rooster465.autos#KR 🇰🇷 | @Raydikalx | AC041E
 trojan://NQ26071394@legible-ram.rooster465.autos:443?security=tls#[3677][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@legible-ram.rooster465.autos:443?security=tls#[3678][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@legible-ram.rooster465.autos:443?sni=legible-ram.rooster465.autos#JP 🇯🇵 | @Raydikalx | 8F27F2
-trojan://NQ26071394@living-hagfish.rooster465.autos:443?security=tls# By EbraSha 🧲
+trojan://NQ26071394@living-hagfish.rooster465.autos:443?security=tls# By EbraSha 👑
 trojan://NQ26071394@living-hagfish.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-13.124.56.133-4722
 trojan://NQ26071394@living-hagfish.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-13.124.56.133-5152
 trojan://NQ26071394@living-hagfish.rooster465.autos:443?security=tls#4Nika-2ab8039f35
 trojan://NQ26071394@living-hagfish.rooster465.autos:443?security=tls#KR 🇰🇷 | @Raydikalx | B08B53
 trojan://NQ26071394@living-hagfish.rooster465.autos:443?security=tls#[3679][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@living-hagfish.rooster465.autos:443?security=tls#[3680][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
+trojan://NQ26071394@living-hagfish.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 708
 trojan://NQ26071394@living-hagfish.rooster465.autos:443?sni=living-hagfish.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR_201
 trojan://NQ26071394@lucky-marmot.rooster465.autos:443?sni=lucky-marmot.rooster465.autos&fp=chrome&type=tcp&path=%2f#JP 🇯🇵 | @Raydikalx | BB2917
 trojan://NQ26071394@magical-falcon.rooster465.autos:443?sni=magical-falcon.rooster465.autos&fp=chrome&type=tcp&path=%2f#SG 🇸🇬 | @Raydikalx | 653AA1
 trojan://NQ26071394@magical-frog.rooster465.autos:443?allowInsecure=1&sni=magical-frog.rooster465.autos#JP 🇯🇵 | @Raydikalx | B6105B
-trojan://NQ26071394@magical-prawn.rooster465.autos:443?security=tls# By EbraSha 💣
+trojan://NQ26071394@magical-prawn.rooster465.autos:443?security=tls# By EbraSha 🚨
 trojan://NQ26071394@magical-prawn.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-43.201.249.3-0201
 trojan://NQ26071394@magical-prawn.rooster465.autos:443?security=tls#4Nika-c830282519
 trojan://NQ26071394@magical-prawn.rooster465.autos:443?security=tls#KR 🇰🇷 | @Raydikalx | 4AF812
 trojan://NQ26071394@magical-prawn.rooster465.autos:443?security=tls#[3681][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@magical-prawn.rooster465.autos:443?security=tls#[3682][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
+trojan://NQ26071394@magical-prawn.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 758
 trojan://NQ26071394@magical-prawn.rooster465.autos:443?security=tls#🔥Join+Telegram:@Farah_VPN🟣
 trojan://NQ26071394@magical-prawn.rooster465.autos:443?sni=magical-prawn.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP_154
 trojan://NQ26071394@magical-prawn.rooster465.autos:443?sni=magical-prawn.rooster465.autos#KR 🇰🇷 | @Raydikalx | 742F9E
-trojan://NQ26071394@massive-ocelot.rooster465.autos:443?security=tls# By EbraSha 🛡️
+trojan://NQ26071394@massive-ocelot.rooster465.autos:443?security=tls# By EbraSha 🧊
 trojan://NQ26071394@massive-ocelot.rooster465.autos:443?security=tls#%F0%9F%87%AF%F0%9F%87%B5JP-85.234.83.212-4652
 trojan://NQ26071394@massive-ocelot.rooster465.autos:443?security=tls#4Sarina-f1aca4d640
 trojan://NQ26071394@massive-ocelot.rooster465.autos:443?security=tls#JP 🇯🇵 | @Raydikalx | A61800
 trojan://NQ26071394@massive-ocelot.rooster465.autos:443?security=tls#[3683][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@massive-ocelot.rooster465.autos:443?security=tls#[3684][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@massive-ocelot.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 334
+trojan://NQ26071394@massive-ocelot.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 463
 trojan://NQ26071394@massive-ocelot.rooster465.autos:443?sni=massive-ocelot.rooster465.autos#%F0%9F%87%A6%F0%9F%87%BAAU_06
 trojan://NQ26071394@merry-falcon.rooster465.autos:443?allowInsecure=0&sni=merry-falcon.rooster465.autos#KR 🇰🇷 | @Raydikalx | 9513EC
-trojan://NQ26071394@mighty-lemming.rooster465.autos:443?security=tls# By EbraSha 🔥
+trojan://NQ26071394@mighty-lemming.rooster465.autos:443?security=tls# By EbraSha 💣
 trojan://NQ26071394@mighty-lemming.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%9F%87%ACSG-52.220.181.28-4718
 trojan://NQ26071394@mighty-lemming.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%9F%87%ACSG-52.220.181.28-5154
 trojan://NQ26071394@mighty-lemming.rooster465.autos:443?security=tls#4Jadi-d2933cc99c
 trojan://NQ26071394@mighty-lemming.rooster465.autos:443?security=tls#[3685][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@mighty-lemming.rooster465.autos:443?security=tls#[3686][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@mighty-lemming.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 912
+trojan://NQ26071394@mighty-lemming.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 939
 trojan://NQ26071394@mighty-lemming.rooster465.autos:443?sni=mighty-lemming.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR_200
 trojan://NQ26071394@mighty-lemming.rooster465.autos:443?sni=mighty-lemming.rooster465.autos#SG 🇸🇬 | @Raydikalx | AC3F33
 trojan://NQ26071394@modest-amoeba.rooster465.autos:443?allowInsecure=1&sni=modest-amoeba.rooster465.autos#KR 🇰🇷 | @Raydikalx | FA7997
 trojan://NQ26071394@musical-mouse.rooster465.autos:443?allowInsecure=0&sni=musical-mouse.rooster465.autos#SG 🇸🇬 | @Raydikalx | 663E60
-trojan://NQ26071394@neat-octopus.rooster465.autos:443?security=tls# By EbraSha 🃏
+trojan://NQ26071394@neat-octopus.rooster465.autos:443?security=tls# By EbraSha 🦈
 trojan://NQ26071394@neat-octopus.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-3.38.181.59-4721
 trojan://NQ26071394@neat-octopus.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-3.38.181.59-5155
 trojan://NQ26071394@neat-octopus.rooster465.autos:443?security=tls#4FreeIran-e693518e25
@@ -414,29 +428,28 @@ trojan://NQ26071394@powerful-troll.rooster465.autos:443?sni=powerful-troll.roost
 trojan://NQ26071394@prepared-thrush.rooster465.autos:443?sni=prepared-thrush.rooster465.autos&type=tcp&fp=chrome#KR 🇰🇷 | @Raydikalx | 59823F
 trojan://NQ26071394@pretty-mollusk.rooster465.autos:443?sni=pretty-mollusk.rooster465.autos&fp=chrome&type=tcp&path=%2f#PL 🇵🇱 | @Raydikalx | DAD0F7
 trojan://NQ26071394@prime-quail.rooster465.autos:443?allowInsecure=1&sni=prime-quail.rooster465.autos#SG 🇸🇬 | @Raydikalx | 224D19
-trojan://NQ26071394@promoted-rattler.rooster465.autos:443?security=tls# By EbraSha 🕷️
+trojan://NQ26071394@promoted-rattler.rooster465.autos:443?security=tls# By EbraSha 🧬
 trojan://NQ26071394@promoted-rattler.rooster465.autos:443?security=tls#%F0%9F%87%AF%F0%9F%87%B5JP-52.192.45.137-4732
 trojan://NQ26071394@promoted-rattler.rooster465.autos:443?security=tls#4Sarina-61e091f415
 trojan://NQ26071394@promoted-rattler.rooster465.autos:443?security=tls#[3691][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@promoted-rattler.rooster465.autos:443?security=tls#[3692][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@promoted-rattler.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 433
 trojan://NQ26071394@promoted-rattler.rooster465.autos:443?sni=promoted-rattler.rooster465.autos#%F0%9F%87%B8%F0%9F%87%ACSG_223
 trojan://NQ26071394@promoted-rattler.rooster465.autos:443?sni=promoted-rattler.rooster465.autos#JP 🇯🇵 | @Raydikalx | 3F3586
 trojan://NQ26071394@proper-marlin.rooster465.autos:443?allowInsecure=1&sni=proper-marlin.rooster465.autos#KR 🇰🇷 | @Raydikalx | C307A8
 trojan://NQ26071394@pure-ghoul.rooster465.autos:443?allowInsecure=1&sni=pure-ghoul.rooster465.autos#SG 🇸🇬 | @Raydikalx | 962D87
-trojan://NQ26071394@quiet-condor.rooster465.autos:443?security=tls# By EbraSha 🛜
+trojan://NQ26071394@quiet-condor.rooster465.autos:443?security=tls# By EbraSha 🔮
 trojan://NQ26071394@quiet-condor.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%9F%87%ACSG-81.28.13.69-0207
 trojan://NQ26071394@quiet-condor.rooster465.autos:443?security=tls#4Kian-61441ea009
 trojan://NQ26071394@quiet-condor.rooster465.autos:443?security=tls#SG 🇸🇬 | @Raydikalx | 529245
 trojan://NQ26071394@quiet-condor.rooster465.autos:443?security=tls#[3693][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@quiet-condor.rooster465.autos:443?security=tls#[3694][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@quiet-condor.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 31
 trojan://NQ26071394@quiet-condor.rooster465.autos:443?security=tls#🔥Join+Telegram:@Farah_VPN🟣
-trojan://NQ26071394@ready-kangaroo.rooster465.autos:443?security=tls# By EbraSha ♣️
+trojan://NQ26071394@ready-kangaroo.rooster465.autos:443?security=tls# By EbraSha 🌍
 trojan://NQ26071394@ready-kangaroo.rooster465.autos:443?security=tls#%F0%9F%87%AF%F0%9F%87%B5JP-95.85.94.208-4668
 trojan://NQ26071394@ready-kangaroo.rooster465.autos:443?security=tls#4Sarina-a22a02fcbb
 trojan://NQ26071394@ready-kangaroo.rooster465.autos:443?security=tls#[3695][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@ready-kangaroo.rooster465.autos:443?security=tls#[3696][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
+trojan://NQ26071394@ready-kangaroo.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 860
 trojan://NQ26071394@ready-kangaroo.rooster465.autos:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=ready-kangaroo.rooster465.autos#JP 🇯🇵 | @Raydikalx | B8038A
 trojan://NQ26071394@real-ewe.rooster465.autos:443?security=tls#[3697][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@real-ewe.rooster465.autos:443?security=tls#[3698][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
@@ -447,16 +460,15 @@ trojan://NQ26071394@select-ferret.rooster465.autos:443?allowInsecure=0&sni=selec
 trojan://NQ26071394@sharing-porpoise.rooster465.autos:443?allowInsecure=0&sni=sharing-porpoise.rooster465.autos#SG 🇸🇬 | @Raydikalx | F435DD
 trojan://NQ26071394@shining-prawn.rooster465.autos:443?sni=shining-prawn.rooster465.autos&type=tcp&fp=chrome#SG 🇸🇬 | @Raydikalx | E6CE8B
 trojan://NQ26071394@singular-sheepdog.rooster465.autos:443?sni=singular-sheepdog.rooster465.autos&fp=chrome&type=tcp&path=%2f#SG 🇸🇬 | @Raydikalx | 72318F
-trojan://NQ26071394@skilled-polliwog.rooster465.autos:443?security=tls# By EbraSha ♦️
+trojan://NQ26071394@skilled-polliwog.rooster465.autos:443?security=tls# By EbraSha 🧊
 trojan://NQ26071394@skilled-polliwog.rooster465.autos:443?security=tls#%F0%9F%87%AF%F0%9F%87%B5JP-13.112.192.202-4658
 trojan://NQ26071394@skilled-polliwog.rooster465.autos:443?security=tls#4Jadi-5e12f03592
 trojan://NQ26071394@skilled-polliwog.rooster465.autos:443?security=tls#[3699][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@skilled-polliwog.rooster465.autos:443?security=tls#[3700][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@skilled-polliwog.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 918
 trojan://NQ26071394@skilled-polliwog.rooster465.autos:443?sni=skilled-polliwog.rooster465.autos#%F0%9F%87%A7%F0%9F%87%AABE_27
 trojan://NQ26071394@skilled-polliwog.rooster465.autos:443?sni=skilled-polliwog.rooster465.autos#JP 🇯🇵 | @Raydikalx | 7FF972
 trojan://NQ26071394@smooth-sculpin.rooster465.autos:443?allowInsecure=1&sni=smooth-sculpin.rooster465.autos#KR 🇰🇷 | @Raydikalx | DEDAE8
-trojan://NQ26071394@square-gnat.rooster465.autos:443?security=tls# By EbraSha ⛓️
+trojan://NQ26071394@square-gnat.rooster465.autos:443?security=tls# By EbraSha 📱
 trojan://NQ26071394@square-gnat.rooster465.autos:443?security=tls#%F0%9F%87%BA%F0%9F%87%B8US-54.245.10.59-4734
 trojan://NQ26071394@square-gnat.rooster465.autos:443?security=tls#4Mohsen-12eb34d5b9
 trojan://NQ26071394@square-gnat.rooster465.autos:443?security=tls#[3701][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
@@ -466,7 +478,7 @@ trojan://NQ26071394@square-gnat.rooster465.autos:443?sni=square-gnat.rooster465.
 trojan://NQ26071394@square-pheasant.rooster465.autos:443?fp=chrome#AU 🇦🇺 | @Raydikalx | DE7403
 trojan://NQ26071394@striking-cheetah.rooster465.autos:443?sni=striking-cheetah.rooster465.autos&fp=chrome&type=tcp&path=/#HK 🇭🇰 | @Raydikalx | 2737C1
 trojan://NQ26071394@striking-maggot.rooster465.autos:443?allowInsecure=1&sni=striking-maggot.rooster465.autos#SG 🇸🇬 | @Raydikalx | CB7B19
-trojan://NQ26071394@stunning-mastodon.rooster465.autos:443?security=tls# By EbraSha 📼
+trojan://NQ26071394@stunning-mastodon.rooster465.autos:443?security=tls# By EbraSha 💎
 trojan://NQ26071394@stunning-mastodon.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%9F%87%ACSG-13.212.181.141-4698
 trojan://NQ26071394@stunning-mastodon.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%9F%87%ACSG-13.212.181.141-5109
 trojan://NQ26071394@stunning-mastodon.rooster465.autos:443?security=tls#4Sarina-ff02ab54d6
@@ -474,27 +486,15 @@ trojan://NQ26071394@stunning-mastodon.rooster465.autos:443?security=tls#[3703][S
 trojan://NQ26071394@stunning-mastodon.rooster465.autos:443?sni=stunning-mastodon.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP_186
 trojan://NQ26071394@stunning-mastodon.rooster465.autos:443?sni=stunning-mastodon.rooster465.autos#SG 🇸🇬 | @Raydikalx | 1A8C9D
 trojan://NQ26071394@sure-husky.rooster465.autos:443?sni=sure-husky.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP_181
-trojan://NQ26071394@thankful-piranha.rooster465.autos:443?security=tls&sni=thankful-piranha.rooster465.autos# By EbraSha 🃏
+trojan://NQ26071394@thankful-piranha.rooster465.autos:443?security=tls&sni=thankful-piranha.rooster465.autos# By EbraSha 🧨
 trojan://NQ26071394@thankful-piranha.rooster465.autos:443?security=tls&sni=thankful-piranha.rooster465.autos#JP 🇯🇵 | @Raydikalx | 24364C
 trojan://NQ26071394@thankful-piranha.rooster465.autos:443?security=tls&sni=thankful-piranha.rooster465.autos#[3704][JP][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
 trojan://NQ26071394@thorough-falcon.rooster465.autos:443?allowInsecure=1#NL 🇳🇱 | @Raydikalx | 38D732
-trojan://NQ26071394@thorough-foxhound.rooster465.autos:443?security=tls# By EbraSha 🛰️
+trojan://NQ26071394@thorough-foxhound.rooster465.autos:443?security=tls# By EbraSha 🧨
 trojan://NQ26071394@thorough-foxhound.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%9F%87%ACSG-54.254.196.251-4648
 trojan://NQ26071394@thorough-foxhound.rooster465.autos:443?security=tls#4Mohsen-49df72d5b8
-trojan://NQ26071394@thorough-foxhound.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 330
+trojan://NQ26071394@thorough-foxhound.rooster465.autos:443?security=tls#⚡ b2n.ir/v2ray-configs | 417
 trojan://NQ26071394@thorough-foxhound.rooster465.autos:443?sni=thorough-foxhound.rooster465.autos#%F0%9F%87%A6%F0%9F%87%BAAU_21
 trojan://NQ26071394@thorough-foxhound.rooster465.autos:443?sni=thorough-foxhound.rooster465.autos#SG 🇸🇬 | @Raydikalx | 9DD797
 trojan://NQ26071394@tidy-gelding.rooster465.autos:443?allowInsecure=1&sni=tidy-gelding.rooster465.autos#DE 🇩🇪 | @Raydikalx | 131E2F
 trojan://NQ26071394@topical-shark.rooster465.autos:443?allowInsecure=0&sni=topical-shark.rooster465.autos#JP 🇯🇵 | @Raydikalx | 4704AA
-trojan://NQ26071394@tops-marlin.rooster465.autos:443?fp=chrome#SG 🇸🇬 | @Raydikalx | FB6FBF
-trojan://NQ26071394@tops-marlin.rooster465.autos:443?security=tls&sni=tops-marlin.rooster465.autos&fp=chrome&insecure=0&allowInsecure=0&type=tcp&headerType=none# By EbraSha 🤖
-trojan://NQ26071394@tops-marlin.rooster465.autos:443?security=tls&sni=tops-marlin.rooster465.autos&fp=chrome&insecure=0&allowInsecure=0&type=tcp&headerType=none#[3705][SG][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@upright-caribou.rooster465.autos:443?allowInsecure=0&sni=upright-caribou.rooster465.autos#JP 🇯🇵 | @Raydikalx | A29DB9
-trojan://NQ26071394@upward-hedgehog.rooster465.autos:443?sni=upward-hedgehog.rooster465.autos&fp=chrome&type=tcp&path=%2f#NL 🇳🇱 | @Raydikalx | 200F42
-trojan://NQ26071394@usable-dogfish.rooster465.autos:443?allowInsecure=1&sni=usable-dogfish.rooster465.autos#KR 🇰🇷 | @Raydikalx | 0C9FCE
-trojan://NQ26071394@verified-ringtail.rooster465.autos:443?allowInsecure=1&sni=verified-ringtail.rooster465.autos#IE 🇮🇪 | @Raydikalx | C5DB88
-trojan://NQ26071394@warm-bass.rooster465.autos:443?security=tls# By EbraSha 🦾
-trojan://NQ26071394@warm-bass.rooster465.autos:443?security=tls#%F0%9F%87%B0%F0%9F%87%B7KR-43.200.254.103-4744
-trojan://NQ26071394@warm-bass.rooster465.autos:443?security=tls#4Kian-51b2c38a8b
-trojan://NQ26071394@warm-bass.rooster465.autos:443?security=tls#[3706][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
-trojan://NQ26071394@warm-bass.rooster465.autos:443?security=tls#[3707][KR][0][TROJAN][None][ext_raw.githubusercontent.com][2026-09-04][2026-09-04 01:43]
