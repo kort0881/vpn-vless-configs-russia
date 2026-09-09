@@ -1,20 +1,20 @@
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@67.220.95.3:18000?encryption=aes-128-gcm&amp;security=none&amp;type=tcp#%E2%98%BA%EF%B8%8F83@oneclickvpnkeys | 3ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@67.220.85.46:18000?encryption=auto&amp;security=none&amp;type=tcp#%E2%9B%91%EF%B8%8F94@oneclickvpnkeys | 7ms
-vmess://04621bae-ab36-11ec-b909-0242ac120002@216.106.183.35:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%91%9D95@oneclickvpnkeys | 9ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@134.195.196.211:18000?encryption=auto&amp;security=none&amp;type=tcp#3%F0%9F%A9%B3@oneclickvpnkeys | 22ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@23.162.200.198:18000?encryption=auto&amp;security=none&amp;type=tcp#%E2%9B%91%EF%B8%8F89@oneclickvpnkeys | 22ms
-vmess://d13fc2f5-3e05-4795-81eb-44143a09e552@82.198.246.233:180?encryption=auto&amp;security=none&amp;type=tcp#%E2%98%BA%EF%B8%8F96@oneclickvpnkeys | 57ms
-vmess://f836c736-87fc-4fde-aabc-00857ecdff3e@129.146.77.248:39495?encryption=auto&host=129.146.77.248&path=/cctv13.m3u8&security=none&type=ws#US 🇺🇸 | @Raydikalx | D120D3 | 61ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@169.197.142.22:18000?encryption=auto&security=none&type=tcp#US 🇺🇸 | @Raydikalx | B22504 | 68ms
-vmess://e7d72a8d-26f2-4b54-b366-0c43e0bcba7d@165.140.216.141:443?encryption=auto&amp;security=none&amp;type=tcp#%E2%98%BA%EF%B8%8F98@oneclickvpnkeys | 72ms
-vmess://72f2cbe4-2874-45b7-b6aa-b93077c10c72@51.38.71.147:2053?alpn=h2%2Chttp%2F1.1&amp;encryption=auto&amp;security=tls&amp;sni=node-uk.connectsuite.org&amp;type=tcp#%F0%9F%91%9D43@oneclickvpnkeys | 76ms
-vmess://04621bae-ab36-11ec-b909-0242ac120002@67.220.72.237:22324?encryption=auto&security=none&type=tcp#US 🇺🇸 | @Raydikalx | 209789 | 80ms
-vmess://5c040f1d-45db-43bd-8d46-e4950e433735@159.223.13.109:1234?allowInsecure=1&amp;encryption=aes-128-gcm&amp;security=tls&amp;sni=supervpn.super.com&amp;type=tcp#%E2%98%BA%EF%B8%8F8@oneclickvpnkeys | 85ms
-vmess://b3a11068-1a7e-4643-85de-7c82cce46943@78.17.71.236:33736?encryption=auto&amp;path=%2Fvmess-ws&amp;security=none&amp;type=ws#%F0%9F%A9%B350@oneclickvpnkeys | 86ms
-vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn | 96ms
-vmess://8e9687fc-a3a7-414a-8676-8e2136797cfe@newrelax.relaxedboy.online:110?encryption=auto&amp;security=none&amp;type=tcp#%E2%AD%90%EF%B8%8F1@oneclickvpnkeys | 147ms
-vmess://5e40f49a-d8ce-4efa-a0eb-5136586f4fe1@94.183.207.215:5065?packetEncoding=xudp#IR 🇮🇷 | @Raydikalx | 58AA32 | 172ms
-vmess://f23bb427-c1f9-4373-876c-2f43e9f790f3@47.243.92.155:443?type=ws&security=tls&path=/ws-vmess&sni=mtckundigepwu3up.v.3dns.vip#HK 🇭🇰 | @Raydikalx | 988DF0 | 202ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@149.88.23.207:18000?encryption=auto&amp;security=none&amp;type=tcp#4%E2%9B%91%EF%B8%8F@oneclickvpnkeys | 224ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@ww11.levikogjgfdd.ir:18000?encryption=auto&security=none&type=tcp#SG 🇸🇬 | @Raydikalx | 7DF84D | 233ms
-vmess://72f2cbe4-2874-45b7-b6aa-b93077c10c72@node-uk.connectsuite.org:2053?alpn=h2%2Chttp%2F1.1&amp;encryption=auto&amp;security=tls&amp;sni=node-uk.connectsuite.org&amp;type=tcp#%F0%9F%A9%B380@oneclickvpnkeys | 274ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@169.197.142.22:18000?encryption=auto&security=none&type=tcp#US 🇺🇸 | @Raydikalx | B22504 | 2ms
+vmess://d13fc2f5-3e05-4795-81eb-44143a09e552@82.198.246.233:180?encryption=auto&amp;security=none&amp;type=tcp#%E2%98%BA%EF%B8%8F96@oneclickvpnkeys | 9ms
+vmess://e7d72a8d-26f2-4b54-b366-0c43e0bcba7d@165.140.216.141:443?encryption=auto&amp;security=none&amp;type=tcp#%E2%98%BA%EF%B8%8F98@oneclickvpnkeys | 10ms
+vmess://f836c736-87fc-4fde-aabc-00857ecdff3e@129.146.77.248:39495?encryption=auto&host=129.146.77.248&path=/cctv13.m3u8&security=none&type=ws#US 🇺🇸 | @Raydikalx | D120D3 | 20ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@23.162.200.198:18000?encryption=auto&amp;security=none&amp;type=tcp#%E2%9B%91%EF%B8%8F89@oneclickvpnkeys | 59ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@134.195.196.211:18000?encryption=auto&amp;security=none&amp;type=tcp#3%F0%9F%A9%B3@oneclickvpnkeys | 59ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@67.220.95.3:18000?encryption=aes-128-gcm&amp;security=none&amp;type=tcp#%E2%98%BA%EF%B8%8F83@oneclickvpnkeys | 65ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@67.220.85.46:18000?encryption=auto&amp;security=none&amp;type=tcp#%E2%9B%91%EF%B8%8F94@oneclickvpnkeys | 66ms
+vmess://04621bae-ab36-11ec-b909-0242ac120002@67.220.72.237:22324?encryption=auto&security=none&type=tcp#US 🇺🇸 | @Raydikalx | 209789 | 77ms
+vmess://04621bae-ab36-11ec-b909-0242ac120002@216.106.183.35:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%91%9D95@oneclickvpnkeys | 83ms
+vmess://72f2cbe4-2874-45b7-b6aa-b93077c10c72@51.38.71.147:2053?alpn=h2%2Chttp%2F1.1&amp;encryption=auto&amp;security=tls&amp;sni=node-uk.connectsuite.org&amp;type=tcp#%F0%9F%91%9D43@oneclickvpnkeys | 140ms
+vmess://b3a11068-1a7e-4643-85de-7c82cce46943@78.17.71.236:33736?encryption=auto&amp;path=%2Fvmess-ws&amp;security=none&amp;type=ws#%F0%9F%A9%B350@oneclickvpnkeys | 147ms
+vmess://f23bb427-c1f9-4373-876c-2f43e9f790f3@47.243.92.155:443?type=ws&security=tls&path=/ws-vmess&sni=mtckundigepwu3up.v.3dns.vip#HK 🇭🇰 | @Raydikalx | 988DF0 | 147ms
+vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn | 151ms
+vmess://5c040f1d-45db-43bd-8d46-e4950e433735@159.223.13.109:1234?allowInsecure=1&amp;encryption=aes-128-gcm&amp;security=tls&amp;sni=supervpn.super.com&amp;type=tcp#%E2%98%BA%EF%B8%8F8@oneclickvpnkeys | 154ms
+vmess://8e9687fc-a3a7-414a-8676-8e2136797cfe@newrelax.relaxedboy.online:110?encryption=auto&amp;security=none&amp;type=tcp#%E2%AD%90%EF%B8%8F1@oneclickvpnkeys | 166ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@149.88.23.207:18000?encryption=auto&amp;security=none&amp;type=tcp#4%E2%9B%91%EF%B8%8F@oneclickvpnkeys | 168ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@ww11.levikogjgfdd.ir:18000?encryption=auto&security=none&type=tcp#SG 🇸🇬 | @Raydikalx | 7DF84D | 174ms
+vmess://5e40f49a-d8ce-4efa-a0eb-5136586f4fe1@94.183.207.215:5065?packetEncoding=xudp#IR 🇮🇷 | @Raydikalx | 58AA32 | 277ms
+vmess://72f2cbe4-2874-45b7-b6aa-b93077c10c72@node-uk.connectsuite.org:2053?alpn=h2%2Chttp%2F1.1&amp;encryption=auto&amp;security=tls&amp;sni=node-uk.connectsuite.org&amp;type=tcp#%F0%9F%A9%B380@oneclickvpnkeys | 380ms
