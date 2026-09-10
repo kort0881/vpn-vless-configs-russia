@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Mirror.py — WHITELIST ONLY + ALIVE CHECK (TCP/TLS) + geoip фильтр с кешем
-# Оптимизирован: параллельная загрузка источников, таймаут 1.2с, max_workers=150
+# Оптимизирован: параллельная загрузка источников, самоочистка new/ в конце
 
 import os
 import sys
@@ -56,8 +56,8 @@ CONFIG_SOURCES_FILE = os.path.join(BASE_PATH, "data", "config_sources.json")
 print(f"DEBUG: CONFIG_SOURCES_FILE = {CONFIG_SOURCES_FILE}", flush=True)
 
 CHUNK_SIZE = 500
+MAX_RESPONSE_BYTES = 5_000_000
 
-# ---------- Загрузка geoip.dat ----------
 GEOIP_PATH = os.path.join(BASE_PATH, "data", "geoip.dat")
 geoip_reader = None
 try:
@@ -66,10 +66,9 @@ try:
 except Exception as e:
     print(f"⚠️ geoip.dat not loaded: {e}", flush=True)
 
-# ---------- Кеш для geoip ----------
 geoip_cache = {}
 
-# ---------- Функция проверки IP с кешем ----------
+
 def is_ip_allowed(ip_str):
     if not ip_str or geoip_reader is None:
         return True
@@ -88,10 +87,8 @@ def is_ip_allowed(ip_str):
         geoip_cache[ip_str] = False
         return False
 
-# ============================================================================
-# ФУНКЦИЯ ПРОВЕРКИ ДОСТУПНОСТИ (TCP + TLS handshake) - ОПТИМИЗИРОВАНА
-# ============================================================================
-def check_alive(line: str, timeout: float = 1.2) -> tuple[bool, float]:
+
+def check_alive(line: str, timeout: float = 1.2) -> tuple:
     try:
         parsed = urllib.parse.urlparse(line)
         host = parsed.hostname
@@ -227,16 +224,20 @@ def write_chunks_by_protocol(base_dir: str, protocol: str, items: list, chunk_si
             f.write("\n".join(part))
 
 
-# ---------- Функция загрузки одного источника (для параллельного выполнения) ----------
-def fetch_source(url: str, timeout: int = 15) -> tuple[str, str]:
-    """Возвращает (url, content) или (url, '') при ошибке"""
+def fetch_source(url: str, timeout: int = 15, max_bytes: int = MAX_RESPONSE_BYTES) -> tuple:
+    """Возвращает (url, content). Ограничивает размер ответа."""
     try:
-        r = requests.get(url, timeout=timeout, headers={"User-Agent": "Mozilla/5.0"})
-        if r.status_code == 200:
-            return url, r.text
-        else:
+        r = requests.get(
+            url,
+            timeout=timeout,
+            headers={"User-Agent": "Mozilla/5.0"},
+            stream=True,
+        )
+        if r.status_code != 200:
             return url, ""
-    except Exception as e:
+        content = r.raw.read(max_bytes, decode_content=True)
+        return url, content.decode("utf-8", errors="ignore")
+    except Exception:
         return url, ""
 
 
@@ -249,10 +250,9 @@ def main() -> int:
         total_urls = len(urls)
         print(f"🚀 Старт: всего источников: {total_urls}", flush=True)
 
-        # ---------- ПАРАЛЛЕЛЬНАЯ ЗАГРУЗКА ВСЕХ ИСТОЧНИКОВ ----------
         print("⏳ Загрузка источников параллельно...", flush=True)
         loaded = 0
-        with ThreadPoolExecutor(max_workers=30) as executor:
+        with ThreadPoolExecutor(max_workers=15) as executor:
             future_to_url = {executor.submit(fetch_source, url, 15): url for url in urls}
             for future in as_completed(future_to_url):
                 url = future_to_url[future]
@@ -262,7 +262,6 @@ def main() -> int:
                     if not content:
                         print(f"{loaded}/{total_urls} ❌ Не удалось загрузить {url}", flush=True)
                         continue
-                    # Обработка содержимого
                     if "://" not in content:
                         try:
                             content = base64.b64decode(content + "==").decode("utf-8", errors="ignore")
@@ -286,7 +285,6 @@ def main() -> int:
                 except Exception as e:
                     print(f"{loaded}/{total_urls} ⚠️ Ошибка при обработке {url}: {e}", flush=True)
 
-        # ---------- SSTAP (отдельно, т.к. это не URL из config_sources) ----------
         sstap_keys = fetch_keys_from_sstap()
         sstap_added = 0
         sstap_trash = 0
@@ -303,7 +301,7 @@ def main() -> int:
         if sstap_added > 0:
             print(f"📡 С sstap.org добавлено {sstap_added} ключей (отфильтровано {sstap_trash})", flush=True)
         else:
-            print(f"📡 С sstap.org не добавлено ни одного ключа (все {len(sstap_keys)} отклонены фильтром)", flush=True)
+            print(f"📡 С sstap.org не добавлено ни одного ключа", flush=True)
 
         all_keys_list = sorted(all_keys)
         with open(os.path.join(NEW_DIR, "all_new.txt"), "w", encoding="utf-8") as f:
@@ -318,7 +316,6 @@ def main() -> int:
             if items:
                 write_chunks_by_protocol(NEW_BY_PROTO_DIR, p, items, CHUNK_SIZE)
 
-        # ---------- УДАЛЕНИЕ ДУБЛЕЙ И ПРОВЕРКА НА ЖИЗНЬ ----------
         seen_ip = set()
         unique_lines = []
         for line in all_keys_list:
@@ -335,7 +332,7 @@ def main() -> int:
         total = len(unique_lines)
         checked = 0
 
-        with ThreadPoolExecutor(max_workers=150) as executor:
+        with ThreadPoolExecutor(max_workers=50) as executor:
             future_to_line = {executor.submit(check_alive, line, 1.2): line for line in unique_lines}
             for future in as_completed(future_to_line):
                 line = future_to_line[future]
@@ -363,12 +360,19 @@ def main() -> int:
 
         clean_keys = alive_lines
 
-        # ---------- ЗАПИСЬ В clean/ ПО ПРОТОКОЛАМ ----------
         for p in PROTOCOLS:
             items = [k for k in clean_keys if protocol_of(k) == p]
             if items:
                 with open(os.path.join(CLEAN_DIR, f"{p}.txt"), "w", encoding="utf-8") as f:
                     f.write("\n".join(items))
+
+        # ---------- САМООЧИСТКА: удаляем промежуточную папку new/ ----------
+        try:
+            if os.path.exists(NEW_DIR):
+                shutil.rmtree(NEW_DIR)
+                print(f"🧹 Удалена промежуточная папка: {NEW_DIR}", flush=True)
+        except Exception as e:
+            print(f"⚠️ Не удалось удалить {NEW_DIR}: {e}", flush=True)
 
         print("\n✅ ГОТОВО!", flush=True)
         print(f"   📥 Всего ключей после фильтра: {len(all_keys_list)}", flush=True)
@@ -389,154 +393,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
