@@ -4,15 +4,27 @@ cleanup_repo.py
 # Python cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
 
 # Temporary files
 *.tmp
 *.bak
 *.old
 *.orig
+*.swp
+.DS_Store
 
 # Logs (keep only latest via main.py)
 logs/
+*.log
 
-# ===== ДОБАВЛЕНО ДЛЯ ИСКЛЮЧЕНИЯ БОЛЬШОГО ФАЙЛА =====
+# ===== Исключаем промежуточные файлы mirror.py =====
+# Вся папка new/ — это временный буфер, в репозиторий не идёт
+data/githubmirror/new/
+# Отдельно на всякий случай (если кто-то снимет папку)
 data/githubmirror/new/all_new.txt
+data/githubmirror/clean_backup/
