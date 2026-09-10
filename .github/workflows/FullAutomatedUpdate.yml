@@ -2,7 +2,7 @@ name: FullAutomatedUpdate
 
 on:
   schedule:
-    - cron: '0 */2 * * *'   # раз в 2 часа
+    - cron: '0 */4 * * *'
   workflow_dispatch:
 
 permissions:
@@ -10,26 +10,27 @@ permissions:
 
 concurrency:
   group: full-update
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   full-update:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 90
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v5
         with:
-          fetch-depth: 0
+          fetch-depth: 1
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Reset to origin/main
         run: |
-          git fetch origin main
+          git fetch origin main --depth=1
           git reset --hard origin/main
           git clean -fdx
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
 
@@ -39,7 +40,7 @@ jobs:
           pip install requests pyyaml maxminddb geoip2
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Download geoip.dat from ru-routing-dat
+      - name: Download geoip.dat
         run: |
           mkdir -p data
           wget -q -O data/geoip.dat https://cdn.jsdelivr.net/gh/GrimbirdUsers/ru-routing-dat@main/geoip.dat
@@ -47,31 +48,59 @@ jobs:
       - name: Merge sources from proxy-collect manifest
         run: python scripts/proxy_collect_merge.py
 
-      - name: Update githubmirror (mirror.py)
-        run: python scripts/mirror.py
-
-      - name: Generate my own VLESS configs
+      - name: Generate own VLESS configs
         run: python scripts/my_vless_generator.py
 
       - name: Run checker (main.py)
         run: python scripts/main.py --geoip data/geoip.dat
 
-      - name: Commit and push all changes
+      - name: Cleanup temp data before commit
+        if: always()
+        run: |
+          echo "=== До очистки ==="
+          du -sh data/githubmirror 2>/dev/null || true
+          du -sh logs 2>/dev/null || true
+          du -sh .git 2>/dev/null || true
+
+          rm -rf data/githubmirror/new 2>/dev/null || true
+          rm -rf data/githubmirror/clean_backup 2>/dev/null || true
+          rm -rf logs/*.log 2>/dev/null || true
+          rm -rf logs/*.txt 2>/dev/null || true
+          find . -type f \( -name "*.tmp" -o -name "*.pyc" \) -delete 2>/dev/null || true
+          find . -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
+          find . -type d -name ".pytest_cache" -exec rm -rf {} + 2>/dev/null || true
+
+          echo "=== После очистки ==="
+          du -sh data/githubmirror 2>/dev/null || true
+          du -sh logs 2>/dev/null || true
+          du -sh .git 2>/dev/null || true
+
+      - name: Commit and push (with auto history reset)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
-          git add .
-          
-          # Явно исключаем большой файл из индекса
-          git reset data/githubmirror/new/all_new.txt 2>/dev/null || true
-          
+
+          git add -A
+
           if git diff --cached --quiet; then
             echo "Нет изменений для коммита"
             exit 0
           fi
-          
+
           git commit -m "🤖 Full auto-update $(date -u '+%Y-%m-%d %H:%M:%S')"
-          
-          # Вместо pull --rebase используем force-with-lease, т.к. локальная ветка всегда синхронизирована
-          git push --force-with-lease origin main
+
+          SIZE=$(du -sm .git | cut -f1)
+          echo "📦 Размер .git: ${SIZE} МБ"
+
+          if [ "$SIZE" -gt 400 ]; then
+            echo "🧹 История раздулась (${SIZE}МБ). Делаю orphan reset..."
+            git checkout --orphan clean-main
+            git commit -m "🧹 Auto history reset (prev .git was ${SIZE}MB) $(date -u '+%Y-%m-%d')"
+            git branch -D main || true
+            git branch -M clean-main main
+            git push --force origin main
+            echo "✅ История сброшена"
+          else
+            git push origin main
+            echo "✅ Пуш без сброса истории (${SIZE}МБ)"
+          fi
