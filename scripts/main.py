@@ -16,11 +16,11 @@ from urllib.parse import urlparse
 # КОНФИГУРАЦИЯ
 # ============================================================================
 
-BASE_DIR = Path(__file__).parent.parent  # корень репозитория
+BASE_DIR = Path(__file__).parent.parent
 SCRIPTS_DIR = BASE_DIR / "scripts"
 LOGS_DIR = BASE_DIR / "logs"
 STATS_FILE = BASE_DIR / "data" / "stats.json"
-GEOIP_PATH = BASE_DIR / "data" / "geoip.dat"  # путь к geoip.dat
+GEOIP_PATH = BASE_DIR / "data" / "geoip.dat"
 
 LOGS_DIR.mkdir(exist_ok=True)
 
@@ -47,35 +47,29 @@ logger = setup_logging()
 # ============================================================================
 
 def run_script(script_name: str, description: str, timeout: int = 300, args: list = None) -> bool:
-    """Запускает скрипт из папки scripts/ с дополнительными аргументами"""
+    """Запускает скрипт с наследованием stdout/stderr — вывод идёт в реальном времени."""
     logger.info(f"🚀 Запуск {script_name} ({description})...")
     script_path = SCRIPTS_DIR / script_name
     if not script_path.exists():
         logger.error(f"❌ Скрипт {script_name} не найден в {SCRIPTS_DIR}")
         return False
-    cmd = [sys.executable, str(script_path)]
+
+    cmd = [sys.executable, "-u", str(script_path)]
     if args:
         cmd.extend(args)
+
+    env = os.environ.copy()
+    env["PYTHONUNBUFFERED"] = "1"
+
     try:
         result = subprocess.run(
             cmd,
             cwd=BASE_DIR,
-            capture_output=True,
-            text=True,
             timeout=timeout,
-            encoding='utf-8',
-            errors='replace'
+            env=env,
         )
-        if result.stdout:
-            for line in result.stdout.strip().split('\n'):
-                if line.strip():
-                    logger.info(f"  → {line}")
         if result.returncode != 0:
             logger.error(f"❌ {script_name} завершился с кодом {result.returncode}")
-            if result.stderr:
-                for line in result.stderr.strip().split('\n'):
-                    if line.strip():
-                        logger.error(f"  ⚠️  {line}")
             return False
         logger.info(f"✅ {script_name} завершён успешно")
         return True
@@ -86,8 +80,8 @@ def run_script(script_name: str, description: str, timeout: int = 300, args: lis
         logger.error(f"❌ Неожиданная ошибка при запуске {script_name}: {e}")
         return False
 
+
 def run_mirror_script():
-    # Увеличиваем таймаут до 1800 секунд (30 минут) и передаём путь к geoip
     args = []
     if GEOIP_PATH.exists():
         args = ["--geoip", str(GEOIP_PATH)]
@@ -96,8 +90,10 @@ def run_mirror_script():
         logger.warning("⚠️ geoip.dat не найден, проверка по стране будет отключена")
     return run_script("mirror.py", "Загрузка и фильтрация по РФ/СНГ/Европа", timeout=1800, args=args)
 
+
 def generate_cf_vless():
     return run_script("generate_cf_vless.py", "50 новых CF-VLESS", timeout=90)
+
 
 def merge_cf_with_clean():
     clean_path = BASE_DIR / "data" / "githubmirror" / "clean" / "vless.txt"
@@ -122,12 +118,14 @@ def merge_cf_with_clean():
     if not new_configs:
         logger.info("ℹ️ cf_fresh.txt пуст – нечего добавлять")
         return True
+
     def extract_key(line):
         try:
             u = urlparse(line)
             return (u.hostname, u.port or 443, u.scheme)
         except:
             return None
+
     old_keys = {extract_key(c) for c in old_configs if extract_key(c)}
     unique_new = []
     for cfg in new_configs:
@@ -150,11 +148,14 @@ def merge_cf_with_clean():
     logger.info(f"📊 Всего в clean/vless.txt теперь: {len(all_configs)}")
     return True
 
+
 def run_filter_script():
     return run_script("filter_ru_sni.py", "Фильтр по реальному SNI (CDN+RU)", timeout=120)
 
+
 def run_filter_local_script():
     return run_script("filter_ru_sni_local.py", "Экспериментальный фильтр по RU-SNI", timeout=120)
+
 
 def collect_statistics():
     logger.info("📊 Сбор статистики...")
@@ -181,6 +182,7 @@ def collect_statistics():
                     logger.warning(f"    ⚠️  Ошибка чтения {protocol_file.name}: {e}")
         else:
             logger.warning("  ⚠️  Директория githubmirror/clean не найдена")
+
         ru_sni_dir = BASE_DIR / "data" / "githubmirror" / "ru-sni"
         if ru_sni_dir.exists():
             logger.info("  📁 githubmirror/ru-sni:")
@@ -199,6 +201,7 @@ def collect_statistics():
                     logger.warning(f"    ⚠️  Ошибка чтения {protocol_file.name}: {e}")
         else:
             logger.warning("  ⚠️  Директория githubmirror/ru-sni не найдена")
+
         cf_fresh_path = BASE_DIR / "data" / "githubmirror" / "new" / "cf_fresh.txt"
         new_cf_count = 0
         if cf_fresh_path.exists():
@@ -206,11 +209,13 @@ def collect_statistics():
                 new_cf_count = sum(1 for line in f if line.strip())
         stats["new_cf_added"] = new_cf_count
         logger.info(f"  ✨ Новых CF-VLESS в этом запуске: {new_cf_count}")
+
         total_clean = stats["totals"]["clean"]
         total_ru_sni = stats["totals"]["ru_sni"]
         if total_clean > 0:
             filter_rate = (total_ru_sni / total_clean) * 100
             stats["totals"]["filter_rate"] = round(filter_rate, 2)
+
         logger.info("")
         logger.info("  " + "─" * 50)
         logger.info(f"  📈 ИТОГО:")
@@ -218,14 +223,31 @@ def collect_statistics():
         logger.info(f"    RU-SNI (после SNI-фильтра):  {total_ru_sni:6d}")
         logger.info(f"    Прошло фильтр:               {stats['totals']['filter_rate']:6.1f}%")
         logger.info("  " + "─" * 50)
+
         STATS_FILE.parent.mkdir(parents=True, exist_ok=True)
         with open(STATS_FILE, 'w', encoding='utf-8') as f:
             json.dump(stats, f, indent=2, ensure_ascii=False)
         logger.info(f"✅ Статистика сохранена: {STATS_FILE}")
+
+        # ---------- САМООЧИСТКА: оставляем только 5 последних логов ----------
+        try:
+            log_files = sorted(LOGS_DIR.glob("vpn-checker-*.log"),
+                               key=lambda p: p.stat().st_mtime, reverse=True)
+            for old_log in log_files[5:]:
+                try:
+                    old_log.unlink()
+                except Exception:
+                    pass
+            if len(log_files) > 5:
+                logger.info(f"🧹 Удалено старых логов: {len(log_files) - 5}")
+        except Exception as e:
+            logger.warning(f"⚠️ Не удалось почистить логи: {e}")
+
         return True
     except Exception as e:
         logger.error(f"❌ Ошибка при сборе статистики: {e}", exc_info=True)
         return False
+
 
 def check_dependencies():
     logger.info("🔍 Проверка наличия скриптов...")
@@ -242,6 +264,7 @@ def check_dependencies():
         logger.error(f"❌ Отсутствуют обязательные скрипты: {', '.join(missing)}")
         return False
     return True
+
 
 def main():
     logger.info("=" * 70)
@@ -272,6 +295,7 @@ def main():
         if not success:
             logger.warning(f"⚠️  Этап '{step_name}' завершился с ошибкой")
         logger.info("")
+
     success_count = sum(1 for v in results.values() if v)
     total_steps = len(steps)
     logger.info("=" * 70)
@@ -293,6 +317,7 @@ def main():
     logger.info(f"⏰ Время завершения: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     logger.info("=" * 70)
     return exit_code
+
 
 if __name__ == "__main__":
     try:
