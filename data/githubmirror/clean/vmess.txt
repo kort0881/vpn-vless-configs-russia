@@ -1,18 +1,19 @@
-vmess://d13fc2f5-3e05-4795-81eb-44143a09e552@82.198.246.97:180?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%90%8A99@oneclickvpnkeys | 8ms
-vmess://d13fc2f5-3e05-4795-81eb-44143a09e552@82.198.246.233:180?encryption=aes-128-gcm&amp;security=none&amp;type=tcp#%E2%9B%BD82@oneclickvpnkeys | 9ms
-vmess://d4603cc2-e0ee-4651-83f5-1db5b7168177@129.146.143.80:48111?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%92%8882@oneclickvpnkeys | 17ms
-vmess://f836c736-87fc-4fde-aabc-00857ecdff3e@129.146.77.248:39495?encryption=auto&amp;host=129.146.77.248&amp;path=%2Fcctv13.m3u8&amp;security=none&amp;type=ws#%E2%9A%99%EF%B8%8F88@oneclickvpnkeys | 18ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@84.17.41.2:18000?encryption=auto&amp;security=none&amp;type=tcp#1%F0%9F%90%8A@oneclickvpnkeys | 22ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@23.162.200.198:18000?encryption=auto&amp;security=none&amp;type=tcp#%E2%9B%BD65@oneclickvpnkeys | 56ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@38.110.1.246:18000?encryption=auto&amp;security=none&amp;type=tcp#%E2%9B%BD73@oneclickvpnkeys | 65ms
-vmess://ad78d02b-873f-4cff-8d4a-673f53d6ce0f@107.173.254.27:15311?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%92%8862@oneclickvpnkeys | 79ms
-vmess://04621bae-ab36-11ec-b909-0242ac120002@66.163.117.58:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%92%889@oneclickvpnkeys | 142ms
-vmess://a25cbf11-2908-4a1b-a3a8-9a571777dca3@57.129.132.223:80?encryption=auto&amp;host=google.com&amp;path=%2Fvmess%2F&amp;security=none&amp;type=ws#%E2%9A%99%EF%B8%8F34@oneclickvpnkeys | 143ms
-vmess://f2c67cae-c09d-4739-947d-f5302d87a3c0@47.86.167.194:800?encryption=auto&amp;headerType=http&amp;host=sjskendn.dingtalk.com&amp;path=%2Fx&amp;security=none&amp;type=tcp#%F0%9F%92%8886@oneclickvpnkeys | 147ms
-vmess://845e6b08-2919-4290-ade0-5dc7dcea59ca@47.244.120.197:44867?ed=2048&amp;eh=Sec-WebSocket-Protocol&amp;encryption=auto&amp;path=%2Farki&amp;security=none&amp;type=ws#%F0%9F%92%8891@oneclickvpnkeys | 151ms
-vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn | 153ms
-vmess://5c040f1d-45db-43bd-8d46-e4950e433735@51.89.41.22:1234?allowInsecure=1&amp;encryption=auto&amp;security=tls&amp;sni=51.89.41.22&amp;type=tcp#%F0%9F%8F%8017@oneclickvpnkeys | 153ms
-vmess://b3a11068-1a7e-4643-85de-7c82cce46943@151.243.173.119:33736?encryption=auto&path=/vmess-ws&security=none&type=ws#NL 🇳🇱 | @Raydikalx | 7E62C0 | 156ms
-vmess://04621bae-ab36-11ec-b909-0242ac120002@85.90.217.42:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%8F%8042@oneclickvpnkeys | 166ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@ww11.levikogjgfdd.ir:18000?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%90%92100@oneclickvpnkeys | 180ms
-vmess://e8758bf0-c234-4809-89f7-25fd868316d0@31.77.8.97:110?encryption=auto&amp;security=none&amp;type=tcp#%E2%9A%99%EF%B8%8F1@oneclickvpnkeys | 263ms
+vmess://ad78d02b-873f-4cff-8d4a-673f53d6ce0f@107.173.254.27:15311?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%92%8862@oneclickvpnkeys | 25ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@23.162.200.198:18000?encryption=auto&amp;security=none&amp;type=tcp#%E2%9B%BD65@oneclickvpnkeys | 26ms
+vmess://d13fc2f5-3e05-4795-81eb-44143a09e552@82.198.246.233:180?encryption=aes-128-gcm&amp;security=none&amp;type=tcp#%E2%9B%BD82@oneclickvpnkeys | 38ms
+vmess://d13fc2f5-3e05-4795-81eb-44143a09e552@82.198.246.97:180?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%90%8A99@oneclickvpnkeys | 38ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@84.17.41.2:18000?encryption=auto&amp;security=none&amp;type=tcp#1%F0%9F%90%8A@oneclickvpnkeys | 46ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@38.110.1.246:18000?encryption=auto&amp;security=none&amp;type=tcp#%E2%9B%BD73@oneclickvpnkeys | 51ms
+vmess://f836c736-87fc-4fde-aabc-00857ecdff3e@129.146.77.248:39495?encryption=auto&amp;host=129.146.77.248&amp;path=%2Fcctv13.m3u8&amp;security=none&amp;type=ws#%E2%9A%99%EF%B8%8F88@oneclickvpnkeys | 54ms
+vmess://d4603cc2-e0ee-4651-83f5-1db5b7168177@129.146.143.80:48111?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%92%8882@oneclickvpnkeys | 64ms
+vmess://04621bae-ab36-11ec-b909-0242ac120002@66.163.117.58:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%92%889@oneclickvpnkeys | 109ms
+vmess://f6361af8-bb8f-4609-bf5d-3fc0f688f47b@94.249.187.46:2086?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%90%8A10@oneclickvpnkeys | 109ms
+vmess://a25cbf11-2908-4a1b-a3a8-9a571777dca3@57.129.132.223:80?encryption=auto&amp;host=google.com&amp;path=%2Fvmess%2F&amp;security=none&amp;type=ws#%E2%9A%99%EF%B8%8F34@oneclickvpnkeys | 112ms
+vmess://e8758bf0-c234-4809-89f7-25fd868316d0@31.77.8.97:110?encryption=auto&amp;security=none&amp;type=tcp#%E2%9A%99%EF%B8%8F1@oneclickvpnkeys | 117ms
+vmess://5c040f1d-45db-43bd-8d46-e4950e433735@51.89.41.22:1234?allowInsecure=1&amp;encryption=auto&amp;security=tls&amp;sni=51.89.41.22&amp;type=tcp#%F0%9F%8F%8017@oneclickvpnkeys | 119ms
+vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn | 128ms
+vmess://04621bae-ab36-11ec-b909-0242ac120002@85.90.217.42:22324?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%8F%8042@oneclickvpnkeys | 145ms
+vmess://b3a11068-1a7e-4643-85de-7c82cce46943@151.243.173.119:33736?encryption=auto&path=/vmess-ws&security=none&type=ws#NL 🇳🇱 | @Raydikalx | 7E62C0 | 154ms
+vmess://845e6b08-2919-4290-ade0-5dc7dcea59ca@47.244.120.197:44867?ed=2048&amp;eh=Sec-WebSocket-Protocol&amp;encryption=auto&amp;path=%2Farki&amp;security=none&amp;type=ws#%F0%9F%92%8891@oneclickvpnkeys | 176ms
+vmess://f2c67cae-c09d-4739-947d-f5302d87a3c0@47.86.167.194:800?encryption=auto&amp;headerType=http&amp;host=sjskendn.dingtalk.com&amp;path=%2Fx&amp;security=none&amp;type=tcp#%F0%9F%92%8886@oneclickvpnkeys | 184ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@ww11.levikogjgfdd.ir:18000?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%90%92100@oneclickvpnkeys | 222ms
