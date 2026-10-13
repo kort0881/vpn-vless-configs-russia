@@ -22,6 +22,25 @@ venv/
 logs/
 *.log
 
+# Runtime/output artifacts
+archive/
+out/
+data/logs/
+
+# GeoIP / large binaries
+*.mmdb
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+
 # ===== Исключаем промежуточные файлы mirror.py =====
 # Вся папка new/ — это временный буфер, в репозиторий не идёт
 data/githubmirror/new/
