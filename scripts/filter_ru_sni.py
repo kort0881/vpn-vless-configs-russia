@@ -1,3 +1,5 @@
+"""Filter VLESS configs by Russian SNI requirements."""
+
 #!/usr/bin/env python3
 """
 filter_ru_sni.py — фильтр конфигов по реальному SNI/host.
