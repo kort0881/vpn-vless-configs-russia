@@ -1,16 +1,16 @@
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@23.162.200.198:18000?encryption=auto&amp;security=none&amp;type=tcp#%E2%9B%B272@oneclickvpnkeys | 44ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@67.220.85.46:18000?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%8D%8E93@oneclickvpnkeys | 48ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@38.91.107.49:18000?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%8D%8E95@oneclickvpnkeys | 48ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@84.17.41.2:18000?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%8D%8E96@oneclickvpnkeys | 56ms
-vmess://11c3627f-31e8-4695-dfbd-34076e2f1f5d@168.138.43.75:80?encryption=auto&amp;host=none&amp;path=%2Fcctv13.m3u8&amp;security=none&amp;type=ws#%F0%9F%A4%A999@oneclickvpnkeys | 128ms
-vmess://1281acca-f21d-475c-bf04-eccbee7f8df2@168.113.215.6:33736?encryption=auto&amp;host=nl-2a972c8052.shamanapp.online&amp;path=%2Fvmess-ws&amp;security=none&amp;type=ws#%F0%9F%8D%8E14@oneclickvpnkeys | 129ms
-vmess://632cfa69-ae00-49d1-81e0-554979d1e9fa@31.76.11.83:22366?encryption=auto&security=none&type=tcp#DE 🇩🇪 | @Raydikalx | 6F2952 | 134ms
-vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn | 135ms
-vmess://06d4d001-4168-4876-9416-7caecf578f40@178.105.168.171:2110?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%A4%A92@oneclickvpnkeys | 140ms
-vmess://b3a11068-1a7e-4643-85de-7c82cce46943@217.60.183.95:33744?encryption=auto&amp;path=%2FShamanVMESS2026&amp;security=none&amp;type=ws#%E2%9B%B22@oneclickvpnkeys | 154ms
-vmess://aeb3c019-ae83-4677-af97-846baa787ad5@185.212.149.7:2053?encryption=auto&amp;headerType=http&amp;host=down-cdn.dingtalk.com&amp;path=%2F3x&amp;security=none&amp;type=tcp#%F0%9F%8D%8E42@oneclickvpnkeys | 155ms
-vmess://c58c1205-b308-416f-8503-c04557abf93d@158.160.180.165:24212?alpn=h2%2Chttp%2F1.1&amp;encryption=auto&amp;security=tls&amp;type=tcp#%F0%9F%90%9996@oneclickvpnkeys | 179ms
-vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@ww11.levikogjgfdd.ir:18000?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%8C%8D95@oneclickvpnkeys | 225ms
-vmess://5504eaa8-1395-402f-8e0e-75ecd762e627@mix2.998998.best:443?allowInsecure=1&amp;ed=2560&amp;eh=Sec-WebSocket-Protocol&amp;encryption=auto&amp;host=server10.9966338.xyz&amp;path=%2Frthiugoyretdsuigg&amp;security=tls&amp;sni=server10.9966338.xyz&amp;type=ws#%F0%9F%9B%9573@oneclickvpnkeys | 279ms
-vmess://b3a11068-1a7e-4643-85de-7c82cce46943@de-d21e56c13c.shamanapp.online:33744?encryption=auto&amp;host=de-d21e56c13c.shamanapp.online%3A33744&amp;path=%2FShamanVMESS2026&amp;security=none&amp;type=ws#%F0%9F%8D%8E91@oneclickvpnkeys | 339ms
-vmess://9b31490d-190e-4ef1-af0a-7ccab3e7c3b5@rib9jxayoqjgn2kw.v.3dns.vip:443?encryption=auto&amp;host=rib9jxayoqjgn2kw.v.3dns.vip&amp;path=%2Fws-vmess&amp;security=tls&amp;sni=rib9jxayoqjgn2kw.v.3dns.vip&amp;type=ws#%F0%9F%9B%B898@oneclickvpnkeys | 1556ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@84.17.41.2:18000?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%8D%8E96@oneclickvpnkeys | 20ms
+vmess://9b31490d-190e-4ef1-af0a-7ccab3e7c3b5@rib9jxayoqjgn2kw.v.3dns.vip:443?encryption=auto&amp;host=rib9jxayoqjgn2kw.v.3dns.vip&amp;path=%2Fws-vmess&amp;security=tls&amp;sni=rib9jxayoqjgn2kw.v.3dns.vip&amp;type=ws#%F0%9F%9B%B898@oneclickvpnkeys | 21ms
+vmess://5504eaa8-1395-402f-8e0e-75ecd762e627@mix2.998998.best:443?allowInsecure=1&amp;ed=2560&amp;eh=Sec-WebSocket-Protocol&amp;encryption=auto&amp;host=server10.9966338.xyz&amp;path=%2Frthiugoyretdsuigg&amp;security=tls&amp;sni=server10.9966338.xyz&amp;type=ws#%F0%9F%9B%9573@oneclickvpnkeys | 46ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@23.162.200.198:18000?encryption=auto&amp;security=none&amp;type=tcp#%E2%9B%B272@oneclickvpnkeys | 60ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@67.220.85.46:18000?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%8D%8E93@oneclickvpnkeys | 64ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@38.91.107.49:18000?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%8D%8E95@oneclickvpnkeys | 73ms
+vmess://11c3627f-31e8-4695-dfbd-34076e2f1f5d@168.138.43.75:80?encryption=auto&amp;host=none&amp;path=%2Fcctv13.m3u8&amp;security=none&amp;type=ws#%F0%9F%A4%A999@oneclickvpnkeys | 111ms
+vmess://1281acca-f21d-475c-bf04-eccbee7f8df2@168.113.215.6:33736?encryption=auto&amp;host=nl-2a972c8052.shamanapp.online&amp;path=%2Fvmess-ws&amp;security=none&amp;type=ws#%F0%9F%8D%8E14@oneclickvpnkeys | 145ms
+vmess://632cfa69-ae00-49d1-81e0-554979d1e9fa@31.76.11.83:22366?encryption=auto&security=none&type=tcp#DE 🇩🇪 | @Raydikalx | 6F2952 | 149ms
+vmess://06d4d001-4168-4876-9416-7caecf578f40@178.105.168.171:2110?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%A4%A92@oneclickvpnkeys | 150ms
+vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn | 158ms
+vmess://b3a11068-1a7e-4643-85de-7c82cce46943@217.60.183.95:33744?encryption=auto&amp;path=%2FShamanVMESS2026&amp;security=none&amp;type=ws#%E2%9B%B22@oneclickvpnkeys | 166ms
+vmess://aeb3c019-ae83-4677-af97-846baa787ad5@185.212.149.7:2053?encryption=auto&amp;headerType=http&amp;host=down-cdn.dingtalk.com&amp;path=%2F3x&amp;security=none&amp;type=tcp#%F0%9F%8D%8E42@oneclickvpnkeys | 185ms
+vmess://f8c8dc3d-0d37-46b0-8b34-a7232882fcfe@ww11.levikogjgfdd.ir:18000?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%8C%8D95@oneclickvpnkeys | 185ms
+vmess://c58c1205-b308-416f-8503-c04557abf93d@158.160.180.165:24212?alpn=h2%2Chttp%2F1.1&amp;encryption=auto&amp;security=tls&amp;type=tcp#%F0%9F%90%9996@oneclickvpnkeys | 210ms
+vmess://b3a11068-1a7e-4643-85de-7c82cce46943@de-d21e56c13c.shamanapp.online:33744?encryption=auto&amp;host=de-d21e56c13c.shamanapp.online%3A33744&amp;path=%2FShamanVMESS2026&amp;security=none&amp;type=ws#%F0%9F%8D%8E91@oneclickvpnkeys | 344ms
