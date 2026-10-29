@@ -1,7 +1,8 @@
-vmess://83b09a64-1eaf-4c4d-89ed-866d4b6b8115@www.speedtest.net:443?type=ws&security=tls&path=/truth&host=www.ubuntuupdates.com&sni=www.ubuntuupdates.com&fp=chrome#CA 🇨🇦 | @Raydikalx | 89305A | 39ms
-vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn | 91ms
-vmess://06d4d001-4168-4876-9416-7caecf578f40@178.105.168.171:2110?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%A4%A92@oneclickvpnkeys | 101ms
-vmess://11c3627f-31e8-4695-dfbd-34076e2f1f5d@168.138.43.75:80?encryption=auto&amp;host=none&amp;path=%2Fcctv13.m3u8&amp;security=none&amp;type=ws#%F0%9F%A4%A999@oneclickvpnkeys | 162ms
-vmess://dfa9f875-3805-49d9-8636-46b6899be24e@sg-transit-3.nebulacloud.win:31414?type=ws&security=tls&path=/getData/us&host=sg-transit-3.nebulacloud.win#SG 🇸🇬 | @Raydikalx | 78F116 | 238ms
-vmess://f81d0fc9-c6b0-4dab-a270-6e697e0a367f@120.48.133.162:10086?type=ws#CN 🇨🇳 | @Raydikalx | 7D2C9C | 262ms
-vmess://9b31490d-190e-4ef1-af0a-7ccab3e7c3b5@rib9jxayoqjgn2kw.v.3dns.vip:443?encryption=auto&amp;host=rib9jxayoqjgn2kw.v.3dns.vip&amp;path=%2Fws-vmess&amp;security=tls&amp;sni=rib9jxayoqjgn2kw.v.3dns.vip&amp;type=ws#%F0%9F%9B%B898@oneclickvpnkeys | 732ms
+vmess://83b09a64-1eaf-4c4d-89ed-866d4b6b8115@www.speedtest.net:443?type=ws&security=tls&path=/truth&host=www.ubuntuupdates.com&sni=www.ubuntuupdates.com&fp=chrome#CA 🇨🇦 | @Raydikalx | 89305A | 3ms
+vmess://533ae32c-5dda-11f1-a6eb-23a176880b5a@51.195.91.135:10000?encryption=auto&amp;path=%2Fvpnjantit&amp;security=none&amp;type=ws#5%20Asiatech%20@OpenSSTPVpn | 93ms
+vmess://06d4d001-4168-4876-9416-7caecf578f40@178.105.168.171:2110?encryption=auto&amp;security=none&amp;type=tcp#%F0%9F%A4%A92@oneclickvpnkeys | 95ms
+vmess://c58c1205-b308-416f-8503-c04557abf93d@158.160.180.165:24212?alpn=h2%2Chttp%2F1.1&amp;encryption=auto&amp;security=tls&amp;type=tcp#%F0%9F%90%9996@oneclickvpnkeys | 131ms
+vmess://11c3627f-31e8-4695-dfbd-34076e2f1f5d@168.138.43.75:80?encryption=auto&amp;host=none&amp;path=%2Fcctv13.m3u8&amp;security=none&amp;type=ws#%F0%9F%A4%A999@oneclickvpnkeys | 165ms
+vmess://f81d0fc9-c6b0-4dab-a270-6e697e0a367f@120.48.133.162:10086?type=ws#CN 🇨🇳 | @Raydikalx | 7D2C9C | 268ms
+vmess://dfa9f875-3805-49d9-8636-46b6899be24e@sg-transit-3.nebulacloud.win:31414?type=ws&security=tls&path=/getData/us&host=sg-transit-3.nebulacloud.win#SG 🇸🇬 | @Raydikalx | 78F116 | 304ms
+vmess://9b31490d-190e-4ef1-af0a-7ccab3e7c3b5@rib9jxayoqjgn2kw.v.3dns.vip:443?encryption=auto&amp;host=rib9jxayoqjgn2kw.v.3dns.vip&amp;path=%2Fws-vmess&amp;security=tls&amp;sni=rib9jxayoqjgn2kw.v.3dns.vip&amp;type=ws#%F0%9F%9B%B898@oneclickvpnkeys | 694ms
