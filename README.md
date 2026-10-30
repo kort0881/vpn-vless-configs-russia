@@ -452,6 +452,7 @@ RU_DOMAINS = [
 - [NoMoreWalls](https://github.com/peasoft/NoMoreWalls) - Proxy листы
 - [Xray-core](https://github.com/XTLS/Xray-core) - Proxy движок
 - [Hiddify](https://github.com/hiddify) - Multi-platform VPN клиент
+- [vpn_telegram_2026](https://github.com/wwewtech/vpn_telegram_2026) - каталог 200+ VPN-ботов для России (Telegram), авто-проверка ссылок каждую неделю
 
 ### Документация
 
