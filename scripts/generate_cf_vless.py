@@ -1,68 +1,52 @@
 #!/usr/bin/env python3
 """
-Генератор свежих VLESS-конфигов на IP-диапазонах Cloudflare.
-Сохраняет результат в data/githubmirror/new/cf_fresh.txt.
+Экстрактор лучших VLESS-конфигов из собранных данных.
+Берёт живые ноды из clean/vless.txt, сортирует по задержке,
+сохраняет топ-50 в data/githubmirror/new/cf_fresh.txt.
 """
 
-import uuid
-import random
-import requests
+import re
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent.parent
+CLEAN_FILE = BASE_DIR / "data" / "githubmirror" / "clean" / "vless.txt"
 OUTPUT_FILE = BASE_DIR / "data" / "githubmirror" / "new" / "cf_fresh.txt"
 OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 
-CF_IPV4_URL = "https://www.cloudflare.com/ips-v4"
 COUNT = 50
-PORT = 443
-ENCRYPTION = "none"
-FLOW = "xtls-rprx-vision"
-SECURITY = "tls"
-TYPE = "tcp"
 
-def get_cf_ips():
-    resp = requests.get(CF_IPV4_URL, timeout=10)
-    resp.raise_for_status()
-    cidrs = resp.text.strip().splitlines()
-    import ipaddress
-    all_ips = []
-    for cidr in cidrs:
-        try:
-            net = ipaddress.ip_network(cidr.strip())
-            # Берём не более 5 IP из каждого диапазона, чтобы не перебирать все
-            for i, ip in enumerate(net.hosts()):
-                if i >= 5:
-                    break
-                all_ips.append(str(ip))
-        except:
-            continue
-    random.shuffle(all_ips)
-    return all_ips[:COUNT * 2]
-
-def generate_vless(ip):
-    uid = str(uuid.uuid4())
-    params = {
-        "encryption": ENCRYPTION,
-        "security": SECURITY,
-        "type": TYPE,
-        "flow": FLOW,
-        "sni": "cloudflare.com",
-    }
-    query = "&".join(f"{k}={v}" for k, v in params.items())
-    return f"vless://{uid}@{ip}:{PORT}?{query}#CF-{ip}"
+def extract_delay(line: str) -> float:
+    m = re.search(r'\| (\d+)ms', line)
+    if m:
+        return float(m.group(1))
+    return 99999.0
 
 def main():
-    print("=== Генератор свежих VLESS-конфигов на IP Cloudflare ===")
-    ips = get_cf_ips()
-    if not ips:
-        print("❌ Не удалось получить IP Cloudflare")
+    print("=== Экстрактор лучших VLESS-конфигов ===")
+    if not CLEAN_FILE.exists():
+        print(f"❌ Файл {CLEAN_FILE} не найден")
         return 1
-    configs = [generate_vless(ip) for ip in ips[:COUNT]]
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write("\n".join(configs) + "\n")
-    print(f"✅ Сгенерировано и сохранено {len(configs)} VLESS-конфигов.")
+
+    with open(CLEAN_FILE, 'r', encoding='utf-8') as f:
+        lines = [l.strip() for l in f if l.strip() and l.startswith('vless://')]
+
+    if not lines:
+        print("❌ Нет VLESS-конфигов в clean/vless.txt")
+        return 1
+
+    # Сортируем по задержке (меньше = лучше)
+    lines.sort(key=extract_delay)
+    top = lines[:COUNT]
+
+    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(top) + '\n')
+
+    print(f"✅ Сохранено {len(top)} лучших VLESS-конфигов из {len(lines)}")
     print(f"📂 Файл: {OUTPUT_FILE}")
+    if top:
+        best_delay = extract_delay(top[0])
+        worst_delay = extract_delay(top[-1])
+        print(f"⚡ Задержка: {best_delay:.0f}ms - {worst_delay:.0f}ms")
     return 0
 
 if __name__ == "__main__":
