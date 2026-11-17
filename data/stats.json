@@ -1,25 +1,25 @@
 {
-  "timestamp": "2026-11-16T18:07:04.624554",
+  "timestamp": "2026-11-17T02:55:07.062618",
   "github_mirror_clean": {
-    "hy2": 18,
-    "hysteria2": 58,
-    "ss": 2805,
-    "trojan": 2641,
-    "vless": 14571,
-    "vmess": 48
+    "hy2": 17,
+    "hysteria2": 55,
+    "ss": 2812,
+    "trojan": 2685,
+    "vless": 14769,
+    "vmess": 49
   },
   "ru_sni_filtered": {
     "hy2": 2,
-    "hysteria2": 8,
+    "hysteria2": 7,
     "ss": 1,
-    "trojan": 21,
-    "vless": 824,
+    "trojan": 22,
+    "vless": 866,
     "vmess": 0
   },
   "totals": {
-    "clean": 20141,
-    "ru_sni": 856,
-    "filter_rate": 4.25
+    "clean": 20387,
+    "ru_sni": 898,
+    "filter_rate": 4.4
   },
   "new_cf_added": 50
 }
