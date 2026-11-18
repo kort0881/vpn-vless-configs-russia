@@ -58,13 +58,39 @@ print(f"DEBUG: CONFIG_SOURCES_FILE = {CONFIG_SOURCES_FILE}", flush=True)
 CHUNK_SIZE = 500
 MAX_RESPONSE_BYTES = 5_000_000
 
-GEOIP_PATH = os.path.join(BASE_PATH, "data", "geoip.dat")
-geoip_reader = None
-try:
-    geoip_reader = maxminddb.open(GEOIP_PATH)
-    print("✅ geoip.dat loaded for mirror.py", flush=True)
-except Exception as e:
-    print(f"⚠️ geoip.dat not loaded: {e}", flush=True)
+# Фильтр по стране читает MaxMind-базу. data/geoip.dat — это xray-формат (protobuf),
+# maxminddb его не открывает, поэтому сначала ищем .mmdb, а geoip.dat — последним.
+GEOIP_CANDIDATES = [
+    os.path.join(BASE_PATH, "data", "Country.mmdb"),
+    os.path.join(BASE_PATH, "data", "GeoLite2-Country.mmdb"),
+    os.path.join(BASE_PATH, "data", "geoip.dat"),
+]
+GEOIP_PATH = GEOIP_CANDIDATES[0]
+
+
+def _open_geoip(path):
+    """maxminddb 2.x умеет только open(), 3.x — только open_database()."""
+    opener = getattr(maxminddb, "open_database", None) or getattr(maxminddb, "open", None)
+    if opener is None:
+        raise RuntimeError("maxminddb: нет ни open_database(), ни open()")
+    return opener(path)
+
+
+def _load_geoip():
+    for path in GEOIP_CANDIDATES:
+        if not os.path.exists(path):
+            continue
+        try:
+            reader = _open_geoip(path)
+            print(f"✅ geoip loaded for mirror.py: {os.path.basename(path)}", flush=True)
+            return reader
+        except Exception as e:
+            print(f"⚠️ {os.path.basename(path)} не MaxMind-база: {e}", flush=True)
+    print("⚠️ geoip: валидной .mmdb нет — фильтр по стране выключен", flush=True)
+    return None
+
+
+geoip_reader = _load_geoip()
 
 geoip_cache = {}
 

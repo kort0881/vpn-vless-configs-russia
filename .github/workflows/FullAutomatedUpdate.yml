@@ -45,6 +45,12 @@ jobs:
           mkdir -p data
           wget -q -O data/geoip.dat https://cdn.jsdelivr.net/gh/GrimbirdUsers/ru-routing-dat@main/geoip.dat
 
+      - name: Download Country.mmdb (MaxMind, для geo-фильтра mirror.py)
+        run: |
+          mkdir -p data
+          wget -q -O data/Country.mmdb https://raw.githubusercontent.com/Dreamacro/maxmind-geoip/release/Country.mmdb \
+            || echo "⚠️ Country.mmdb не скачался — фильтр по стране будет выключен"
+
       - name: Merge sources from proxy-collect manifest
         run: python scripts/proxy_collect_merge.py
 
