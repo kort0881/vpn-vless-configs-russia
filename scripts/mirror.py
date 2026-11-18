@@ -88,14 +88,27 @@ def is_ip_allowed(ip_str):
         return False
 
 
+# Протоколы, которые НЕЛЬЗЯ проверять TCP-коннектом: hy2/tuic живут на UDP/QUIC.
+# Их ключи не отбрасываем, а помечаем как «непроверенные по TCP».
+NON_TCP_PROTOS = {"hysteria", "hysteria2", "hy2", "tuic"}
+
+
 def check_alive(line: str, timeout: float = 1.2) -> tuple:
+    """Возвращает (alive, delay_ms, skipped_tcp).
+
+    Для UDP-протоколов (hy2/hysteria2/hysteria/tuic) TCP-проверка не имеет смысла:
+    ключ остаётся alive=True с delay=0 и флагом skipped_tcp=True.
+    """
     try:
         parsed = urllib.parse.urlparse(line)
         host = parsed.hostname
         port = parsed.port or 443
         scheme = parsed.scheme
         if not host:
-            return False, 0.0
+            return False, 0.0, False
+
+        if (scheme or "").lower() in NON_TCP_PROTOS:
+            return True, 0.0, True
 
         sni = None
         if scheme in ('vless', 'trojan', 'vmess'):
@@ -115,9 +128,9 @@ def check_alive(line: str, timeout: float = 1.2) -> tuple:
                 context.verify_mode = ssl.CERT_NONE
                 with context.wrap_socket(sock, server_hostname=sni) as ssock:
                     pass
-            return True, elapsed
+            return True, elapsed, False
     except Exception:
-        return False, 0.0
+        return False, 0.0, False
 
 
 def fetch_keys_from_sstap():
@@ -329,6 +342,7 @@ def main() -> int:
 
         print(f"⏳ Проверка доступности {len(unique_lines)} уникальных узлов (таймаут 1.2с)...", flush=True)
         alive_lines = []
+        skipped_tcp_check_by_proto = {p: 0 for p in PROTOCOLS if p in NON_TCP_PROTOS}
         total = len(unique_lines)
         checked = 0
 
@@ -340,8 +354,15 @@ def main() -> int:
                 if checked % 500 == 0:
                     print(f"   Проверено {checked}/{total}", flush=True)
                 try:
-                    alive, delay = future.result()
+                    alive, delay, skipped_tcp = future.result()
                     if alive:
+                        if skipped_tcp:
+                            # UDP-протокол: метку задержки не пишем, ключ идёт как есть
+                            proto = protocol_of(line)
+                            if proto:
+                                skipped_tcp_check_by_proto[proto] = skipped_tcp_check_by_proto.get(proto, 0) + 1
+                            alive_lines.append(line)
+                            continue
                         if '#' in line:
                             base, frag = line.split('#', 1)
                             line = f"{base}#{frag} | {delay:.0f}ms"
@@ -377,8 +398,17 @@ def main() -> int:
         print("\n✅ ГОТОВО!", flush=True)
         print(f"   📥 Всего ключей после фильтра: {len(all_keys_list)}", flush=True)
         print(f"   🔗 Уникальных IP:PORT:SCHEME: {len(unique_lines)}", flush=True)
-        print(f"   🟢 Работающих (TCP/TLS): {len(clean_keys)}", flush=True)
+        print(f"   🟢 Живых (TCP/TLS + UDP без проверки): {len(clean_keys)}", flush=True)
         print(f"   🗑️ Выброшено мусора: {trash_count}", flush=True)
+        skipped_total = sum(skipped_tcp_check_by_proto.values())
+        skipped_detail = ", ".join(
+            f"{p}={c}" for p, c in sorted(skipped_tcp_check_by_proto.items()) if c > 0
+        ) or "none"
+        print(
+            f"   ⏭️ skipped_tcp_check_by_proto: {skipped_total} ({skipped_detail})"
+            f" — UDP-протоколы оставлены без TCP-проверки",
+            flush=True,
+        )
         print("\n📊 По протоколам (только живые):", flush=True)
         for p in PROTOCOLS:
             count = len([k for k in clean_keys if protocol_of(k) == p])
