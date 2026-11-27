@@ -1,16 +1,14 @@
-trojan://0e681470-6845-11f1-8364-1239d0255272@news.microsoft.com:443?path=%2Fhowdy&amp;security=tls&amp;insecure=0&amp;host=usa.test3.net&amp;type=ws&amp;allowInsecure=0&amp;sni=usa.test3.net#[534][US][0][TROJAN][None][prrofile_purple][2026-06-14][2026-11-25 05:53] | 17ms
-trojan://5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0@us-1.gsafevpnapi.com:44370?sni=www.yahoo.com#%F0%9F%87%BA%F0%9F%87%B8%20us-1 | 46ms
-trojan://nCKwZIFgBH@gary04.1688848.xyz:51565?sni=www.bing.com&allowInsecure=1#4FreeIran-21403d4669 | 50ms
-trojan://nCKwZIFgBH@gary04.1688848.xyz:38663?sni=www.bing.com&allowInsecure=1#4Kian-99209db231 | 51ms
-trojan://nCKwZIFgBH@gary04.1688848.xyz:37233?sni=www.bing.com&allowInsecure=1#4Jadi-8f44be7378 | 55ms
-trojan://nCKwZIFgBH@gary04.1688848.xyz:22508?sni=www.bing.com&allowInsecure=1#4Mohsen-463662eff4 | 60ms
-trojan://f6a0a650-306e-11ee-b692-1239d0255272@51.158.146.183:443/?type=tcp&security=tls&sni=Speedtest.net#%F0%9F%87%B3%F0%9F%87%B1NL-51.158.146.183-8278 | 82ms
-trojan://SoftNetConnect@167.233.105.87:443?mode=auto&path=%2F&security=reality&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D&pbk=nhOVbG_d8gvDrs6ayt-kdjwo2wITTujBH_hbDO5hZnE&fp=chrome&spx=%2F&type=xhttp&sni=www.yahoo.com&sid=7a66d2f9e8805c17#%F0%9F%87%A9%F0%9F%87%AA%20Germany%200407 | 99ms
-trojan://SoftNetConnect@83.228.224.161:443?security=reality&sni=www.yahoo.com&fp=chrome&pbk=lnP3zaTgKpFJpC8IYOJZUuAedJghDQPowXJp5diOzQA&sid=141b14d8&spx=%2F&type=xhttp&path=%2F&mode=auto&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%20062 | 101ms
-trojan://ae407090-fcd7-41e1-acf1-6115a6b8dcf4@de.g-boot.ir:443?security=reality&pbk=KaVqOudPdBy9TIEDxGMN_fcOGlKJmNg2e2grikDJ2lE&headerType=none&fp=chrome&type=tcp&sni=www.yahoo.com&sid=9a597f16c2171bab#%F0%9F%87%A9%F0%9F%87%AA%20Germany%200409 | 101ms
-trojan://5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0@hk-1.gsafevpnapi.com:44370?sni=www.yahoo.com#%F0%9F%87%AD%F0%9F%87%B0%20hk-1 | 212ms
-trojan://erqdvpg95no9i4ox@shop.raadshop.bond:8447?security=reality&sni=dl.google.com&fp=chrome&pbk=XriFROPBSExFRv1woiPKt6tmBn1AW8UPSVnk6jqG1Rk&sid=5200238f5ec02cd0&spx=%2F3e968cac816da44&type=xhttp&path=%2F1d236330ba&mode=auto&extra=%7B%22mode%22%3A%22auto%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%20035 | 223ms
-trojan://5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0@sg-2.gsafevpnapi.com:44370?sni=www.yahoo.com#%F0%9F%87%B8%F0%9F%87%AC%20sg-2 | 255ms
-trojan://83a8fde4-62d6-41ae-85a8-0cef7504027c@tu.g-boot.ir:443?security=reality&pbk=KaVqOudPdBy9TIEDxGMN_fcOGlKJmNg2e2grikDJ2lE&headerType=none&fp=chrome&type=tcp&sni=www.yahoo.com&sid=9a597f16c2171bab#%F0%9F%87%B9%F0%9F%87%B7%20Turkey%20050 | 291ms
-trojan://83a8fde4-62d6-41ae-85a8-0cef7504027c@ir.g-boot.ir:443?security=reality&pbk=KaVqOudPdBy9TIEDxGMN_fcOGlKJmNg2e2grikDJ2lE&headerType=none&fp=chrome&type=tcp&sni=www.yahoo.com&sid=9a597f16c2171bab#%F0%9F%87%AE%F0%9F%87%B7%20Iran%200065 | 344ms
-trojan://2f1f7fbf-f37d-4275-c014-298a83f4e5a8@www.speedtest.net:80/?type=tcp&security=tls#4ms
+trojan://0e681470-6845-11f1-8364-1239d0255272@news.microsoft.com:443?path=%2Fhowdy&amp;security=tls&amp;insecure=0&amp;host=usa.test3.net&amp;type=ws&amp;allowInsecure=0&amp;sni=usa.test3.net#[534][US][0][TROJAN][None][prrofile_purple][2026-06-14][2026-11-25 05:53] | 21ms
+trojan://nCKwZIFgBH@gary04.1688848.xyz:51565?sni=www.bing.com&allowInsecure=1#4FreeIran-21403d4669 | 45ms
+trojan://nCKwZIFgBH@gary04.1688848.xyz:38663?sni=www.bing.com&allowInsecure=1#4Kian-99209db231 | 62ms
+trojan://5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0@us-1.gsafevpnapi.com:44370?sni=www.yahoo.com#%F0%9F%87%BA%F0%9F%87%B8%20us-1 | 67ms
+trojan://nCKwZIFgBH@gary04.1688848.xyz:22508?sni=www.bing.com&allowInsecure=1#4Mohsen-463662eff4 | 79ms
+trojan://nCKwZIFgBH@gary04.1688848.xyz:37233?sni=www.bing.com&allowInsecure=1#4Jadi-8f44be7378 | 79ms
+trojan://f6a0a650-306e-11ee-b692-1239d0255272@51.158.146.183:443/?type=tcp&security=tls&sni=Speedtest.net#%F0%9F%87%B3%F0%9F%87%B1NL-51.158.146.183-8278 | 147ms
+trojan://5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0@hk-1.gsafevpnapi.com:44370?sni=www.yahoo.com#%F0%9F%87%AD%F0%9F%87%B0%20hk-1 | 151ms
+trojan://SoftNetConnect@83.228.224.161:443?security=reality&sni=www.yahoo.com&fp=chrome&pbk=lnP3zaTgKpFJpC8IYOJZUuAedJghDQPowXJp5diOzQA&sid=141b14d8&spx=%2F&type=xhttp&path=%2F&mode=auto&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%20062 | 160ms
+trojan://SoftNetConnect@167.233.105.87:443?mode=auto&path=%2F&security=reality&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D&pbk=nhOVbG_d8gvDrs6ayt-kdjwo2wITTujBH_hbDO5hZnE&fp=chrome&spx=%2F&type=xhttp&sni=www.yahoo.com&sid=7a66d2f9e8805c17#%F0%9F%87%A9%F0%9F%87%AA%20Germany%200407 | 168ms
+trojan://ae407090-fcd7-41e1-acf1-6115a6b8dcf4@de.g-boot.ir:443?security=reality&pbk=KaVqOudPdBy9TIEDxGMN_fcOGlKJmNg2e2grikDJ2lE&headerType=none&fp=chrome&type=tcp&sni=www.yahoo.com&sid=9a597f16c2171bab#%F0%9F%87%A9%F0%9F%87%AA%20Germany%200409 | 168ms
+trojan://5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0@sg-2.gsafevpnapi.com:44370?sni=www.yahoo.com#%F0%9F%87%B8%F0%9F%87%AC%20sg-2 | 187ms
+trojan://erqdvpg95no9i4ox@shop.raadshop.bond:8447?security=reality&sni=dl.google.com&fp=chrome&pbk=XriFROPBSExFRv1woiPKt6tmBn1AW8UPSVnk6jqG1Rk&sid=5200238f5ec02cd0&spx=%2F3e968cac816da44&type=xhttp&path=%2F1d236330ba&mode=auto&extra=%7B%22mode%22%3A%22auto%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D#%F0%9F%87%B8%F0%9F%87%AA%20Sweden%20035 | 204ms
+trojan://2f1f7fbf-f37d-4275-c014-298a83f4e5a8@www.speedtest.net:80/?type=tcp&security=tls#8ms
